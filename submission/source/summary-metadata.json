@@ -1,4 +1,6 @@
 {
-  "characters": 2399,
-  "maximum": 3000
+  "characters": 1884,
+  "maximum": 3000,
+  "words": 246,
+  "maximum_words": 2000
 }

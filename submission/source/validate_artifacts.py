@@ -27,8 +27,8 @@ for file,limit in [('01-skill-function-description.pdf',30000000),('02-api-docum
                 contact.paste(im,(x,y)); d.text(((i%3)*360+12,(i//3)*520+5),src.name,fill='black')
             contact.save(QA/(p.stem+f'-contact-{start//6+1}.png'))
     manifest['files'].append(row)
-summary=(OUT/'06-entry-summary.txt').read_text(encoding='utf-8'); assert len(summary)<=3000
-manifest['summary']={'file':'06-entry-summary.txt','characters':len(summary),'limit':3000}
+summary=(OUT/'06-entry-summary.txt').read_text(encoding='utf-8'); assert len(summary)<=3000 and len(summary.split())<=2000
+manifest['summary']={'file':'06-entry-summary.txt','characters':len(summary),'limit':3000,'words':len(summary.split()),'word_limit':2000}
 manifest['video']={'duration_seconds':round(metadata['final_duration'],2),'maximum_seconds':300,'distinct_skills':len({r['skill_id'] for r in metadata['runs']}),'voice':metadata['voice'],'format':'H.264 video, AAC audio, embedded English subtitles','dimensions':[1600,900]}
 if 'workspace_tour' in metadata: manifest['workspace_tour']=metadata['workspace_tour']
 assert metadata['final_duration']<300

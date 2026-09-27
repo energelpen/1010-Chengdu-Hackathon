@@ -54,8 +54,10 @@
   },
   "summary": {
     "file": "06-entry-summary.txt",
-    "characters": 2399,
-    "limit": 3000
+    "characters": 1884,
+    "limit": 3000,
+    "words": 246,
+    "word_limit": 2000
   },
   "video": {
     "duration_seconds": 286.01,

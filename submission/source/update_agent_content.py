@@ -42,26 +42,24 @@ appendix=json.loads((HERE/'api_skill_appendix.json').read_text(encoding='utf-8')
 complete={**api,'pages':api['pages']+appendix['pages']}
 for name,data in [('skill_description.json',doc),('enterprise_fit.json',fit),('api_documentation.json',api),('api_complete.json',complete)]:
     (HERE/name).write_text(json.dumps(data,indent=2,ensure_ascii=False),encoding='utf-8')
-summary=f'''Atlas Office is an organizational collaboration workspace for Product Launch Preparation, aligned with the SP-D challenge and Chengdu's culture, commerce and tourism theme.
+summary=f'''Atlas Office is an AI-powered collaboration workspace that turns one business request into a coordinated plan, executed skills and a reviewable set of deliverables. Built for the SP-D Product Launch Preparation challenge, it demonstrates a Chengdu food-and-tea group-tour launch simulation.
 
-One user brief drives a real model-led simulation for a Chengdu food and tea group-tour launch. Atlas reads the skill contracts, creates a dependency-aware plan, delegates to qualified fictional colleagues, supplies the inputs and executes the local skills without the user operating them one by one.
+The agent reads skill instructions, chooses qualified fictional colleagues, plans dependencies, supplies inputs and calls the tools itself. In the recorded demonstration, one request completed {stats['skills_completed']} skill executions across {stats['distinct_skills']} distinct skills and {stats['delegated_people']} colleagues, producing {stats['artifacts']} real files.
 
-{measured}
+The workflow covers launch-option comparison, team capacity, responsibilities, campaign planning, risk assessment, budgets, forecasting, decisions, management handoff and reusable knowledge. Deliverables include editable Word, PowerPoint and Excel files, plus a final PDF report.
 
-{coverage}
+A live dashboard shows the agent's plan, assignees, tool calls, completion states, elapsed time, token usage and generated files. The organisation chart, people directory, 69-skill library, activity and approval views, and file and knowledge tools make the work easy to inspect and reopen.
 
-The visible dashboard shows the agent's plan, staff assignments, calls, completion states, elapsed time, file counts and token usage. Each result can be inspected and reopened. The repository includes the actual run evidence and generated deliverables.
+Browser, HTTP, CLI and MCP interfaces share one validated execution runtime. External and reviewed writes require approval. The library includes nine tourism stages supporting an inquiry-to-outcome simulation.
 
-The library contains 69 registered skills across office documents, finance, planning, governance and optional connected services. Browser, HTTP, CLI and MCP share the validated runtime. Nine tourism stages also provide an inquiry-to-outcome simulation. External and reviewed writes require review; pending work is not counted as completed.
+Verification passed 180 tourism behaviour cases, 51 automated tests and 48 fixed routing prompts. The repository includes the application, skill contracts, API documentation, narrated demonstration, execution evidence and generated outputs.
 
-Verification passed 180 tourism behavior cases, 51 automated tests, and a fixed routing corpus of 43 action prompts plus 5 non-action prompts. The live launch recording demonstrates one scenario, not a general reliability or business-savings claim.
+Atlas makes task ownership, decisions and deliverables visible and reusable. It is a local single-user prototype. Staff and business outcomes are simulated; the recorded agent calls and generated files are real.
 
-Public information about Sichuan Shanghai Airlines Holiday International Travel Agency Co., Ltd. informs the enterprise context. The company has not endorsed the prototype or supplied private SOPs. Staff, launch inputs and business outcomes are simulated. The agent calls and generated files are real. The app is a local single-user prototype.
-
-Source: {repo}'''
-assert len(summary)<=3000
+GitHub repository: {repo}'''
+assert len(summary)<=3000 and len(summary.split())<=2000
 (OUT/'06-entry-summary.txt').write_text(summary,encoding='utf-8')
-(HERE/'summary-metadata.json').write_text(json.dumps({'characters':len(summary),'maximum':3000},indent=2),encoding='utf-8')
+(HERE/'summary-metadata.json').write_text(json.dumps({'characters':len(summary),'maximum':3000,'words':len(summary.split()),'maximum_words':2000},indent=2),encoding='utf-8')
 for name,data in [('01-skill-function-description.md',doc),('02-api-documentation.md',complete),('04-enterprise-challenge-fit.md',fit)]:
     lines=['# '+data['subtitle'],'',data['version'],'','Repository: '+repo,'']
     for p in data['pages']:
