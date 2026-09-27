@@ -1,10 +1,10 @@
 COMMAND: python -m unittest discover -s tests -p test_*.py -q
-127.0.0.1 - - [27/Sep/2026 12:10:19] "POST /api/chat HTTP/1.1" 403 -
-127.0.0.1 - - [27/Sep/2026 12:10:19] "GET /api/config HTTP/1.1" 200 -
-127.0.0.1 - - [27/Sep/2026 12:10:19] "GET /.env HTTP/1.1" 404 -
-127.0.0.1 - - [27/Sep/2026 12:10:19] "POST /api/config/key HTTP/1.1" 200 -
-127.0.0.1 - - [27/Sep/2026 12:10:19] "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - [27/Sep/2026 13:05:11] "POST /api/chat HTTP/1.1" 403 -
+127.0.0.1 - - [27/Sep/2026 13:05:11] "GET /api/config HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 13:05:11] "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - [27/Sep/2026 13:05:12] "POST /api/config/key HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 13:05:12] "GET /.env HTTP/1.1" 404 -
 ----------------------------------------------------------------------
-Ran 46 tests in 5.358s
+Ran 51 tests in 9.244s
 
 OK

@@ -33,7 +33,7 @@ class ConversationStore:
                     id TEXT PRIMARY KEY, title TEXT NOT NULL,
                     created_at TEXT NOT NULL, updated_at TEXT NOT NULL,
                     person_id TEXT NOT NULL, request_id TEXT, proposal TEXT,
-                    work_plan TEXT
+                    work_plan TEXT, agent_run TEXT
                 );
                 CREATE TABLE IF NOT EXISTS messages (
                     sequence INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -62,6 +62,8 @@ class ConversationStore:
                 db.execute("ALTER TABLE conversations ADD COLUMN proposal TEXT")
             if "work_plan" not in {row[1] for row in db.execute("PRAGMA table_info(conversations)")}:
                 db.execute("ALTER TABLE conversations ADD COLUMN work_plan TEXT")
+            if "agent_run" not in {row[1] for row in db.execute("PRAGMA table_info(conversations)")}:
+                db.execute("ALTER TABLE conversations ADD COLUMN agent_run TEXT")
 
     def _connect(self) -> sqlite3.Connection:
         db = sqlite3.connect(self.path, timeout=10)
@@ -99,6 +101,7 @@ class ConversationStore:
             result = dict(row)
             result["proposal"] = json.loads(result["proposal"]) if result.get("proposal") else None
             result["work_plan"] = json.loads(result["work_plan"]) if result.get("work_plan") else None
+            result["agent_run"] = json.loads(result["agent_run"]) if result.get("agent_run") else None
             result["messages"] = [dict(message) for message in db.execute(
                 "SELECT id, role, content, person_id, name, mode, created_at, request_id "
                 "FROM messages WHERE conversation_id=? ORDER BY sequence", (conversation_id,))]
@@ -160,6 +163,15 @@ class ConversationStore:
                 raise FileNotFoundError("Conversation not found.")
             db.execute("UPDATE conversations SET work_plan=?, updated_at=? WHERE id=?",
                        (json.dumps(plan, ensure_ascii=False), utc_now(), conversation_id))
+
+    def save_agent_run(self, conversation_id: str, run: dict) -> None:
+        """Persist the latest actual agent execution snapshot for polling and reopening."""
+        check_id(conversation_id)
+        with closing(self._connect()) as db, db:
+            if db.execute("SELECT id FROM conversations WHERE id=?", (conversation_id,)).fetchone() is None:
+                raise FileNotFoundError("Conversation not found.")
+            db.execute("UPDATE conversations SET agent_run=?, updated_at=? WHERE id=?",
+                       (json.dumps(run, ensure_ascii=False), utc_now(), conversation_id))
 
     def import_cases(self, folder: Path) -> None:
         """Import saved simulations once, including traces made by the legacy UI."""

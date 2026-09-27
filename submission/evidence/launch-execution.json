@@ -1,83 +1,646 @@
 {
+  "prompt": "Run an end-to-end SIMULATION of launching a Chengdu food-and-tea group-tour product, from evaluating options to recording the simulated launch outcome and delivering the executive pack. Compare a CNY 50,000 pilot with a CNY 120,000 full launch; assume 30 guests and a preparation start of 1 October 2026. You may invent clearly labeled, internally consistent simulation assumptions for all missing facts. Choose the approach, assign qualified colleagues with capacity, plan dependencies and responsibilities, create the campaign and launch checklist, track work, assess risks, calculate budget variance and a finance forecast, record the simulated decision and outcome, and produce editable proposal slides, a Word management handoff, an Excel budget and a final PDF report. Save and retrieve the launch knowledge for reuse. Execute the local skills yourself in this one turn and show the actual plan, delegated staff, calls and statistics. Everything is simulated; do not contact anyone, use external accounts, make payments, book travel, or claim a real product launch. Finish all local preparation and simulated reporting automatically without asking me to operate the skills.",
+  "agent_run": {
+    "id": "AGENT-bdfa98ec084a4d8c9c4e36c57c52773b",
+    "status": "completed",
+    "model": "gpt-6-astra",
+    "started_at": "2026-09-27T05:03:34.033373+00:00",
+    "steps": [
+      {
+        "id": "S01",
+        "title": "SIMULATION: verify configured team capacity and skills",
+        "skill_id": "team-capacity",
+        "person_id": "ops_manager",
+        "depends_on": [],
+        "status": "completed",
+        "run_id": "run_62efe6f09db944ff88a65bfaf9a4be90"
+      },
+      {
+        "id": "S02",
+        "title": "Compare CNY 50,000 pilot and CNY 120,000 full launch; editable proposal",
+        "skill_id": "proposal-package",
+        "person_id": "sales_manager",
+        "depends_on": [
+          "S01"
+        ],
+        "status": "completed",
+        "run_id": "run_7e06ef0f33f84bd3b9c820729344f030"
+      },
+      {
+        "id": "S03",
+        "title": "Record simulated approach decision and spending boundary",
+        "skill_id": "decision-log",
+        "person_id": "director",
+        "depends_on": [
+          "S02"
+        ],
+        "status": "completed",
+        "run_id": "run_62e4f3a6d8b6470d9c1e5f731ab7a019"
+      },
+      {
+        "id": "S04",
+        "title": "Build dependency schedule from 1 October 2026",
+        "skill_id": "project-plan",
+        "person_id": "ops_manager",
+        "depends_on": [
+          "S03"
+        ],
+        "status": "completed",
+        "run_id": "run_6c5ce806dc5d437b90ac675d1469ae9b"
+      },
+      {
+        "id": "S05",
+        "title": "Assign qualified owners, RACI and effort envelope",
+        "skill_id": "responsibility-matrix",
+        "person_id": "ops_manager",
+        "depends_on": [
+          "S04"
+        ],
+        "status": "completed",
+        "run_id": "run_def062ae8350403fa38b40789411d45d"
+      },
+      {
+        "id": "S06",
+        "title": "Create simulated food-and-tea campaign and product brief",
+        "skill_id": "campaign-plan",
+        "person_id": "product_manager",
+        "depends_on": [
+          "S03",
+          "S04"
+        ],
+        "status": "completed",
+        "run_id": "run_b43f96aae6564812b3147054c7391ccb"
+      },
+      {
+        "id": "S07",
+        "title": "Assess simulated launch risks and mitigations",
+        "skill_id": "risk-register",
+        "person_id": "ops_manager",
+        "depends_on": [
+          "S04",
+          "S06"
+        ],
+        "status": "completed",
+        "run_id": "run_3ff1a25982e14ca9bf6540c9a92ab240"
+      },
+      {
+        "id": "S08",
+        "title": "Create launch readiness checklist with simulation-only evidence",
+        "skill_id": "policy-checklist",
+        "person_id": "itinerary_specialist",
+        "depends_on": [
+          "S05",
+          "S06",
+          "S07"
+        ],
+        "status": "completed",
+        "run_id": "run_aabc6ec812f2499fbd2888dea40426f9"
+      },
+      {
+        "id": "S09",
+        "title": "Track completed local preparation milestone",
+        "skill_id": "task-tracker",
+        "person_id": "product_manager",
+        "depends_on": [
+          "S08"
+        ],
+        "status": "completed",
+        "run_id": "run_483b02acf6324fcf9e0c759004b1f3c4"
+      },
+      {
+        "id": "S10",
+        "title": "Calculate fictional actual spending against pilot budget",
+        "skill_id": "budget-variance",
+        "person_id": "finance_manager",
+        "depends_on": [
+          "S08"
+        ],
+        "status": "completed",
+        "run_id": "run_03067b5bc9aa4a73991413bd108e13c1"
+      },
+      {
+        "id": "S11",
+        "title": "Create Excel option budgets, simulated actuals and variance",
+        "skill_id": "spreadsheet-create",
+        "person_id": "finance_manager",
+        "depends_on": [
+          "S10"
+        ],
+        "status": "completed",
+        "run_id": "run_1093043173fd4ebbba27c5451a4869d9"
+      },
+      {
+        "id": "S12",
+        "title": "Calculate October-December scenario finance forecast",
+        "skill_id": "finance-forecast",
+        "person_id": "finance_manager",
+        "depends_on": [
+          "S10"
+        ],
+        "status": "completed",
+        "run_id": "run_55a93062141f4c6ea6d48d3b1a8ade6f"
+      },
+      {
+        "id": "S13",
+        "title": "Record simulated launch outcome and follow-on decision",
+        "skill_id": "decision-log",
+        "person_id": "director",
+        "depends_on": [
+          "S09",
+          "S11",
+          "S12"
+        ],
+        "status": "completed",
+        "run_id": "run_459c3e660bb64fc4bcb37c62cdc9368c"
+      },
+      {
+        "id": "S14",
+        "title": "Track simulated outcome milestone with explicit fictional status",
+        "skill_id": "task-tracker",
+        "person_id": "ops_manager",
+        "depends_on": [
+          "S13"
+        ],
+        "status": "completed",
+        "run_id": "run_2cebbd0acd134e2ab267935deab7cc3b"
+      },
+      {
+        "id": "S15",
+        "title": "Save reusable simulation launch knowledge and provenance",
+        "skill_id": "knowledge-save",
+        "person_id": "transport_coordinator",
+        "depends_on": [
+          "S13",
+          "S14"
+        ],
+        "status": "completed",
+        "run_id": "run_90c49f37b68349f9a91cf5b765b2fa03"
+      },
+      {
+        "id": "S16",
+        "title": "Retrieve saved launch knowledge to verify reuse",
+        "skill_id": "knowledge-search",
+        "person_id": "transport_coordinator",
+        "depends_on": [
+          "S15"
+        ],
+        "status": "completed",
+        "run_id": "run_0b725bf68dcd4316859b909eb4269e38"
+      },
+      {
+        "id": "S17",
+        "title": "Deliver Word executive management handoff; local unsent draft only",
+        "skill_id": "management-handoff",
+        "person_id": "sales_manager",
+        "depends_on": [
+          "S11",
+          "S12",
+          "S14",
+          "S16"
+        ],
+        "status": "completed",
+        "run_id": "run_ab07d92a4cc14b84b5884e4920646e84"
+      },
+      {
+        "id": "S18",
+        "title": "Track completed editable executive handoff",
+        "skill_id": "task-tracker",
+        "person_id": "product_manager",
+        "depends_on": [
+          "S17"
+        ],
+        "status": "completed",
+        "run_id": "run_a98ce13acec54b3681dee7a796f6ff45"
+      },
+      {
+        "id": "S19",
+        "title": "Create final PDF with results, plan, calls and execution statistics",
+        "skill_id": "pdf-create",
+        "person_id": "finance_manager",
+        "depends_on": [
+          "S18",
+          "S16"
+        ],
+        "status": "completed",
+        "run_id": "run_5065c8da97ce43b294d374948ca08b7f"
+      },
+      {
+        "id": "S20",
+        "title": "Record local executive-pack closure, not a real launch",
+        "skill_id": "task-tracker",
+        "person_id": "ops_manager",
+        "depends_on": [
+          "S19"
+        ],
+        "status": "completed",
+        "run_id": "run_6aa35c758022409d9fba0e063982e135"
+      }
+    ],
+    "calls": [
+      {
+        "id": "call_MnqjWWulcLnZHi5JQqKosiFi",
+        "tool": "find_skills",
+        "status": "completed",
+        "started_at": "2026-09-27T05:03:44.207993+00:00",
+        "duration_ms": 63
+      },
+      {
+        "id": "call_G7yJ3hOhXdBTZLhSuXKZFG8V",
+        "tool": "find_skills",
+        "status": "completed",
+        "started_at": "2026-09-27T05:03:49.762376+00:00",
+        "duration_ms": 32
+      },
+      {
+        "id": "call_ntxq6qm49rf6NlmvKHTGVGwj",
+        "tool": "read_skills",
+        "status": "completed",
+        "started_at": "2026-09-27T05:03:52.756662+00:00",
+        "duration_ms": 47
+      },
+      {
+        "id": "call_2YSDT8tdta9ZM2ML0tTXMinG",
+        "tool": "read_skills",
+        "status": "completed",
+        "started_at": "2026-09-27T05:03:55.866897+00:00",
+        "duration_ms": 31
+      },
+      {
+        "id": "call_ZE68pINhry8DIg4HBQUPbvAe",
+        "tool": "set_plan",
+        "status": "completed",
+        "started_at": "2026-09-27T05:04:20.913201+00:00",
+        "duration_ms": 31
+      },
+      {
+        "id": "call_c1wQ0qg8jhvMd7YvvdPJ1L2b",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:04:23.287418+00:00",
+        "skill_id": "team-capacity",
+        "person_id": "ops_manager",
+        "step_id": "S01",
+        "run_id": "run_62efe6f09db944ff88a65bfaf9a4be90",
+        "duration_ms": 171
+      },
+      {
+        "id": "call_QI2czzLiIF8vH2jtz6DlKEGc",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:04:32.662313+00:00",
+        "skill_id": "proposal-package",
+        "person_id": "sales_manager",
+        "step_id": "S02",
+        "run_id": "run_7e06ef0f33f84bd3b9c820729344f030",
+        "duration_ms": 828
+      },
+      {
+        "id": "call_fz0mk5jVU4UC9STLtkiIMtJv",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:04:43.398018+00:00",
+        "skill_id": "decision-log",
+        "person_id": "director",
+        "step_id": "S03",
+        "run_id": "run_62e4f3a6d8b6470d9c1e5f731ab7a019",
+        "duration_ms": 156
+      },
+      {
+        "id": "call_dXx7p4fR4fCRQ4PyI5zhDPYe",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:04:51.108277+00:00",
+        "skill_id": "project-plan",
+        "person_id": "ops_manager",
+        "step_id": "S04",
+        "run_id": "run_6c5ce806dc5d437b90ac675d1469ae9b",
+        "duration_ms": 500
+      },
+      {
+        "id": "call_yKTe1Agw6FMBqBBcisFYI043",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:05:07.416461+00:00",
+        "skill_id": "responsibility-matrix",
+        "person_id": "ops_manager",
+        "step_id": "S05",
+        "run_id": "run_def062ae8350403fa38b40789411d45d",
+        "duration_ms": 218
+      },
+      {
+        "id": "call_4QDkbgiV5bh3vfIjeDQDse20",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:05:07.673875+00:00",
+        "skill_id": "campaign-plan",
+        "person_id": "product_manager",
+        "step_id": "S06",
+        "run_id": "run_b43f96aae6564812b3147054c7391ccb",
+        "duration_ms": 218
+      },
+      {
+        "id": "call_rseuRcjDLVJoLHTbkpyr6eE1",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:05:19.490155+00:00",
+        "skill_id": "risk-register",
+        "person_id": "ops_manager",
+        "step_id": "S07",
+        "run_id": "run_3ff1a25982e14ca9bf6540c9a92ab240",
+        "duration_ms": 125
+      },
+      {
+        "id": "call_C5dzgyA2l4xNytPLdivi2weo",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:05:36.734216+00:00",
+        "skill_id": "policy-checklist",
+        "person_id": "itinerary_specialist",
+        "step_id": "S08",
+        "run_id": "run_aabc6ec812f2499fbd2888dea40426f9",
+        "duration_ms": 141
+      },
+      {
+        "id": "call_op5p4012MO4HHcxYWCyK8OI6",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:05:42.952918+00:00",
+        "skill_id": "task-tracker",
+        "person_id": "product_manager",
+        "step_id": "S09",
+        "run_id": "run_483b02acf6324fcf9e0c759004b1f3c4",
+        "duration_ms": 140
+      },
+      {
+        "id": "call_rY0TwuiEBXiQIyIPurIEdla6",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:05:43.108121+00:00",
+        "skill_id": "budget-variance",
+        "person_id": "finance_manager",
+        "step_id": "S10",
+        "run_id": "run_03067b5bc9aa4a73991413bd108e13c1",
+        "duration_ms": 125
+      },
+      {
+        "id": "call_bTEvwZeR9LvWyBhcJnEGzpLB",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:06:04.620127+00:00",
+        "skill_id": "spreadsheet-create",
+        "person_id": "finance_manager",
+        "step_id": "S11",
+        "run_id": "run_1093043173fd4ebbba27c5451a4869d9",
+        "duration_ms": 218
+      },
+      {
+        "id": "call_JH1by0xOj7ixnSxygsd9rUHO",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:06:04.855100+00:00",
+        "skill_id": "finance-forecast",
+        "person_id": "finance_manager",
+        "step_id": "S12",
+        "run_id": "run_55a93062141f4c6ea6d48d3b1a8ade6f",
+        "duration_ms": 188
+      },
+      {
+        "id": "call_Z4T92qKG9Yv2GHp1feowM9Vq",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:06:18.099060+00:00",
+        "skill_id": "decision-log",
+        "person_id": "director",
+        "step_id": "S13",
+        "run_id": "run_459c3e660bb64fc4bcb37c62cdc9368c",
+        "duration_ms": 141
+      },
+      {
+        "id": "call_b3aZHg5F3fCmvhi1jgBe6kOh",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:06:23.548498+00:00",
+        "skill_id": "task-tracker",
+        "person_id": "ops_manager",
+        "step_id": "S14",
+        "run_id": "run_2cebbd0acd134e2ab267935deab7cc3b",
+        "duration_ms": 140
+      },
+      {
+        "id": "call_nqWpd01kfcfwO66MKEdTDzYi",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:06:40.512285+00:00",
+        "skill_id": "knowledge-save",
+        "person_id": "transport_coordinator",
+        "step_id": "S15",
+        "run_id": "run_90c49f37b68349f9a91cf5b765b2fa03",
+        "duration_ms": 125
+      },
+      {
+        "id": "call_gtgwi3kozidZjg6O6461Bhkw",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:06:44.350893+00:00",
+        "skill_id": "knowledge-search",
+        "person_id": "transport_coordinator",
+        "step_id": "S16",
+        "run_id": "run_0b725bf68dcd4316859b909eb4269e38",
+        "duration_ms": 203
+      },
+      {
+        "id": "call_WLUYrJWjn0r527wVdq7MktTT",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:07:03.694650+00:00",
+        "skill_id": "management-handoff",
+        "person_id": "sales_manager",
+        "step_id": "S17",
+        "run_id": "run_ab07d92a4cc14b84b5884e4920646e84",
+        "duration_ms": 203
+      },
+      {
+        "id": "call_KbpMMye068Px1A7Qitipp36j",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:07:07.597470+00:00",
+        "skill_id": "task-tracker",
+        "person_id": "product_manager",
+        "step_id": "S18",
+        "run_id": "run_a98ce13acec54b3681dee7a796f6ff45",
+        "duration_ms": 125
+      },
+      {
+        "id": "call_iOjzaK03qxamGyUGa9Kz1bT0",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:08:06.016503+00:00",
+        "skill_id": "pdf-create",
+        "person_id": "finance_manager",
+        "step_id": "S19",
+        "run_id": "run_5065c8da97ce43b294d374948ca08b7f",
+        "duration_ms": 407
+      },
+      {
+        "id": "call_JBCLFkMNnkHVjY3XD6466ooE",
+        "tool": "run_skill",
+        "status": "completed",
+        "started_at": "2026-09-27T05:08:10.421492+00:00",
+        "skill_id": "task-tracker",
+        "person_id": "ops_manager",
+        "step_id": "S20",
+        "run_id": "run_6aa35c758022409d9fba0e063982e135",
+        "duration_ms": 125
+      },
+      {
+        "id": "call_2RuVXeMANDAk6ItFNFasR4Ob",
+        "tool": "list_workspace_files",
+        "status": "completed",
+        "started_at": "2026-09-27T05:08:14.393312+00:00",
+        "duration_ms": 0
+      }
+    ],
+    "run_ids": [
+      "run_62efe6f09db944ff88a65bfaf9a4be90",
+      "run_7e06ef0f33f84bd3b9c820729344f030",
+      "run_62e4f3a6d8b6470d9c1e5f731ab7a019",
+      "run_6c5ce806dc5d437b90ac675d1469ae9b",
+      "run_def062ae8350403fa38b40789411d45d",
+      "run_b43f96aae6564812b3147054c7391ccb",
+      "run_3ff1a25982e14ca9bf6540c9a92ab240",
+      "run_aabc6ec812f2499fbd2888dea40426f9",
+      "run_483b02acf6324fcf9e0c759004b1f3c4",
+      "run_03067b5bc9aa4a73991413bd108e13c1",
+      "run_1093043173fd4ebbba27c5451a4869d9",
+      "run_55a93062141f4c6ea6d48d3b1a8ade6f",
+      "run_459c3e660bb64fc4bcb37c62cdc9368c",
+      "run_2cebbd0acd134e2ab267935deab7cc3b",
+      "run_90c49f37b68349f9a91cf5b765b2fa03",
+      "run_0b725bf68dcd4316859b909eb4269e38",
+      "run_ab07d92a4cc14b84b5884e4920646e84",
+      "run_a98ce13acec54b3681dee7a796f6ff45",
+      "run_5065c8da97ce43b294d374948ca08b7f",
+      "run_6aa35c758022409d9fba0e063982e135"
+    ],
+    "artifact_ids": [
+      "file_4087b6fe92114699948811bfaf2d0be8",
+      "file_d92ee8c164a9492593e3a34b3b5ac39a",
+      "file_887498f7973c445da9a3b63f1d15a94c",
+      "file_5ad100b2e2764db8965376969ce53f80",
+      "file_450c6eebc696489e9814e9fe780c8757",
+      "file_3aca934d23c84d13ab5d00157f5afb89",
+      "file_ac7e9a5adeb04b3ea1990e82a1780f72",
+      "file_f5e5bc3d631d4ee88705e125c19fcaff",
+      "file_5c3eb86cc64c46e6a09ae32aa0e87ad4",
+      "file_128a5d8818634fc5bc7874eec3fa0493"
+    ],
+    "statistics": {
+      "model_requests": 24,
+      "tool_calls": 26,
+      "skills_executed": 20,
+      "skills_completed": 20,
+      "skills_failed": 0,
+      "skills_pending": 0,
+      "distinct_skills": 16,
+      "delegated_people": 7,
+      "artifacts": 10,
+      "input_tokens": 786654,
+      "output_tokens": 14141,
+      "total_tokens": 800795,
+      "elapsed_ms": 303797
+    },
+    "elapsed_ms": 303797,
+    "finished_at": "2026-09-27T05:08:37.827736+00:00"
+  },
   "runs": [
     {
-      "id": "run_1fd797df38014d82bda0d541ffad5c49",
-      "skill_id": "knowledge-search",
-      "person_id": "transport_coordinator",
+      "id": "run_6aa35c758022409d9fba0e063982e135",
+      "skill_id": "task-tracker",
+      "person_id": "ops_manager",
       "status": "completed",
       "input": {
-        "query": "Chengdu launch"
-      },
-      "output": {
-        "summary": "Matching local source notes.",
-        "matches": [
-          {
-            "id": "rec_a784b7c2ad86440a83792811a6b69ca7",
-            "kind": "knowledge-save",
-            "title": "Chengdu launch preparation outcome",
-            "payload": {
-              "title": "Chengdu launch preparation outcome",
-              "content": "Pilot first recommended at score 75.7. SIM readiness evidence supplied. Reviewed budget copy and management handoff produced. No real product release or booking.",
-              "source": "Recorded local launch demo, 27 September 2026",
-              "owner": "Chen / Director"
-            },
-            "created_at": "2026-09-27T04:29:20.280114+00:00",
-            "updated_at": "2026-09-27T04:29:20.280114+00:00"
-          }
-        ]
-      },
-      "created_at": "2026-09-27T04:29:23.260422+00:00",
-      "updated_at": "2026-09-27T04:29:23.284438+00:00",
-      "idempotency_key": "4b72465c-cb5a-4fa0-bf9e-a7502f697017"
-    },
-    {
-      "id": "run_c7927339c02e4a9f90a428ac594d0b9f",
-      "skill_id": "knowledge-save",
-      "person_id": "transport_coordinator",
-      "status": "completed",
-      "input": {
-        "title": "Chengdu launch preparation outcome",
-        "content": "Pilot first recommended at score 75.7. SIM readiness evidence supplied. Reviewed budget copy and management handoff produced. No real product release or booking.",
-        "source": "Recorded local launch demo, 27 September 2026",
-        "owner": "Chen / Director"
+        "title": "SIMULATION local executive pack closed: S01–S19 completed including PDF file_128a5d8818634fc5bc7874eec3fa0493; 10 generated files, proposal PPTX, Word handoff, Excel budget/forecast, knowledge retrieval verified; no real launch or external actions. This is S20 final milestone.",
+        "owner": "He, Operations lead",
+        "due": "2026-10-15",
+        "status": "done"
       },
       "output": {
         "summary": "Saved to the local company register.",
         "record": {
-          "id": "rec_a784b7c2ad86440a83792811a6b69ca7",
-          "kind": "knowledge-save",
-          "title": "Chengdu launch preparation outcome",
+          "id": "rec_2be014f031a8421d85682700fa103ae1",
+          "kind": "task-tracker",
+          "title": "SIMULATION local executive pack closed: S01–S19 completed including PDF file_128a5d8818634fc5bc7874eec3fa0493; 10 generated files, proposal PPTX, Word handoff, Excel budget/forecast, knowledge retrieval verified; no real launch or external actions. This is S20 final milestone.",
           "payload": {
-            "title": "Chengdu launch preparation outcome",
-            "content": "Pilot first recommended at score 75.7. SIM readiness evidence supplied. Reviewed budget copy and management handoff produced. No real product release or booking.",
-            "source": "Recorded local launch demo, 27 September 2026",
-            "owner": "Chen / Director"
+            "title": "SIMULATION local executive pack closed: S01–S19 completed including PDF file_128a5d8818634fc5bc7874eec3fa0493; 10 generated files, proposal PPTX, Word handoff, Excel budget/forecast, knowledge retrieval verified; no real launch or external actions. This is S20 final milestone.",
+            "owner": "He, Operations lead",
+            "due": "2026-10-15",
+            "status": "done"
           }
         }
       },
-      "created_at": "2026-09-27T04:29:20.250117+00:00",
-      "updated_at": "2026-09-27T04:29:20.291116+00:00",
-      "idempotency_key": "300f9ea0-fb47-4227-9573-33f5515b6065"
+      "created_at": "2026-09-27T05:08:10.460942+00:00",
+      "updated_at": "2026-09-27T05:08:10.506343+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_25"
     },
     {
-      "id": "run_8d7751cac87e4c4683df7619786fa078",
+      "id": "run_5065c8da97ce43b294d374948ca08b7f",
       "skill_id": "pdf-create",
       "person_id": "finance_manager",
       "status": "completed",
       "input": {
-        "title": "Chengdu tour launch - simulation outcome",
+        "title": "SIMULATION Chengdu Food-and-Tea Launch — Final Executive Report",
         "sections": [
           {
-            "heading": "Decision",
-            "body": "Pilot first recommended: score 75.7, compared with 62.0 for Full launch. Costs and scores are supplied simulation inputs."
+            "heading": "1. Executive decision and simulation boundary",
+            "body": "Prepared locally on 27 September 2026 as an advance simulation of 1–15 October 2026. User authorized invented assumptions. Atlas, Company Assistant, coordinated local skills delegated to qualified roster colleagues. Select CNY 50,000 pilot; defer CNY 120,000 full launch. Actual achievements are local artifact generation, calculations and register records. Guest attendance, revenue, costs, satisfaction and launch success are fictional assumptions, not real-world evidence. No external accounts, contacts, payments, bookings, advertisements or travel reservations were used. An unsent text email draft exists only within the management-handoff result."
           },
           {
-            "heading": "Preparation completed",
-            "body": "Scope, readiness review and management decision were recorded as complete for this simulation. A reviewed spreadsheet edit created a new workbook copy."
+            "heading": "2. Options and commercial assumptions",
+            "body": "Both approaches start with 30 guests at CNY 2,000 each, modeled revenue CNY 60,000. Pilot: budget CNY 50,000, impact 4/5, risk 2/5, score 73.5; planned pre-tax operating profit CNY 10,000. Full: budget CNY 120,000, impact 5/5, risk 4/5, score 52.0; planned operating loss CNY 60,000. Weight inputs impact/risk/cost = 4/3/3. Ratings are invented judgments. Cost envelopes include guest service costs and contingency; do not add them twice. Planned pilot fixed/reserve cost 26,000 and variable cost 800/guest imply break-even ceil(26000/1200)=22 guests. Full fixed/reserve cost 96,000 implies 80 guests, above the initial 30-guest cap. Costs exclude flights, lodging, personal purchases, tax, financing and unrelated corporate overhead; no supplier prices researched or represented as market facts."
           },
           {
-            "heading": "Release boundary",
-            "body": "This is operator-led simulated product launch preparation. No real supplier reservation, external message, payment or product release occurred."
+            "heading": "3. Product and campaign",
+            "body": "Fictional premium one-day Chengdu-inspired experience, three supervised groups of ten. 09:30 welcome/dietary briefing; 10:00 food walk; 11:30 cooking workshop and lunch; 13:30 tea preparation/tasting; 15:30 close. All venues, hosts and availability invented. Includes activities, food, tea and local transfers. Campaign planned 6–10 October: content CNY 3,000, partner mockups CNY 3,000, referral copy CNY 2,000; assumed qualified inquiries 150/90/60, deduplicated total 300. Target 30 guests, conversion 10%, campaign cost per guest at most CNY 266.67. No publication, purchase or outreach."
+          },
+          {
+            "heading": "4. Business schedule and critical dependencies",
+            "body": "Calendar-day schedule generated by project-plan: evaluate 1–2 October; design 3–5 October; campaign 6–10 October; tabletop rehearsal 6–7 October in parallel; readiness gate 11 October depends on campaign AND rehearsal; fictional departure 12 October; reconciliation 13–14 October; executive report and knowledge 15 October. Tool finish dates are exclusive, so final finish is 16 October 2026, not an extra workday. Critical chain evaluate > design > campaign > gate > departure > reconcile > report is 15 calendar days. Rehearsal branch has 3 days slack. Dates describe scenario work, not activities actually performed in October."
+          },
+          {
+            "heading": "5. Qualified staff, capacity and RACI",
+            "body": "Configured capacity checked by completed team-capacity run; no live calendars. Assumed preparation effort / configured free hours: Chen, Director 3/9; Wang, Sales lead 6/22; Zhao, Product lead 8/21; He, Operations lead 9/22; Liu, People & culture lead 3/23; Deng, Finance lead 8/20; Sun, IT & knowledge lead 3/25. Total 40/142 hours, 102 hours remaining within this planning envelope; no time reservation or measured labor claim. Every delegated skill matches the person's assigned skills and all are available. Chen accountable for commercial, operations and finance streams; He accountable for Sun's knowledge stream. RACI workbook names responsible, accountable, consulted and informed staff for all seven streams."
+          },
+          {
+            "heading": "6. Actual local execution plan and calls",
+            "body": "S01 He/team-capacity, no dependency. S02 Wang/proposal-package <- S01. S03 Chen/decision-log <- S02. S04 He/project-plan <- S03. S05 He/responsibility-matrix <- S04. S06 Zhao/campaign-plan <- S03,S04. S07 He/risk-register <- S04,S06. S08 Liu/policy-checklist <- S05,S06,S07. S09 Zhao/task-tracker <- S08. S10 Deng/budget-variance <- S08. S11 Deng/spreadsheet-create <- S10. S12 Deng/finance-forecast <- S10. S13 Chen/decision-log outcome <- S09,S11,S12. S14 He/task-tracker <- S13. S15 Sun/knowledge-save <- S13,S14. S16 Sun/knowledge-search <- S15. S17 Wang/management-handoff <- S11,S12,S14,S16. S18 Zhao/task-tracker <- S17. S19 Deng/pdf-create (this report) <- S18,S16. S20 He/task-tracker local-pack closure <- S19. At this report's input snapshot S01–S18 are recorded completed; S19 is this generation call and S20 will run only after S19 returns completed. Consult final Activity statuses for post-generation closure, rather than treating future calls as already successful."
+          },
+          {
+            "heading": "7. Readiness and risks",
+            "body": "Completed checklist: 10 checks, 8 met within tabletop scope, zero gaps, 2 real-world unknown. Unknowns are actual supplier/service verification and applicable legal/tax/licensing/insurance/privacy validation. These block a REAL launch, not completion of this simulation. Eight risk scores (assumed likelihood x impact): food safety 15; real compliance uncertainty 15; venue capacity 12; demand 12; simulation mistaken for evidence 10; overrun 9; weather/access 9; capacity mismatch 8. Mitigations: dietary screening/opt-out and escalation; three groups of ten; fictional indoor/access alternative; 22-guest planned break-even gate; CNY 50,000 total ceiling with reserve included; clear labels and separate real verification. No health, safety or legal certification made."
+          },
+          {
+            "heading": "8. Excel budget and simulated variance — CNY",
+            "body": "Category: pilot plan / full plan / pilot fictional actual / actual-minus-pilot variance. Guest services: 24,000 / 24,000 / 24,600 / +600 (+2.5%). Product: 6,000 / 24,000 / 5,500 / -500 (-8.33%). Campaign: 8,000 / 36,000 / 7,500 / -500 (-6.25%). Operations: 7,000 / 24,000 / 6,900 / -100 (-1.43%). Reserve/fallback spend: 5,000 / 12,000 / 2,500 / -2,500 (-50%). TOTAL: 50,000 / 120,000 / 47,000 / -3,000 (-6%). Positive cost variance means overspend. Revenue 60,000 less simulated expense 47,000 = operating profit 13,000; margin 21.67%. CNY 2,500 unused reserve is not expense; no real payments occurred. Labor allocations are included in modeled overhead, not added again. Excel contains editable static numeric values, not live formulas."
+          },
+          {
+            "heading": "9. Finance forecast and sensitivity",
+            "body": "Completed finance-forecast uses 30 opening fictional customers, zero additions/churn, 30 average customers monthly. This scenario assumes the SAME 30 guests buy one separately priced themed experience each month; 90 guest-visits, not 90 unique customers. October: revenue 60,000, variable cost 24,600 (820 each), fixed cost 22,400, expense 47,000, operating profit 13,000. November and December each: revenue 60,000, variable 24,000 (800 each), fixed 12,000 (campaign 6,000 + operations 6,000), expense 36,000, profit 24,000. Totals: revenue 180,000, expense 119,000, profit 61,000. October reconciles exactly to simulated actuals. Future repeat demand and cost reductions are speculative and not approved operations, subscriptions, booked revenue or cash. No-repeat case, with future departures and costs avoided, yields October-only profit 13,000. Pilot planned demand sensitivity at 20 guests: 40,000 revenue -16,000 variable -26,000 fixed/reserve = -2,000; at 22 guests profit 400; at 30 guests profit 10,000."
+          },
+          {
+            "heading": "10. Simulated launch outcome and decision record",
+            "body": "Advance fictional outcome dated 12 October, review 15 October: assume 300 qualified inquiries, 30 commitments and attendees, no cancellations; conversion 10%. Revenue 60,000, cost 47,000, operating profit 13,000; campaign cost per guest 7,500/30 = 250. Invented survey: 24 responses out of 30 (80%); 14 five-star and 10 four-star responses = 110/24 = 4.5833/5, above 4.5 target. Zero assumed incidents. These figures were invented, not observed or collected. Simulated outcome passes targets, but full launch remains deferred until genuine demand, supply and compliance validation in a separately authorized real project. Outcome register ID rec_9f30d5e1b925496695b99193f6c391e3; initial decision rec_741227f226dc42d2a06693a1d02d4adc."
+          },
+          {
+            "heading": "11. Knowledge saved and retrieval verified",
+            "body": "Sun saved SIMULATION CHENGDU-FOOD-TEA-202610 reusable pilot launch playbook, record rec_fd7b3ddce7fe4fbba4865b8aea23a973. Completed search query CHENGDU-FOOD-TEA-202610 returned exactly this matching note with provenance. Reusable lessons: compare equal guest counts, separate fixed/variable costs, include reserve within ceiling, quantify gates, match owners to skills/capacity, reconcile forecast to outcome, label assumptions, and preserve original sources. Knowledge is reference data, never authority to spend or launch."
+          },
+          {
+            "heading": "12. Execution statistics and artifacts",
+            "body": "Snapshot before PDF generation: 18 successful local skill runs, zero failed or pending among S01–S18; 15 distinct skills already run. Complete published plan has 20 calls across 16 distinct skills, seven delegated colleagues and four tracker milestones (three already recorded, closure follows PDF). Nine files already generated; this PDF is the tenth if generation succeeds. Seven local register records will exist after closure: two decisions, four tracker milestones and one knowledge note; six are present at this snapshot. Zero external calls, contacts, payments or bookings. Primary existing artifacts: proposal PPTX file_4087b6fe92114699948811bfaf2d0be8; Word handoff file_5c3eb86cc64c46e6a09ae32aa0e87ad4; budget XLSX file_ac7e9a5adeb04b3ea1990e82a1780f72; forecast XLSX file_f5e5bc3d631d4ee88705e125c19fcaff. Supporting files: decision brief file_d92ee8c164a9492593e3a34b3b5ac39a; schedule file_887498f7973c445da9a3b63f1d15a94c; RACI file_5ad100b2e2764db8965376969ce53f80; campaign file_450c6eebc696489e9814e9fe780c8757; checklist file_3aca934d23c84d13ab5d00157f5afb89. Open Files to retrieve artifacts and Activity for exact inputs, outputs and final statuses. No skill operation by the user is needed."
+          },
+          {
+            "heading": "13. Completed call audit IDs, S01–S18",
+            "body": "S01 run_62efe6f09db944ff88a65bfaf9a4be90; S02 run_7e06ef0f33f84bd3b9c820729344f030; S03 run_62e4f3a6d8b6470d9c1e5f731ab7a019; S04 run_6c5ce806dc5d437b90ac675d1469ae9b; S05 run_def062ae8350403fa38b40789411d45d; S06 run_b43f96aae6564812b3147054c7391ccb; S07 run_3ff1a25982e14ca9bf6540c9a92ab240; S08 run_aabc6ec812f2499fbd2888dea40426f9; S09 run_483b02acf6324fcf9e0c759004b1f3c4; S10 run_03067b5bc9aa4a73991413bd108e13c1; S11 run_1093043173fd4ebbba27c5451a4869d9; S12 run_55a93062141f4c6ea6d48d3b1a8ade6f; S13 run_459c3e660bb64fc4bcb37c62cdc9368c; S14 run_2cebbd0acd134e2ab267935deab7cc3b; S15 run_90c49f37b68349f9a91cf5b765b2fa03; S16 run_0b725bf68dcd4316859b909eb4269e38; S17 run_ab07d92a4cc14b84b5884e4920646e84; S18 run_a98ce13acec54b3681dee7a796f6ff45. All recorded status completed. S19/S20 audit IDs become available in Activity after this report is created."
           }
         ]
       },
@@ -85,49 +648,118 @@
         "summary": "PDF brief created.",
         "artifacts": [
           {
-            "id": "file_94698859a281417d9457cae36d23fd21",
-            "name": "Chengdu tour launch - simulation outcome.pdf",
-            "size": 41866,
-            "url": "/api/files/file_94698859a281417d9457cae36d23fd21/download"
+            "id": "file_128a5d8818634fc5bc7874eec3fa0493",
+            "name": "SIMULATION Chengdu Food-and-Tea Launch — Final Executive Report.pdf",
+            "size": 50921,
+            "url": "/api/files/file_128a5d8818634fc5bc7874eec3fa0493/download"
           }
         ]
       },
-      "created_at": "2026-09-27T04:29:16.930319+00:00",
-      "updated_at": "2026-09-27T04:29:17.122320+00:00",
-      "idempotency_key": "b0c005ed-ee9f-4e58-b7c0-d1ee5d0540fa"
+      "created_at": "2026-09-27T05:08:06.049243+00:00",
+      "updated_at": "2026-09-27T05:08:06.372297+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_24"
     },
     {
-      "id": "run_63f1971c7b9043ed8562c08cdaeea207",
-      "skill_id": "management-handoff",
-      "person_id": "director",
+      "id": "run_a98ce13acec54b3681dee7a796f6ff45",
+      "skill_id": "task-tracker",
+      "person_id": "product_manager",
       "status": "completed",
       "input": {
-        "title": "Chengdu launch readiness - simulated completion",
-        "audience": "Executive team",
+        "title": "SIMULATION editable executive handoff complete: Word file_5c3eb86cc64c46e6a09ae32aa0e87ad4, proposal PPTX, budget and forecast XLSX verified from completed runs; no messages sent",
+        "owner": "Zhao, Product lead",
+        "due": "2026-10-15",
+        "status": "done"
+      },
+      "output": {
+        "summary": "Saved to the local company register.",
+        "record": {
+          "id": "rec_00ab3caccca94b0298575b5ad17ce39a",
+          "kind": "task-tracker",
+          "title": "SIMULATION editable executive handoff complete: Word file_5c3eb86cc64c46e6a09ae32aa0e87ad4, proposal PPTX, budget and forecast XLSX verified from completed runs; no messages sent",
+          "payload": {
+            "title": "SIMULATION editable executive handoff complete: Word file_5c3eb86cc64c46e6a09ae32aa0e87ad4, proposal PPTX, budget and forecast XLSX verified from completed runs; no messages sent",
+            "owner": "Zhao, Product lead",
+            "due": "2026-10-15",
+            "status": "done"
+          }
+        }
+      },
+      "created_at": "2026-09-27T05:07:07.635771+00:00",
+      "updated_at": "2026-09-27T05:07:07.684906+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_23"
+    },
+    {
+      "id": "run_ab07d92a4cc14b84b5884e4920646e84",
+      "skill_id": "management-handoff",
+      "person_id": "sales_manager",
+      "status": "completed",
+      "input": {
+        "title": "SIMULATION Chengdu food-and-tea executive management handoff",
+        "audience": "Chen, Director — local review only; no recipient or sending",
         "items": [
           {
-            "work": "Pilot scope and option comparison",
-            "owner": "Zhao and Wang",
+            "work": "SIMULATION boundary and selected approach",
+            "owner": "Chen, Director",
             "status": "done",
-            "due": "2026-10-03",
-            "next_step": "Archive decision brief",
+            "due": "2026-10-02",
+            "next_step": "Local decision recorded in advance on 2026-09-27: pilot CNY 50,000 ranks 73.5 vs full CNY 120,000 at 52.0, weights impact/risk/cost 4/3/3. Both 30 guests at CNY 2,000; planned profits +10,000/-60,000. Keep full rollout deferred; no spend approval.",
             "blocker": ""
           },
           {
-            "work": "Pilot readiness and capacity check",
-            "owner": "He",
+            "work": "Local schedule, RACI and campaign completed",
+            "owner": "Zhao, Product lead; He, Operations lead",
             "status": "done",
-            "due": "2026-10-06",
-            "next_step": "Replace SIM evidence in enterprise pilot",
+            "due": "2026-10-11",
+            "next_step": "Scenario dates: prepare Oct 1; design Oct 3–5; campaign Oct 6–10; rehearsal Oct 6–7; gate Oct 11; departure Oct 12; reconciliation Oct 13–14; report Oct 15. Exclusive finish Oct 16. Seven qualified staff, 40h assumed/142h configured free, no calendars reserved. CNY 8,000 campaign target 300 inquiries/30 guests.",
             "blocker": ""
           },
           {
-            "work": "Reviewed budget and management decision",
-            "owner": "Deng and Chen",
+            "work": "Readiness checklist and eight-risk assessment completed",
+            "owner": "Liu, People & culture lead; He, Operations lead",
             "status": "done",
-            "due": "2026-10-07",
-            "next_step": "Obtain real enterprise authorization",
+            "due": "2026-10-11",
+            "next_step": "8 tabletop checks met and 2 real-world unknown; highest assumed risks food safety and compliance 15/25. Scenario-only readiness; controls include dietary opt-out, emergency escalation, 3 groups of 10, indoor fallback, 22-guest break-even gate and CNY 50,000 ceiling.",
             "blocker": ""
+          },
+          {
+            "work": "Excel budget and variance completed using fictional actuals",
+            "owner": "Deng, Finance lead",
+            "status": "done",
+            "due": "2026-10-14",
+            "next_step": "Budget file_ac7e9a5adeb04b3ea1990e82a1780f72: CNY 50,000 plan vs 47,000 assumed expense, -3,000 (-6%) favorable; revenue 60,000; profit 13,000, margin 21.67%. Guest/product/campaign/operations/reserve expense 24,600/5,500/7,500/6,900/2,500. No money moved; excludes flights, hotels, personal purchases, tax, financing and unrelated overhead.",
+            "blocker": ""
+          },
+          {
+            "work": "Conditional finance forecast completed",
+            "owner": "Deng, Finance lead",
+            "status": "done",
+            "due": "2026-10-14",
+            "next_step": "Forecast file_f5e5bc3d631d4ee88705e125c19fcaff: Oct revenue/cost/profit 60,000/47,000/13,000; Nov and Dec each 60,000/36,000/24,000. Total 180,000/119,000/61,000. Same 30 fictional guests assumed to return monthly: 90 visits, not 90 new customers. Speculative demand; October-only fallback profit 13,000 if repeats/costs avoided. Forecast is not booked sales or cash.",
+            "blocker": ""
+          },
+          {
+            "work": "Simulated outcome recorded, not a real completed departure",
+            "owner": "Chen, Director",
+            "status": "done",
+            "due": "2026-10-15",
+            "next_step": "Outcome rec_9f30d5e1b925496695b99193f6c391e3 assumes 30 attendees, 10% conversion, CNY 250 campaign cost/guest, 24/30 survey responses, 4.5833/5 satisfaction (14 fives,10 fours), zero incidents. All fictional future Oct 12 results. Full launch deferred despite assumed success.",
+            "blocker": ""
+          },
+          {
+            "work": "Reusable launch knowledge saved and successfully retrieved",
+            "owner": "Sun, IT & knowledge lead",
+            "status": "done",
+            "due": "2026-10-15",
+            "next_step": "Query CHENGDU-FOOD-TEA-202610 returned exactly one matching saved note rec_fd7b3ddce7fe4fbba4865b8aea23a973, with source provenance and SIMULATION labels. Reuse framework, not invented demand or supplier evidence.",
+            "blocker": ""
+          },
+          {
+            "work": "Real launch clearance — excluded from requested simulation",
+            "owner": "Chen, Director; Zhao, Product lead",
+            "status": "blocked",
+            "due": "2026-10-11",
+            "next_step": "No action now. Only a separately authorized real project may validate suppliers, safety, licensing, insurance, tax, privacy and genuine demand. This blocker does not prevent completion of the requested local simulation.",
+            "blocker": "No real suppliers verified, compliance assessed, customers enrolled or launch authorized. User prohibits contacts, accounts, payments and bookings."
           }
         ]
       },
@@ -136,111 +768,369 @@
         "counts": {
           "not_started": 0,
           "in_progress": 0,
-          "blocked": 0,
-          "done": 3
+          "blocked": 1,
+          "done": 7
         },
-        "blockers": [],
+        "blockers": [
+          {
+            "work": "Real launch clearance — excluded from requested simulation",
+            "owner": "Chen, Director; Zhao, Product lead",
+            "blocker": "No real suppliers verified, compliance assessed, customers enrolled or launch authorized. User prohibits contacts, accounts, payments and bookings."
+          }
+        ],
         "artifacts": [
           {
-            "id": "file_e689a3e543384eaa8e91da6521b39310",
-            "name": "Chengdu launch readiness - simulated completion.docx",
-            "size": 36992,
-            "url": "/api/files/file_e689a3e543384eaa8e91da6521b39310/download"
+            "id": "file_5c3eb86cc64c46e6a09ae32aa0e87ad4",
+            "name": "SIMULATION Chengdu food-and-tea executive management handoff.docx",
+            "size": 38562,
+            "url": "/api/files/file_5c3eb86cc64c46e6a09ae32aa0e87ad4/download"
           }
         ],
         "email_draft": {
-          "subject": "Chengdu launch readiness - simulated completion",
-          "body": "Audience: Executive team\nnot started: 0, in progress: 0, blocked: 0, done: 3\n\nNo reported blockers."
+          "subject": "SIMULATION Chengdu food-and-tea executive management handoff",
+          "body": "Audience: Chen, Director — local review only; no recipient or sending\nnot started: 0, in progress: 0, blocked: 1, done: 7\n\nReal launch clearance — excluded from requested simulation: No real suppliers verified, compliance assessed, customers enrolled or launch authorized. User prohibits contacts, accounts, payments and bookings. — ask Chen, Director; Zhao, Product lead for a resolution"
         }
       },
-      "created_at": "2026-09-27T04:29:11.380838+00:00",
-      "updated_at": "2026-09-27T04:29:11.436817+00:00",
-      "idempotency_key": "64ee1e55-9384-449e-a9b5-e46d39b272da"
+      "created_at": "2026-09-27T05:07:03.730603+00:00",
+      "updated_at": "2026-09-27T05:07:03.853303+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_22"
     },
     {
-      "id": "run_54501884a929462797ee48bb665b6ed9",
-      "skill_id": "decision-log",
-      "person_id": "director",
+      "id": "run_0b725bf68dcd4316859b909eb4269e38",
+      "skill_id": "knowledge-search",
+      "person_id": "transport_coordinator",
       "status": "completed",
       "input": {
-        "title": "SIMULATION - pilot preparation approved",
-        "rationale": "Pilot scores 75.7 versus 62.0. Budget input reviewed. SIM: scope, supplier capacity and readiness checklist supplied for this demonstration. No real supplier contract or spending approval.",
-        "owner": "Chen / Director",
-        "review_date": "2026-10-07"
+        "query": "CHENGDU-FOOD-TEA-202610"
+      },
+      "output": {
+        "summary": "Matching local source notes.",
+        "matches": [
+          {
+            "id": "rec_fd7b3ddce7fe4fbba4865b8aea23a973",
+            "kind": "knowledge-save",
+            "title": "SIMULATION CHENGDU-FOOD-TEA-202610 reusable pilot launch playbook",
+            "payload": {
+              "title": "SIMULATION CHENGDU-FOOD-TEA-202610 reusable pilot launch playbook",
+              "content": "SIMULATION ONLY. Prepared 2026-09-27; all business inputs and outcomes fictional under user authorization. Preparation 2026-10-01; campaign Oct 6–10; gate Oct 11; one-day departure Oct 12; reconciliation Oct 13–14; report Oct 15, exclusive finish Oct 16. Product: 30 guests in three groups of ten, food walk, cooking workshop, lunch and tea tasting; CNY 2,000 each. No named real venues. Pilot 50,000 vs full 120,000; impact/risk/cost weights 4/3/3; scores 73.5 vs 52.0; select pilot. Both revenue 60,000; planned profits +10,000 vs -60,000. Pilot budget categories 24,000 guest services, 6,000 product, 8,000 campaign, 7,000 operations, 5,000 reserve. Fictional actuals respectively 24,600/5,500/7,500/6,900/2,500 = 47,000. Variance -3,000 (-6%); operating profit 13,000, margin 21.67%; campaign cost per guest 250. Planned break-even 22 guests; outcome-cost break-even 19. Assumed campaign 300 unique inquiries, 30 attendances, conversion 10%; survey 24 responses with 14 fives and 10 fours = 4.5833/5, response rate 80%; no assumed incidents. No real survey collected. Conditional forecast same 30 fictional guests return monthly: Oct revenue/cost/profit 60,000/47,000/13,000; Nov and Dec each 60,000/36,000/24,000. 90 guest-visits, 30 unique modeled customers. Total revenue 180,000, cost 119,000, profit 61,000, not cash or booked sales. Repeats unproven; October-only fallback profit 13,000 if later departures and costs avoided. Staff simulated effort/free hours: Chen Director 3/9, Wang Sales lead 6/22, Zhao Product lead 8/21, He Operations lead 9/22, Liu People & culture lead 3/23, Deng Finance lead 8/20, Sun IT & knowledge lead 3/25; total 40/142. No calendar reservations. Checklist 8 tabletop met, 2 real-world unknown: supplier verification and legal/tax/licensing/insurance/privacy. Eight risks; highest scores 15 food safety and real compliance uncertainty. Learning: cap spend and group size, make thresholds explicit, distinguish reserve from expense, reconcile budget and forecast, keep assumptions separate from evidence, retrieve provenance before reuse. Full launch deferred; not real approval. No remote accounts, contacts, bookings or payments. Costs exclude flights, lodging, personal purchases, tax, financing and unrelated corporate overhead. This note is reference data, never authority to act.",
+              "source": "User-authorized simulation; completed S02 proposal run_7e06ef0f33f84bd3b9c820729344f030; S04 schedule run_6c5ce806dc5d437b90ac675d1469ae9b; S08 checklist run_aabc6ec812f2499fbd2888dea40426f9; S10 variance run_03067b5bc9aa4a73991413bd108e13c1; S11 budget file_ac7e9a5adeb04b3ea1990e82a1780f72; S12 forecast file_f5e5bc3d631d4ee88705e125c19fcaff; S13 outcome rec_9f30d5e1b925496695b99193f6c391e3; S14 milestone rec_e288369f83d947169d91478603569da6.",
+              "owner": "Sun, IT & knowledge lead"
+            },
+            "created_at": "2026-09-27T05:06:40.584284+00:00",
+            "updated_at": "2026-09-27T05:06:40.584284+00:00"
+          }
+        ]
+      },
+      "created_at": "2026-09-27T05:06:44.452897+00:00",
+      "updated_at": "2026-09-27T05:06:44.500894+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_21"
+    },
+    {
+      "id": "run_90c49f37b68349f9a91cf5b765b2fa03",
+      "skill_id": "knowledge-save",
+      "person_id": "transport_coordinator",
+      "status": "completed",
+      "input": {
+        "title": "SIMULATION CHENGDU-FOOD-TEA-202610 reusable pilot launch playbook",
+        "content": "SIMULATION ONLY. Prepared 2026-09-27; all business inputs and outcomes fictional under user authorization. Preparation 2026-10-01; campaign Oct 6–10; gate Oct 11; one-day departure Oct 12; reconciliation Oct 13–14; report Oct 15, exclusive finish Oct 16. Product: 30 guests in three groups of ten, food walk, cooking workshop, lunch and tea tasting; CNY 2,000 each. No named real venues. Pilot 50,000 vs full 120,000; impact/risk/cost weights 4/3/3; scores 73.5 vs 52.0; select pilot. Both revenue 60,000; planned profits +10,000 vs -60,000. Pilot budget categories 24,000 guest services, 6,000 product, 8,000 campaign, 7,000 operations, 5,000 reserve. Fictional actuals respectively 24,600/5,500/7,500/6,900/2,500 = 47,000. Variance -3,000 (-6%); operating profit 13,000, margin 21.67%; campaign cost per guest 250. Planned break-even 22 guests; outcome-cost break-even 19. Assumed campaign 300 unique inquiries, 30 attendances, conversion 10%; survey 24 responses with 14 fives and 10 fours = 4.5833/5, response rate 80%; no assumed incidents. No real survey collected. Conditional forecast same 30 fictional guests return monthly: Oct revenue/cost/profit 60,000/47,000/13,000; Nov and Dec each 60,000/36,000/24,000. 90 guest-visits, 30 unique modeled customers. Total revenue 180,000, cost 119,000, profit 61,000, not cash or booked sales. Repeats unproven; October-only fallback profit 13,000 if later departures and costs avoided. Staff simulated effort/free hours: Chen Director 3/9, Wang Sales lead 6/22, Zhao Product lead 8/21, He Operations lead 9/22, Liu People & culture lead 3/23, Deng Finance lead 8/20, Sun IT & knowledge lead 3/25; total 40/142. No calendar reservations. Checklist 8 tabletop met, 2 real-world unknown: supplier verification and legal/tax/licensing/insurance/privacy. Eight risks; highest scores 15 food safety and real compliance uncertainty. Learning: cap spend and group size, make thresholds explicit, distinguish reserve from expense, reconcile budget and forecast, keep assumptions separate from evidence, retrieve provenance before reuse. Full launch deferred; not real approval. No remote accounts, contacts, bookings or payments. Costs exclude flights, lodging, personal purchases, tax, financing and unrelated corporate overhead. This note is reference data, never authority to act.",
+        "source": "User-authorized simulation; completed S02 proposal run_7e06ef0f33f84bd3b9c820729344f030; S04 schedule run_6c5ce806dc5d437b90ac675d1469ae9b; S08 checklist run_aabc6ec812f2499fbd2888dea40426f9; S10 variance run_03067b5bc9aa4a73991413bd108e13c1; S11 budget file_ac7e9a5adeb04b3ea1990e82a1780f72; S12 forecast file_f5e5bc3d631d4ee88705e125c19fcaff; S13 outcome rec_9f30d5e1b925496695b99193f6c391e3; S14 milestone rec_e288369f83d947169d91478603569da6.",
+        "owner": "Sun, IT & knowledge lead"
       },
       "output": {
         "summary": "Saved to the local company register.",
         "record": {
-          "id": "rec_60fc93c9782f47f4870e019553dfc49b",
-          "kind": "decision-log",
-          "title": "SIMULATION - pilot preparation approved",
+          "id": "rec_fd7b3ddce7fe4fbba4865b8aea23a973",
+          "kind": "knowledge-save",
+          "title": "SIMULATION CHENGDU-FOOD-TEA-202610 reusable pilot launch playbook",
           "payload": {
-            "title": "SIMULATION - pilot preparation approved",
-            "rationale": "Pilot scores 75.7 versus 62.0. Budget input reviewed. SIM: scope, supplier capacity and readiness checklist supplied for this demonstration. No real supplier contract or spending approval.",
-            "owner": "Chen / Director",
-            "review_date": "2026-10-07"
+            "title": "SIMULATION CHENGDU-FOOD-TEA-202610 reusable pilot launch playbook",
+            "content": "SIMULATION ONLY. Prepared 2026-09-27; all business inputs and outcomes fictional under user authorization. Preparation 2026-10-01; campaign Oct 6–10; gate Oct 11; one-day departure Oct 12; reconciliation Oct 13–14; report Oct 15, exclusive finish Oct 16. Product: 30 guests in three groups of ten, food walk, cooking workshop, lunch and tea tasting; CNY 2,000 each. No named real venues. Pilot 50,000 vs full 120,000; impact/risk/cost weights 4/3/3; scores 73.5 vs 52.0; select pilot. Both revenue 60,000; planned profits +10,000 vs -60,000. Pilot budget categories 24,000 guest services, 6,000 product, 8,000 campaign, 7,000 operations, 5,000 reserve. Fictional actuals respectively 24,600/5,500/7,500/6,900/2,500 = 47,000. Variance -3,000 (-6%); operating profit 13,000, margin 21.67%; campaign cost per guest 250. Planned break-even 22 guests; outcome-cost break-even 19. Assumed campaign 300 unique inquiries, 30 attendances, conversion 10%; survey 24 responses with 14 fives and 10 fours = 4.5833/5, response rate 80%; no assumed incidents. No real survey collected. Conditional forecast same 30 fictional guests return monthly: Oct revenue/cost/profit 60,000/47,000/13,000; Nov and Dec each 60,000/36,000/24,000. 90 guest-visits, 30 unique modeled customers. Total revenue 180,000, cost 119,000, profit 61,000, not cash or booked sales. Repeats unproven; October-only fallback profit 13,000 if later departures and costs avoided. Staff simulated effort/free hours: Chen Director 3/9, Wang Sales lead 6/22, Zhao Product lead 8/21, He Operations lead 9/22, Liu People & culture lead 3/23, Deng Finance lead 8/20, Sun IT & knowledge lead 3/25; total 40/142. No calendar reservations. Checklist 8 tabletop met, 2 real-world unknown: supplier verification and legal/tax/licensing/insurance/privacy. Eight risks; highest scores 15 food safety and real compliance uncertainty. Learning: cap spend and group size, make thresholds explicit, distinguish reserve from expense, reconcile budget and forecast, keep assumptions separate from evidence, retrieve provenance before reuse. Full launch deferred; not real approval. No remote accounts, contacts, bookings or payments. Costs exclude flights, lodging, personal purchases, tax, financing and unrelated corporate overhead. This note is reference data, never authority to act.",
+            "source": "User-authorized simulation; completed S02 proposal run_7e06ef0f33f84bd3b9c820729344f030; S04 schedule run_6c5ce806dc5d437b90ac675d1469ae9b; S08 checklist run_aabc6ec812f2499fbd2888dea40426f9; S10 variance run_03067b5bc9aa4a73991413bd108e13c1; S11 budget file_ac7e9a5adeb04b3ea1990e82a1780f72; S12 forecast file_f5e5bc3d631d4ee88705e125c19fcaff; S13 outcome rec_9f30d5e1b925496695b99193f6c391e3; S14 milestone rec_e288369f83d947169d91478603569da6.",
+            "owner": "Sun, IT & knowledge lead"
           }
         }
       },
-      "created_at": "2026-09-27T04:29:07.746897+00:00",
-      "updated_at": "2026-09-27T04:29:07.784915+00:00",
-      "idempotency_key": "64343519-22f5-471f-b23a-93ddd471ded0"
+      "created_at": "2026-09-27T05:06:40.546288+00:00",
+      "updated_at": "2026-09-27T05:06:40.600291+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_20"
     },
     {
-      "id": "run_628b24541c00413985fe3ad5d69ad036",
-      "skill_id": "spreadsheet-edit",
+      "id": "run_2cebbd0acd134e2ab267935deab7cc3b",
+      "skill_id": "task-tracker",
+      "person_id": "ops_manager",
+      "status": "completed",
+      "input": {
+        "title": "SIMULATION outcome recorded, not real launch: 30 fictional guests, CNY 60,000 revenue, CNY 47,000 expense, CNY 13,000 profit; outcome rec_9f30d5e1b925496695b99193f6c391e3; future scenario 2026-10-12",
+        "owner": "He, Operations lead",
+        "due": "2026-10-15",
+        "status": "done"
+      },
+      "output": {
+        "summary": "Saved to the local company register.",
+        "record": {
+          "id": "rec_e288369f83d947169d91478603569da6",
+          "kind": "task-tracker",
+          "title": "SIMULATION outcome recorded, not real launch: 30 fictional guests, CNY 60,000 revenue, CNY 47,000 expense, CNY 13,000 profit; outcome rec_9f30d5e1b925496695b99193f6c391e3; future scenario 2026-10-12",
+          "payload": {
+            "title": "SIMULATION outcome recorded, not real launch: 30 fictional guests, CNY 60,000 revenue, CNY 47,000 expense, CNY 13,000 profit; outcome rec_9f30d5e1b925496695b99193f6c391e3; future scenario 2026-10-12",
+            "owner": "He, Operations lead",
+            "due": "2026-10-15",
+            "status": "done"
+          }
+        }
+      },
+      "created_at": "2026-09-27T05:06:23.585964+00:00",
+      "updated_at": "2026-09-27T05:06:23.640963+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_19"
+    },
+    {
+      "id": "run_459c3e660bb64fc4bcb37c62cdc9368c",
+      "skill_id": "decision-log",
+      "person_id": "director",
+      "status": "completed",
+      "input": {
+        "title": "SIMULATION Chengdu pilot outcome: fictional success; full launch deferred",
+        "rationale": "Recorded 2026-09-27 as an advance simulation of departure 2026-10-12 and review 2026-10-15, NOT an event that already happened. Assume 300 unique qualified inquiries, 30 guest commitments and attendances, no cancellations, 10% conversion, CNY 2,000/person. Fictional survey: 24 responses (80%); 14 scores of 5 and 10 scores of 4 = 110/24 = 4.5833/5, above 4.5 threshold; zero assumed incidents. S08 checklist completed: 8 met for tabletop requirements, 2 real-world unknown. Completed S10 variance and S11 budget produce CNY 50,000 plan, CNY 47,000 simulated expense, variance -3,000 (-6%), CNY 60,000 revenue and CNY 13,000 pre-tax operating profit (21.67%). CNY 7,500 campaign gives CNY 250/guest. Cost categories: 24,600 guest services + 5,500 product + 7,500 campaign + 6,900 operations + 2,500 contingency use. October forecast exactly reconciles to this simulated outcome. S12 conditional Oct-Dec model assumes the same 30 fictional guests participate in one separately priced themed experience each month, no churn/additions: 30 unique modeled guests, 90 guest-visits, NOT 90 acquired customers or automatic subscription charges. October fixed cost 22,400; November/December fixed cost 12,000 per month (campaign 6,000, operations 6,000, no new product investment), variable 800/visit; forecast revenue 180,000, expense 119,000, operating profit 61,000. Repeat visits and future cost reductions are speculative assumptions, not demand evidence; only the October pilot is the selected scenario. If no repeats occur and future costs are avoided, scenario remains October-only profit 13,000. Simulated decision: pilot passes assumed KPIs; defer CNY 120,000 full rollout and require genuine supplier, safety, legal and demand evidence before any separate real-world authorization. No real launch, money, guests, survey, incident report or bookings exist.",
+        "owner": "Chen, Director — simulated outcome owner; no actual approval",
+        "review_date": "2026-10-15"
+      },
+      "output": {
+        "summary": "Saved to the local company register.",
+        "record": {
+          "id": "rec_9f30d5e1b925496695b99193f6c391e3",
+          "kind": "decision-log",
+          "title": "SIMULATION Chengdu pilot outcome: fictional success; full launch deferred",
+          "payload": {
+            "title": "SIMULATION Chengdu pilot outcome: fictional success; full launch deferred",
+            "rationale": "Recorded 2026-09-27 as an advance simulation of departure 2026-10-12 and review 2026-10-15, NOT an event that already happened. Assume 300 unique qualified inquiries, 30 guest commitments and attendances, no cancellations, 10% conversion, CNY 2,000/person. Fictional survey: 24 responses (80%); 14 scores of 5 and 10 scores of 4 = 110/24 = 4.5833/5, above 4.5 threshold; zero assumed incidents. S08 checklist completed: 8 met for tabletop requirements, 2 real-world unknown. Completed S10 variance and S11 budget produce CNY 50,000 plan, CNY 47,000 simulated expense, variance -3,000 (-6%), CNY 60,000 revenue and CNY 13,000 pre-tax operating profit (21.67%). CNY 7,500 campaign gives CNY 250/guest. Cost categories: 24,600 guest services + 5,500 product + 7,500 campaign + 6,900 operations + 2,500 contingency use. October forecast exactly reconciles to this simulated outcome. S12 conditional Oct-Dec model assumes the same 30 fictional guests participate in one separately priced themed experience each month, no churn/additions: 30 unique modeled guests, 90 guest-visits, NOT 90 acquired customers or automatic subscription charges. October fixed cost 22,400; November/December fixed cost 12,000 per month (campaign 6,000, operations 6,000, no new product investment), variable 800/visit; forecast revenue 180,000, expense 119,000, operating profit 61,000. Repeat visits and future cost reductions are speculative assumptions, not demand evidence; only the October pilot is the selected scenario. If no repeats occur and future costs are avoided, scenario remains October-only profit 13,000. Simulated decision: pilot passes assumed KPIs; defer CNY 120,000 full rollout and require genuine supplier, safety, legal and demand evidence before any separate real-world authorization. No real launch, money, guests, survey, incident report or bookings exist.",
+            "owner": "Chen, Director — simulated outcome owner; no actual approval",
+            "review_date": "2026-10-15"
+          }
+        }
+      },
+      "created_at": "2026-09-27T05:06:18.137063+00:00",
+      "updated_at": "2026-09-27T05:06:18.197061+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_18"
+    },
+    {
+      "id": "run_55a93062141f4c6ea6d48d3b1a8ade6f",
+      "skill_id": "finance-forecast",
       "person_id": "finance_manager",
       "status": "completed",
       "input": {
-        "file_id": "file_936b6d1bdfb940aebebdf7e79ca635ac",
-        "sheet": "Overview",
-        "cell": "B2",
-        "value": 11500
+        "title": "SIMULATION Oct-Dec 2026 retained 30-guest monthly-repeat scenario",
+        "currency": "CNY",
+        "opening_customers": 30,
+        "periods": [
+          {
+            "month": "2026-10",
+            "new_customers": 0,
+            "churn": 0,
+            "revenue_per_customer": 2000,
+            "variable_cost_per_customer": 820,
+            "fixed_cost": 22400
+          },
+          {
+            "month": "2026-11",
+            "new_customers": 0,
+            "churn": 0,
+            "revenue_per_customer": 2000,
+            "variable_cost_per_customer": 800,
+            "fixed_cost": 12000
+          },
+          {
+            "month": "2026-12",
+            "new_customers": 0,
+            "churn": 0,
+            "revenue_per_customer": 2000,
+            "variable_cost_per_customer": 800,
+            "fixed_cost": 12000
+          }
+        ]
       },
       "output": {
-        "summary": "A reviewed input cell was changed in a new workbook copy. Excel recalculates formulas when opened.",
-        "change": {
-          "sheet": "Overview",
-          "cell": "B2",
-          "before": 10000,
-          "after": 11500
-        },
-        "artifacts": [
+        "summary": "Monthly operating forecast calculated; average billable customers assume additions and churn occur evenly within each month.",
+        "currency": "CNY",
+        "months": [
           {
-            "id": "file_3806a3c5326d4a0bb9a1632ace014af1",
-            "name": "Chengdu launch budget - simulation-edited.xlsx",
-            "size": 5828,
-            "url": "/api/files/file_3806a3c5326d4a0bb9a1632ace014af1/download"
+            "month": "2026-10",
+            "opening_customers": 30,
+            "new_customers": 0,
+            "churn": 0,
+            "closing_customers": 30,
+            "average_customers": 30.0,
+            "revenue": 60000.0,
+            "variable_cost": 24600.0,
+            "fixed_cost": 22400,
+            "expense": 47000.0,
+            "operating_profit": 13000.0
+          },
+          {
+            "month": "2026-11",
+            "opening_customers": 30,
+            "new_customers": 0,
+            "churn": 0,
+            "closing_customers": 30,
+            "average_customers": 30.0,
+            "revenue": 60000.0,
+            "variable_cost": 24000.0,
+            "fixed_cost": 12000,
+            "expense": 36000.0,
+            "operating_profit": 24000.0
+          },
+          {
+            "month": "2026-12",
+            "opening_customers": 30,
+            "new_customers": 0,
+            "churn": 0,
+            "closing_customers": 30,
+            "average_customers": 30.0,
+            "revenue": 60000.0,
+            "variable_cost": 24000.0,
+            "fixed_cost": 12000,
+            "expense": 36000.0,
+            "operating_profit": 24000.0
           }
         ],
-        "original_file_id": "file_936b6d1bdfb940aebebdf7e79ca635ac"
+        "total_revenue": 180000.0,
+        "total_operating_profit": 61000.0,
+        "artifacts": [
+          {
+            "id": "file_f5e5bc3d631d4ee88705e125c19fcaff",
+            "name": "SIMULATION Oct-Dec 2026 retained 30-guest monthly-repeat scenario.xlsx",
+            "size": 6187,
+            "url": "/api/files/file_f5e5bc3d631d4ee88705e125c19fcaff/download"
+          }
+        ]
       },
-      "created_at": "2026-09-27T04:28:59.485955+00:00",
-      "updated_at": "2026-09-27T04:29:03.685510+00:00",
-      "idempotency_key": "f87b00fd-577c-4d58-8087-ee2e524d7100"
+      "created_at": "2026-09-27T05:06:04.903101+00:00",
+      "updated_at": "2026-09-27T05:06:04.998100+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_17"
     },
     {
-      "id": "run_8cbd977619094b528c119862b8e93fcc",
+      "id": "run_1093043173fd4ebbba27c5451a4869d9",
       "skill_id": "spreadsheet-create",
       "person_id": "finance_manager",
       "status": "completed",
       "input": {
-        "title": "Chengdu launch budget - simulation",
+        "title": "SIMULATION Chengdu launch budget CNY — assumptions not transactions",
         "columns": [
-          "Category",
-          "Budget CNY",
-          "Forecast CNY"
+          "Category / metric",
+          "Pilot plan CNY",
+          "Full launch plan CNY",
+          "Pilot simulated actual CNY",
+          "Variance actual minus pilot CNY",
+          "Variance percent",
+          "Basis / exclusions"
         ],
         "rows": [
           [
-            "Marketing",
-            10000,
-            11500
+            "Guest services",
+            24000,
+            24000,
+            24600,
+            600,
+            2.5,
+            "30 guests; planned CNY 800 each, simulated actual CNY 820; includes food, tea, hosts and local transfers"
           ],
           [
-            "Pilot operations",
-            25000,
-            24500
+            "Product development",
+            6000,
+            24000,
+            5500,
+            -500,
+            -8.33,
+            "Assumed one-time preparation"
+          ],
+          [
+            "Campaign",
+            8000,
+            36000,
+            7500,
+            -500,
+            -6.25,
+            "Pilot plan 3000/3000/2000; simulated actual 2800/2900/1800"
+          ],
+          [
+            "Operations / overhead",
+            7000,
+            24000,
+            6900,
+            -100,
+            -1.43,
+            "Allocated labor/preparation overhead included; 40h is capacity estimate not extra billed labor"
+          ],
+          [
+            "Contingency reserve / fallback spending",
+            5000,
+            12000,
+            2500,
+            -2500,
+            -50,
+            "Reserve is within cap; only simulated amount used counts as outcome expense"
+          ],
+          [
+            "TOTAL COST",
+            50000,
+            120000,
+            47000,
+            -3000,
+            -6,
+            "All actuals fictional; no payments or supplier quotes"
+          ],
+          [
+            "Revenue",
+            60000,
+            60000,
+            60000,
+            0,
+            0,
+            "30 guests x CNY 2000; no collections or bookings"
+          ],
+          [
+            "Pre-tax operating result",
+            10000,
+            -60000,
+            13000,
+            3000,
+            30,
+            "Revenue minus total modeled expense; budget comparison treats entire reserve conservatively as cost"
+          ],
+          [
+            "Operating margin percent",
+            16.67,
+            -100,
+            21.67,
+            null,
+            null,
+            "Percent, not CNY; exclusions below"
+          ],
+          [
+            "Break-even guests",
+            22,
+            80,
+            19,
+            null,
+            null,
+            "Guests, not CNY. ceil(fixed cost / (2000-variable cost)); pilot plan fixed 26000, full 96000, outcome 22400; full exceeds 30-guest capacity"
+          ],
+          [
+            "Campaign cost per guest",
+            266.67,
+            1200,
+            250,
+            -16.67,
+            -6.25,
+            "Campaign only, not total customer acquisition overhead"
+          ],
+          [
+            "Assumptions and boundaries",
+            null,
+            null,
+            null,
+            null,
+            null,
+            "SIMULATION prepared 2026-09-27; scenario starts 2026-10-01; departure 2026-10-12. CNY only. Excludes flights, lodging, personal purchases, tax, financing and unrelated corporate costs. Figures illustrative, not market quotes. Static editable numeric cells, not live formulas."
           ]
         ]
       },
@@ -248,19 +1138,19 @@
         "summary": "Excel workbook created.",
         "artifacts": [
           {
-            "id": "file_936b6d1bdfb940aebebdf7e79ca635ac",
-            "name": "Chengdu launch budget - simulation.xlsx",
-            "size": 5816,
-            "url": "/api/files/file_936b6d1bdfb940aebebdf7e79ca635ac/download"
+            "id": "file_ac7e9a5adeb04b3ea1990e82a1780f72",
+            "name": "SIMULATION Chengdu launch budget CNY — assumptions not transactions.xlsx",
+            "size": 7139,
+            "url": "/api/files/file_ac7e9a5adeb04b3ea1990e82a1780f72/download"
           }
         ]
       },
-      "created_at": "2026-09-27T04:28:56.166616+00:00",
-      "updated_at": "2026-09-27T04:28:56.206595+00:00",
-      "idempotency_key": "40a5bfa4-026c-42ee-ab03-ea0eaf7876a3"
+      "created_at": "2026-09-27T05:06:04.665544+00:00",
+      "updated_at": "2026-09-27T05:06:04.798543+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_16"
     },
     {
-      "id": "run_5bd9fa3920064b70bfaa3ffa7a609e37",
+      "id": "run_03067b5bc9aa4a73991413bd108e13c1",
       "skill_id": "budget-variance",
       "person_id": "finance_manager",
       "status": "completed",
@@ -268,14 +1158,29 @@
         "currency": "CNY",
         "items": [
           {
-            "category": "Marketing",
-            "budget": 10000,
-            "actual": 11500
+            "category": "SIMULATION guest food, tea, hosts and local transfers: 30 guests",
+            "budget": 24000,
+            "actual": 24600
           },
           {
-            "category": "Pilot operations",
-            "budget": 25000,
-            "actual": 24500
+            "category": "SIMULATION product development and creative preparation",
+            "budget": 6000,
+            "actual": 5500
+          },
+          {
+            "category": "SIMULATION campaign: planned 3000/3000/2000; assumed actual 2800/2900/1800",
+            "budget": 8000,
+            "actual": 7500
+          },
+          {
+            "category": "SIMULATION operations and allocated preparation overhead",
+            "budget": 7000,
+            "actual": 6900
+          },
+          {
+            "category": "SIMULATION contingency reserve / assumed fallback spending",
+            "budget": 5000,
+            "actual": 2500
           }
         ]
       },
@@ -284,86 +1189,441 @@
         "currency": "CNY",
         "items": [
           {
-            "category": "Marketing",
-            "budget": 10000,
-            "actual": 11500,
-            "variance": 1500.0,
-            "variance_percent": 15.0
+            "category": "SIMULATION guest food, tea, hosts and local transfers: 30 guests",
+            "budget": 24000,
+            "actual": 24600,
+            "variance": 600.0,
+            "variance_percent": 2.5
           },
           {
-            "category": "Pilot operations",
-            "budget": 25000,
-            "actual": 24500,
+            "category": "SIMULATION product development and creative preparation",
+            "budget": 6000,
+            "actual": 5500,
             "variance": -500.0,
-            "variance_percent": -2.0
+            "variance_percent": -8.33
+          },
+          {
+            "category": "SIMULATION campaign: planned 3000/3000/2000; assumed actual 2800/2900/1800",
+            "budget": 8000,
+            "actual": 7500,
+            "variance": -500.0,
+            "variance_percent": -6.25
+          },
+          {
+            "category": "SIMULATION operations and allocated preparation overhead",
+            "budget": 7000,
+            "actual": 6900,
+            "variance": -100.0,
+            "variance_percent": -1.43
+          },
+          {
+            "category": "SIMULATION contingency reserve / assumed fallback spending",
+            "budget": 5000,
+            "actual": 2500,
+            "variance": -2500.0,
+            "variance_percent": -50.0
           }
         ]
       },
-      "created_at": "2026-09-27T04:28:52.816065+00:00",
-      "updated_at": "2026-09-27T04:28:52.851976+00:00",
-      "idempotency_key": "950847ac-7ba5-408c-a6d0-e9bbae0c5b1c"
+      "created_at": "2026-09-27T05:05:43.147123+00:00",
+      "updated_at": "2026-09-27T05:05:43.189116+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_15"
     },
     {
-      "id": "run_b4202fa51c534c1b9d9d9682dc554d7c",
+      "id": "run_483b02acf6324fcf9e0c759004b1f3c4",
       "skill_id": "task-tracker",
-      "person_id": "ops_manager",
+      "person_id": "product_manager",
       "status": "completed",
       "input": {
-        "title": "SIMULATION - confirm pilot supplier capacity",
-        "owner": "He / Operations",
-        "due": "2026-10-06",
-        "status": "blocked"
+        "title": "SIMULATION local preparation complete: proposal, decision, schedule, RACI, campaign, 8-risk register and checklist 8 met/2 real-world unknown; not a real readiness approval",
+        "owner": "Zhao, Product lead",
+        "due": "2026-10-11",
+        "status": "done"
       },
       "output": {
         "summary": "Saved to the local company register.",
         "record": {
-          "id": "rec_5e272ecc591842e29b0a1ef08b593316",
+          "id": "rec_632a753a404c41839bbc54f8206a492d",
           "kind": "task-tracker",
-          "title": "SIMULATION - confirm pilot supplier capacity",
+          "title": "SIMULATION local preparation complete: proposal, decision, schedule, RACI, campaign, 8-risk register and checklist 8 met/2 real-world unknown; not a real readiness approval",
           "payload": {
-            "title": "SIMULATION - confirm pilot supplier capacity",
-            "owner": "He / Operations",
-            "due": "2026-10-06",
-            "status": "blocked"
+            "title": "SIMULATION local preparation complete: proposal, decision, schedule, RACI, campaign, 8-risk register and checklist 8 met/2 real-world unknown; not a real readiness approval",
+            "owner": "Zhao, Product lead",
+            "due": "2026-10-11",
+            "status": "done"
           }
         }
       },
-      "created_at": "2026-09-27T04:28:42.968186+00:00",
-      "updated_at": "2026-09-27T04:28:43.005101+00:00",
-      "idempotency_key": "571a6adf-dbb7-4910-9465-5a0fb63d0be7"
+      "created_at": "2026-09-27T05:05:42.997123+00:00",
+      "updated_at": "2026-09-27T05:05:43.053116+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_14"
     },
     {
-      "id": "run_b66cb8bfcb5d4860a70f7d4e0d7d01b2",
-      "skill_id": "responsibility-matrix",
+      "id": "run_aabc6ec812f2499fbd2888dea40426f9",
+      "skill_id": "policy-checklist",
+      "person_id": "itinerary_specialist",
+      "status": "completed",
+      "input": {
+        "title": "SIMULATION Chengdu launch checklist — tabletop gate 2026-10-11, not real clearance",
+        "items": [
+          {
+            "requirement": "Simulation boundary and no external execution",
+            "evidence": "User authorizes invented inputs; S01–S07 local completed runs only. No accounts, contacts, bookings or payments used.",
+            "status": "met",
+            "owner": "Chen, Director"
+          },
+          {
+            "requirement": "Two-option decision with CNY 50,000 total pilot ceiling",
+            "evidence": "S02 proposal scores 73.5 pilot vs 52 full; S03 simulated decision rec_741227f226dc42d2a06693a1d02d4adc. Ceiling includes CNY 5,000 reserve.",
+            "status": "met",
+            "owner": "Chen, Director"
+          },
+          {
+            "requirement": "Dependency schedule and qualified responsibility owners",
+            "evidence": "S04 schedule Oct 1–15 inclusive, Oct 16 exclusive finish; S05 RACI seven owners, 40h assumed against 142h configured free. No calendar reservation.",
+            "status": "met",
+            "owner": "He, Operations lead"
+          },
+          {
+            "requirement": "Product and campaign draft with price, scope and targets",
+            "evidence": "S06 local campaign file_450c6eebc696489e9814e9fe780c8757; 30 guests, CNY 2,000 each; CNY 8,000 planned campaign; 300 inquiries and 10% conversion assumed.",
+            "status": "met",
+            "owner": "Zhao, Product lead"
+          },
+          {
+            "requirement": "Tabletop food safety, dietary and emergency controls documented",
+            "evidence": "S07 risk register includes opt-out menu, ingredient review and emergency escalation. Fictional scenario assumes no unresolved dietary needs. Not inspection or professional safety clearance.",
+            "status": "met",
+            "owner": "He, Operations lead"
+          },
+          {
+            "requirement": "Tabletop capacity, accessibility and indoor fallback",
+            "evidence": "Invented three groups of ten, staggered sessions and indoor step-free alternative; no real location inspected.",
+            "status": "met",
+            "owner": "Liu, People & culture lead"
+          },
+          {
+            "requirement": "Simulation go/no-go thresholds",
+            "evidence": "Assume 30 guest commitments against minimum 22 planned break-even; CNY 50,000 cap, no unresolved assumed safety issue. Gate passes only within fictional scenario.",
+            "status": "met",
+            "owner": "Chen, Director"
+          },
+          {
+            "requirement": "Outcome measurement and reconciliation approach",
+            "evidence": "Plan 24 assumed survey responses, satisfaction threshold 4.5/5, zero incident target; reconcile fictional actual cost by five budget categories on Oct 13–14.",
+            "status": "met",
+            "owner": "Deng, Finance lead"
+          },
+          {
+            "requirement": "Actual supplier capacity, contracts and service verification before any real launch",
+            "evidence": "No suppliers contacted or bookings made; deliberately unverified outside simulation.",
+            "status": "unknown",
+            "owner": "Zhao, Product lead"
+          },
+          {
+            "requirement": "Applicable real licensing, insurance, tax and privacy requirements validated",
+            "evidence": "No real legal or compliance investigation performed. Must be independently verified before separately authorized real operation; not required to finish this local simulation.",
+            "status": "unknown",
+            "owner": "Chen, Director"
+          }
+        ]
+      },
+      "output": {
+        "summary": "Checklist reviewed against supplied evidence.",
+        "counts": {
+          "met": 8,
+          "gap": 0,
+          "unknown": 2
+        },
+        "artifacts": [
+          {
+            "id": "file_3aca934d23c84d13ab5d00157f5afb89",
+            "name": "SIMULATION Chengdu launch checklist — tabletop gate 2026-10-11, not real clearance.md",
+            "size": 2781,
+            "url": "/api/files/file_3aca934d23c84d13ab5d00157f5afb89/download"
+          }
+        ]
+      },
+      "created_at": "2026-09-27T05:05:36.774218+00:00",
+      "updated_at": "2026-09-27T05:05:36.823217+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_13"
+    },
+    {
+      "id": "run_3ff1a25982e14ca9bf6540c9a92ab240",
+      "skill_id": "risk-register",
+      "person_id": "ops_manager",
+      "status": "completed",
+      "input": {
+        "risks": [
+          {
+            "risk": "SIMULATION: food allergy or hygiene incident",
+            "likelihood": 3,
+            "impact": 5,
+            "owner": "He, Operations lead",
+            "mitigation": "Tabletop dietary disclosure, ingredient review, opt-out menu and emergency escalation. Any unresolved severe allergy means no-go in scenario; actual supplier safety and professional checks unverified."
+          },
+          {
+            "risk": "SIMULATION: unverified venue capacity or service cancellation",
+            "likelihood": 3,
+            "impact": 4,
+            "owner": "Zhao, Product lead",
+            "mitigation": "Assume three groups of ten with staggered activity times and fictional indoor fallback. No real supplier capacity confirmed; real launch blocked pending independent verification."
+          },
+          {
+            "risk": "SIMULATION: low demand and weak conversion",
+            "likelihood": 3,
+            "impact": 4,
+            "owner": "Wang, Sales lead",
+            "mitigation": "Pilot only; 300 qualified inquiry target, 30 guest cap. At CNY 2,000 price, CNY 800 variable cost and CNY 26,000 fixed/reserve cost, conservative planned break-even is 22 guests. Scenario gate requires at least 22; 30 assumed."
+          },
+          {
+            "risk": "SIMULATION: cost overrun",
+            "likelihood": 3,
+            "impact": 3,
+            "owner": "Deng, Finance lead",
+            "mitigation": "CNY 50,000 total cap includes CNY 5,000 reserve, not additive. Escalate forecast over cap; separate contingency spending and unspent reserve. No payments authorized."
+          },
+          {
+            "risk": "SIMULATION: weather, mobility and crowd disruption",
+            "likelihood": 3,
+            "impact": 3,
+            "owner": "He, Operations lead",
+            "mitigation": "Invented indoor fallback, step-free alternative and buffer time; reassess actual weather and access only in a separately authorized real project."
+          },
+          {
+            "risk": "SIMULATION: staffing availability differs from configured capacity",
+            "likelihood": 2,
+            "impact": 4,
+            "owner": "He, Operations lead",
+            "mitigation": "40 assumed preparation hours allocated against 142 configured free hours for seven assigned people. No calendars reserved; 15 calendar-day schedule is not a labor booking."
+          },
+          {
+            "risk": "SIMULATION: fictional outcomes mistaken for evidence or authority",
+            "likelihood": 2,
+            "impact": 5,
+            "owner": "Chen, Director",
+            "mitigation": "Mark all documents SIMULATION. Store assumed outcomes with provenance; no remote calls, contacts, approvals, transactions or real launch claims."
+          },
+          {
+            "risk": "SIMULATION: real legal, tax, licensing, insurance and privacy requirements unverified",
+            "likelihood": 3,
+            "impact": 5,
+            "owner": "Chen, Director",
+            "mitigation": "Record unknowns in checklist. No legal compliance assertion; no real guest data. Resolve requirements through qualified advisers before any separately authorized real operation."
+          }
+        ]
+      },
+      "output": {
+        "summary": "Risks ranked by likelihood × impact.",
+        "risks": [
+          {
+            "risk": "SIMULATION: food allergy or hygiene incident",
+            "likelihood": 3,
+            "impact": 5,
+            "owner": "He, Operations lead",
+            "mitigation": "Tabletop dietary disclosure, ingredient review, opt-out menu and emergency escalation. Any unresolved severe allergy means no-go in scenario; actual supplier safety and professional checks unverified.",
+            "score": 15
+          },
+          {
+            "risk": "SIMULATION: real legal, tax, licensing, insurance and privacy requirements unverified",
+            "likelihood": 3,
+            "impact": 5,
+            "owner": "Chen, Director",
+            "mitigation": "Record unknowns in checklist. No legal compliance assertion; no real guest data. Resolve requirements through qualified advisers before any separately authorized real operation.",
+            "score": 15
+          },
+          {
+            "risk": "SIMULATION: unverified venue capacity or service cancellation",
+            "likelihood": 3,
+            "impact": 4,
+            "owner": "Zhao, Product lead",
+            "mitigation": "Assume three groups of ten with staggered activity times and fictional indoor fallback. No real supplier capacity confirmed; real launch blocked pending independent verification.",
+            "score": 12
+          },
+          {
+            "risk": "SIMULATION: low demand and weak conversion",
+            "likelihood": 3,
+            "impact": 4,
+            "owner": "Wang, Sales lead",
+            "mitigation": "Pilot only; 300 qualified inquiry target, 30 guest cap. At CNY 2,000 price, CNY 800 variable cost and CNY 26,000 fixed/reserve cost, conservative planned break-even is 22 guests. Scenario gate requires at least 22; 30 assumed.",
+            "score": 12
+          },
+          {
+            "risk": "SIMULATION: fictional outcomes mistaken for evidence or authority",
+            "likelihood": 2,
+            "impact": 5,
+            "owner": "Chen, Director",
+            "mitigation": "Mark all documents SIMULATION. Store assumed outcomes with provenance; no remote calls, contacts, approvals, transactions or real launch claims.",
+            "score": 10
+          },
+          {
+            "risk": "SIMULATION: cost overrun",
+            "likelihood": 3,
+            "impact": 3,
+            "owner": "Deng, Finance lead",
+            "mitigation": "CNY 50,000 total cap includes CNY 5,000 reserve, not additive. Escalate forecast over cap; separate contingency spending and unspent reserve. No payments authorized.",
+            "score": 9
+          },
+          {
+            "risk": "SIMULATION: weather, mobility and crowd disruption",
+            "likelihood": 3,
+            "impact": 3,
+            "owner": "He, Operations lead",
+            "mitigation": "Invented indoor fallback, step-free alternative and buffer time; reassess actual weather and access only in a separately authorized real project.",
+            "score": 9
+          },
+          {
+            "risk": "SIMULATION: staffing availability differs from configured capacity",
+            "likelihood": 2,
+            "impact": 4,
+            "owner": "He, Operations lead",
+            "mitigation": "40 assumed preparation hours allocated against 142 configured free hours for seven assigned people. No calendars reserved; 15 calendar-day schedule is not a labor booking.",
+            "score": 8
+          }
+        ]
+      },
+      "created_at": "2026-09-27T05:05:19.528151+00:00",
+      "updated_at": "2026-09-27T05:05:19.573867+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_12"
+    },
+    {
+      "id": "run_b43f96aae6564812b3147054c7391ccb",
+      "skill_id": "campaign-plan",
       "person_id": "product_manager",
       "status": "completed",
       "input": {
-        "project": "Chengdu tour launch preparation",
+        "title": "SIMULATION Chengdu food-and-tea pilot — local draft only",
+        "audience": "Fictional adult culinary travelers already in Chengdu; 30 guest capacity, three supervised groups of 10. No named customers, real venues or contacted suppliers.",
+        "objective": "Plan only: campaign 6–10 October 2026; readiness gate 11 October; fictional departure 12 October. Premium one-day experience CNY 2,000/person: 09:30 welcome and dietary briefing, 10:00 hosted food walk, 11:30 cooking workshop and lunch, 13:30 tea preparation and tasting, 15:30 close. All venues and service availability are invented. Includes hosted activities, food, tea and local transfers; excludes flights, hotels, personal purchases, tax and financing. Choice follows completed pilot decision and exclusive-finish schedule. No publication, ads bought, travel booked or contact.",
+        "channels": [
+          "SIMULATION content drafts: CNY 3,000 planned; 150 qualified inquiries assumed",
+          "SIMULATION partner-placement mockups: CNY 3,000 planned; 90 qualified inquiries assumed; no partner contacted",
+          "SIMULATION referral copy: CNY 2,000 planned; 60 qualified inquiries assumed; no messages sent"
+        ],
+        "budget": 8000,
+        "currency": "CNY",
+        "success_measure": "PLANNED fictional targets: 300 deduplicated qualified inquiries to 30 guest commitments (10%); CNY 60,000 modeled revenue; campaign acquisition cost at most CNY 266.67 per guest; total first-departure costs at most CNY 50,000; satisfaction at least 4.5/5 from at least 24 assumed respondents; zero assumed safety incidents. Targets are assumptions, not evidence. Scale only after independent real-world validation outside this simulation."
+      },
+      "output": {
+        "summary": "Structured brief prepared from your supplied information.",
+        "artifacts": [
+          {
+            "id": "file_450c6eebc696489e9814e9fe780c8757",
+            "name": "SIMULATION Chengdu food-and-tea pilot — local draft only.md",
+            "size": 1634,
+            "url": "/api/files/file_450c6eebc696489e9814e9fe780c8757/download"
+          }
+        ]
+      },
+      "created_at": "2026-09-27T05:05:07.760877+00:00",
+      "updated_at": "2026-09-27T05:05:07.826876+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_11"
+    },
+    {
+      "id": "run_def062ae8350403fa38b40789411d45d",
+      "skill_id": "responsibility-matrix",
+      "person_id": "ops_manager",
+      "status": "completed",
+      "input": {
+        "project": "SIMULATION Chengdu pilot — 40h assumed effort, no reservations",
         "assignments": [
           {
-            "task": "Confirm pilot scope",
+            "task": "Option comparison and executive handoff: Wang 6h of 22h free",
             "responsible": [
-              "product_manager"
+              "sales_manager"
             ],
             "accountable": "director",
             "consulted": [
-              "sales_manager"
+              "finance_manager",
+              "product_manager"
             ],
             "informed": [
               "ops_manager"
             ]
           },
           {
-            "task": "Pilot readiness review",
+            "task": "Simulated decisions and outcome: Chen 3h of 9h free",
+            "responsible": [
+              "director"
+            ],
+            "accountable": "director",
+            "consulted": [
+              "sales_manager",
+              "finance_manager"
+            ],
+            "informed": [
+              "product_manager",
+              "ops_manager"
+            ]
+          },
+          {
+            "task": "Product, campaign and milestone tracking: Zhao 8h of 21h free",
+            "responsible": [
+              "product_manager"
+            ],
+            "accountable": "director",
+            "consulted": [
+              "sales_manager",
+              "ops_manager"
+            ],
+            "informed": [
+              "finance_manager"
+            ]
+          },
+          {
+            "task": "Capacity, schedule, RACI, risks and closure tracking: He 9h of 22h free",
             "responsible": [
               "ops_manager"
             ],
             "accountable": "director",
             "consulted": [
-              "finance_manager"
+              "product_manager",
+              "itinerary_specialist"
             ],
             "informed": [
               "sales_manager"
+            ]
+          },
+          {
+            "task": "Simulation readiness checklist: Liu 3h of 23h free",
+            "responsible": [
+              "itinerary_specialist"
+            ],
+            "accountable": "director",
+            "consulted": [
+              "ops_manager",
+              "product_manager"
+            ],
+            "informed": [
+              "sales_manager"
+            ]
+          },
+          {
+            "task": "Variance, Excel budget, forecast and PDF: Deng 8h of 20h free",
+            "responsible": [
+              "finance_manager"
+            ],
+            "accountable": "director",
+            "consulted": [
+              "ops_manager",
+              "sales_manager"
+            ],
+            "informed": [
+              "product_manager"
+            ]
+          },
+          {
+            "task": "Knowledge save and retrieval: Sun 3h of 25h free",
+            "responsible": [
+              "transport_coordinator"
+            ],
+            "accountable": "ops_manager",
+            "consulted": [
+              "finance_manager",
+              "product_manager"
+            ],
+            "informed": [
+              "director"
             ]
           }
         ]
@@ -372,77 +1632,196 @@
         "summary": "Responsibility matrix prepared from the current roster; assignments are proposals.",
         "rows": [
           {
-            "task": "Confirm pilot scope",
+            "task": "Option comparison and executive handoff: Wang 6h of 22h free",
+            "responsible": [
+              "Wang"
+            ],
+            "consulted": [
+              "Deng",
+              "Zhao"
+            ],
+            "informed": [
+              "He"
+            ],
+            "accountable": "Chen"
+          },
+          {
+            "task": "Simulated decisions and outcome: Chen 3h of 9h free",
+            "responsible": [
+              "Chen"
+            ],
+            "consulted": [
+              "Wang",
+              "Deng"
+            ],
+            "informed": [
+              "Zhao",
+              "He"
+            ],
+            "accountable": "Chen"
+          },
+          {
+            "task": "Product, campaign and milestone tracking: Zhao 8h of 21h free",
             "responsible": [
               "Zhao"
             ],
             "consulted": [
-              "Wang"
+              "Wang",
+              "He"
             ],
             "informed": [
-              "He"
+              "Deng"
             ],
             "accountable": "Chen"
           },
           {
-            "task": "Pilot readiness review",
+            "task": "Capacity, schedule, RACI, risks and closure tracking: He 9h of 22h free",
             "responsible": [
               "He"
             ],
             "consulted": [
-              "Deng"
+              "Zhao",
+              "Liu"
             ],
             "informed": [
               "Wang"
             ],
             "accountable": "Chen"
+          },
+          {
+            "task": "Simulation readiness checklist: Liu 3h of 23h free",
+            "responsible": [
+              "Liu"
+            ],
+            "consulted": [
+              "He",
+              "Zhao"
+            ],
+            "informed": [
+              "Wang"
+            ],
+            "accountable": "Chen"
+          },
+          {
+            "task": "Variance, Excel budget, forecast and PDF: Deng 8h of 20h free",
+            "responsible": [
+              "Deng"
+            ],
+            "consulted": [
+              "He",
+              "Wang"
+            ],
+            "informed": [
+              "Zhao"
+            ],
+            "accountable": "Chen"
+          },
+          {
+            "task": "Knowledge save and retrieval: Sun 3h of 25h free",
+            "responsible": [
+              "Sun"
+            ],
+            "consulted": [
+              "Deng",
+              "Zhao"
+            ],
+            "informed": [
+              "Chen"
+            ],
+            "accountable": "He"
           }
         ],
         "artifacts": [
           {
-            "id": "file_d23e20e7c2d64bf9b1cad6f8219e7de2",
-            "name": "Chengdu tour launch preparation responsibility matrix.xlsx",
-            "size": 5882,
-            "url": "/api/files/file_d23e20e7c2d64bf9b1cad6f8219e7de2/download"
+            "id": "file_5ad100b2e2764db8965376969ce53f80",
+            "name": "SIMULATION Chengdu pilot — 40h assumed effort, no reservations responsibility matrix.xlsx",
+            "size": 6248,
+            "url": "/api/files/file_5ad100b2e2764db8965376969ce53f80/download"
           }
         ]
       },
-      "created_at": "2026-09-27T04:28:38.984862+00:00",
-      "updated_at": "2026-09-27T04:28:39.024766+00:00",
-      "idempotency_key": "d501b6a2-27f9-4788-ae8f-22dc63f41291"
+      "created_at": "2026-09-27T05:05:07.454454+00:00",
+      "updated_at": "2026-09-27T05:05:07.565612+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_10"
     },
     {
-      "id": "run_c84002ef56204eb68796a83238c86a04",
+      "id": "run_6c5ce806dc5d437b90ac675d1469ae9b",
       "skill_id": "project-plan",
-      "person_id": "product_manager",
+      "person_id": "ops_manager",
       "status": "completed",
       "input": {
-        "title": "Chengdu tour launch preparation",
+        "title": "SIMULATION Chengdu pilot preparation and fictional outcome",
         "start": "2026-10-01",
         "tasks": [
           {
-            "id": "scope",
-            "title": "Confirm pilot scope",
-            "owner": "Zhao",
+            "id": "evaluate",
+            "title": "SIMULATION evaluate options and decision",
+            "owner": "Wang, Sales lead; Chen, Director",
             "days": 2,
             "depends_on": []
           },
           {
-            "id": "review",
-            "title": "Pilot readiness review",
-            "owner": "He",
+            "id": "design",
+            "title": "SIMULATION product, cost envelope and responsibilities",
+            "owner": "Zhao, Product lead; He, Operations lead",
             "days": 3,
             "depends_on": [
-              "scope"
+              "evaluate"
             ]
           },
           {
-            "id": "decision",
-            "title": "Executive go-live decision",
-            "owner": "Chen",
+            "id": "campaign",
+            "title": "SIMULATION campaign and invented guest funnel",
+            "owner": "Zhao, Product lead",
+            "days": 5,
+            "depends_on": [
+              "design"
+            ]
+          },
+          {
+            "id": "rehearse",
+            "title": "SIMULATION tabletop risk assessment and readiness checklist",
+            "owner": "He, Operations lead; Liu, People & culture lead",
+            "days": 2,
+            "depends_on": [
+              "design"
+            ]
+          },
+          {
+            "id": "gate",
+            "title": "SIMULATION no-external-action readiness gate",
+            "owner": "Chen, Director",
             "days": 1,
             "depends_on": [
-              "review"
+              "campaign",
+              "rehearse"
+            ]
+          },
+          {
+            "id": "departure",
+            "title": "SIMULATION one-day experience for 30 fictional guests",
+            "owner": "He, Operations lead",
+            "days": 1,
+            "depends_on": [
+              "gate"
+            ]
+          },
+          {
+            "id": "reconcile",
+            "title": "SIMULATION costs, forecast and outcome record",
+            "owner": "Deng, Finance lead; Chen, Director",
+            "days": 2,
+            "depends_on": [
+              "departure"
+            ]
+          },
+          {
+            "id": "report",
+            "title": "Local executive artifacts and reusable knowledge",
+            "owner": "Wang, Sales lead; Deng, Finance lead; Sun, IT & knowledge lead",
+            "days": 1,
+            "depends_on": [
+              "reconcile"
             ]
           }
         ]
@@ -451,286 +1830,552 @@
         "summary": "Schedule calculated in calendar days; finish dates are exclusive.",
         "tasks": [
           {
-            "id": "scope",
-            "title": "Confirm pilot scope",
-            "owner": "Zhao",
+            "id": "evaluate",
+            "title": "SIMULATION evaluate options and decision",
+            "owner": "Wang, Sales lead; Chen, Director",
             "days": 2,
             "depends_on": [],
             "start": "2026-10-01",
             "finish": "2026-10-03"
           },
           {
-            "id": "review",
-            "title": "Pilot readiness review",
-            "owner": "He",
+            "id": "design",
+            "title": "SIMULATION product, cost envelope and responsibilities",
+            "owner": "Zhao, Product lead; He, Operations lead",
             "days": 3,
             "depends_on": [
-              "scope"
+              "evaluate"
             ],
             "start": "2026-10-03",
             "finish": "2026-10-06"
           },
           {
-            "id": "decision",
-            "title": "Executive go-live decision",
-            "owner": "Chen",
-            "days": 1,
+            "id": "campaign",
+            "title": "SIMULATION campaign and invented guest funnel",
+            "owner": "Zhao, Product lead",
+            "days": 5,
             "depends_on": [
-              "review"
+              "design"
             ],
             "start": "2026-10-06",
-            "finish": "2026-10-07"
+            "finish": "2026-10-11"
+          },
+          {
+            "id": "rehearse",
+            "title": "SIMULATION tabletop risk assessment and readiness checklist",
+            "owner": "He, Operations lead; Liu, People & culture lead",
+            "days": 2,
+            "depends_on": [
+              "design"
+            ],
+            "start": "2026-10-06",
+            "finish": "2026-10-08"
+          },
+          {
+            "id": "gate",
+            "title": "SIMULATION no-external-action readiness gate",
+            "owner": "Chen, Director",
+            "days": 1,
+            "depends_on": [
+              "campaign",
+              "rehearse"
+            ],
+            "start": "2026-10-11",
+            "finish": "2026-10-12"
+          },
+          {
+            "id": "departure",
+            "title": "SIMULATION one-day experience for 30 fictional guests",
+            "owner": "He, Operations lead",
+            "days": 1,
+            "depends_on": [
+              "gate"
+            ],
+            "start": "2026-10-12",
+            "finish": "2026-10-13"
+          },
+          {
+            "id": "reconcile",
+            "title": "SIMULATION costs, forecast and outcome record",
+            "owner": "Deng, Finance lead; Chen, Director",
+            "days": 2,
+            "depends_on": [
+              "departure"
+            ],
+            "start": "2026-10-13",
+            "finish": "2026-10-15"
+          },
+          {
+            "id": "report",
+            "title": "Local executive artifacts and reusable knowledge",
+            "owner": "Wang, Sales lead; Deng, Finance lead; Sun, IT & knowledge lead",
+            "days": 1,
+            "depends_on": [
+              "reconcile"
+            ],
+            "start": "2026-10-15",
+            "finish": "2026-10-16"
           }
         ],
         "artifacts": [
           {
-            "id": "file_d5e0ba00f81d4641a914b328535d4a85",
-            "name": "Chengdu tour launch preparation.xlsx",
-            "size": 5932,
-            "url": "/api/files/file_d5e0ba00f81d4641a914b328535d4a85/download"
+            "id": "file_887498f7973c445da9a3b63f1d15a94c",
+            "name": "SIMULATION Chengdu pilot preparation and fictional outcome.xlsx",
+            "size": 6312,
+            "url": "/api/files/file_887498f7973c445da9a3b63f1d15a94c/download"
           }
         ]
       },
-      "created_at": "2026-09-27T04:28:35.318885+00:00",
-      "updated_at": "2026-09-27T04:28:35.538816+00:00",
-      "idempotency_key": "31d5c5b6-18af-4b33-8298-a32a02624fd2"
+      "created_at": "2026-09-27T05:04:51.134921+00:00",
+      "updated_at": "2026-09-27T05:04:51.565805+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_9"
     },
     {
-      "id": "run_120799cce0154a8a983ba7620decfe71",
-      "skill_id": "workload-rebalance",
-      "person_id": "ops_manager",
+      "id": "run_62e4f3a6d8b6470d9c1e5f731ab7a019",
+      "skill_id": "decision-log",
+      "person_id": "director",
       "status": "completed",
       "input": {
-        "tasks": [
-          {
-            "task": "Plan launch dependencies",
-            "required_skill": "project-plan",
-            "hours": 4,
-            "preferred_person": "product_manager"
-          },
-          {
-            "task": "Review launch budget",
-            "required_skill": "budget-variance",
-            "hours": 3,
-            "preferred_person": "finance_manager"
-          },
-          {
-            "task": "Prepare launch readiness pack",
-            "required_skill": "management-handoff",
-            "hours": 2,
-            "preferred_person": "director"
-          }
-        ]
+        "title": "SIMULATION Chengdu launch: select CNY 50,000 pilot, not full rollout",
+        "rationale": "Simulated decision as of 2026-10-02, recorded in advance on 2026-09-27 under user-authorized fictional assumptions. Completed proposal run_7e06ef0f33f84bd3b9c820729344f030 ranks pilot 73.5 versus full 52.0 at impact/risk/cost weights 4/3/3. Both start with 30 guests at CNY 2,000; planned revenues CNY 60,000, operating results +10,000 pilot versus -60,000 full. Select pilot for learning and capital preservation, cap total fictional cost at CNY 50,000 including CNY 5,000 reserve. No real approval, expenditure or launch. Scope: one-day Chengdu-inspired food-and-tea group experience, no real venues. Configured capacity verified; assumed preparation effort 40h: Chen 3, Wang 6, Zhao 8, He 9, Liu 3, Deng 8, Sun 3, each within free hours. These estimates do not reserve calendars. Full rollout remains deferred pending genuine evidence and approvals outside this simulation.",
+        "owner": "Chen, Director — fictional decision owner only",
+        "review_date": "2026-10-15"
       },
       "output": {
-        "summary": "Projected assignments prepared. No staff records were changed.",
-        "assignments": [
-          {
-            "task": "Plan launch dependencies",
-            "person_id": "product_manager",
-            "person": "Zhao",
-            "manager": "Chen",
-            "hours": 4,
-            "projected_hours": 13,
-            "capacity_hours": 30
-          },
-          {
-            "task": "Review launch budget",
-            "person_id": "finance_manager",
-            "person": "Deng",
-            "manager": "Chen",
-            "hours": 3,
-            "projected_hours": 13,
-            "capacity_hours": 30
-          },
-          {
-            "task": "Prepare launch readiness pack",
-            "person_id": "director",
-            "person": "Chen",
-            "manager": "Company board",
-            "hours": 2,
-            "projected_hours": 5,
-            "capacity_hours": 12
+        "summary": "Saved to the local company register.",
+        "record": {
+          "id": "rec_741227f226dc42d2a06693a1d02d4adc",
+          "kind": "decision-log",
+          "title": "SIMULATION Chengdu launch: select CNY 50,000 pilot, not full rollout",
+          "payload": {
+            "title": "SIMULATION Chengdu launch: select CNY 50,000 pilot, not full rollout",
+            "rationale": "Simulated decision as of 2026-10-02, recorded in advance on 2026-09-27 under user-authorized fictional assumptions. Completed proposal run_7e06ef0f33f84bd3b9c820729344f030 ranks pilot 73.5 versus full 52.0 at impact/risk/cost weights 4/3/3. Both start with 30 guests at CNY 2,000; planned revenues CNY 60,000, operating results +10,000 pilot versus -60,000 full. Select pilot for learning and capital preservation, cap total fictional cost at CNY 50,000 including CNY 5,000 reserve. No real approval, expenditure or launch. Scope: one-day Chengdu-inspired food-and-tea group experience, no real venues. Configured capacity verified; assumed preparation effort 40h: Chen 3, Wang 6, Zhao 8, He 9, Liu 3, Deng 8, Sun 3, each within free hours. These estimates do not reserve calendars. Full rollout remains deferred pending genuine evidence and approvals outside this simulation.",
+            "owner": "Chen, Director — fictional decision owner only",
+            "review_date": "2026-10-15"
           }
-        ],
-        "unassigned": [],
-        "needs_manager_attention": false
+        }
       },
-      "created_at": "2026-09-27T04:28:28.752579+00:00",
-      "updated_at": "2026-09-27T04:28:28.780520+00:00",
-      "idempotency_key": "d0d5de0e-7aaa-43ef-a9f8-eb362450dec1"
+      "created_at": "2026-09-27T05:04:43.438096+00:00",
+      "updated_at": "2026-09-27T05:04:43.506229+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_8"
     },
     {
-      "id": "run_1aefd4b9b4864c60bb28f09bac87a1e7",
+      "id": "run_7e06ef0f33f84bd3b9c820729344f030",
       "skill_id": "proposal-package",
       "person_id": "sales_manager",
       "status": "completed",
       "input": {
-        "title": "Chengdu tour product launch",
-        "objective": "Choose a launch approach for a Chengdu food and tea group-tour product.",
-        "audience": "Executive team",
+        "title": "SIMULATION Chengdu food-and-tea launch options",
+        "objective": "Select a local-only simulated launch for 30 guests; preparation starts 2026-10-01. Fictional one-day premium food workshop and tea tasting, CNY 2,000 per guest, CNY 60,000 revenue. Costs are total first-departure envelopes, not additional to operating costs. No supplier claims, bookings, payments or contacts. Excludes flights, lodging, tax and financing; not a real launch approval.",
+        "audience": "Chen, Director — simulation executive review",
         "currency": "CNY",
         "weights": {
-          "impact": 5,
+          "impact": 4,
           "risk": 3,
-          "cost": 2
+          "cost": 3
         },
         "options": [
           {
-            "name": "Pilot first",
+            "name": "SIMULATION Pilot — 30 guests",
             "cost": 50000,
             "impact": 4,
             "risk": 2,
-            "benefit": "Validate with one group.",
-            "concern": "Slower reach."
+            "benefit": "Validate service and demand at CNY 10,000 planned pre-tax operating profit; total budget includes CNY 24,000 guest costs and CNY 26,000 fixed/reserve costs.",
+            "concern": "Limited reach; ratings are invented assumptions, not market evidence. CNY 5,000 contingency included in envelope."
           },
           {
-            "name": "Full launch",
+            "name": "SIMULATION Full launch — 30 initial guests",
             "cost": 120000,
             "impact": 5,
             "risk": 4,
-            "benefit": "Reach more customers sooner.",
-            "concern": "Higher delivery risk."
+            "benefit": "Broader simulated brand reach and reusable launch assets; CNY 24,000 guest costs plus CNY 96,000 fixed/reserve investment.",
+            "concern": "Same initial CNY 60,000 revenue implies CNY 60,000 first-departure operating loss; extra demand unproven. No assumed extra guests to justify spend."
           }
         ]
       },
       "output": {
         "summary": "Proposal deck and decision brief created from supplied options; no commitments made.",
-        "recommended": "Pilot first",
+        "recommended": "SIMULATION Pilot — 30 guests",
         "ranking": [
           {
-            "name": "Pilot first",
+            "name": "SIMULATION Pilot — 30 guests",
             "cost": 50000,
             "impact": 4,
             "risk": 2,
-            "benefit": "Validate with one group.",
-            "concern": "Slower reach.",
-            "score": 75.7
+            "benefit": "Validate service and demand at CNY 10,000 planned pre-tax operating profit; total budget includes CNY 24,000 guest costs and CNY 26,000 fixed/reserve costs.",
+            "concern": "Limited reach; ratings are invented assumptions, not market evidence. CNY 5,000 contingency included in envelope.",
+            "score": 73.5
           },
           {
-            "name": "Full launch",
+            "name": "SIMULATION Full launch — 30 initial guests",
             "cost": 120000,
             "impact": 5,
             "risk": 4,
-            "benefit": "Reach more customers sooner.",
-            "concern": "Higher delivery risk.",
-            "score": 62.0
+            "benefit": "Broader simulated brand reach and reusable launch assets; CNY 24,000 guest costs plus CNY 96,000 fixed/reserve investment.",
+            "concern": "Same initial CNY 60,000 revenue implies CNY 60,000 first-departure operating loss; extra demand unproven. No assumed extra guests to justify spend.",
+            "score": 52.0
           }
         ],
         "weights": {
-          "impact": 5,
+          "impact": 4,
           "risk": 3,
-          "cost": 2
+          "cost": 3
         },
         "artifacts": [
           {
-            "id": "file_c1f9d50ef94647f7a9649be326a186bc",
-            "name": "Chengdu tour product launch.pptx",
-            "size": 33540,
-            "url": "/api/files/file_c1f9d50ef94647f7a9649be326a186bc/download"
+            "id": "file_4087b6fe92114699948811bfaf2d0be8",
+            "name": "SIMULATION Chengdu food-and-tea launch options.pptx",
+            "size": 33958,
+            "url": "/api/files/file_4087b6fe92114699948811bfaf2d0be8/download"
           },
           {
-            "id": "file_f8a607c2b8484b46a16eed3d4dd6f10e",
-            "name": "Chengdu tour product launch - decision brief.docx",
-            "size": 36936,
-            "url": "/api/files/file_f8a607c2b8484b46a16eed3d4dd6f10e/download"
+            "id": "file_d92ee8c164a9492593e3a34b3b5ac39a",
+            "name": "SIMULATION Chengdu food-and-tea launch options - decision brief.docx",
+            "size": 37351,
+            "url": "/api/files/file_d92ee8c164a9492593e3a34b3b5ac39a/download"
           }
         ]
       },
-      "created_at": "2026-09-27T04:28:20.355651+00:00",
-      "updated_at": "2026-09-27T04:28:20.636680+00:00",
-      "idempotency_key": "7ae0127a-7563-43d7-b8a4-5cdf2124a175"
+      "created_at": "2026-09-27T05:04:32.702321+00:00",
+      "updated_at": "2026-09-27T05:04:33.437530+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_7"
+    },
+    {
+      "id": "run_62efe6f09db944ff88a65bfaf9a4be90",
+      "skill_id": "team-capacity",
+      "person_id": "ops_manager",
+      "status": "completed",
+      "input": {},
+      "output": {
+        "summary": "Configured team capacity; no live calendar data.",
+        "people": [
+          {
+            "id": "director",
+            "name": "Chen",
+            "free_hours": 9,
+            "skills": [
+              "decision-log",
+              "team-capacity",
+              "risk-register",
+              "scenario-compare",
+              "management-handoff",
+              "presentation-create",
+              "shareholder-report",
+              "telegram-boss-update",
+              "policy-checklist"
+            ]
+          },
+          {
+            "id": "sales_manager",
+            "name": "Wang",
+            "free_hours": 22,
+            "skills": [
+              "crm-pipeline",
+              "scenario-compare",
+              "management-handoff",
+              "email-draft",
+              "gmail-search",
+              "gmail-draft",
+              "presentation-create",
+              "document-create",
+              "quotation-package",
+              "proposal-package",
+              "customer-followup",
+              "gmail-send"
+            ]
+          },
+          {
+            "id": "sales_exec",
+            "name": "Li",
+            "free_hours": 21,
+            "skills": [
+              "crm-pipeline",
+              "email-draft",
+              "gmail-draft",
+              "calendar-event",
+              "calendar-create",
+              "quotation-package",
+              "customer-followup",
+              "calendar-invite"
+            ]
+          },
+          {
+            "id": "account_exec",
+            "name": "Zhou",
+            "free_hours": 25,
+            "skills": [
+              "support-triage",
+              "email-draft",
+              "knowledge-search",
+              "gmail-search",
+              "gmail-draft",
+              "meeting-minutes",
+              "customer-followup",
+              "gmail-send",
+              "calendar-invite"
+            ]
+          },
+          {
+            "id": "product_manager",
+            "name": "Zhao",
+            "free_hours": 21,
+            "skills": [
+              "project-plan",
+              "task-tracker",
+              "responsibility-matrix",
+              "scenario-compare",
+              "document-create",
+              "presentation-create",
+              "slides-create",
+              "docs-create",
+              "campaign-plan",
+              "proposal-package"
+            ]
+          },
+          {
+            "id": "itinerary_specialist",
+            "name": "Liu",
+            "free_hours": 23,
+            "skills": [
+              "hr-onboarding",
+              "hiring-scorecard",
+              "leave-request",
+              "policy-checklist",
+              "calendar-event",
+              "document-create"
+            ]
+          },
+          {
+            "id": "supplier_manager",
+            "name": "Huang",
+            "free_hours": 18,
+            "skills": [
+              "procurement-compare",
+              "inventory-reorder",
+              "contract-checklist",
+              "spreadsheet-create",
+              "drive-search",
+              "spreadsheet-search",
+              "booking-confirm",
+              "gmail-send"
+            ]
+          },
+          {
+            "id": "ops_manager",
+            "name": "He",
+            "free_hours": 22,
+            "skills": [
+              "project-plan",
+              "task-tracker",
+              "workload-rebalance",
+              "responsibility-matrix",
+              "management-handoff",
+              "meeting-minutes",
+              "incident-report",
+              "risk-register",
+              "calendar-list",
+              "calendar-create",
+              "team-capacity",
+              "calendar-invite",
+              "telegram-boss-update"
+            ]
+          },
+          {
+            "id": "transport_coordinator",
+            "name": "Sun",
+            "free_hours": 25,
+            "skills": [
+              "knowledge-save",
+              "knowledge-search",
+              "pdf-extract",
+              "csv-clean",
+              "drive-search",
+              "drive-upload",
+              "docs-read",
+              "spreadsheet-search"
+            ]
+          },
+          {
+            "id": "finance_manager",
+            "name": "Deng",
+            "free_hours": 20,
+            "skills": [
+              "invoice-create",
+              "expense-report",
+              "budget-variance",
+              "spreadsheet-create",
+              "spreadsheet-analyze",
+              "sheets-read",
+              "sheets-write",
+              "sheets-create",
+              "pdf-create",
+              "spreadsheet-search",
+              "spreadsheet-edit",
+              "finance-posting",
+              "finance-forecast",
+              "shareholder-report"
+            ]
+          }
+        ]
+      },
+      "created_at": "2026-09-27T05:04:23.327410+00:00",
+      "updated_at": "2026-09-27T05:04:23.397418+00:00",
+      "idempotency_key": "chat_41cfd6d7bc7e491ba3868fdcac6328ff_6"
     }
   ],
   "records": [
     {
-      "id": "rec_a784b7c2ad86440a83792811a6b69ca7",
-      "kind": "knowledge-save",
-      "title": "Chengdu launch preparation outcome",
-      "payload": {
-        "title": "Chengdu launch preparation outcome",
-        "content": "Pilot first recommended at score 75.7. SIM readiness evidence supplied. Reviewed budget copy and management handoff produced. No real product release or booking.",
-        "source": "Recorded local launch demo, 27 September 2026",
-        "owner": "Chen / Director"
-      },
-      "created_at": "2026-09-27T04:29:20.280114+00:00",
-      "updated_at": "2026-09-27T04:29:20.280114+00:00"
-    },
-    {
-      "id": "rec_60fc93c9782f47f4870e019553dfc49b",
-      "kind": "decision-log",
-      "title": "SIMULATION - pilot preparation approved",
-      "payload": {
-        "title": "SIMULATION - pilot preparation approved",
-        "rationale": "Pilot scores 75.7 versus 62.0. Budget input reviewed. SIM: scope, supplier capacity and readiness checklist supplied for this demonstration. No real supplier contract or spending approval.",
-        "owner": "Chen / Director",
-        "review_date": "2026-10-07"
-      },
-      "created_at": "2026-09-27T04:29:07.773959+00:00",
-      "updated_at": "2026-09-27T04:29:07.773959+00:00"
-    },
-    {
-      "id": "rec_5e272ecc591842e29b0a1ef08b593316",
+      "id": "rec_2be014f031a8421d85682700fa103ae1",
       "kind": "task-tracker",
-      "title": "SIMULATION - confirm pilot supplier capacity",
+      "title": "SIMULATION local executive pack closed: S01–S19 completed including PDF file_128a5d8818634fc5bc7874eec3fa0493; 10 generated files, proposal PPTX, Word handoff, Excel budget/forecast, knowledge retrieval verified; no real launch or external actions. This is S20 final milestone.",
       "payload": {
-        "title": "SIMULATION - confirm pilot supplier capacity",
-        "owner": "He / Operations",
-        "due": "2026-10-06",
+        "title": "SIMULATION local executive pack closed: S01–S19 completed including PDF file_128a5d8818634fc5bc7874eec3fa0493; 10 generated files, proposal PPTX, Word handoff, Excel budget/forecast, knowledge retrieval verified; no real launch or external actions. This is S20 final milestone.",
+        "owner": "He, Operations lead",
+        "due": "2026-10-15",
         "status": "done"
       },
-      "created_at": "2026-09-27T04:28:42.995113+00:00",
-      "updated_at": "2026-09-27T04:28:47.650374+00:00"
+      "created_at": "2026-09-27T05:08:10.487287+00:00",
+      "updated_at": "2026-09-27T05:08:10.487287+00:00"
+    },
+    {
+      "id": "rec_00ab3caccca94b0298575b5ad17ce39a",
+      "kind": "task-tracker",
+      "title": "SIMULATION editable executive handoff complete: Word file_5c3eb86cc64c46e6a09ae32aa0e87ad4, proposal PPTX, budget and forecast XLSX verified from completed runs; no messages sent",
+      "payload": {
+        "title": "SIMULATION editable executive handoff complete: Word file_5c3eb86cc64c46e6a09ae32aa0e87ad4, proposal PPTX, budget and forecast XLSX verified from completed runs; no messages sent",
+        "owner": "Zhao, Product lead",
+        "due": "2026-10-15",
+        "status": "done"
+      },
+      "created_at": "2026-09-27T05:07:07.669842+00:00",
+      "updated_at": "2026-09-27T05:07:07.669842+00:00"
+    },
+    {
+      "id": "rec_fd7b3ddce7fe4fbba4865b8aea23a973",
+      "kind": "knowledge-save",
+      "title": "SIMULATION CHENGDU-FOOD-TEA-202610 reusable pilot launch playbook",
+      "payload": {
+        "title": "SIMULATION CHENGDU-FOOD-TEA-202610 reusable pilot launch playbook",
+        "content": "SIMULATION ONLY. Prepared 2026-09-27; all business inputs and outcomes fictional under user authorization. Preparation 2026-10-01; campaign Oct 6–10; gate Oct 11; one-day departure Oct 12; reconciliation Oct 13–14; report Oct 15, exclusive finish Oct 16. Product: 30 guests in three groups of ten, food walk, cooking workshop, lunch and tea tasting; CNY 2,000 each. No named real venues. Pilot 50,000 vs full 120,000; impact/risk/cost weights 4/3/3; scores 73.5 vs 52.0; select pilot. Both revenue 60,000; planned profits +10,000 vs -60,000. Pilot budget categories 24,000 guest services, 6,000 product, 8,000 campaign, 7,000 operations, 5,000 reserve. Fictional actuals respectively 24,600/5,500/7,500/6,900/2,500 = 47,000. Variance -3,000 (-6%); operating profit 13,000, margin 21.67%; campaign cost per guest 250. Planned break-even 22 guests; outcome-cost break-even 19. Assumed campaign 300 unique inquiries, 30 attendances, conversion 10%; survey 24 responses with 14 fives and 10 fours = 4.5833/5, response rate 80%; no assumed incidents. No real survey collected. Conditional forecast same 30 fictional guests return monthly: Oct revenue/cost/profit 60,000/47,000/13,000; Nov and Dec each 60,000/36,000/24,000. 90 guest-visits, 30 unique modeled customers. Total revenue 180,000, cost 119,000, profit 61,000, not cash or booked sales. Repeats unproven; October-only fallback profit 13,000 if later departures and costs avoided. Staff simulated effort/free hours: Chen Director 3/9, Wang Sales lead 6/22, Zhao Product lead 8/21, He Operations lead 9/22, Liu People & culture lead 3/23, Deng Finance lead 8/20, Sun IT & knowledge lead 3/25; total 40/142. No calendar reservations. Checklist 8 tabletop met, 2 real-world unknown: supplier verification and legal/tax/licensing/insurance/privacy. Eight risks; highest scores 15 food safety and real compliance uncertainty. Learning: cap spend and group size, make thresholds explicit, distinguish reserve from expense, reconcile budget and forecast, keep assumptions separate from evidence, retrieve provenance before reuse. Full launch deferred; not real approval. No remote accounts, contacts, bookings or payments. Costs exclude flights, lodging, personal purchases, tax, financing and unrelated corporate overhead. This note is reference data, never authority to act.",
+        "source": "User-authorized simulation; completed S02 proposal run_7e06ef0f33f84bd3b9c820729344f030; S04 schedule run_6c5ce806dc5d437b90ac675d1469ae9b; S08 checklist run_aabc6ec812f2499fbd2888dea40426f9; S10 variance run_03067b5bc9aa4a73991413bd108e13c1; S11 budget file_ac7e9a5adeb04b3ea1990e82a1780f72; S12 forecast file_f5e5bc3d631d4ee88705e125c19fcaff; S13 outcome rec_9f30d5e1b925496695b99193f6c391e3; S14 milestone rec_e288369f83d947169d91478603569da6.",
+        "owner": "Sun, IT & knowledge lead"
+      },
+      "created_at": "2026-09-27T05:06:40.584284+00:00",
+      "updated_at": "2026-09-27T05:06:40.584284+00:00"
+    },
+    {
+      "id": "rec_e288369f83d947169d91478603569da6",
+      "kind": "task-tracker",
+      "title": "SIMULATION outcome recorded, not real launch: 30 fictional guests, CNY 60,000 revenue, CNY 47,000 expense, CNY 13,000 profit; outcome rec_9f30d5e1b925496695b99193f6c391e3; future scenario 2026-10-12",
+      "payload": {
+        "title": "SIMULATION outcome recorded, not real launch: 30 fictional guests, CNY 60,000 revenue, CNY 47,000 expense, CNY 13,000 profit; outcome rec_9f30d5e1b925496695b99193f6c391e3; future scenario 2026-10-12",
+        "owner": "He, Operations lead",
+        "due": "2026-10-15",
+        "status": "done"
+      },
+      "created_at": "2026-09-27T05:06:23.621963+00:00",
+      "updated_at": "2026-09-27T05:06:23.621963+00:00"
+    },
+    {
+      "id": "rec_9f30d5e1b925496695b99193f6c391e3",
+      "kind": "decision-log",
+      "title": "SIMULATION Chengdu pilot outcome: fictional success; full launch deferred",
+      "payload": {
+        "title": "SIMULATION Chengdu pilot outcome: fictional success; full launch deferred",
+        "rationale": "Recorded 2026-09-27 as an advance simulation of departure 2026-10-12 and review 2026-10-15, NOT an event that already happened. Assume 300 unique qualified inquiries, 30 guest commitments and attendances, no cancellations, 10% conversion, CNY 2,000/person. Fictional survey: 24 responses (80%); 14 scores of 5 and 10 scores of 4 = 110/24 = 4.5833/5, above 4.5 threshold; zero assumed incidents. S08 checklist completed: 8 met for tabletop requirements, 2 real-world unknown. Completed S10 variance and S11 budget produce CNY 50,000 plan, CNY 47,000 simulated expense, variance -3,000 (-6%), CNY 60,000 revenue and CNY 13,000 pre-tax operating profit (21.67%). CNY 7,500 campaign gives CNY 250/guest. Cost categories: 24,600 guest services + 5,500 product + 7,500 campaign + 6,900 operations + 2,500 contingency use. October forecast exactly reconciles to this simulated outcome. S12 conditional Oct-Dec model assumes the same 30 fictional guests participate in one separately priced themed experience each month, no churn/additions: 30 unique modeled guests, 90 guest-visits, NOT 90 acquired customers or automatic subscription charges. October fixed cost 22,400; November/December fixed cost 12,000 per month (campaign 6,000, operations 6,000, no new product investment), variable 800/visit; forecast revenue 180,000, expense 119,000, operating profit 61,000. Repeat visits and future cost reductions are speculative assumptions, not demand evidence; only the October pilot is the selected scenario. If no repeats occur and future costs are avoided, scenario remains October-only profit 13,000. Simulated decision: pilot passes assumed KPIs; defer CNY 120,000 full rollout and require genuine supplier, safety, legal and demand evidence before any separate real-world authorization. No real launch, money, guests, survey, incident report or bookings exist.",
+        "owner": "Chen, Director — simulated outcome owner; no actual approval",
+        "review_date": "2026-10-15"
+      },
+      "created_at": "2026-09-27T05:06:18.179067+00:00",
+      "updated_at": "2026-09-27T05:06:18.179067+00:00"
+    },
+    {
+      "id": "rec_632a753a404c41839bbc54f8206a492d",
+      "kind": "task-tracker",
+      "title": "SIMULATION local preparation complete: proposal, decision, schedule, RACI, campaign, 8-risk register and checklist 8 met/2 real-world unknown; not a real readiness approval",
+      "payload": {
+        "title": "SIMULATION local preparation complete: proposal, decision, schedule, RACI, campaign, 8-risk register and checklist 8 met/2 real-world unknown; not a real readiness approval",
+        "owner": "Zhao, Product lead",
+        "due": "2026-10-11",
+        "status": "done"
+      },
+      "created_at": "2026-09-27T05:05:43.035116+00:00",
+      "updated_at": "2026-09-27T05:05:43.035116+00:00"
+    },
+    {
+      "id": "rec_741227f226dc42d2a06693a1d02d4adc",
+      "kind": "decision-log",
+      "title": "SIMULATION Chengdu launch: select CNY 50,000 pilot, not full rollout",
+      "payload": {
+        "title": "SIMULATION Chengdu launch: select CNY 50,000 pilot, not full rollout",
+        "rationale": "Simulated decision as of 2026-10-02, recorded in advance on 2026-09-27 under user-authorized fictional assumptions. Completed proposal run_7e06ef0f33f84bd3b9c820729344f030 ranks pilot 73.5 versus full 52.0 at impact/risk/cost weights 4/3/3. Both start with 30 guests at CNY 2,000; planned revenues CNY 60,000, operating results +10,000 pilot versus -60,000 full. Select pilot for learning and capital preservation, cap total fictional cost at CNY 50,000 including CNY 5,000 reserve. No real approval, expenditure or launch. Scope: one-day Chengdu-inspired food-and-tea group experience, no real venues. Configured capacity verified; assumed preparation effort 40h: Chen 3, Wang 6, Zhao 8, He 9, Liu 3, Deng 8, Sun 3, each within free hours. These estimates do not reserve calendars. Full rollout remains deferred pending genuine evidence and approvals outside this simulation.",
+        "owner": "Chen, Director — fictional decision owner only",
+        "review_date": "2026-10-15"
+      },
+      "created_at": "2026-09-27T05:04:43.482227+00:00",
+      "updated_at": "2026-09-27T05:04:43.482227+00:00"
     }
   ],
   "artifacts": [
     {
-      "id": "file_94698859a281417d9457cae36d23fd21",
-      "name": "Chengdu tour launch - simulation outcome.pdf",
-      "size": 41866,
-      "created_at": "2026-09-27T04:29:17.117321+00:00"
+      "id": "file_128a5d8818634fc5bc7874eec3fa0493",
+      "name": "SIMULATION Chengdu Food-and-Tea Launch — Final Executive Report.pdf",
+      "size": 50921,
+      "created_at": "2026-09-27T05:08:06.365348+00:00"
     },
     {
-      "id": "file_e689a3e543384eaa8e91da6521b39310",
-      "name": "Chengdu launch readiness - simulated completion.docx",
-      "size": 36992,
-      "created_at": "2026-09-27T04:29:11.431818+00:00"
+      "id": "file_5c3eb86cc64c46e6a09ae32aa0e87ad4",
+      "name": "SIMULATION Chengdu food-and-tea executive management handoff.docx",
+      "size": 38562,
+      "created_at": "2026-09-27T05:07:03.843175+00:00"
     },
     {
-      "id": "file_3806a3c5326d4a0bb9a1632ace014af1",
-      "name": "Chengdu launch budget - simulation-edited.xlsx",
-      "size": 5828,
-      "created_at": "2026-09-27T04:29:03.679533+00:00"
+      "id": "file_f5e5bc3d631d4ee88705e125c19fcaff",
+      "name": "SIMULATION Oct-Dec 2026 retained 30-guest monthly-repeat scenario.xlsx",
+      "size": 6187,
+      "created_at": "2026-09-27T05:06:04.988099+00:00"
     },
     {
-      "id": "file_936b6d1bdfb940aebebdf7e79ca635ac",
-      "name": "Chengdu launch budget - simulation.xlsx",
-      "size": 5816,
-      "created_at": "2026-09-27T04:28:56.201593+00:00"
+      "id": "file_ac7e9a5adeb04b3ea1990e82a1780f72",
+      "name": "SIMULATION Chengdu launch budget CNY — assumptions not transactions.xlsx",
+      "size": 7139,
+      "created_at": "2026-09-27T05:06:04.785567+00:00"
     },
     {
-      "id": "file_d23e20e7c2d64bf9b1cad6f8219e7de2",
-      "name": "Chengdu tour launch preparation responsibility matrix.xlsx",
-      "size": 5882,
-      "created_at": "2026-09-27T04:28:39.018764+00:00"
+      "id": "file_3aca934d23c84d13ab5d00157f5afb89",
+      "name": "SIMULATION Chengdu launch checklist — tabletop gate 2026-10-11, not real clearance.md",
+      "size": 2781,
+      "created_at": "2026-09-27T05:05:36.816218+00:00"
     },
     {
-      "id": "file_d5e0ba00f81d4641a914b328535d4a85",
-      "name": "Chengdu tour launch preparation.xlsx",
-      "size": 5932,
-      "created_at": "2026-09-27T04:28:35.532803+00:00"
+      "id": "file_450c6eebc696489e9814e9fe780c8757",
+      "name": "SIMULATION Chengdu food-and-tea pilot — local draft only.md",
+      "size": 1634,
+      "created_at": "2026-09-27T05:05:07.815873+00:00"
     },
     {
-      "id": "file_f8a607c2b8484b46a16eed3d4dd6f10e",
-      "name": "Chengdu tour product launch - decision brief.docx",
-      "size": 36936,
-      "created_at": "2026-09-27T04:28:20.631648+00:00"
+      "id": "file_5ad100b2e2764db8965376969ce53f80",
+      "name": "SIMULATION Chengdu pilot — 40h assumed effort, no reservations responsibility matrix.xlsx",
+      "size": 6248,
+      "created_at": "2026-09-27T05:05:07.553168+00:00"
     },
     {
-      "id": "file_c1f9d50ef94647f7a9649be326a186bc",
-      "name": "Chengdu tour product launch.pptx",
-      "size": 33540,
-      "created_at": "2026-09-27T04:28:20.537649+00:00"
+      "id": "file_887498f7973c445da9a3b63f1d15a94c",
+      "name": "SIMULATION Chengdu pilot preparation and fictional outcome.xlsx",
+      "size": 6312,
+      "created_at": "2026-09-27T05:04:51.558889+00:00"
+    },
+    {
+      "id": "file_d92ee8c164a9492593e3a34b3b5ac39a",
+      "name": "SIMULATION Chengdu food-and-tea launch options - decision brief.docx",
+      "size": 37351,
+      "created_at": "2026-09-27T05:04:33.425709+00:00"
+    },
+    {
+      "id": "file_4087b6fe92114699948811bfaf2d0be8",
+      "name": "SIMULATION Chengdu food-and-tea launch options.pptx",
+      "size": 33958,
+      "created_at": "2026-09-27T05:04:33.148348+00:00"
     }
   ],
   "voice": {
@@ -739,7 +2384,9 @@
     "synthetic": true
   },
   "scenario": "Product Launch Preparation",
-  "mode": "Operator-led local simulation",
-  "distinct_skills": 13,
-  "recorded_date": "2026-09-27"
+  "mode": "Real model-led local execution of a business simulation",
+  "distinct_skills": 16,
+  "recorded_date": "2026-09-27",
+  "recording_notes": "Single user request. Waiting periods compressed; synthetic English narration. No manual skill submissions.",
+  "answer": "## SIMULATION completed — all 20 steps executed\n\n**Atlas, Company Assistant:** The local workflow is complete: **20 successful skill runs, 16 distinct skills, 7 delegated colleagues and 10 generated files**. No failed or pending runs.\n\nAll business outcomes below are fictional assumptions. **Nobody was contacted; no external accounts, payments, bookings or real launch were involved.**\n\n### Executive decision and simulated results\n\n**Selected: CNY 50,000 pilot.** The CNY 120,000 full launch remains deferred.\n\n| Comparison | Pilot | Full launch |\n|---|---:|---:|\n| Initial guests | 30 | 30 |\n| Assumed revenue | CNY 60,000 | CNY 60,000 |\n| Budget | CNY 50,000 | CNY 120,000 |\n| Planned operating result | **CNY 10,000 profit** | **CNY 60,000 loss** |\n| Weighted option score | **73.5** | 52.0 |\n\nThe fictional product is a one-day food walk, cooking workshop, lunch and tea experience at **CNY 2,000 per guest**. Scoring used impact/risk/cost weights of **4/3/3**.\n\n**Recorded simulated pilot outcome:**\n- Spending: **CNY 47,000**, or **CNY 3,000 under budget (6%)**\n- Revenue: **CNY 60,000**\n- Pre-tax operating profit: **CNY 13,000**, margin **21.67%**\n- Assumed attendance: **30 guests**\n- Assumed satisfaction: **4.58/5 from 24 fictional responses**\n- Assumed incidents: **zero**\n\nThese are modeled results—not collected sales, survey or safety evidence.\n\n### Executive pack\n\n| Deliverable | Download |\n|---|---|\n| Editable proposal slides | [PowerPoint proposal](/api/files/file_4087b6fe92114699948811bfaf2d0be8/download) |\n| Word management handoff | [Executive handoff](/api/files/file_5c3eb86cc64c46e6a09ae32aa0e87ad4/download) |\n| Excel budget and variance | [Budget workbook](/api/files/file_ac7e9a5adeb04b3ea1990e82a1780f72/download) |\n| Excel finance forecast | [Forecast workbook](/api/files/file_f5e5bc3d631d4ee88705e125c19fcaff/download) |\n| Final PDF report | [Executive report](/api/files/file_128a5d8818634fc5bc7874eec3fa0493/download) |\n\nAlso created: a Word decision brief, Excel dependency schedule, Excel RACI, campaign brief and launch checklist.\n\n### Delegated staff and capacity\n\nAll delegated skills matched the colleagues’ assigned skills. Hours are **assumed preparation effort / configured free capacity**, not calendar reservations.\n\n| Colleague and role | Hours | Executed steps |\n|---|---:|---|\n| Chen — Director | 3 / 9 | S03, S13: approach and outcome decisions |\n| Wang — Sales lead | 6 / 22 | S02, S17: proposal and management handoff |\n| Zhao — Product lead | 8 / 21 | S06, S09, S18: campaign and milestone tracking |\n| He — Operations lead | 9 / 22 | S01, S04, S05, S07, S14, S20: capacity, schedule, RACI, risks and tracking |\n| Liu — People & culture lead | 3 / 23 | S08: readiness checklist |\n| Deng — Finance lead | 8 / 20 | S10–S12, S19: variance, budget, forecast and PDF |\n| Sun — IT & knowledge lead | 3 / 25 | S15–S16: knowledge save and retrieval |\n| **Total** | **40 / 142** | **20 completed calls** |\n\n### Executed plan and dependencies\n\nThe published plan and PDF contain the full call-level dependency map:\n\n1. **S01–S03:** Capacity → option comparison → simulated decision.\n2. **S04–S08:** Schedule → responsibilities and campaign → risks → readiness checklist.\n3. **S09–S12:** Preparation milestone → simulated variance → budget and forecast.\n4. **S13–S16:** Outcome decision → outcome milestone → knowledge saved → retrieval verified.\n5. **S17–S20:** Word handoff → handoff milestone → PDF → final closure record.\n\n**Scenario dates:** preparation starts **1 October 2026**; campaign **6–10 October**; readiness gate **11 October**; fictional departure **12 October**; reconciliation **13–14 October**; reporting **15 October**. These future events were simulated in advance on **27 September 2026**.\n\n### Forecast, controls and reuse\n\n- **October–December conditional forecast:** CNY **180,000 revenue**, **119,000 expense**, **61,000 operating profit**. This assumes the same 30 fictional guests return monthly—**90 visits, not 90 acquired customers**. Without repeats, and avoiding subsequent costs, the October-only result remains CNY 13,000.\n- **Eight risks assessed.** Checklist: **8 tabletop requirements met, 2 real-world requirements unknown**. Supplier verification and compliance remain unresolved; no real launch clearance is implied.\n- **Seven local records saved:** two decisions, four tracking milestones and one knowledge note.\n- Knowledge query **`CHENGDU-FOOD-TEA-202610`** successfully retrieved the saved playbook with provenance.\n\nOpen **Files** for all artifacts and **Activity** for exact call inputs, outputs and completed statuses. No further skill operation or approval is needed to finish this simulation."
 }

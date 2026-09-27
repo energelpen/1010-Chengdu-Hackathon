@@ -1,15 +1,17 @@
-Atlas Office is an organizational collaboration workspace for Product Launch Preparation and group-travel operations, aligned with the SP-D challenge and the culture, commerce and tourism theme.
+Atlas Office is an organizational collaboration workspace for Product Launch Preparation, aligned with the SP-D challenge and Chengdu's culture, commerce and tourism theme.
 
-Its representative enterprise context is Sichuan Shanghai Airlines Holiday International Travel Agency Co., Ltd. Public descriptions of destination services, business travel and MICE inform the workflow design. The enterprise has not endorsed the prototype or supplied private SOPs.
+One user brief drives a real model-led simulation for a Chengdu food and tea group-tour launch. Atlas reads the skill contracts, creates a dependency-aware plan, delegates to qualified fictional colleagues, supplies the inputs and executes the local skills without the user operating them one by one.
 
-Atlas models fictional colleagues through their roles, managers, skills, availability, capacity and relationships. Its 69 registered skills support business documents, spreadsheets, presentations, project work, finance, governance and optional connected tools. The same validated runtime serves browser forms, HTTP, CLI and MCP.
+The recorded run completed 20 skill executions across 16 distinct skills and 7 fictional colleagues, producing 10 real files. It used 24 model requests and 26 tool calls; reported usage totaled 800,795 tokens across requests. Actual wall time was 303.8 seconds.
 
-The narrated implementation demo records the full operator-led preparation of a fictional Chengdu food and tea group-tour product. Thirteen distinct skills compare pilot and full-launch options, propose qualified staff allocations, calculate dependencies, map responsibilities, track a blocker through a simulated resolution, calculate budget variance, create and review a workbook change, record a management decision, deliver a completed simulated handoff, generate a PDF, and save and retrieve knowledge. Word, PowerPoint, Excel and PDF artifacts are real outputs. The recording includes a genuine approval gate for a local spreadsheet copy.
+The agent compares pilot and full-launch options, checks team capacity, records decisions, schedules dependencies, maps responsibility, prepares a campaign and launch checklist, tracks tasks, assesses risk, calculates budget variance and a finance forecast, creates the executive pack, and saves and retrieves reusable knowledge. The pack includes editable Word, PowerPoint and Excel files plus a PDF report.
 
-Nine independently callable tourism skills additionally form an integrated inquiry-to-outcome simulation. They apply budget and capacity constraints, track evidence and dependencies, build dated schedules, and hold release when required checks are missing.
+The visible dashboard shows the agent's plan, staff assignments, calls, completion states, elapsed time, file counts and token usage. Each result can be inspected and reopened. The repository includes the actual run evidence and generated deliverables.
 
-Verification on 27 September 2026 passed 180 tourism behavior cases and 46 automated tests. The fixed routing corpus matched 43/43 action prompts and left 5/5 non-action prompts unassigned. These bounded tests are not general accuracy or measured enterprise savings.
+The library contains 69 registered skills across office documents, finance, planning, governance and optional connected services. Browser, HTTP, CLI and MCP share the validated runtime. Nine tourism stages also provide an inquiry-to-outcome simulation. External and reviewed writes require review; pending work is not counted as completed.
 
-The core value is visible responsibility, inspectable decisions and reusable preparation work. Demo staff, prices, decisions and completion evidence are synthetic. No real launch, booking, payment or external message occurs. The recording uses typed skill forms; automatic full launch completion from one sentence remains unverified. OpenAI and external services are optional. The current app is a single-user local prototype.
+Verification passed 180 tourism behavior cases, 51 automated tests, and a fixed routing corpus of 43 action prompts plus 5 non-action prompts. The live launch recording demonstrates one scenario, not a general reliability or business-savings claim.
+
+Public information about Sichuan Shanghai Airlines Holiday International Travel Agency Co., Ltd. informs the enterprise context. The company has not endorsed the prototype or supplied private SOPs. Staff, launch inputs and business outcomes are simulated. The agent calls and generated files are real. The app is a local single-user prototype.
 
 Source: https://github.com/energelpen/1010-Chengdu-Hackathon

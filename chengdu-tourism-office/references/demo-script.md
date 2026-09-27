@@ -1,6 +1,6 @@
 # SP-D live demo and judging narrative
 
-The submission's final [narrated Product Launch Preparation recording and script](../../submission/demo-script.md) supersede this tourism-only rehearsal for the competition video. It records 13 skills through a complete operator-led simulation. The strict single-sentence automatic launch-completion requirement remains unverified. The scenario below is retained as an additional demonstration of the specialized tourism engine.
+The final [agent-led launch recording and script](../../submission/demo-script.md) supersede this tourism-only rehearsal. The recorded run completed 20 skill executions across 16 distinct skills and 7 fictional colleagues, producing 10 real files. It used 24 model requests and 26 tool calls; reported usage totaled 800,795 tokens across requests. Actual wall time was 303.8 seconds. The scenario below remains an additional demonstration of the tourism engine.
 
 ## Claim
 

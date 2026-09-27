@@ -112,7 +112,10 @@ def chat(body: dict) -> dict:
             from skill_runtime import Runtime
             answer = company_response(Runtime(DATA), conversation, person, company,
                                       progress=lambda actor, stage, detail: store.append_event(cid, actor, stage, detail),
+                                      telemetry=lambda snapshot: store.save_agent_run(cid, snapshot),
                                       root=ROOT)
+            if answer.get("agent_run"):
+                store.save_agent_run(cid, answer["agent_run"])
         else:
             answer = assistant_response(ROOT, conversation, person, company, case, workflow_ran)
         if workflow_ran:
@@ -549,6 +552,8 @@ class Handler(BaseHTTPRequestHandler):
             if url.path == "/style.css": return self.file(STATIC / "style.css", "text/css; charset=utf-8")
             if url.path == "/chat-format.css": return self.file(STATIC / "chat-format.css", "text/css; charset=utf-8")
             if url.path == "/app.js": return self.file(STATIC / "app.js", "text/javascript; charset=utf-8")
+            if url.path == "/agent-run.js": return self.file(STATIC / "agent-run.js", "text/javascript; charset=utf-8")
+            if url.path == "/agent-run.css": return self.file(STATIC / "agent-run.css", "text/css; charset=utf-8")
             if url.path == "/avatar.css": return self.file(STATIC / "avatar.css", "text/css; charset=utf-8")
             if url.path == "/avatar.js": return self.file(STATIC / "avatar.js", "text/javascript; charset=utf-8")
             if url.path == "/api/company": return self.respond(200, load_company())
@@ -559,6 +564,8 @@ class Handler(BaseHTTPRequestHandler):
             if url.path == "/api/conversations": return self.respond(200, history_store().list())
             if re.fullmatch(r"/api/conversation/[A-Za-z0-9_-]+/events", url.path):
                 return self.respond(200, history_store().events(url.path.split("/")[-2]))
+            if re.fullmatch(r"/api/conversation/[A-Za-z0-9_-]+/agent-run", url.path):
+                return self.respond(200, history_store().get(url.path.split("/")[-2])["agent_run"])
             if url.path.startswith("/api/conversation/"):
                 return self.respond(200, history_store().get(url.path.split("/")[-1]))
             if url.path == "/api/search":

@@ -19,11 +19,11 @@ The API documentation is included even though the pasted form labels it optional
 
 ## Demo contents
 
-The MP4 is an edited recording of the actual application, with a synthetic English voiceover and chapter captions. It demonstrates an operator-led, complete Product Launch Preparation simulation. [The script](demo-script.md) identifies the actions, evidence and limits. [Evidence files](evidence/) contain sanitized run records and actual generated drafts.
+The narrated demo shows **one request driving an agent-led Product Launch Preparation simulation**. The recorded run completed 20 skill executions across 16 distinct skills and 7 fictional colleagues, producing 10 real files. It used 24 model requests and 26 tool calls; reported usage totaled 800,795 tokens across requests. Actual wall time was 303.8 seconds. The agent compares pilot and full-launch options, checks team capacity, records decisions, schedules dependencies, maps responsibility, prepares a campaign and launch checklist, tracks tasks, assesses risk, calculates budget variance and a finance forecast, creates the executive pack, and saves and retrieves reusable knowledge. The pack includes editable Word, PowerPoint and Excel files plus a PDF report.
 
-The launch work is for a fictional Chengdu food and tea group-tour product. Thirteen distinct skills cover options, allocations, dependencies, accountability, a blocked-to-done task record, budget variance, a genuine approval gate for a spreadsheet copy, management decision, completed simulated handoff, document output and knowledge search.
+The live dashboard shows the plan, staff, real skill calls, completion states, file counts, elapsed time and provider-reported token usage. [Run evidence](evidence/launch-execution.json) and [the demo script](demo-script.md) preserve the provenance.
 
-Preparation completion is based on explicitly supplied simulation evidence. This does not represent a real product release, independent supplier verification or an automatically completed single-sentence launch workflow. The remaining strict SP-D automation gap is stated in the PDFs and source README.
+One user brief starts a real configured OpenAI model. The model chooses the skills, publishes a dependency-aware plan, assigns qualified colleagues, supplies the inputs and executes local work through the shared runtime. The recording contains no manual skill submissions. All business facts and launch outcomes are explicitly simulated; no external delivery, spending or real product release occurs. Execution evidence and generated files are retained in the submission evidence folder.
 
 ## Additional review material
 

@@ -1,9 +1,9 @@
 """Render chapter narration locally with installed Windows SAPI voices."""
 from pathlib import Path
-import json, wave
+import json, wave, sys
 import win32com.client
 ROOT=Path(__file__).resolve().parents[1]
-QA=ROOT/'qa/full-demo'
+QA=ROOT/('qa/agent-demo' if '--agent' in sys.argv else 'qa/full-demo')
 data=json.loads((QA/'recording.json').read_text(encoding='utf-8'))
 voice=win32com.client.Dispatch('SAPI.SpVoice')
 tokens=voice.GetVoices()

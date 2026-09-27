@@ -31,7 +31,11 @@
           ]
         }
       ],
-      "sources": ["app.py: Handler and main", "scripts/workspace_api.py: specification/get/post", "scripts/skill_runtime.py: Runtime.catalog"]
+      "sources": [
+        "app.py: Handler and main",
+        "scripts/workspace_api.py: specification/get/post",
+        "scripts/skill_runtime.py: Runtime.catalog"
+      ]
     },
     {
       "title": "Run a skill and inspect its result",
@@ -48,24 +52,50 @@
         {
           "heading": "Response shape",
           "code": "{\n  \"id\": \"run_<generated-id>\",\n  \"skill_id\": \"budget-variance\",\n  \"person_id\": \"atlas\",\n  \"status\": \"completed\",\n  \"input\": {\"currency\": \"CNY\", \"items\": [...]},\n  \"output\": {\n    \"summary\": \"Positive variance means overspending.\",\n    \"currency\": \"CNY\",\n    \"items\": [{\n      \"category\": \"Marketing\",\n      \"budget\": 10000, \"actual\": 11500,\n      \"variance\": 1500.0, \"variance_percent\": 15.0\n    }]\n  },\n  \"created_at\": \"<ISO timestamp>\",\n  \"updated_at\": \"<ISO timestamp>\",\n  \"idempotency_key\": \"DOCS-001\"\n}",
-          "paragraphs": ["Abbreviated response; input echoes the full submitted payload. GET /api/runs/{id} retrieves the persisted record. Inspect status and output even after HTTP 200: a skill failure is saved as a run result."]
+          "paragraphs": [
+            "Abbreviated response; input echoes the full submitted payload. GET /api/runs/{id} retrieves the persisted record. Inspect status and output even after HTTP 200: a skill failure is saved as a run result."
+          ]
         },
         {
           "heading": "Run lifecycle and approval",
           "table": {
-            "headers": ["Effect / state", "Behavior"],
+            "headers": [
+              "Effect / state",
+              "Behavior"
+            ],
             "rows": [
-              ["Local or read action", "queued -> running -> completed, or failed"],
-              ["remote_write / reviewed_write", "awaiting_approval; no action executes yet"],
-              ["POST /api/runs/{id}/approve", "Executes the prepared action; failure becomes needs_attention"],
-              ["POST /api/runs/{id}/reject", "Cancels an awaiting_approval run"],
-              ["completed", "Execution finished; inspect business output and artifacts"]
+              [
+                "Local or read action",
+                "queued -> running -> completed, or failed"
+              ],
+              [
+                "remote_write / reviewed_write",
+                "awaiting_approval; no action executes yet"
+              ],
+              [
+                "POST /api/runs/{id}/approve",
+                "Executes the prepared action; failure becomes needs_attention"
+              ],
+              [
+                "POST /api/runs/{id}/reject",
+                "Cancels an awaiting_approval run"
+              ],
+              [
+                "completed",
+                "Execution finished; inspect business output and artifacts"
+              ]
             ]
           },
-          "paragraphs": ["Approval and rejection accept a JSON object such as {}. Runtime state transitions prevent repeated execution of the same run. A changed Google connection or MCP configuration invalidates the prepared connection fingerprint. For an uncertain external result, inspect the destination before preparing another run."]
+          "paragraphs": [
+            "Approval and rejection accept a JSON object such as {}. Runtime state transitions prevent repeated execution of the same run. A changed Google connection or MCP configuration invalidates the prepared connection fingerprint. For an uncertain external result, inspect the destination before preparing another run."
+          ]
         }
       ],
-      "sources": ["scripts/skill_runtime.py: submit/approve/reject/_execute", "skills/budget-variance/skill.json", "scripts/business_tools.py: variance handler"]
+      "sources": [
+        "scripts/skill_runtime.py: submit/approve/reject/_execute",
+        "skills/budget-variance/skill.json",
+        "scripts/business_tools.py: variance handler"
+      ]
     },
     {
       "title": "Workspace endpoint reference",
@@ -74,39 +104,111 @@
         {
           "heading": "HTTP routes",
           "table": {
-            "headers": ["Method and route", "Purpose / input"],
+            "headers": [
+              "Method and route",
+              "Purpose / input"
+            ],
             "rows": [
-              ["GET /api/health", "{status: ok, version: 3.0.0, skills: 69}"],
-              ["GET /api/skills", "Manifest catalog, schemas, examples, effects and paths"],
-              ["GET /api/skills/{id}", "One manifest plus its SKILL.md instructions"],
-              ["POST /api/skills/{id}/run", "inputs; optional person_id and idempotency_key"],
-              ["GET /api/runs or /api/runs/{id}", "Latest 200 runs, or one stored run"],
-              ["POST /api/runs/{id}/approve or /reject", "Execute or cancel the exact pending run"],
-              ["GET /api/files", "Latest 300 files: id, name, size, created_at"],
-              ["POST /api/files", "name and content_base64"],
-              ["GET /api/files/{id}/download", "File bytes with download filename header"],
-              ["GET /api/records?kind=...&q=...", "Filter up to 1,000 recent local records"],
-              ["POST /api/records/{id}", "Update using the record's original skill input schema"],
-              ["GET /api/audit", "Latest 300 recorded audit events"],
-              ["GET /api/company", "Current company and editable staff roster"],
-              ["POST /api/company", "Save a validated company object"],
-              ["GET /api/templates", "Available general and tourism templates"],
-              ["POST /api/company/template", "{template: general} or {template: tourism}; backs up old roster"],
-              ["GET /api/connections", "Public Google, Telegram and MCP connection status"],
-              ["POST /api/mcp/discover", "{server_id: configured-id}; cache tool schemas"],
-              ["GET /api/config", "Public AI configuration, without the credential"],
-              ["POST /api/config/key", "{api_key: <new secret>}; server-side key configuration"],
-              ["GET or POST /api/settings", "Read or save tourism autonomy and delivery rules"]
+              [
+                "GET /api/health",
+                "{status: ok, version: 3.0.0, skills: 69}"
+              ],
+              [
+                "GET /api/skills",
+                "Manifest catalog, schemas, examples, effects and paths"
+              ],
+              [
+                "GET /api/skills/{id}",
+                "One manifest plus its SKILL.md instructions"
+              ],
+              [
+                "POST /api/skills/{id}/run",
+                "inputs; optional person_id and idempotency_key"
+              ],
+              [
+                "GET /api/runs or /api/runs/{id}",
+                "Latest 200 runs, or one stored run"
+              ],
+              [
+                "POST /api/runs/{id}/approve or /reject",
+                "Execute or cancel the exact pending run"
+              ],
+              [
+                "GET /api/files",
+                "Latest 300 files: id, name, size, created_at"
+              ],
+              [
+                "POST /api/files",
+                "name and content_base64"
+              ],
+              [
+                "GET /api/files/{id}/download",
+                "File bytes with download filename header"
+              ],
+              [
+                "GET /api/records?kind=...&q=...",
+                "Filter up to 1,000 recent local records"
+              ],
+              [
+                "POST /api/records/{id}",
+                "Update using the record's original skill input schema"
+              ],
+              [
+                "GET /api/audit",
+                "Latest 300 recorded audit events"
+              ],
+              [
+                "GET /api/company",
+                "Current company and editable staff roster"
+              ],
+              [
+                "POST /api/company",
+                "Save a validated company object"
+              ],
+              [
+                "GET /api/templates",
+                "Available general and tourism templates"
+              ],
+              [
+                "POST /api/company/template",
+                "{template: general} or {template: tourism}; backs up old roster"
+              ],
+              [
+                "GET /api/connections",
+                "Public Google, Telegram and MCP connection status"
+              ],
+              [
+                "POST /api/mcp/discover",
+                "{server_id: configured-id}; cache tool schemas"
+              ],
+              [
+                "GET /api/config",
+                "Public AI configuration, without the credential"
+              ],
+              [
+                "POST /api/config/key",
+                "{api_key: <new secret>}; server-side key configuration"
+              ],
+              [
+                "GET or POST /api/settings",
+                "Read or save tourism autonomy and delivery rules"
+              ]
             ]
           }
         },
         {
           "heading": "File upload example",
           "code": "POST /api/files\n{\"name\": \"note.txt\", \"content_base64\": \"SGVsbG8=\"}\n\n# Response shape\n{\n  \"id\": \"file_<generated-id>\",\n  \"name\": \"note.txt\", \"size\": 5,\n  \"url\": \"/api/files/file_<generated-id>/download\"\n}",
-          "paragraphs": ["Supported extensions are .csv, .xlsx, .docx, .pptx, .pdf, .txt, .md, .json, .eml and .ics. Store the returned ID and pass it to file-based skills. Generated artifacts use the same file registry. Uploading a file does not execute it or send it externally."]
+          "paragraphs": [
+            "Supported extensions are .csv, .xlsx, .docx, .pptx, .pdf, .txt, .md, .json, .eml and .ics. Store the returned ID and pass it to file-based skills. Generated artifacts use the same file registry. Uploading a file does not execute it or send it externally."
+          ]
         }
       ],
-      "sources": ["scripts/workspace_api.py: get/post", "app.py: Handler.do_POST", "scripts/skill_runtime.py: files/records/audit"]
+      "sources": [
+        "scripts/workspace_api.py: get/post",
+        "app.py: Handler.do_POST",
+        "scripts/skill_runtime.py: files/records/audit"
+      ]
     },
     {
       "title": "The nine tourism skills",
@@ -115,20 +217,52 @@
         {
           "heading": "Callable IDs and stage inputs",
           "table": {
-            "headers": ["Skill ID", "Input and principal output"],
+            "headers": [
+              "Skill ID",
+              "Input and principal output"
+            ],
             "rows": [
-              ["inquiry-intake", "message; optional explicit trip fields -> normalized inquiry, source provenance, missing fields"],
-              ["flight-search", "inquiry; optional snapshot -> eligible and rejected CNY group flight estimates"],
-              ["tour-search", "inquiry; optional catalog -> activities ranked by interests, price and capacity"],
-              ["option-comparison", "inquiry; optional flight, activities, priority -> feasible options and cost breakdown"],
-              ["hierarchy-router", "optional people and task_kind -> lead, duty owners, reporting routes and capability gaps"],
-              ["workload-splitter", "inquiry, option, hierarchy -> owned task graph, dates, dependencies and approval gates"],
-              ["schedule-builder", "inquiry, activities; optional flight -> dated schedule and unscheduled activities"],
-              ["execution-controller", "tasks, events -> accepted evidence, rejected events, readiness and escalations"],
-              ["outcome-reporter", "inquiry, option, hierarchy, execution -> hold/review decision, evidence register and email draft"]
+              [
+                "inquiry-intake",
+                "message; optional explicit trip fields -> normalized inquiry, source provenance, missing fields"
+              ],
+              [
+                "flight-search",
+                "inquiry; optional snapshot -> eligible and rejected CNY group flight estimates"
+              ],
+              [
+                "tour-search",
+                "inquiry; optional catalog -> activities ranked by interests, price and capacity"
+              ],
+              [
+                "option-comparison",
+                "inquiry; optional flight, activities, priority -> feasible options and cost breakdown"
+              ],
+              [
+                "hierarchy-router",
+                "optional people and task_kind -> lead, duty owners, reporting routes and capability gaps"
+              ],
+              [
+                "workload-splitter",
+                "inquiry, option, hierarchy -> owned task graph, dates, dependencies and approval gates"
+              ],
+              [
+                "schedule-builder",
+                "inquiry, activities; optional flight -> dated schedule and unscheduled activities"
+              ],
+              [
+                "execution-controller",
+                "tasks, events -> accepted evidence, rejected events, readiness and escalations"
+              ],
+              [
+                "outcome-reporter",
+                "inquiry, option, hierarchy, execution -> hold/review decision, evidence register and email draft"
+              ]
             ]
           },
-          "paragraphs": ["Pass a preceding stage's data object to downstream inputs, not its whole envelope. Every stage accepts a JSON object and is callable through /api/skills/{id}/run, the company MCP run_skill tool, and the tourism CLI."]
+          "paragraphs": [
+            "Pass a preceding stage's data object to downstream inputs, not its whole envelope. Every stage accepts a JSON object and is callable through /api/skills/{id}/run, the company MCP run_skill tool, and the tourism CLI."
+          ]
         },
         {
           "heading": "Tourism envelope",
@@ -147,7 +281,11 @@
           ]
         }
       ],
-      "sources": ["scripts/tourism_core.py: SKILLS/HANDLERS and stage functions", "shared/message-schema.json", "skills/*/skill.json"]
+      "sources": [
+        "scripts/tourism_core.py: SKILLS/HANDLERS and stage functions",
+        "shared/message-schema.json",
+        "skills/*/skill.json"
+      ]
     },
     {
       "title": "Conversations, proposals and cases",
@@ -164,22 +302,67 @@
         {
           "heading": "Workflow routes",
           "table": {
-            "headers": ["Method and route", "Contract"],
+            "headers": [
+              "Method and route",
+              "Contract"
+            ],
             "rows": [
-              ["GET /api/conversations", "Saved titles, previews, timestamps and linked request IDs"],
-              ["POST /api/conversations/new", "Exactly title and person_id; creates an empty conversation"],
-              ["GET /api/conversation/{id}", "Conversation, ordered messages and proposal"],
-              ["GET /api/conversation/{id}/events", "Stored per-person progress events"],
-              ["POST /api/chat", "message plus optional conversation_id, person_id, request_id, run_workflow"],
-              ["POST /api/review", "conversation_id, action, comment"],
-              ["POST /api/simulate", "message; optional trip fields, auto_execute, preferred_option"],
-              ["GET /api/case/{id}", "Stored case trace"],
-              ["POST /api/event", "request_id, task_id, action; incident can include reason"],
-              ["POST /api/reassign", "request_id, duty, person_id; enforces skill and capacity"],
-              ["POST /api/option", "request_id, option_id; chooses a feasible quote"],
-              ["POST /api/agent", "person_id, question; optional request_id for grounded answers"],
-              ["GET /api/search?q=...", "Search locally indexed cases"],
-              ["GET /download/{filename}", "Allowed SIM- case DOCX, PPTX or trace JSON"]
+              [
+                "GET /api/conversations",
+                "Saved titles, previews, timestamps and linked request IDs"
+              ],
+              [
+                "POST /api/conversations/new",
+                "Exactly title and person_id; creates an empty conversation"
+              ],
+              [
+                "GET /api/conversation/{id}",
+                "Conversation, ordered messages and proposal"
+              ],
+              [
+                "GET /api/conversation/{id}/events",
+                "Stored per-person progress events"
+              ],
+              [
+                "POST /api/chat",
+                "message plus optional conversation_id, person_id, request_id, run_workflow"
+              ],
+              [
+                "POST /api/review",
+                "conversation_id, action, comment"
+              ],
+              [
+                "POST /api/simulate",
+                "message; optional trip fields, auto_execute, preferred_option"
+              ],
+              [
+                "GET /api/case/{id}",
+                "Stored case trace"
+              ],
+              [
+                "POST /api/event",
+                "request_id, task_id, action; incident can include reason"
+              ],
+              [
+                "POST /api/reassign",
+                "request_id, duty, person_id; enforces skill and capacity"
+              ],
+              [
+                "POST /api/option",
+                "request_id, option_id; chooses a feasible quote"
+              ],
+              [
+                "POST /api/agent",
+                "person_id, question; optional request_id for grounded answers"
+              ],
+              [
+                "GET /api/search?q=...",
+                "Search locally indexed cases"
+              ],
+              [
+                "GET /download/{filename}",
+                "Allowed SIM- case DOCX, PPTX or trace JSON"
+              ]
             ]
           }
         },
@@ -191,7 +374,11 @@
           ]
         }
       ],
-      "sources": ["app.py: chat/review/simulate/_update_case/Handler", "scripts/governance.py", "references/api.md"]
+      "sources": [
+        "app.py: chat/review/simulate/_update_case/Handler",
+        "scripts/governance.py",
+        "references/api.md"
+      ]
     },
     {
       "title": "CLI, MCP and operational limits",
@@ -200,15 +387,26 @@
         {
           "heading": "Command-line interfaces",
           "code": "# Standalone tourism stage; @ loads a JSON file\npython scripts/tourism_office.py run inquiry-intake '@examples/rfq.json'\n\n# Full synthetic case with generated report artifacts\npython scripts/tourism_office.py case '@examples/rfq.json' --out ./demo-output\n\n# Any registered skill uses its shared-runtime runner\npython skills/budget-variance/scripts/run.py --input budget.json\n\n# Local MCP servers; launch through an MCP host\npython server/company_mcp.py\npython server/tourism_mcp.py",
-          "paragraphs": ["For the general runner, --input - reads stdin and --data-dir selects the workspace. A remote or reviewed write remains awaiting_approval; CLI and MCP submission do not approve it. For host configuration, use absolute Python and server-file paths with stdio transport."]
+          "paragraphs": [
+            "For the general runner, --input - reads stdin and --data-dir selects the workspace. A remote or reviewed write remains awaiting_approval; CLI and MCP submission do not approve it. For host configuration, use absolute Python and server-file paths with stdio transport."
+          ]
         },
         {
           "heading": "MCP tool surfaces",
           "table": {
-            "headers": ["Server", "Tools and behavior"],
+            "headers": [
+              "Server",
+              "Tools and behavior"
+            ],
             "rows": [
-              ["company_mcp.py", "list_skills(category), read_skill(skill_id), run_skill(skill_id, arguments, person_id, idempotency_key), list_runs(), list_files(), search_knowledge(query), get_company()"],
-              ["tourism_mcp.py", "simulate_rfq(message, request_id, customer_email), compare_flights(group_size, travel_start, duration_days, origin_airport), find_tours(group_size, interests, accessible), search_prior_cases(query, limit), preview_report_email(request_id), send_approved_report_email(request_id, approval_code)"]
+              [
+                "company_mcp.py",
+                "list_skills(category), read_skill(skill_id), run_skill(skill_id, arguments, person_id, idempotency_key), list_runs(), list_files(), search_knowledge(query), get_company()"
+              ],
+              [
+                "tourism_mcp.py",
+                "simulate_rfq(message, request_id, customer_email), compare_flights(group_size, travel_start, duration_days, origin_airport), find_tours(group_size, interests, accessible), search_prior_cases(query, limit), preview_report_email(request_id), send_approved_report_email(request_id, approval_code)"
+              ]
             ]
           },
           "paragraphs": [
@@ -219,20 +417,105 @@
         {
           "heading": "Errors and deployment boundary",
           "table": {
-            "headers": ["Result", "Caller action"],
+            "headers": [
+              "Result",
+              "Caller action"
+            ],
             "rows": [
-              ["400 {error: ...}", "Correct JSON, required fields, schema, ID or transition"],
-              ["403 {error: ...}", "Check local origin, assigned skill or review permission"],
-              ["404 {error: ...}", "Check skill, file, case, conversation or run ID"],
-              ["500 {error: ...}", "Generic server failure; inspect local configuration"],
-              ["200 with failed / needs_attention", "Read output.error; execution outcome is stored"],
-              ["Tourism needs_input / blocked / escalated", "Inspect output.issues and complete missing conditions"]
+              [
+                "400 {error: ...}",
+                "Correct JSON, required fields, schema, ID or transition"
+              ],
+              [
+                "403 {error: ...}",
+                "Check local origin, assigned skill or review permission"
+              ],
+              [
+                "404 {error: ...}",
+                "Check skill, file, case, conversation or run ID"
+              ],
+              [
+                "500 {error: ...}",
+                "Generic server failure; inspect local configuration"
+              ],
+              [
+                "200 with failed / needs_attention",
+                "Read output.error; execution outcome is stored"
+              ],
+              [
+                "Tourism needs_input / blocked / escalated",
+                "Inspect output.issues and complete missing conditions"
+              ]
             ]
           },
-          "paragraphs": ["No reservations or payments are made by the tourism simulation. OpenAI, Google, Telegram, SMTP and external MCP features depend on separately configured services. Public AI configuration never returns the API credential. Exposing this workspace to other users requires identity, authorization and an HTTPS application server; local origin checks do not supply those controls."]
+          "paragraphs": [
+            "No reservations or payments are made by the tourism simulation. OpenAI, Google, Telegram, SMTP and external MCP features depend on separately configured services. Public AI configuration never returns the API credential. Exposing this workspace to other users requires identity, authorization and an HTTPS application server; local origin checks do not supply those controls."
+          ]
         }
       ],
-      "sources": ["scripts/tourism_office.py", "scripts/skill_runtime.py: cli", "server/company_mcp.py", "server/tourism_mcp.py", "scripts/mcp_bridge.py", "app.py: Handler"]
+      "sources": [
+        "scripts/tourism_office.py",
+        "scripts/skill_runtime.py: cli",
+        "server/company_mcp.py",
+        "server/tourism_mcp.py",
+        "scripts/mcp_bridge.py",
+        "app.py: Handler"
+      ]
+    },
+    {
+      "title": "Agent orchestration and execution statistics",
+      "kicker": "API / AGENT EXECUTION",
+      "sections": [
+        {
+          "heading": "One request, bounded model-led execution",
+          "paragraphs": [
+            "POST /api/chat with message and optional conversation_id/person_id runs the selected company assistant. With a configured API key, Atlas exposes find_skills, read_skill, read_skills, set_plan, run_skill, list_workspace_files, ask_user and web search to the configured Responses model. The model chooses the sequence and inputs. There is no hard-coded launch pipeline.",
+            "The turn is bounded to 48 model requests, 80 function-tool calls and 600 seconds checked between operations. A single in-flight model request may extend past the time check. Read skill contracts before execution. Planned runs must match their step assignee and skill and may execute only after prerequisites complete. Qualified staff are enforced by the runtime. External and reviewed writes remain pending for explicit review."
+          ]
+        },
+        {
+          "heading": "Polling and persistence",
+          "table": {
+            "headers": [
+              "Route / field",
+              "Contract"
+            ],
+            "rows": [
+              [
+                "GET /api/conversation/{id}/agent-run",
+                "Latest persisted agent execution object, or null before the first run."
+              ],
+              [
+                "GET /api/conversation/{id}/events",
+                "Timestamped progress events."
+              ],
+              [
+                "conversation.agent_run",
+                "The same snapshot included when reading or completing a conversation."
+              ],
+              [
+                "steps[]",
+                "id, title, skill_id, person_id, depends_on, status; optional run_id and error."
+              ],
+              [
+                "calls[]",
+                "id, tool, status, started_at, duration_ms; optional skill_id/person_id/step_id/run_id/error."
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Measured fields and completion states",
+          "paragraphs": [
+            "statistics contains model_requests, tool_calls, skills_executed, skills_completed, skills_failed, skills_pending, distinct_skills, delegated_people, artifacts, elapsed_ms and input/output/total_tokens. Tokens sum provider usage across requests, including repeated context; they are null if usage is unavailable. They are not a cost estimate. Tool-call counts refer to function tools; built-in web search activity is separately exposed in progress events.",
+            "Run states are running, completed, needs_input, awaiting_approval, needs_attention and budget_exhausted. Offline directory mode requests a configured connection and produces no skill runs. Failed or pending work cannot complete a planned dependency. A completed skill means its local handler finished, not that a real-world business outcome occurred."
+          ]
+        }
+      ],
+      "sources": [
+        "Application: scripts/company_chat.py, scripts/agent_execution.py, scripts/conversation_store.py, app.py",
+        "OpenAI function calling: https://developers.openai.com/api/docs/guides/function-calling"
+      ]
     }
   ]
 }

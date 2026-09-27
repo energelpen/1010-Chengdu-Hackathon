@@ -204,10 +204,10 @@
       "kicker": "04 / HONEST READINESS STATEMENT",
       "sections": [
         {
-          "heading": "SP-D alignment and the remaining scenario gap",
+          "heading": "SP-D alignment and demonstrated scope",
           "paragraphs": [
             "Challenge Topics.pdf, physical p. 6, requires a relationship network, automatic lead and collaborator selection, and a complete lifecycle from one sentence. It explicitly names Product Launch Preparation as the unified validation scenario.",
-            "Atlas implements the relationship workspace, independent launch planning and reporting tools, and an integrated tourism RFQ loop. The recording demonstrates the full operator-led launch preparation cycle through 13 distinct skills, including a reviewed workbook change and simulated completion. Automatic multi-person launch completion from a single sentence has not been verified. Separate successful skill calls do not establish that strict SP-D requirement."
+            "One user brief starts a real configured OpenAI model. The model chooses the skills, publishes a dependency-aware plan, assigns qualified colleagues, supplies the inputs and executes local work through the shared runtime. The recording contains no manual skill submissions. All business facts and launch outcomes are explicitly simulated; no external delivery, spending or real product release occurs. The recorded run completed 20 skill executions across 16 distinct skills and 7 fictional colleagues, producing 10 real files. It used 24 model requests and 26 tool calls; reported usage totaled 800,795 tokens across requests. Actual wall time was 303.8 seconds. This is a single recorded scenario, not a broad end-to-end success-rate study. The fictional profiles represent delegated skill execution by one orchestrator; they are not real employees or independently running model sessions."
           ]
         },
         {

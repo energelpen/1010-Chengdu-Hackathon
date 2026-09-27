@@ -4,29 +4,29 @@
   "files": [
     {
       "file": "01-skill-function-description.pdf",
-      "bytes": 56321,
+      "bytes": 56655,
       "limit_bytes": 30000000,
-      "sha256": "8ba902c8f125ed0952b73b844e3d820d452b67b9f8001e991678e7087746f4a6",
+      "sha256": "3293d2a7e9ae76abe84fd4c2a0adee105bddb7acbd0754fde6c7cba80a32851c",
       "pages": 5
     },
     {
       "file": "02-api-documentation.pdf",
-      "bytes": 96903,
+      "bytes": 99731,
       "limit_bytes": 30000000,
-      "sha256": "a120fa413bc38ee701e5f0664b8b003990861d2874deab48976673503fe07d82",
-      "pages": 21
+      "sha256": "c6062f07dbbed8c00cec62fb130d4cca48982cf9fb59bd1d11e22efadfe9c9ed",
+      "pages": 22
     },
     {
       "file": "03-implementation-demo.mp4",
-      "bytes": 13051170,
+      "bytes": 9600423,
       "limit_bytes": 200000000,
-      "sha256": "c5d7d92a8c34c0d578d26b806d789a97dae128523dfc3ecde182a1c1c82640c6"
+      "sha256": "a9862da0585f72e9d16f8716af390dd4a2f5c65b816489c2f0cc5db9b93f5720"
     },
     {
       "file": "04-enterprise-challenge-fit.pdf",
-      "bytes": 53380,
+      "bytes": 53670,
       "limit_bytes": 30000000,
-      "sha256": "c8d6e9ea46e79aaea045ca447e9bc9c75142dfa6bbe2e68435f4c193818c9332",
+      "sha256": "29c20665bee7b75a706eb86b688a4ead5031dc4ac79bc10d09c2ede839c35158",
       "pages": 4
     },
     {
@@ -36,16 +36,31 @@
       "sha256": "a7cb88c956b466e6dd69db8bfcf8461811d65be68fe040095cdcb31103b00b04"
     }
   ],
-  "demo_mode": "Actual application recording; operator-led simulation; synthetic voice; edited pacing",
+  "demo_mode": "Real agent-led execution of one business simulation request; narrated recording with compressed waits",
+  "agent_statistics": {
+    "model_requests": 24,
+    "tool_calls": 26,
+    "skills_executed": 20,
+    "skills_completed": 20,
+    "skills_failed": 0,
+    "skills_pending": 0,
+    "distinct_skills": 16,
+    "delegated_people": 7,
+    "artifacts": 10,
+    "input_tokens": 786654,
+    "output_tokens": 14141,
+    "total_tokens": 800795,
+    "elapsed_ms": 303797
+  },
   "summary": {
     "file": "06-entry-summary.txt",
-    "characters": 2470,
+    "characters": 2399,
     "limit": 3000
   },
   "video": {
-    "duration_seconds": 234.57,
+    "duration_seconds": 181.46,
     "maximum_seconds": 300,
-    "distinct_skills": 13,
+    "distinct_skills": 16,
     "voice": {
       "engine": "Windows SAPI",
       "name": "Microsoft Zira Desktop - English (United States)",
@@ -54,7 +69,7 @@
     "format": "H.264 video, AAC audio, embedded English subtitles",
     "dimensions": [
       1600,
-      1000
+      900
     ]
   }
 }

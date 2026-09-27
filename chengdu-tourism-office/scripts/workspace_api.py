@@ -16,6 +16,8 @@ def specification(rt):
         if body is not None: operation["requestBody"]={"required":True,"content":{"application/json":{"schema":body}}}
         paths.setdefault(path,{})[method]=operation
     object_schema={"type":"object"}
+    route("/api/conversation/{id}/agent-run","get","Latest measured agent run: plan, skill calls, assignments, artifacts and token usage")
+    route("/api/conversation/{id}/events","get","Recorded assistant progress events")
     for path,summary in [("/api/health","Server status"),("/api/company","Current organization"),("/api/templates","Organization templates"),("/api/skills","Executable skill catalog"),("/api/skills/{id}","Skill instructions and schema"),("/api/runs","Recorded runs"),("/api/runs/{id}","Single run result"),("/api/files","Workspace files"),("/api/records","Company work register"),("/api/connections","Connection configuration status"),("/api/audit","Recent audit events"),("/api/conversations","Saved conversations"),("/api/conversation/{id}","Saved conversation messages"),("/api/settings","Saved autonomy settings"),("/api/config","Public AI configuration"),("/api/case/{id}","Saved tourism case"),("/api/search","Search tourism cases")]: route(path,"get",summary)
     for path,summary in [("/api/runs/{id}/approve","Execute the exact pending external action once"),("/api/runs/{id}/reject","Cancel a pending external action")]: route(path,"post",summary,object_schema)
     for skill in rt.catalog():

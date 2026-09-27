@@ -12,16 +12,18 @@ The final Markdown editions are `01-skill-function-description.md`, `02-api-docu
 python submission/source/render_submission.py
 ```
 
-`create_content.py` created the initial content. `finalize_content.py` reconciled it with the final recording and generated the Markdown editions. Do not rerun either as a prerequisite for rendering the saved final content. `build_api_appendix.py` extracts the full parameter appendix from the application's manifests.
+`update_agent_content.py` reconciles the PDFs, Markdown and summary with the verified agent execution evidence. `create_content.py` is historical scaffolding, not a prerequisite for rendering the saved content. `build_api_appendix.py` extracts the parameter appendix from the application's manifests.
 
 ## Recording and narration
 
-`record_full_demo.py` copies credential-free app code to the ignored QA directory, creates fresh state, and records real browser interactions with Playwright and Edge. Its skill runs and file downloads are actual application outputs. `voice_full_demo.py` uses Windows SAPI for local synthetic narration. `assemble_full_demo.py` synchronizes chapters, adds scope labels and embedded English captions, and exports H.264/AAC MP4. It requires Pillow and FFmpeg. `validate_artifacts.py` renders PDFs with Poppler, decodes the entire video, checks audio and upload limits, and writes the submission manifest.
+`record_agent_demo.py` copies app code into an isolated QA workspace and records one prompt driving real model-led skill execution in Playwright and Edge. The configured API key is passed only to the child server environment. API usage must be authorized before reproduction. There are no scripted skill submissions or manual approval clicks. The recorder downloads actual generated files and captures measured execution snapshots.
+
+`voice_full_demo.py --agent` uses Windows SAPI for narration. `assemble_agent_demo.py` compresses waits, synchronizes chapters, adds a small Simulation badge and embedded English captions, and exports a clean full-frame H.264/AAC MP4. It requires Pillow and FFmpeg. `validate_artifacts.py` renders PDFs with Poppler, decodes the entire video, checks audio and upload limits, and writes the manifest.
 
 Runtime and FFmpeg paths near the top of the scripts reflect the Windows authoring environment and should be adjusted on another machine. Temporary browser videos, audio, isolated state and encoding tools are not committed. The sanitized execution evidence and generated files are in `../evidence/`.
 
 ## Verification scope
 
-`verification/` contains the captured existing test-suite outputs, not fabricated evaluation results. `verify_submission.py` uses an isolated state directory for those checks. The 180 tourism decision cases, 46 automated tests and 48 fixed routing prompts are distinct reported groups.
+`verification/` contains captured test outputs. `verify_submission.py` uses an isolated state directory for those checks. The 180 tourism decision cases, 51 automated tests and 48 fixed routing prompts are distinct reported groups. The added tests cover extended single-request execution, token counts, approval dependencies, required contract reads, unfinished plans and persistence.
 
-The recording covers an operator-led simulated launch preparation workflow. It does not demonstrate automatic full launch completion from one sentence or real external release. The documentation preserves that distinction.
+The recording covers one successful model-led simulated launch workflow. It demonstrates actual skill execution and local artifacts, not a real external release or a general end-to-end reliability rate. `evidence/launch-execution.json` and `evidence/agent-timeline.json` contain the measured results. The staff profiles represent delegated tool execution within one orchestrator.

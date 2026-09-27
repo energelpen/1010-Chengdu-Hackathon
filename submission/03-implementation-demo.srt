@@ -1,159 +1,127 @@
 1
-00:00:00,000 --> 00:00:04,246
-This is Atlas Office, running locally with fictional colleagues.
+00:00:00,000 --> 00:00:01,266
+Meet Atlas Office.
 
 2
-00:00:04,246 --> 00:00:09,686
-Our scenario is preparing the launch of a Chengdu food and tea group-tour product.
+00:00:01,266 --> 00:00:07,316
+One request brings the team together to prepare a Chengdu food and tea product launch.
 
 3
-00:00:09,686 --> 00:00:12,605
-We will follow the entire preparation cycle.
+00:00:07,316 --> 00:00:13,506
+This is a business simulation using a real model connection and executable local skills.
 
 4
-00:00:12,605 --> 00:00:19,239
-In this credential-free recording, the operator invokes the actual skills and reviews their results.
+00:00:13,506 --> 00:00:19,766
+Atlas chooses the work, assigns colleagues, runs the tools, and creates the deliverables.
 
 5
-00:00:19,239 --> 00:00:23,485
-Free-form model orchestration is optional and is not shown here.
+00:00:20,966 --> 00:00:24,797
+Atlas turns the request into a visible execution plan.
 
 6
-00:00:24,685 --> 00:00:28,707
-Wang, the sales lead, prepares two launch alternatives.
+00:00:24,797 --> 00:00:29,835
+Each step has an actual skill, an assigned colleague, and dependencies.
 
 7
-00:00:28,707 --> 00:00:32,948
-We supply the costs, impact, risk, and weights explicitly.
+00:00:29,835 --> 00:00:33,808
+The model reads the skill contracts before it uses them.
 
 8
-00:00:32,948 --> 00:00:41,504
-The executed proposal skill recommends the pilot, scoring seventy-five point seven against sixty-two for full launch.
+00:00:33,808 --> 00:00:39,697
+The plan and progress come from the running agent, not a prewritten video sequence.
 
 9
-00:00:41,504 --> 00:00:46,403
-It creates an editable PowerPoint proposal and Word decision brief.
+00:00:40,897 --> 00:00:43,021
+The first results are arriving.
 
 10
-00:00:46,403 --> 00:00:51,010
-The recorded result is a recommendation, not spending approval.
+00:00:43,021 --> 00:00:49,667
+Atlas supplies the skill inputs itself and delegates to colleagues whose profiles allow the work.
 
 11
-00:00:52,210 --> 00:00:58,807
-Operations now splits the launch work using real assigned skill identifiers and projected capacity.
+00:00:49,667 --> 00:00:54,325
+Every call is recorded with its assignee, outcome, and elapsed time.
 
 12
-00:00:58,807 --> 00:01:04,870
-The result assigns planning, budget review, and management handoff to qualified colleagues.
+00:00:54,325 --> 00:00:58,093
+Completed results become context for the next decision.
 
 13
-00:01:04,870 --> 00:01:12,133
-If no colleague has the required skill or hours, the same tool reports unassigned work for manager attention.
+00:00:59,293 --> 00:01:01,911
+The agent continues across the company.
 
 14
-00:01:12,133 --> 00:01:17,530
-These are proposed allocations; it does not secretly change saved staff capacity.
+00:01:01,911 --> 00:01:09,026
+Planning, responsibilities, capacity and commercial decisions are handled through the same shared runtime.
 
 15
-00:01:18,730 --> 00:01:24,600
-Zhao, the product lead, converts the launch preparation into a dependency-aware schedule.
+00:01:09,026 --> 00:01:13,590
+Dependent steps can proceed only after their prerequisites complete.
 
 16
-00:01:24,600 --> 00:01:30,601
-The pilot review follows scope confirmation, and the executive decision follows the review.
+00:01:13,590 --> 00:01:17,214
+There are no manual skill forms between these actions.
 
 17
-00:01:30,601 --> 00:01:33,964
-Finish dates are exclusive calendar-day boundaries.
+00:01:18,414 --> 00:01:22,391
+The launch takes shape as business records and real files.
 
 18
-00:01:33,964 --> 00:01:41,680
-A separate responsibility matrix names the responsible specialists and makes Chen accountable for the final decision.
+00:01:22,391 --> 00:01:29,659
+Finance calculations, project work, launch risks and management outputs are linked to recorded skill runs.
 
 19
-00:01:42,880 --> 00:01:47,361
-We record a launch task as blocked, with Operations as its owner.
+00:01:29,659 --> 00:01:37,680
+Simulation assumptions remain visible in the content, while the document and spreadsheet generation actually execute.
 
 20
-00:01:47,361 --> 00:01:50,876
-The manager can inspect and edit that saved record.
+00:01:38,880 --> 00:01:44,631
+Atlas brings the completed work into the launch handoff and reusable company knowledge.
 
 21
-00:01:50,876 --> 00:01:56,528
-For this simulation, we enter a supplied readiness outcome and mark the task done.
+00:01:44,631 --> 00:01:48,795
+The same request drives the workflow through its final outputs.
 
 22
-00:01:56,528 --> 00:02:03,007
-This is an operator-recorded status transition, not automatic verification of a real supplier.
+00:01:48,795 --> 00:01:55,472
+The live dashboard keeps the completed work, remaining steps, generated files, and API usage visible.
 
 23
-00:02:03,007 --> 00:02:06,660
-The record remains available in the company register.
+00:01:56,672 --> 00:02:04,246
+This run recorded 20 completed skill executions, covering 16 different skills and 7 colleagues.
 
 24
-00:02:07,860 --> 00:02:13,667
-Deng, the finance lead, calculates budget variance from supplied simulation figures.
+00:02:04,246 --> 00:02:05,920
+It produced 10 files.
 
 25
-00:02:13,667 --> 00:02:17,123
-Marketing is fifteen hundred renminbi over budget.
+00:02:05,920 --> 00:02:10,943
+The dashboard also reports 24 model requests and 26 tool calls.
 
 26
-00:02:17,123 --> 00:02:22,377
-We then create a real Excel launch budget and propose a revised input value.
+00:02:10,943 --> 00:02:16,922
+These are measured results from this run, not projected productivity gains.
 
 27
-00:02:22,377 --> 00:02:25,626
-Spreadsheet editing stops at awaiting approval.
+00:02:18,122 --> 00:02:21,327
+Every completed step links to its actual result.
 
 28
-00:02:25,626 --> 00:02:32,815
-Only after review and the approval click does Atlas create a new workbook copy, preserving the original.
+00:02:21,327 --> 00:02:28,537
+The activity record keeps the inputs and outputs, while the file library contains the generated launch pack.
 
 29
-00:02:34,015 --> 00:02:42,559
-Chen records the simulated decision to proceed with pilot preparation, with the weighted comparison and reviewed budget as its rationale.
+00:02:28,537 --> 00:02:34,279
+You can reopen the conversation later and inspect the same persisted execution record.
 
 30
-00:02:42,559 --> 00:02:52,100
-The final handoff reports three preparation tasks done from supplied simulation evidence and produces a management Word brief plus an unsent email draft.
+00:02:35,479 --> 00:02:44,791
+Atlas Office makes agent work inspectable: one brief, a delegated plan, executable skills, and a finished set of business outputs.
 
 31
-00:02:52,100 --> 00:02:58,960
-The preparation loop is complete; launching a real travel product still requires authorized enterprise checks.
+00:02:44,791 --> 00:02:53,817
+The GitHub repository includes the application, sixty-nine skill contracts, the API reference, and the evidence from this run.
 
 32
-00:03:00,160 --> 00:03:05,637
-The launch pack can be delivered as a PDF as well as Word, PowerPoint, and Excel.
-
-33
-00:03:05,637 --> 00:03:11,520
-We save the outcome as a sourced local knowledge note, then find it with a real search.
-
-34
-00:03:11,520 --> 00:03:15,848
-This preserves the decision and its limits for the next request.
-
-35
-00:03:15,848 --> 00:03:21,325
-Files remain downloadable from the workspace, and the email draft remains unsent.
-
-36
-00:03:22,525 --> 00:03:29,186
-Activity shows the actual runs across Sales, Product, Operations, Finance, IT and the Director.
-
-37
-00:03:29,186 --> 00:03:32,200
-Thirteen different skills are demonstrated.
-
-38
-00:03:32,200 --> 00:03:39,422
-The repository contains the source, all sixty-nine skill contracts, test evidence, and this submission.
-
-39
-00:03:39,422 --> 00:03:43,839
-The nine-stage tourism engine is an additional domain workflow.
-
-40
-00:03:43,839 --> 00:03:53,374
-This recording demonstrates the complete operator-led launch preparation cycle, including a real approval gate and simulated completion.
+00:02:53,817 --> 00:03:00,264
+The business launch is simulated; the agent execution and generated deliverables are real.

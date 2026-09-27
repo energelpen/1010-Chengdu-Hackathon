@@ -19,9 +19,9 @@ The [submission folder](submission/README.md) contains the three upload PDFs, im
 - [Entry summary](submission/06-entry-summary.txt)
 - [Demo script and recording notes](submission/demo-script.md)
 
-The narrated recording follows a complete **operator-led Product Launch Preparation simulation** for a Chengdu food and tea group-tour product. It demonstrates 13 distinct skills: option proposals, capacity allocation, dependency planning, responsibility mapping, task tracking, budget variance, spreadsheet creation and reviewed editing, decision logging, management handoff, PDF generation, knowledge saving and search. The execution records and generated outputs are retained as [demo evidence](submission/evidence/).
+The narrated demo shows **one request driving an agent-led Product Launch Preparation simulation**. The recorded run completed 20 skill executions across 16 distinct skills and 7 fictional colleagues, producing 10 real files. It used 24 model requests and 26 tool calls; reported usage totaled 800,795 tokens across requests. Actual wall time was 303.8 seconds. The agent compares pilot and full-launch options, checks team capacity, records decisions, schedules dependencies, maps responsibility, prepares a campaign and launch checklist, tracks tasks, assesses risk, calculates budget variance and a finance forecast, creates the executive pack, and saves and retrieves reusable knowledge. The pack includes editable Word, PowerPoint and Excel files plus a PDF report.
 
-The recording begins with one brief, then the operator invokes and reviews the skills. It does **not** establish automatic completion of the entire launch from one sentence. That remains an explicit gap against the strict SP-D scenario. Real files and database records are generated, while staff, business inputs, approval decisions and completion evidence are fictional. No travel booking, payment, real product release or external message occurs in the recording.
+One user brief starts a real configured OpenAI model. The model chooses the skills, publishes a dependency-aware plan, assigns qualified colleagues, supplies the inputs and executes local work through the shared runtime. The recording contains no manual skill submissions. All business facts and launch outcomes are explicitly simulated; no external delivery, spending or real product release occurs. Execution evidence and generated files are retained in the submission evidence folder.
 
 ## Run locally
 
@@ -69,7 +69,7 @@ From `chengdu-tourism-office`:
 .venv\Scripts\python.exe tests/trigger_eval.py
 ```
 
-On 27 September 2026, the submission checks passed **180 tourism behavior cases**, **46 automated tests**, and **43/43 fixed action-routing prompts plus 5/5 non-action prompts**. The 180 decision cases are separate from the 46 automated tests. These bounded checks are not evidence of arbitrary-language success, enterprise savings or live connector delivery. [Captured logs](submission/source/verification/) preserve their scope.
+On 27 September 2026, the submission checks passed **180 tourism behavior cases**, **51 automated tests**, and **43/43 fixed action-routing prompts plus 5/5 non-action prompts**. The 180 decision cases are separate from the 51 automated tests. These bounded checks are not evidence of arbitrary-language success, enterprise savings or live connector delivery. [Captured logs](submission/source/verification/) preserve their scope.
 
 ## API and source map
 

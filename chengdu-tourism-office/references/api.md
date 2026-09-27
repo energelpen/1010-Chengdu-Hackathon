@@ -30,6 +30,8 @@ The local application binds to `127.0.0.1:8765` by default:
 | `/api/config` | GET | Read AI key presence, model, mode and company name; never returns a credential |
 | `/api/conversations` | GET | List saved conversations, newest first, with previews and linked case IDs |
 | `/api/conversation/{id}` | GET | Read a conversation, messages and current proposal review |
+| `/api/conversation/{id}/agent-run` | GET | Read the persisted agent plan, calls, actual runs, artifact counts and provider token usage |
+| `/api/conversation/{id}/events` | GET | Read timestamped assistant progress events |
 | `/api/chat` | POST | Chat with Atlas or a staff avatar; optionally run a company workflow under saved policy |
 | `/api/settings` | GET / POST | Read or update company autonomy, reports, email rules and automatic quotation limit |
 | `/api/review` | POST | Approve, return with comments, escalate, resolve, resubmit, or separately approve delivery |
@@ -45,6 +47,8 @@ The local application binds to `127.0.0.1:8765` by default:
 The app's `output/` is local state. OpenAI chat is optional and configured only on the server. Flight and tour prices remain synthetic. Real email requires saved opt-in rules, a reviewed proposal, an allowed recipient and SMTP configuration.
 
 ## Chat and history contract
+
+General company chat uses the configured Responses model to choose and execute skills. Multi-step requests publish a model-authored dependency plan. The UI polls the agent-run endpoint while the chat POST runs and restores the saved snapshot when reopening the conversation. The execution budget is 48 model requests, 80 function calls and 600 seconds checked between operations; model requests time out after 120 seconds. Pending reviewed or remote writes do not count as completed skills. See the full API reference for the telemetry fields and status values.
 
 `POST /api/chat` accepts:
 

@@ -8,7 +8,7 @@ Repository: https://github.com/energelpen/1010-Chengdu-Hackathon
 
 ### A workspace that makes collaboration inspectable
 
-Atlas Office brings programmable staff profiles, task routing, skill execution, review gates and generated business files into one local workspace. A colleague has a manager, assigned skills, availability, capacity, follow links and role guidance. The operator can inspect who performed a task, what it produced and what still needs attention.
+Atlas Office brings programmable staff profiles, task routing, skill execution, review gates and generated business files into one local workspace. A colleague has a manager, assigned skills, availability, capacity, follow links and role guidance. The reviewer can inspect who performed a task, what it produced and what still needs attention.
 
 The entry combines a general company workspace with a specialized Chengdu tourism demonstration. Its 69 registered skills include nine independently callable tourism stages. Local execution creates real draft documents and structured records; the people, supplier offers and tourism task evidence are synthetic.
 
@@ -20,9 +20,9 @@ The entry combines a general company workspace with a specialized Chengdu touris
 
 ### Submission scenario: Product Launch Preparation
 
-The supplied SP-D challenge specifies Product Launch Preparation. The narrated recording follows a complete operator-led preparation simulation for a Chengdu food and tea group-tour product, from one entered brief through 13 distinct skills to a completed simulated management handoff.
+The supplied SP-D challenge specifies Product Launch Preparation. The narrated recording follows one request through an agent-led launch simulation for a Chengdu food and tea group-tour product. The recorded run completed 20 skill executions across 16 distinct skills and 7 fictional colleagues, producing 10 real files. It used 24 model requests and 26 tool calls; reported usage totaled 800,795 tokens across requests. Actual wall time was 303.8 seconds.
 
-The recording includes options, qualified staff allocations, a dependency plan, a responsibility matrix, task status revision, budget variance, a real approval gate for a workbook copy, decision logging, PDF generation and searchable knowledge. Automatic launch completion from one sentence remains unverified; operator inputs and synthetic completion evidence are explicit.
+The agent compares pilot and full-launch options, checks team capacity, records decisions, schedules dependencies, maps responsibility, prepares a campaign and launch checklist, tracks tasks, assesses risk, calculates budget variance and a finance forecast, creates the executive pack, and saves and retrieves reusable knowledge. The pack includes editable Word, PowerPoint and Excel files plus a PDF report.
 
 ### Who it serves
 
@@ -67,7 +67,7 @@ Sources: scripts/tourism_core.py; skills/*/SKILL.md; shared/message-schema.json;
 
 ### A concrete launch preparation task
 
-The recording prepares the launch of a fictional Chengdu food and tea group-tour product. A pilot costing CNY 50,000 is compared with a CNY 120,000 full launch. Supplied impact/risk/cost weights of 5/3/2 produce scores of 75.7 and 62.0, respectively. The executed proposal skill recommends the pilot and creates real Word and PowerPoint files.
+The recording prepares a fictional Chengdu food and tea group-tour launch. A CNY 50,000 pilot is compared with a CNY 120,000 full launch. The agent supplies clearly labeled synthetic assumptions and delegates the actual scoring and proposal generation to proposal-package. Its recommendation and detailed inputs are retained in the execution evidence.
 
 ### Composable tools for the preparation team
 
@@ -86,13 +86,13 @@ The recording prepares the launch of a fictional Chengdu food and tea group-tour
 
 The Assistant routes recognized requests to a qualified colleague and records progress. The Skills library offers structured input forms and examples for deliberate invocation. Activity & approvals exposes runs and pending actions; Files & knowledge retains generated artifacts. The Org chart distinguishes reporting, current collaboration and follows.
 
-OpenAI-backed conversation and bounded tool discovery are optional. No-key general-company chat provides local directory/help responses; it does not execute the free-form launch request. The recording uses the typed Skills library to invoke and assign real operations. A selected avatar is role context, not a separate authenticated employee account.
+The recording uses the configured OpenAI model to orchestrate the entire local workflow from one request. Offline general-company chat provides directory/help responses and does not execute free-form requests. Staff profiles supply role context, assigned skills and capacity; one orchestrator performs the delegated tool calls. They are not separate authenticated employee accounts or independent model sessions.
 
 ### Current integration boundary
 
-The final recording exercises 13 distinct skills and supplies simulated completion evidence for the preparation tasks. The management handoff records three done tasks; the separate task register shows a blocked-to-done operator update. No real product release, supplier reservation, payment or external message is claimed.
+One user brief starts a real configured OpenAI model. The model chooses the skills, publishes a dependency-aware plan, assigns qualified colleagues, supplies the inputs and executes local work through the shared runtime. The recording contains no manual skill submissions. All business facts and launch outcomes are explicitly simulated; no external delivery, spending or real product release occurs.
 
-Automatic single-sentence orchestration of the entire launch remains outside the demonstrated scope. The workflow shown is a complete operator-led preparation simulation.
+The live dashboard persists the model-authored plan, assignees, prerequisite states, each actual tool call, run IDs, artifact counts, elapsed time and provider-reported token usage. Step completion is based on runtime status. Pending approvals and unfinished plans are never counted as completed execution.
 
 Sources: scripts/intent_router.py; scripts/assistant_service.py; scripts/skill_runtime.py; skills/proposal-package/skill.json; skills/project-plan/skill.json; tests/test_office_skills.py
 
@@ -134,7 +134,7 @@ Sources: scripts/skill_runtime.py; scripts/governance.py; scripts/conversation_s
 | Evidence | Observed result | What it establishes |
 | --- | --- | --- |
 | Tourism behavior suite | 180 / 180 passed | 20 decision cases per tourism stage; normal, boundary and error conditions. |
-| Automated suite | 46 / 46 passed | Integration, assistant, governance and office-skill behaviors checked by the existing suite. |
+| Automated suite | 51 / 51 passed | Integration, assistant, governance and office-skill behaviors checked by the existing suite. |
 | Fixed routing corpus | 43 / 43 action prompts; 5 / 5 non-action prompts | Correct first-pass routing on this predefined corpus; not arbitrary-language success. |
 | Manifest validation | 69 manifests and examples | Each registered skill has an input schema, an embedded schema-valid example, SKILL.md and a CLI runner. |
 | Runtime API example | CNY 1,500; 15% variance | budget-variance executed in isolated local state with budget 10,000 and actual 11,500. |
@@ -156,9 +156,9 @@ python app.py --data-dir ./submission-demo-state
 
 ### Interpretation of the evidence
 
-Tests were rerun locally using the repository's existing checks. Their captured logs are preserved with the submission sources. External-service operations are mocked or require separate credentials; no real mail, booking or payment was performed to create these materials. The 180 behavior cases are reported separately from the 46 automated tests.
+Tests were rerun locally using the repository's existing checks. Their captured logs are preserved with the submission sources. External-service operations are mocked or require separate credentials; no real mail, booking or payment was performed to create these materials. The 180 behavior cases are reported separately from the 51 automated tests.
 
-The demo video records actual application interactions and 13 completed local skill runs across six roles, with a real awaiting_approval-to-completed spreadsheet edit. Synthetic narration and chapter captions identify the operator-led simulation. This does not establish automatic launch orchestration, enterprise deployment, measured productivity savings or marketplace publication.
+The recorded run completed 20 skill executions across 16 distinct skills and 7 fictional colleagues, producing 10 real files. It used 24 model requests and 26 tool calls; reported usage totaled 800,795 tokens across requests. Actual wall time was 303.8 seconds. The successful run establishes this one-request scenario. It does not establish arbitrary-language reliability, enterprise adoption or measured productivity savings.
 
 ### What a production pilot should establish
 

@@ -12,8 +12,6 @@ Atlas Office exposes 69 registered skills through its local browser workspace, H
 
 The API is a single-user local prototype. It binds only to 127.0.0.1, with port 8765 by default. It has no account login, bearer-token authentication or per-employee access control. A person_id selects a configured colleague; it is not an authenticated identity.
 
-Source repository: https://github.com/energelpen/1010-Chengdu-Hackathon
-
 ### Start and discover
 
 Interactive API documentation is available at /docs. /api/openapi.json is an alias of /openapi.json. The generated OpenAPI 3.1.0 document contains a concrete run route and input schema for each registered skill. Runtime examples in this guide were checked against the implementation; generated IDs and timestamps vary.
@@ -291,6 +289,32 @@ No reservations or payments are made by the tourism simulation. OpenAI, Google, 
 | Tourism needs_input / blocked / escalated | Inspect output.issues and complete missing conditions |
 
 Sources: scripts/tourism_office.py; scripts/skill_runtime.py: cli; server/company_mcp.py; server/tourism_mcp.py; scripts/mcp_bridge.py; app.py: Handler
+
+## Agent orchestration and execution statistics
+
+### One request, bounded model-led execution
+
+POST /api/chat with message and optional conversation_id/person_id runs the selected company assistant. With a configured API key, Atlas exposes find_skills, read_skill, read_skills, set_plan, run_skill, list_workspace_files, ask_user and web search to the configured Responses model. The model chooses the sequence and inputs. There is no hard-coded launch pipeline.
+
+The turn is bounded to 48 model requests, 80 function-tool calls and 600 seconds checked between operations. A single in-flight model request may extend past the time check. Read skill contracts before execution. Planned runs must match their step assignee and skill and may execute only after prerequisites complete. Qualified staff are enforced by the runtime. External and reviewed writes remain pending for explicit review.
+
+### Polling and persistence
+
+| Route / field | Contract |
+| --- | --- |
+| GET /api/conversation/{id}/agent-run | Latest persisted agent execution object, or null before the first run. |
+| GET /api/conversation/{id}/events | Timestamped progress events. |
+| conversation.agent_run | The same snapshot included when reading or completing a conversation. |
+| steps[] | id, title, skill_id, person_id, depends_on, status; optional run_id and error. |
+| calls[] | id, tool, status, started_at, duration_ms; optional skill_id/person_id/step_id/run_id/error. |
+
+### Measured fields and completion states
+
+statistics contains model_requests, tool_calls, skills_executed, skills_completed, skills_failed, skills_pending, distinct_skills, delegated_people, artifacts, elapsed_ms and input/output/total_tokens. Tokens sum provider usage across requests, including repeated context; they are null if usage is unavailable. They are not a cost estimate. Tool-call counts refer to function tools; built-in web search activity is separately exposed in progress events.
+
+Run states are running, completed, needs_input, awaiting_approval, needs_attention and budget_exhausted. Offline directory mode requests a configured connection and produces no skill runs. Failed or pending work cannot complete a planned dependency. A completed skill means its local handler finished, not that a real-world business outcome occurred.
+
+Sources: Application: scripts/company_chat.py, scripts/agent_execution.py, scripts/conversation_store.py, app.py; OpenAI function calling: https://developers.openai.com/api/docs/guides/function-calling
 
 ## Complete skill parameter reference
 

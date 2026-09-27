@@ -3,7 +3,7 @@ from pathlib import Path
 import subprocess, zipfile, json, re, hashlib
 BASE=Path(__file__).resolve().parents[2]; OUT=BASE/'submission'
 raw=subprocess.check_output(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=BASE)
-files=sorted(set(p.decode('utf-8') for p in raw.split(b'\0') if p))
+files=sorted(set(p.decode('utf-8') for p in raw.split(b'\0') if p and (BASE/p.decode('utf-8')).is_file()))
 bad=[]; suspect=[]
 for rel in files:
     p=BASE/rel

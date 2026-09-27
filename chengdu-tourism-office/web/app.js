@@ -107,7 +107,12 @@ function renderHistory(){
   }).join(""):'<p class="sidebar-hint">'+(query?"No matching conversations.":"Your conversations and proposals will appear here.")+'</p>';
 }
 async function refreshHistory(){state.history=await api("/api/conversations");renderHistory();}
-async function refreshEvents(){if(!state.conversation?.id)return;state.events=await api('/api/conversation/'+encodeURIComponent(state.conversation.id)+'/events');if(state.view==='assistant')renderConversation();}
+async function refreshEvents(){
+  const id=state.conversation?.id;if(!id)return;
+  const [events,run]=await Promise.all([api('/api/conversation/'+encodeURIComponent(id)+'/events'),api('/api/conversation/'+encodeURIComponent(id)+'/agent-run')]);
+  if(state.conversation?.id!==id)return;
+  state.events=events;state.conversation.agent_run=run;if(state.view==='assistant')renderConversation();
+}
 async function openConversation(id){
   try{stopSpeech();state.conversation=await api("/api/conversation/"+encodeURIComponent(id));state.personId=state.conversation.person_id||"atlas";state.case=null;state.events=[];await refreshEvents();
     if(state.conversation.request_id)try{state.case=await api("/api/case/"+encodeURIComponent(state.conversation.request_id));}catch{}
@@ -126,6 +131,8 @@ function welcome(){
   ].map(x=>'<button class="suggestion" data-prompt="'+safe(x[3])+'" data-intent="'+x[4]+'">'+icon(x[0])+'<strong>'+x[1]+'</strong><small>'+x[2]+'</small></button>').join("")+'</div><div class="welcome-team"><div class="stacked-faces">'+colleagues.map(p=>'<button data-talk="'+safe(p.id)+'" title="'+safe(p.name)+'">'+face(p)+'</button>').join("")+'</div><span>'+(state.company?.people.length||10)+' colleagues, ready to help</span><button class="text-link" data-view="people">Meet the team →</button></div></div>';
 }
 function renderConversation(){
+  const scrollTop=$("#conversation-scroll").scrollTop;
+  window.AtlasAgentRun?.captureScroll();
   const messages=state.conversation?.messages||[];
   let content=messages.length?messages.map((m,index)=>{
     const agent=person(m.person_id||"atlas");
@@ -133,10 +140,13 @@ function renderConversation(){
   }).join(""):welcome();
   if(state.pendingMessage)content+='<article class="message user"><div class="message-body"><div class="message-text">'+formatText(state.pendingMessage)+'</div></div></article>';
   if(state.busy)content+='<article class="message"><button class="avatar-button">'+face(person(state.personId))+'</button><div class="message-body"><div class="message-heading"><strong>'+safe(personName(state.personId))+'</strong></div><div class="thinking"><i></i><i></i><i></i><span>Working with your company…</span></div></div></article>';
-  if(state.events.length)content+='<section class="agent-progress" aria-label="Agent activity"><div class="agent-progress-title">Agent activity <span>'+state.events.length+' updates</span></div>'+state.events.slice(-10).map(e=>'<div class="agent-progress-row"><span class="agent-progress-dot '+safe(e.stage)+'"></span><strong>'+safe(personName(e.person_id))+'</strong><span>'+safe(e.detail)+'</span><small>'+safe(new Date(e.created_at).toLocaleTimeString())+'</small></div>').join('')+'</section>';
+  if(window.AtlasAgentRun&&!state.conversation?.request_id)content+=AtlasAgentRun.markup(state.conversation?.agent_run,{busy:state.busy});
+  if(state.conversation?.request_id&&state.events.length)content+='<section class="agent-progress" aria-label="Agent activity"><div class="agent-progress-title">Agent activity <span>'+state.events.length+' updates</span></div>'+state.events.slice(-10).map(e=>'<div class="agent-progress-row"><span class="agent-progress-dot '+safe(e.stage)+'"></span><strong>'+safe(personName(e.person_id))+'</strong><span>'+safe(e.detail)+'</span><small>'+safe(new Date(e.created_at).toLocaleTimeString())+'</small></div>').join('')+'</section>';
   if(state.case&&!state.busy)content+=caseSummary();
   if(state.conversation?.proposal&&!state.busy)content+=proposalCard();
   $("#conversation-content").innerHTML=content;
+  $("#conversation-scroll").scrollTop=scrollTop;
+  window.AtlasAgentRun?.restoreScroll();
   $("#send-message").disabled=state.busy;$("#chat-input").disabled=state.busy;
 }
 function caseSummary(){
