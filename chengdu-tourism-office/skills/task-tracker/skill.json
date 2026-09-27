@@ -1,0 +1,57 @@
+{
+  "id": "task-tracker",
+  "title": "Task tracker",
+  "category": "Operations",
+  "description": "Save an owned task with status and due date to the local work register.",
+  "handler": "record",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Task",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "owner": {
+        "type": "string",
+        "title": "Owner",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "due": {
+        "type": "string",
+        "title": "Due date",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "todo",
+          "in_progress",
+          "blocked",
+          "done"
+        ],
+        "title": "Status"
+      }
+    },
+    "required": [
+      "title",
+      "owner",
+      "due",
+      "status"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Confirm launch owners",
+    "owner": "Operations",
+    "due": "2026-10-05",
+    "status": "todo"
+  },
+  "guidance": "Keep the owner and current status explicit. Saved records can be edited through the work register API or UI.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

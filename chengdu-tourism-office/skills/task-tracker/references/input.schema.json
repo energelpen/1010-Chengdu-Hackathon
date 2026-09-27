@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Task",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "owner": {
+      "type": "string",
+      "title": "Owner",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "due": {
+      "type": "string",
+      "title": "Due date",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "todo",
+        "in_progress",
+        "blocked",
+        "done"
+      ],
+      "title": "Status"
+    }
+  },
+  "required": [
+    "title",
+    "owner",
+    "due",
+    "status"
+  ],
+  "additionalProperties": false
+}

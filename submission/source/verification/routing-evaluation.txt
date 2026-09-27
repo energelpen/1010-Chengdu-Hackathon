@@ -1,0 +1,9 @@
+COMMAND: python tests/trigger_eval.py
+{
+  "primary_intent_hit_rate": 1.0,
+  "positive_hits": 43,
+  "positive_total": 43,
+  "negative_correct": 5,
+  "negative_total": 5,
+  "misses": []
+}

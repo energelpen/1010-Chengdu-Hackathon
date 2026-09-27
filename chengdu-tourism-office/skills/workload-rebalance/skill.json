@@ -1,0 +1,23 @@
+{
+  "id": "workload-rebalance",
+  "title": "Workload rebalance",
+  "category": "Operations",
+  "description": "Split a set of tasks across qualified colleagues using projected capacity and identify work that needs a manager.",
+  "handler": "rebalance",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0",
+  "input_schema": {
+    "type": "object", "properties": {
+      "tasks": {"type": "array", "title": "Tasks in priority order", "minItems": 1, "maxItems": 100, "items": {
+        "type": "object", "properties": {
+          "task": {"type": "string", "minLength": 1, "maxLength": 150},
+          "required_skill": {"type": "string", "minLength": 1, "maxLength": 90},
+          "hours": {"type": "number", "exclusiveMinimum": 0, "maximum": 168},
+          "preferred_person": {"type": "string", "maxLength": 100}
+        }, "required": ["task", "required_skill", "hours"], "additionalProperties": false
+      }}
+    }, "required": ["tasks"], "additionalProperties": false
+  },
+  "example": {"tasks": [{"task": "Prepare project plan", "required_skill": "project-plan", "hours": 5, "preferred_person": ""}, {"task": "Review variance", "required_skill": "budget-variance", "hours": 3, "preferred_person": ""}]}
+}

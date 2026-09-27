@@ -1,0 +1,45 @@
+{
+  "id": "email-draft",
+  "title": "Email draft",
+  "category": "Communication",
+  "description": "Create an editable .eml email with a subject, recipients and body.",
+  "handler": "email",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "to": {
+        "type": "string",
+        "title": "Recipient email",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "subject": {
+        "type": "string",
+        "title": "Subject",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "body": {
+        "type": "string",
+        "title": "Message",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "to",
+      "subject",
+      "body"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "to": "client@example.com",
+    "subject": "Project update",
+    "body": "Hello,\nThe proposal is ready for your review.\nBest regards,\nThe team"
+  },
+  "guidance": "Preserve recipient and factual commitments. The output is an unsent .eml file; opening it in a mail client does not imply delivery.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

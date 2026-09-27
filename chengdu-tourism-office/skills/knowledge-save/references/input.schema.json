@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "content": {
+      "type": "string",
+      "title": "Content",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "source": {
+      "type": "string",
+      "title": "Source",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "owner": {
+      "type": "string",
+      "title": "Owner",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "title",
+    "content",
+    "source",
+    "owner"
+  ],
+  "additionalProperties": false
+}

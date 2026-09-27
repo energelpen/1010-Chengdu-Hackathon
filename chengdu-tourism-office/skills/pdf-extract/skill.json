@@ -1,0 +1,29 @@
+{
+  "id": "pdf-extract",
+  "title": "Read a PDF",
+  "category": "Office files",
+  "description": "Extract page text from an uploaded PDF for review and search.",
+  "handler": "extract_pdf",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "file_id": {
+        "type": "string",
+        "title": "Uploaded PDF ID",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "file_id"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "file_id": "select-an-uploaded-file"
+  },
+  "guidance": "Preserve page numbers. Scanned pages without text require OCR outside this skill; explicitly report empty pages.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

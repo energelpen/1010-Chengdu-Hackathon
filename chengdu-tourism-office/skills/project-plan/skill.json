@@ -1,0 +1,109 @@
+{
+  "id": "project-plan",
+  "title": "Project plan",
+  "category": "Operations",
+  "description": "Create a dependency-aware project schedule and identify the critical delivery date.",
+  "handler": "project",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Project",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "start": {
+        "type": "string",
+        "title": "Start date, YYYY-MM-DD",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "tasks": {
+        "type": "array",
+        "title": "Tasks",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "ID",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "title": {
+              "type": "string",
+              "title": "Task",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "owner": {
+              "type": "string",
+              "title": "Owner",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "days": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 365,
+              "title": "Duration in calendar days"
+            },
+            "depends_on": {
+              "type": "array",
+              "title": "Dependencies",
+              "items": {
+                "type": "string",
+                "title": "Task ID",
+                "minLength": 1,
+                "maxLength": 10000
+              },
+              "maxItems": 500
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "owner",
+            "days",
+            "depends_on"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 500
+      }
+    },
+    "required": [
+      "title",
+      "start",
+      "tasks"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Customer portal",
+    "start": "2026-10-01",
+    "tasks": [
+      {
+        "id": "design",
+        "title": "Design",
+        "owner": "Product",
+        "days": 3,
+        "depends_on": []
+      },
+      {
+        "id": "build",
+        "title": "Build",
+        "owner": "Engineering",
+        "days": 5,
+        "depends_on": [
+          "design"
+        ]
+      }
+    ]
+  },
+  "guidance": "Validate dependency references and reject cycles. Durations use calendar days, not working days. Resource capacity is not automatically reserved.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

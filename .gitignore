@@ -1,0 +1,32 @@
+# Local development state and credentials
+.vscode/
+.tmp-pdf-reader/
+able-workdi-root/
+Code/
+**/.venv/
+**/node_modules/
+**/__pycache__/
+*.pyc
+**/.env
+**/.env.*
+!**/.env.example
+**/*client-secret*.json
+**/*credentials*.json
+**/token*.json
+**/google-token*.json
+**/config/mcp-servers.json
+chengdu-tourism-office/output/
+
+# Recording machinery and temporary private workspace state
+submission/qa/
+submission/source/verification/isolated-test-state/
+submission/03-implementation-demo-vo.mp4
+submission/source/make_demo_video.py
+submission/source/make_voiceover.ps1
+submission/source/make_voiceover_com.py
+submission/source/build_launch_evidence.py
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.inspect.ndjson

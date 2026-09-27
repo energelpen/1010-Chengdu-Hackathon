@@ -1,0 +1,14 @@
+{
+  "title": "Launch planning",
+  "notes": "Reviewed launch scope.",
+  "decisions": [
+    "Start with the pilot group"
+  ],
+  "actions": [
+    {
+      "task": "Confirm pilot participants",
+      "owner": "Operations",
+      "due": "2026-10-05"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "properties": {
+    "cost_weight": {
+      "type": "number",
+      "title": "Cost weight",
+      "minimum": 0
+    },
+    "quality_weight": {
+      "type": "number",
+      "title": "Quality weight",
+      "minimum": 0
+    },
+    "delivery_weight": {
+      "type": "number",
+      "title": "Delivery weight",
+      "minimum": 0
+    },
+    "suppliers": {
+      "type": "array",
+      "title": "Suppliers",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Supplier",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "cost": {
+            "type": "number",
+            "title": "Cost",
+            "minimum": 0
+          },
+          "quality": {
+            "type": "number",
+            "title": "Quality, 0 to 100",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "delivery_days": {
+            "type": "number",
+            "title": "Delivery days",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "name",
+          "cost",
+          "quality",
+          "delivery_days"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 500
+    }
+  },
+  "required": [
+    "cost_weight",
+    "quality_weight",
+    "delivery_weight",
+    "suppliers"
+  ],
+  "additionalProperties": false
+}

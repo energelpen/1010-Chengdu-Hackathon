@@ -1,0 +1,12 @@
+output/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.env
+.env.*
+!.env.example
+
+config/mcp-servers.json
+*client-secret*.json
+*credentials*.json

@@ -1,0 +1,19 @@
+{
+  "id": "inquiry-intake",
+  "title": "Inquiry Intake",
+  "category": "Tourism template",
+  "description": "Run the existing synthetic tourism inquiry intake stage.",
+  "handler": "tourism",
+  "function": "inquiry_intake",
+  "effect": "local",
+  "input_schema": {
+    "type": "object",
+    "title": "Tourism stage input"
+  },
+  "example": {
+    "request_id": "EXAMPLE-RFQ",
+    "message": "RFQ for 30 travelers on a 3 day Chengdu food and tea tour from 2026-10-25, budget CNY 200000.",
+    "customer_email": "buyer@example.test"
+  },
+  "version": "2.0.0"
+}

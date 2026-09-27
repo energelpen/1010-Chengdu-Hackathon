@@ -1,0 +1,7 @@
+# Entry cover provenance
+
+Generated with the built-in image generation tool. The saved project asset is `../05-entry-cover.png` (1672 × 941 pixels). It is an illustrative cover, not an application screenshot.
+
+## Prompt
+
+Create a polished competition entry cover for the existing product Atlas Office. Landscape 16:9, ideally 1920x1080 or comparable. Editorial enterprise software visual with a deep midnight navy background, luminous teal and restrained warm white accents, exceptionally crisp typography. Main exact text: 'ATLAS OFFICE'. Secondary exact text: 'One request. An organized team. A traceable outcome.' Small label: 'SP-D | Organizational Collaboration Office'. Small bottom label: 'CHENGDU HACKATHON 2026'. Compose an elegant isometric miniature collaborative office with small fictional human colleagues at desks, connected by subtle teal paths to floating structured task cards, a schedule, an approval check and a document. Light Chengdu-inspired architectural silhouette and tea leaf shapes as quiet backdrop. Premium software product cover, calm generous negative space around the text, sophisticated restrained 3D illustration, no real company logos, no claims of endorsements, no unreadable placeholder paragraphs, no photographs, no watermarks. Communicate human-supervised organization and traceable collaboration. The only rendered words should be the exact text specified. Output a finished cover, no frame or device mockup.

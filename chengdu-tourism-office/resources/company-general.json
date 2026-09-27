@@ -1,0 +1,295 @@
+{
+  "company": "Atlas Company",
+  "simulation": false,
+  "affiliation_claim": "Fictional staff for your editable company workspace.",
+  "people": [
+    {
+      "id": "director",
+      "name": "Chen",
+      "role": "Director",
+      "reports_to": null,
+      "skills": [
+        "decision-log",
+        "team-capacity",
+        "risk-register",
+        "scenario-compare",
+        "management-handoff",
+        "presentation-create",
+        "shareholder-report",
+        "telegram-boss-update",
+        "policy-checklist"
+      ],
+      "capacity_hours": 12,
+      "assigned_hours": 3,
+      "available": true,
+      "follows": [
+        "sales_manager",
+        "product_manager",
+        "ops_manager"
+      ],
+      "avatar_color": "#365f8e",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Help with director responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "director",
+      "department": "Director"
+    },
+    {
+      "id": "sales_manager",
+      "name": "Wang",
+      "role": "Sales lead",
+      "reports_to": "director",
+      "skills": [
+        "crm-pipeline",
+        "scenario-compare",
+        "management-handoff",
+        "email-draft",
+        "gmail-search",
+        "gmail-draft",
+        "presentation-create",
+        "document-create"
+        ,"quotation-package","proposal-package","customer-followup","gmail-send"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 8,
+      "available": true,
+      "follows": [
+        "finance_manager",
+        "product_manager"
+      ],
+      "avatar_color": "#087f7a",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Help with sales lead responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "sales_manager",
+      "department": "Sales"
+    },
+    {
+      "id": "sales_exec",
+      "name": "Li",
+      "role": "Sales specialist",
+      "reports_to": "sales_manager",
+      "skills": [
+        "crm-pipeline",
+        "email-draft",
+        "gmail-draft",
+        "calendar-event",
+        "calendar-create"
+        ,"quotation-package","customer-followup","calendar-invite"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 9,
+      "available": true,
+      "follows": [
+        "itinerary_specialist"
+      ],
+      "avatar_color": "#6a80b5",
+      "voice": "en-US",
+      "decision_style": "price",
+      "agent_instructions": "Help with sales specialist responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "sales_exec",
+      "department": "Sales specialist"
+    },
+    {
+      "id": "account_exec",
+      "name": "Zhou",
+      "role": "Customer success lead",
+      "reports_to": "sales_manager",
+      "skills": [
+        "support-triage",
+        "email-draft",
+        "knowledge-search",
+        "gmail-search",
+        "gmail-draft",
+        "meeting-minutes"
+        ,"customer-followup","gmail-send","calendar-invite"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 5,
+      "available": true,
+      "follows": [
+        "sales_exec"
+      ],
+      "avatar_color": "#aa6f96",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Help with customer success lead responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "account_exec",
+      "department": "Customer success"
+    },
+    {
+      "id": "product_manager",
+      "name": "Zhao",
+      "role": "Product lead",
+      "reports_to": "director",
+      "skills": [
+        "project-plan",
+        "task-tracker",
+        "responsibility-matrix",
+        "scenario-compare",
+        "document-create",
+        "presentation-create",
+        "slides-create",
+        "docs-create",
+        "campaign-plan"
+        ,"proposal-package"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 9,
+      "available": true,
+      "follows": [
+        "ops_manager",
+        "sales_manager"
+      ],
+      "avatar_color": "#a66f42",
+      "voice": "en-US",
+      "decision_style": "experience",
+      "agent_instructions": "Help with product lead responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "product_manager",
+      "department": "Product"
+    },
+    {
+      "id": "itinerary_specialist",
+      "name": "Liu",
+      "role": "People & culture lead",
+      "reports_to": "director",
+      "skills": [
+        "hr-onboarding",
+        "hiring-scorecard",
+        "leave-request",
+        "policy-checklist",
+        "calendar-event",
+        "document-create"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 7,
+      "available": true,
+      "follows": [
+        "transport_coordinator"
+      ],
+      "avatar_color": "#7c78b5",
+      "voice": "en-US",
+      "decision_style": "experience",
+      "agent_instructions": "Help with people & culture lead responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "itinerary_specialist",
+      "department": "People & culture"
+    },
+    {
+      "id": "supplier_manager",
+      "name": "Huang",
+      "role": "Procurement lead",
+      "reports_to": "product_manager",
+      "skills": [
+        "procurement-compare",
+        "inventory-reorder",
+        "contract-checklist",
+        "spreadsheet-create",
+        "drive-search"
+        ,"spreadsheet-search","booking-confirm","gmail-send"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 12,
+      "available": true,
+      "follows": [
+        "finance_manager"
+      ],
+      "avatar_color": "#a6755d",
+      "voice": "en-US",
+      "decision_style": "price",
+      "agent_instructions": "Help with procurement lead responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "supplier_manager",
+      "department": "Procurement"
+    },
+    {
+      "id": "ops_manager",
+      "name": "He",
+      "role": "Operations lead",
+      "reports_to": "director",
+      "skills": [
+        "project-plan",
+        "task-tracker",
+        "workload-rebalance",
+        "responsibility-matrix",
+        "management-handoff",
+        "meeting-minutes",
+        "incident-report",
+        "risk-register",
+        "calendar-list",
+        "calendar-create",
+        "team-capacity"
+        ,"calendar-invite","telegram-boss-update"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 8,
+      "available": true,
+      "follows": [
+        "product_manager"
+      ],
+      "avatar_color": "#bc7a62",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Help with operations lead responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "ops_manager",
+      "department": "Operations"
+    },
+    {
+      "id": "transport_coordinator",
+      "name": "Sun",
+      "role": "IT & knowledge lead",
+      "reports_to": "ops_manager",
+      "skills": [
+        "knowledge-save",
+        "knowledge-search",
+        "pdf-extract",
+        "csv-clean",
+        "drive-search",
+        "drive-upload",
+        "docs-read"
+        ,"spreadsheet-search"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 5,
+      "available": true,
+      "follows": [
+        "supplier_manager"
+      ],
+      "avatar_color": "#598d99",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Help with it & knowledge lead responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "transport_coordinator",
+      "department": "IT & knowledge"
+    },
+    {
+      "id": "finance_manager",
+      "name": "Deng",
+      "role": "Finance lead",
+      "reports_to": "director",
+      "skills": [
+        "invoice-create",
+        "expense-report",
+        "budget-variance",
+        "spreadsheet-create",
+        "spreadsheet-analyze",
+        "sheets-read",
+        "sheets-write",
+        "sheets-create",
+        "pdf-create"
+        ,"spreadsheet-search","spreadsheet-edit","finance-posting","finance-forecast","shareholder-report"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 10,
+      "available": true,
+      "follows": [
+        "sales_manager"
+      ],
+      "avatar_color": "#698e63",
+      "voice": "en-US",
+      "decision_style": "price",
+      "agent_instructions": "Help with finance lead responsibilities. Use your assigned skills and report actual results, assumptions and missing inputs.",
+      "portrait": "finance_manager",
+      "department": "Finance"
+    }
+  ],
+  "template": "general"
+}

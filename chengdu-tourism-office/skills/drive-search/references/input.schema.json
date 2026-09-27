@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string",
+      "title": "File name contains",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100,
+      "title": "Result limit"
+    }
+  },
+  "required": [
+    "query",
+    "limit"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,67 @@
+{
+  "id": "support-triage",
+  "title": "Support triage",
+  "category": "Customer success",
+  "description": "Prioritize a ticket using customer impact and urgency and record its owner.",
+  "handler": "triage",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Issue",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "impact": {
+        "type": "string",
+        "enum": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "title": "Impact"
+      },
+      "urgency": {
+        "type": "string",
+        "enum": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "title": "Urgency"
+      },
+      "owner": {
+        "type": "string",
+        "title": "Owner",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "details": {
+        "type": "string",
+        "title": "Details",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "title",
+      "impact",
+      "urgency",
+      "owner",
+      "details"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Checkout unavailable",
+    "impact": "high",
+    "urgency": "high",
+    "owner": "Support lead",
+    "details": "All customers are unable to complete checkout."
+  },
+  "guidance": "Priority is determined from supplied impact and urgency. The output records a suggested response target, not a contractual SLA.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

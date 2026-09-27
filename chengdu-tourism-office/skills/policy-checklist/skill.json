@@ -1,0 +1,81 @@
+{
+  "id": "policy-checklist",
+  "title": "Policy checklist",
+  "category": "Governance",
+  "description": "Assess supplied requirements against recorded evidence.",
+  "handler": "checklist",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Review title",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "items": {
+        "type": "array",
+        "title": "Checks",
+        "items": {
+          "type": "object",
+          "properties": {
+            "requirement": {
+              "type": "string",
+              "title": "Requirement or clause",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "evidence": {
+              "type": "string",
+              "title": "Evidence",
+              "maxLength": 10000
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "met",
+                "gap",
+                "unknown"
+              ],
+              "title": "Status"
+            },
+            "owner": {
+              "type": "string",
+              "title": "Owner",
+              "minLength": 1,
+              "maxLength": 10000
+            }
+          },
+          "required": [
+            "requirement",
+            "evidence",
+            "status",
+            "owner"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 500
+      }
+    },
+    "required": [
+      "title",
+      "items"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Vendor review",
+    "items": [
+      {
+        "requirement": "Data retention terms documented",
+        "evidence": "",
+        "status": "unknown",
+        "owner": "Legal reviewer"
+      }
+    ]
+  },
+  "guidance": "Only assess supplied requirements. Missing evidence is not a compliance certification.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

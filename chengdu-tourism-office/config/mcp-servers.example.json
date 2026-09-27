@@ -1,0 +1,138 @@
+{
+  "servers": [
+    {
+      "id": "atlas-local",
+      "name": "Atlas local tools",
+      "enabled": true,
+      "transport": "stdio",
+      "command": "${PYTHON}",
+      "args": [
+        "${ROOT}/server/company_mcp.py"
+      ],
+      "env_keys": [],
+      "allowed_tools": [
+        "get_company",
+        "list_skills",
+        "list_files",
+        "search_knowledge"
+      ]
+    },
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "MICROSOFT_365_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "SLACK_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "teams",
+      "name": "Microsoft Teams",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "TEAMS_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "NOTION_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "GITHUB_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "LINEAR_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "SALESFORCE_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "HUBSPOT_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "JIRA_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "zendesk",
+      "name": "Zendesk",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "ZENDESK_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "DROPBOX_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "box",
+      "name": "Box",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "BOX_MCP_TOKEN",
+      "allowed_tools": []
+    },
+    {
+      "id": "sharepoint",
+      "name": "SharePoint",
+      "enabled": false,
+      "transport": "http",
+      "url": "",
+      "token_env": "SHAREPOINT_MCP_TOKEN",
+      "allowed_tools": []
+    }
+  ]
+}

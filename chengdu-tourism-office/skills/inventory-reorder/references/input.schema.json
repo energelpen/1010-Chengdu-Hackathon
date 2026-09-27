@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "title": "Stock items",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sku": {
+            "type": "string",
+            "title": "SKU",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "on_hand": {
+            "type": "number",
+            "title": "On hand",
+            "minimum": 0
+          },
+          "on_order": {
+            "type": "number",
+            "title": "On order",
+            "minimum": 0
+          },
+          "daily_demand": {
+            "type": "number",
+            "title": "Daily demand",
+            "minimum": 0
+          },
+          "lead_days": {
+            "type": "number",
+            "title": "Lead time in days",
+            "minimum": 0
+          },
+          "safety_stock": {
+            "type": "number",
+            "title": "Safety stock",
+            "minimum": 0
+          },
+          "target_days": {
+            "type": "number",
+            "title": "Target days of cover",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "sku",
+          "on_hand",
+          "on_order",
+          "daily_demand",
+          "lead_days",
+          "safety_stock",
+          "target_days"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 500
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

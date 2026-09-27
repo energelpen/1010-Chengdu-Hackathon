@@ -1,0 +1,94 @@
+{
+  "id": "meeting-minutes",
+  "title": "Meeting minutes",
+  "category": "Communication",
+  "description": "Turn supplied decisions and action items into structured meeting notes.",
+  "handler": "brief",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Meeting",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "notes": {
+        "type": "string",
+        "title": "Notes",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "decisions": {
+        "type": "array",
+        "title": "Decisions",
+        "items": {
+          "type": "string",
+          "title": "Decision",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "maxItems": 500
+      },
+      "actions": {
+        "type": "array",
+        "title": "Actions",
+        "items": {
+          "type": "object",
+          "properties": {
+            "task": {
+              "type": "string",
+              "title": "Task",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "owner": {
+              "type": "string",
+              "title": "Owner",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "due": {
+              "type": "string",
+              "title": "Due date",
+              "minLength": 1,
+              "maxLength": 10000
+            }
+          },
+          "required": [
+            "task",
+            "owner",
+            "due"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 500
+      }
+    },
+    "required": [
+      "title",
+      "notes",
+      "decisions",
+      "actions"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Launch planning",
+    "notes": "Reviewed launch scope.",
+    "decisions": [
+      "Start with the pilot group"
+    ],
+    "actions": [
+      {
+        "task": "Confirm pilot participants",
+        "owner": "Operations",
+        "due": "2026-10-05"
+      }
+    ]
+  },
+  "guidance": "Record only supplied decisions. Keep action owners and due dates explicit; do not claim transcription or attendance verification.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

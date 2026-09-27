@@ -1,0 +1,14 @@
+{
+  "spreadsheet_id": "your-spreadsheet-id",
+  "range": "Sheet1!A1:B2",
+  "values": [
+    [
+      "Month",
+      "Revenue"
+    ],
+    [
+      "October",
+      12000
+    ]
+  ]
+}

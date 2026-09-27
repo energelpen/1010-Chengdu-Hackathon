@@ -1,0 +1,53 @@
+{
+  "id": "leave-request",
+  "title": "Leave request",
+  "category": "People",
+  "description": "Calculate requested weekdays and save a leave request for manager review.",
+  "handler": "leave",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "employee": {
+        "type": "string",
+        "title": "Employee",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "start": {
+        "type": "string",
+        "title": "Start date",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "end": {
+        "type": "string",
+        "title": "End date",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "manager": {
+        "type": "string",
+        "title": "Manager",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "employee",
+      "start",
+      "end",
+      "manager"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "employee": "Alex",
+    "start": "2026-10-12",
+    "end": "2026-10-14",
+    "manager": "Operations lead"
+  },
+  "guidance": "Exclude Saturdays and Sundays only; public holidays are not known. This records a request, never approved leave.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

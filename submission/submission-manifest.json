@@ -1,0 +1,60 @@
+{
+  "repository": "https://github.com/energelpen/1010-Chengdu-Hackathon",
+  "created": "2026-09-27",
+  "files": [
+    {
+      "file": "01-skill-function-description.pdf",
+      "bytes": 56321,
+      "limit_bytes": 30000000,
+      "sha256": "8ba902c8f125ed0952b73b844e3d820d452b67b9f8001e991678e7087746f4a6",
+      "pages": 5
+    },
+    {
+      "file": "02-api-documentation.pdf",
+      "bytes": 96903,
+      "limit_bytes": 30000000,
+      "sha256": "a120fa413bc38ee701e5f0664b8b003990861d2874deab48976673503fe07d82",
+      "pages": 21
+    },
+    {
+      "file": "03-implementation-demo.mp4",
+      "bytes": 13051170,
+      "limit_bytes": 200000000,
+      "sha256": "c5d7d92a8c34c0d578d26b806d789a97dae128523dfc3ecde182a1c1c82640c6"
+    },
+    {
+      "file": "04-enterprise-challenge-fit.pdf",
+      "bytes": 53380,
+      "limit_bytes": 30000000,
+      "sha256": "c8d6e9ea46e79aaea045ca447e9bc9c75142dfa6bbe2e68435f4c193818c9332",
+      "pages": 4
+    },
+    {
+      "file": "05-entry-cover.png",
+      "bytes": 1768844,
+      "limit_bytes": 5000000,
+      "sha256": "a7cb88c956b466e6dd69db8bfcf8461811d65be68fe040095cdcb31103b00b04"
+    }
+  ],
+  "demo_mode": "Actual application recording; operator-led simulation; synthetic voice; edited pacing",
+  "summary": {
+    "file": "06-entry-summary.txt",
+    "characters": 2470,
+    "limit": 3000
+  },
+  "video": {
+    "duration_seconds": 234.57,
+    "maximum_seconds": 300,
+    "distinct_skills": 13,
+    "voice": {
+      "engine": "Windows SAPI",
+      "name": "Microsoft Zira Desktop - English (United States)",
+      "synthetic": true
+    },
+    "format": "H.264 video, AAC audio, embedded English subtitles",
+    "dimensions": [
+      1600,
+      1000
+    ]
+  }
+}

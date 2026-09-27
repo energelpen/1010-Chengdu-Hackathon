@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "spreadsheet_id": {
+      "type": "string",
+      "title": "Spreadsheet ID",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "range": {
+      "type": "string",
+      "title": "A1 range",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "values": {
+      "type": "array",
+      "title": "Rows",
+      "items": {
+        "type": "array",
+        "title": "Cells",
+        "items": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        },
+        "maxItems": 100
+      },
+      "maxItems": 1000
+    }
+  },
+  "required": [
+    "spreadsheet_id",
+    "range",
+    "values"
+  ],
+  "additionalProperties": false
+}

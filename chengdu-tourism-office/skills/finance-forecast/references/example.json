@@ -1,0 +1,1 @@
+{"title":"Customer revenue forecast","currency":"CNY","opening_customers":20,"periods":[{"month":"2026-10","new_customers":5,"churn":1,"revenue_per_customer":3000,"variable_cost_per_customer":900,"fixed_cost":25000},{"month":"2026-11","new_customers":4,"churn":2,"revenue_per_customer":3100,"variable_cost_per_customer":950,"fixed_cost":26000}]}

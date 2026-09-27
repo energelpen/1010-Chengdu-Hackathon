@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Decision",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "rationale": {
+      "type": "string",
+      "title": "Rationale",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "owner": {
+      "type": "string",
+      "title": "Decision owner",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "review_date": {
+      "type": "string",
+      "title": "Review date",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "title",
+    "rationale",
+    "owner",
+    "review_date"
+  ],
+  "additionalProperties": false
+}

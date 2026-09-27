@@ -1,0 +1,79 @@
+{
+  "id": "risk-register",
+  "title": "Risk register",
+  "category": "Governance",
+  "description": "Rank risks by likelihood and impact, preserving owners and mitigations.",
+  "handler": "risks",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "risks": {
+        "type": "array",
+        "title": "Risks",
+        "items": {
+          "type": "object",
+          "properties": {
+            "risk": {
+              "type": "string",
+              "title": "Risk",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "likelihood": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "title": "Likelihood, 1 to 5"
+            },
+            "impact": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "title": "Impact, 1 to 5"
+            },
+            "owner": {
+              "type": "string",
+              "title": "Owner",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "mitigation": {
+              "type": "string",
+              "title": "Mitigation",
+              "minLength": 1,
+              "maxLength": 10000
+            }
+          },
+          "required": [
+            "risk",
+            "likelihood",
+            "impact",
+            "owner",
+            "mitigation"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 500
+      }
+    },
+    "required": [
+      "risks"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "risks": [
+      {
+        "risk": "Supplier delay",
+        "likelihood": 3,
+        "impact": 4,
+        "owner": "Procurement",
+        "mitigation": "Confirm backup supplier"
+      }
+    ]
+  },
+  "guidance": "Scores are a prioritization aid based on user ratings. They do not measure objective probabilities.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Sales overview",
+  "columns": [
+    "Month",
+    "Revenue",
+    "Cost"
+  ],
+  "rows": [
+    [
+      "January",
+      12000,
+      7000
+    ],
+    [
+      "February",
+      14500,
+      8200
+    ]
+  ]
+}

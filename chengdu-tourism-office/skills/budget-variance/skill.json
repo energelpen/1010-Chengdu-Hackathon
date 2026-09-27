@@ -1,0 +1,74 @@
+{
+  "id": "budget-variance",
+  "title": "Budget variance",
+  "category": "Finance",
+  "description": "Compare budget with actual spending, including percentage variance.",
+  "handler": "variance",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "currency": {
+        "type": "string",
+        "title": "Currency",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "items": {
+        "type": "array",
+        "title": "Budget lines",
+        "items": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "title": "Category",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "budget": {
+              "type": "number",
+              "title": "Budget",
+              "minimum": 0
+            },
+            "actual": {
+              "type": "number",
+              "title": "Actual",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "category",
+            "budget",
+            "actual"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 500
+      }
+    },
+    "required": [
+      "currency",
+      "items"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "currency": "SGD",
+    "items": [
+      {
+        "category": "Marketing",
+        "budget": 10000,
+        "actual": 11500
+      },
+      {
+        "category": "Software",
+        "budget": 5000,
+        "actual": 4200
+      }
+    ]
+  },
+  "guidance": "Positive variance means overspending. A zero budget has no percentage variance. Values must share the stated currency.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "slides-create",
+  "title": "Create Google Slides",
+  "category": "Google Workspace",
+  "description": "Create an editable Google Slides presentation with titles and text.",
+  "handler": "google",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Presentation title",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "slides": {
+        "type": "array",
+        "title": "Slides",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Slide title",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "bullets": {
+              "type": "array",
+              "title": "Key points",
+              "items": {
+                "type": "string",
+                "maxLength": 180,
+                "minLength": 1
+              },
+              "maxItems": 6
+            }
+          },
+          "required": [
+            "title",
+            "bullets"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 30
+      }
+    },
+    "required": [
+      "title",
+      "slides"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Quarterly review",
+    "slides": [
+      {
+        "title": "Progress",
+        "bullets": [
+          "Pilot completed",
+          "Next: expand rollout"
+        ]
+      }
+    ]
+  },
+  "guidance": "Use the connected Google account. Surface provider errors and actual IDs. Review the exact saved payload before executing this external write; do not retry an uncertain result automatically.",
+  "effect": "remote_write",
+  "connector": "google",
+  "version": "1.0.0"
+}

@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "PDF title",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "sections": {
+      "type": "array",
+      "title": "Sections",
+      "items": {
+        "type": "object",
+        "properties": {
+          "heading": {
+            "type": "string",
+            "title": "Heading",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "body": {
+            "type": "string",
+            "title": "Body",
+            "minLength": 1,
+            "maxLength": 10000
+          }
+        },
+        "required": [
+          "heading",
+          "body"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 50
+    }
+  },
+  "required": [
+    "title",
+    "sections"
+  ],
+  "additionalProperties": false
+}

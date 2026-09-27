@@ -1,0 +1,11 @@
+{
+  "source": "SYNTHETIC_DEMO",
+  "currency": "CNY",
+  "activities": [
+    {"id":"TOUR-FOOD","name":"Chengdu cuisine walk","tags":["food","heritage"],"price_cny_per_person":180,"max_group":35,"duration_minutes":150,"accessible":true,"preferred_slot":"evening"},
+    {"id":"TOUR-TEA","name":"Sichuan tea workshop","tags":["tea","culture"],"price_cny_per_person":160,"max_group":40,"duration_minutes":120,"accessible":true,"preferred_slot":"afternoon"},
+    {"id":"TOUR-MUSEUM","name":"Museum interpretation session","tags":["museum","heritage"],"price_cny_per_person":120,"max_group":40,"duration_minutes":120,"accessible":true,"preferred_slot":"morning"},
+    {"id":"TOUR-PANDA","name":"Panda education visit","tags":["panda","nature"],"price_cny_per_person":210,"max_group":30,"duration_minutes":180,"accessible":false,"preferred_slot":"morning"},
+    {"id":"TOUR-NATURE","name":"Countryside walk","tags":["nature"],"price_cny_per_person":150,"max_group":20,"duration_minutes":240,"accessible":false,"preferred_slot":"afternoon"}
+  ]
+}

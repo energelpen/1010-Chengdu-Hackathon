@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Workbook title",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "columns": {
+      "type": "array",
+      "title": "Columns",
+      "items": {
+        "type": "string",
+        "title": "Column",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "maxItems": 50
+    },
+    "rows": {
+      "type": "array",
+      "title": "Rows",
+      "items": {
+        "type": "array",
+        "title": "Cells",
+        "items": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        },
+        "maxItems": 50
+      },
+      "maxItems": 5000
+    }
+  },
+  "required": [
+    "title",
+    "columns",
+    "rows"
+  ],
+  "additionalProperties": false
+}

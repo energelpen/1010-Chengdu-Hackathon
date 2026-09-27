@@ -1,0 +1,15 @@
+Atlas Office is an organizational collaboration workspace for Product Launch Preparation and group-travel operations, aligned with the SP-D challenge and the culture, commerce and tourism theme.
+
+Its representative enterprise context is Sichuan Shanghai Airlines Holiday International Travel Agency Co., Ltd. Public descriptions of destination services, business travel and MICE inform the workflow design. The enterprise has not endorsed the prototype or supplied private SOPs.
+
+Atlas models fictional colleagues through their roles, managers, skills, availability, capacity and relationships. Its 69 registered skills support business documents, spreadsheets, presentations, project work, finance, governance and optional connected tools. The same validated runtime serves browser forms, HTTP, CLI and MCP.
+
+The narrated implementation demo records the full operator-led preparation of a fictional Chengdu food and tea group-tour product. Thirteen distinct skills compare pilot and full-launch options, propose qualified staff allocations, calculate dependencies, map responsibilities, track a blocker through a simulated resolution, calculate budget variance, create and review a workbook change, record a management decision, deliver a completed simulated handoff, generate a PDF, and save and retrieve knowledge. Word, PowerPoint, Excel and PDF artifacts are real outputs. The recording includes a genuine approval gate for a local spreadsheet copy.
+
+Nine independently callable tourism skills additionally form an integrated inquiry-to-outcome simulation. They apply budget and capacity constraints, track evidence and dependencies, build dated schedules, and hold release when required checks are missing.
+
+Verification on 27 September 2026 passed 180 tourism behavior cases and 46 automated tests. The fixed routing corpus matched 43/43 action prompts and left 5/5 non-action prompts unassigned. These bounded tests are not general accuracy or measured enterprise savings.
+
+The core value is visible responsibility, inspectable decisions and reusable preparation work. Demo staff, prices, decisions and completion evidence are synthetic. No real launch, booking, payment or external message occurs. The recording uses typed skill forms; automatic full launch completion from one sentence remains unverified. OpenAI and external services are optional. The current app is a single-user local prototype.
+
+Source: https://github.com/energelpen/1010-Chengdu-Hackathon

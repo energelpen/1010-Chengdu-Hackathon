@@ -1,0 +1,84 @@
+{
+  "id": "expense-report",
+  "title": "Expense report",
+  "category": "Finance",
+  "description": "Sum expenses by category and flag missing receipts for review.",
+  "handler": "expenses",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "employee": {
+        "type": "string",
+        "title": "Employee",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "currency": {
+        "type": "string",
+        "title": "Currency",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "expenses": {
+        "type": "array",
+        "title": "Expenses",
+        "items": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string",
+              "title": "Description",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "category": {
+              "type": "string",
+              "title": "Category",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "amount": {
+              "type": "number",
+              "title": "Amount",
+              "minimum": 0
+            },
+            "receipt": {
+              "type": "boolean",
+              "title": "Receipt attached"
+            }
+          },
+          "required": [
+            "description",
+            "category",
+            "amount",
+            "receipt"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 500
+      }
+    },
+    "required": [
+      "employee",
+      "currency",
+      "expenses"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "employee": "Alex",
+    "currency": "SGD",
+    "expenses": [
+      {
+        "description": "Airport transfer",
+        "category": "Travel",
+        "amount": 45,
+        "receipt": true
+      }
+    ]
+  },
+  "guidance": "Do not mark expenses reimbursed. Missing receipts are review flags, not evidence of misconduct.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

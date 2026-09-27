@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "file_id": {
+      "type": "string",
+      "title": "Uploaded CSV ID",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "deduplicate": {
+      "type": "boolean",
+      "title": "Remove duplicate rows"
+    }
+  },
+  "required": [
+    "file_id",
+    "deduplicate"
+  ],
+  "additionalProperties": false
+}

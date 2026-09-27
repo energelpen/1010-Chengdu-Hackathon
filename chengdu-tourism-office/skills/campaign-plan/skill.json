@@ -1,0 +1,84 @@
+{
+  "id": "campaign-plan",
+  "title": "Campaign plan",
+  "category": "Marketing",
+  "description": "Create a campaign brief with channels, budget and measurable objectives.",
+  "handler": "brief",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Campaign",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "audience": {
+        "type": "string",
+        "title": "Audience",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "objective": {
+        "type": "string",
+        "title": "Objective",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "channels": {
+        "type": "array",
+        "title": "Channels",
+        "items": {
+          "type": "string",
+          "title": "Channel",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "maxItems": 500
+      },
+      "budget": {
+        "type": "number",
+        "title": "Budget",
+        "minimum": 0
+      },
+      "currency": {
+        "type": "string",
+        "title": "Currency",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "success_measure": {
+        "type": "string",
+        "title": "Success measure",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "title",
+      "audience",
+      "objective",
+      "channels",
+      "budget",
+      "currency",
+      "success_measure"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Portal launch",
+    "audience": "Existing customers",
+    "objective": "Increase adoption",
+    "channels": [
+      "Email",
+      "Webinar"
+    ],
+    "budget": 5000,
+    "currency": "SGD",
+    "success_measure": "50 pilot signups"
+  },
+  "guidance": "Label targets as planned. This does not publish a campaign or purchase advertising.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

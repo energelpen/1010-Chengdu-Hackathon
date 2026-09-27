@@ -1,0 +1,26 @@
+{
+  "id": "tour-search",
+  "title": "Tour Search",
+  "category": "Tourism template",
+  "description": "Run the existing synthetic tourism tour search stage.",
+  "handler": "tourism",
+  "function": "tour_search",
+  "effect": "local",
+  "input_schema": {
+    "type": "object",
+    "title": "Tourism stage input"
+  },
+  "example": {
+    "request_id": "EXAMPLE-RFQ",
+    "inquiry": {
+      "group_size": 30,
+      "interests": [
+        "food",
+        "tea",
+        "heritage"
+      ],
+      "accessible": false
+    }
+  },
+  "version": "2.0.0"
+}

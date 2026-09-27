@@ -1,0 +1,71 @@
+{
+  "id": "presentation-create",
+  "title": "PowerPoint presentation",
+  "category": "Office files",
+  "description": "Build an editable presentation with a cover and concise content slides.",
+  "handler": "presentation",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Presentation title",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "slides": {
+        "type": "array",
+        "title": "Slides",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Slide title",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "bullets": {
+              "type": "array",
+              "title": "Key points",
+              "items": {
+                "type": "string",
+                "maxLength": 180,
+                "minLength": 1
+              },
+              "maxItems": 6
+            }
+          },
+          "required": [
+            "title",
+            "bullets"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 30
+      }
+    },
+    "required": [
+      "title",
+      "slides"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Quarterly business review",
+    "slides": [
+      {
+        "title": "Progress this quarter",
+        "bullets": [
+          "Customer portal pilot completed",
+          "Support response times improved",
+          "Next: expand the rollout"
+        ]
+      }
+    ]
+  },
+  "guidance": "Use at most six concise points per slide. The renderer wraps text; split dense material into additional slides. Do not invent business metrics.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

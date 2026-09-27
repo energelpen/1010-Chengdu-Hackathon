@@ -1,0 +1,313 @@
+{
+  "company": "四川上航假期国际旅行社有限公司",
+  "simulation": true,
+  "affiliation_claim": "Independent demonstration; not endorsed by or integrated with the named company.",
+  "people": [
+    {
+      "id": "director",
+      "name": "Director Chen",
+      "role": "General Manager",
+      "reports_to": null,
+      "skills": [
+        "executive_approval",
+        "strategy",
+        "decision-log",
+        "team-capacity",
+        "risk-register",
+        "scenario-compare",
+        "management-handoff",
+        "presentation-create",
+        "shareholder-report",
+        "telegram-boss-update",
+        "policy-checklist"
+      ],
+      "capacity_hours": 12,
+      "assigned_hours": 3,
+      "available": true,
+      "follows": [
+        "sales_manager",
+        "product_manager",
+        "ops_manager"
+      ],
+      "avatar_color": "#365f8e",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Check high-value exposure and make a clear go/no-go decision.",
+      "portrait": "director"
+    },
+    {
+      "id": "sales_manager",
+      "name": "Sales Manager Wang",
+      "role": "Sales Manager",
+      "reports_to": "director",
+      "skills": [
+        "sales",
+        "pricing",
+        "coordination",
+        "client_email",
+        "crm-pipeline",
+        "scenario-compare",
+        "management-handoff",
+        "email-draft",
+        "gmail-search",
+        "gmail-draft",
+        "presentation-create",
+        "document-create"
+        ,"quotation-package","proposal-package","customer-followup","gmail-send"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 8,
+      "available": true,
+      "follows": [
+        "finance_manager",
+        "product_manager"
+      ],
+      "avatar_color": "#087f7a",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Translate customer needs into a complete, transparent proposal.",
+      "portrait": "sales_manager"
+    },
+    {
+      "id": "sales_exec",
+      "name": "Sales Executive Li",
+      "role": "Sales Executive",
+      "reports_to": "sales_manager",
+      "skills": [
+        "intake",
+        "sales",
+        "client_email",
+        "crm-pipeline",
+        "email-draft",
+        "gmail-draft",
+        "calendar-event",
+        "calendar-create"
+        ,"quotation-package","customer-followup","calendar-invite"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 9,
+      "available": true,
+      "follows": [
+        "itinerary_specialist"
+      ],
+      "avatar_color": "#6a80b5",
+      "voice": "en-US",
+      "decision_style": "price",
+      "agent_instructions": "Ask for missing dates, group size and budget before promising a price.",
+      "portrait": "sales_exec"
+    },
+    {
+      "id": "account_exec",
+      "name": "Account Executive Zhou",
+      "role": "Account Executive",
+      "reports_to": "sales_manager",
+      "skills": [
+        "client_email",
+        "reporting",
+        "sales",
+        "support-triage",
+        "email-draft",
+        "knowledge-search",
+        "gmail-search",
+        "gmail-draft",
+        "meeting-minutes"
+        ,"customer-followup","gmail-send","calendar-invite"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 5,
+      "available": true,
+      "follows": [
+        "sales_exec"
+      ],
+      "avatar_color": "#aa6f96",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Write clear customer updates and separate indicative prices from confirmed offers.",
+      "portrait": "account_exec"
+    },
+    {
+      "id": "product_manager",
+      "name": "Product Manager Zhao",
+      "role": "Product Manager",
+      "reports_to": "director",
+      "skills": [
+        "itinerary",
+        "coordination",
+        "product",
+        "project-plan",
+        "task-tracker",
+        "responsibility-matrix",
+        "scenario-compare",
+        "document-create",
+        "presentation-create",
+        "slides-create",
+        "docs-create",
+        "campaign-plan"
+        ,"proposal-package","booking-confirm"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 9,
+      "available": true,
+      "follows": [
+        "ops_manager",
+        "sales_manager"
+      ],
+      "avatar_color": "#a66f42",
+      "voice": "en-US",
+      "decision_style": "experience",
+      "agent_instructions": "Protect itinerary quality, pacing and local cultural fit.",
+      "portrait": "product_manager"
+    },
+    {
+      "id": "itinerary_specialist",
+      "name": "Itinerary Specialist Liu",
+      "role": "Itinerary Specialist",
+      "reports_to": "product_manager",
+      "skills": [
+        "itinerary",
+        "heritage",
+        "accessibility",
+        "hr-onboarding",
+        "hiring-scorecard",
+        "leave-request",
+        "policy-checklist",
+        "calendar-event",
+        "document-create"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 7,
+      "available": true,
+      "follows": [
+        "transport_coordinator"
+      ],
+      "avatar_color": "#7c78b5",
+      "voice": "en-US",
+      "decision_style": "experience",
+      "agent_instructions": "Check accessible pacing, meaningful stops and realistic travel time.",
+      "portrait": "itinerary_specialist"
+    },
+    {
+      "id": "supplier_manager",
+      "name": "Supplier Manager Huang",
+      "role": "Supplier Manager",
+      "reports_to": "product_manager",
+      "skills": [
+        "procurement",
+        "supplier",
+        "procurement-compare",
+        "inventory-reorder",
+        "contract-checklist",
+        "spreadsheet-create",
+        "drive-search"
+        ,"spreadsheet-search","booking-confirm","gmail-send"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 12,
+      "available": true,
+      "follows": [
+        "finance_manager"
+      ],
+      "avatar_color": "#a6755d",
+      "voice": "en-US",
+      "decision_style": "price",
+      "agent_instructions": "Do not treat fixture inventory as a confirmed booking.",
+      "portrait": "supplier_manager"
+    },
+    {
+      "id": "ops_manager",
+      "name": "Operations Manager He",
+      "role": "Operations Manager",
+      "reports_to": "director",
+      "skills": [
+        "operations",
+        "safety",
+        "coordination",
+        "project-plan",
+        "task-tracker",
+        "workload-rebalance",
+        "responsibility-matrix",
+        "management-handoff",
+        "meeting-minutes",
+        "incident-report",
+        "risk-register",
+        "calendar-list",
+        "calendar-create",
+        "team-capacity"
+        ,"calendar-invite","telegram-boss-update"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 8,
+      "available": true,
+      "follows": [
+        "product_manager"
+      ],
+      "avatar_color": "#bc7a62",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Escalate safety incidents and verify group logistics before release.",
+      "portrait": "ops_manager"
+    },
+    {
+      "id": "transport_coordinator",
+      "name": "Transport Coordinator Sun",
+      "role": "Transport Coordinator",
+      "reports_to": "ops_manager",
+      "skills": [
+        "transport",
+        "safety",
+        "knowledge-save",
+        "knowledge-search",
+        "pdf-extract",
+        "csv-clean",
+        "drive-search",
+        "drive-upload",
+        "docs-read"
+        ,"spreadsheet-search"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 5,
+      "available": true,
+      "follows": [
+        "supplier_manager"
+      ],
+      "avatar_color": "#598d99",
+      "voice": "en-US",
+      "decision_style": "balanced",
+      "agent_instructions": "Check vehicle capacity and contingency for group movement.",
+      "portrait": "transport_coordinator"
+    },
+    {
+      "id": "finance_manager",
+      "name": "Finance Manager Deng",
+      "role": "Finance Manager",
+      "reports_to": "director",
+      "skills": [
+        "finance",
+        "pricing",
+        "financial_approval",
+        "invoice-create",
+        "expense-report",
+        "budget-variance",
+        "spreadsheet-create",
+        "spreadsheet-analyze",
+        "sheets-read",
+        "sheets-write",
+        "sheets-create",
+        "pdf-create"
+        ,"spreadsheet-search","spreadsheet-edit","finance-posting","finance-forecast","shareholder-report"
+      ],
+      "capacity_hours": 30,
+      "assigned_hours": 10,
+      "available": true,
+      "follows": [
+        "sales_manager"
+      ],
+      "avatar_color": "#698e63",
+      "voice": "en-US",
+      "decision_style": "price",
+      "agent_instructions": "Make all quote components and approval evidence visible.",
+      "portrait": "finance_manager"
+    }
+  ],
+  "template": "tourism"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "hr-onboarding",
+  "title": "Employee onboarding",
+  "category": "People",
+  "description": "Create a dated onboarding checklist with accountable owners.",
+  "handler": "onboarding",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "employee": {
+        "type": "string",
+        "title": "Employee",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "role": {
+        "type": "string",
+        "title": "Role",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "start": {
+        "type": "string",
+        "title": "Start date",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "manager": {
+        "type": "string",
+        "title": "Manager",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "employee",
+      "role",
+      "start",
+      "manager"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "employee": "Alex Tan",
+    "role": "Operations specialist",
+    "start": "2026-10-05",
+    "manager": "Operations lead"
+  },
+  "guidance": "Create preparation, first-day, first-week and first-month tasks. Do not collect identity documents or claim access has been granted.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

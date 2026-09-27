@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:04,246
+This is Atlas Office, running locally with fictional colleagues.
+
+2
+00:00:04,246 --> 00:00:09,686
+Our scenario is preparing the launch of a Chengdu food and tea group-tour product.
+
+3
+00:00:09,686 --> 00:00:12,605
+We will follow the entire preparation cycle.
+
+4
+00:00:12,605 --> 00:00:19,239
+In this credential-free recording, the operator invokes the actual skills and reviews their results.
+
+5
+00:00:19,239 --> 00:00:23,485
+Free-form model orchestration is optional and is not shown here.
+
+6
+00:00:24,685 --> 00:00:28,707
+Wang, the sales lead, prepares two launch alternatives.
+
+7
+00:00:28,707 --> 00:00:32,948
+We supply the costs, impact, risk, and weights explicitly.
+
+8
+00:00:32,948 --> 00:00:41,504
+The executed proposal skill recommends the pilot, scoring seventy-five point seven against sixty-two for full launch.
+
+9
+00:00:41,504 --> 00:00:46,403
+It creates an editable PowerPoint proposal and Word decision brief.
+
+10
+00:00:46,403 --> 00:00:51,010
+The recorded result is a recommendation, not spending approval.
+
+11
+00:00:52,210 --> 00:00:58,807
+Operations now splits the launch work using real assigned skill identifiers and projected capacity.
+
+12
+00:00:58,807 --> 00:01:04,870
+The result assigns planning, budget review, and management handoff to qualified colleagues.
+
+13
+00:01:04,870 --> 00:01:12,133
+If no colleague has the required skill or hours, the same tool reports unassigned work for manager attention.
+
+14
+00:01:12,133 --> 00:01:17,530
+These are proposed allocations; it does not secretly change saved staff capacity.
+
+15
+00:01:18,730 --> 00:01:24,600
+Zhao, the product lead, converts the launch preparation into a dependency-aware schedule.
+
+16
+00:01:24,600 --> 00:01:30,601
+The pilot review follows scope confirmation, and the executive decision follows the review.
+
+17
+00:01:30,601 --> 00:01:33,964
+Finish dates are exclusive calendar-day boundaries.
+
+18
+00:01:33,964 --> 00:01:41,680
+A separate responsibility matrix names the responsible specialists and makes Chen accountable for the final decision.
+
+19
+00:01:42,880 --> 00:01:47,361
+We record a launch task as blocked, with Operations as its owner.
+
+20
+00:01:47,361 --> 00:01:50,876
+The manager can inspect and edit that saved record.
+
+21
+00:01:50,876 --> 00:01:56,528
+For this simulation, we enter a supplied readiness outcome and mark the task done.
+
+22
+00:01:56,528 --> 00:02:03,007
+This is an operator-recorded status transition, not automatic verification of a real supplier.
+
+23
+00:02:03,007 --> 00:02:06,660
+The record remains available in the company register.
+
+24
+00:02:07,860 --> 00:02:13,667
+Deng, the finance lead, calculates budget variance from supplied simulation figures.
+
+25
+00:02:13,667 --> 00:02:17,123
+Marketing is fifteen hundred renminbi over budget.
+
+26
+00:02:17,123 --> 00:02:22,377
+We then create a real Excel launch budget and propose a revised input value.
+
+27
+00:02:22,377 --> 00:02:25,626
+Spreadsheet editing stops at awaiting approval.
+
+28
+00:02:25,626 --> 00:02:32,815
+Only after review and the approval click does Atlas create a new workbook copy, preserving the original.
+
+29
+00:02:34,015 --> 00:02:42,559
+Chen records the simulated decision to proceed with pilot preparation, with the weighted comparison and reviewed budget as its rationale.
+
+30
+00:02:42,559 --> 00:02:52,100
+The final handoff reports three preparation tasks done from supplied simulation evidence and produces a management Word brief plus an unsent email draft.
+
+31
+00:02:52,100 --> 00:02:58,960
+The preparation loop is complete; launching a real travel product still requires authorized enterprise checks.
+
+32
+00:03:00,160 --> 00:03:05,637
+The launch pack can be delivered as a PDF as well as Word, PowerPoint, and Excel.
+
+33
+00:03:05,637 --> 00:03:11,520
+We save the outcome as a sourced local knowledge note, then find it with a real search.
+
+34
+00:03:11,520 --> 00:03:15,848
+This preserves the decision and its limits for the next request.
+
+35
+00:03:15,848 --> 00:03:21,325
+Files remain downloadable from the workspace, and the email draft remains unsent.
+
+36
+00:03:22,525 --> 00:03:29,186
+Activity shows the actual runs across Sales, Product, Operations, Finance, IT and the Director.
+
+37
+00:03:29,186 --> 00:03:32,200
+Thirteen different skills are demonstrated.
+
+38
+00:03:32,200 --> 00:03:39,422
+The repository contains the source, all sixty-nine skill contracts, test evidence, and this submission.
+
+39
+00:03:39,422 --> 00:03:43,839
+The nine-stage tourism engine is an additional domain workflow.
+
+40
+00:03:43,839 --> 00:03:53,374
+This recording demonstrates the complete operator-led launch preparation cycle, including a real approval gate and simulated completion.

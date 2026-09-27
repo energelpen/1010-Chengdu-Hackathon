@@ -1,0 +1,8 @@
+{
+  "id":"finance-posting","title":"Review booking finance and invoice draft","category":"Finance",
+  "description":"After a simulated confirmation, update customer income and supplier outflow projections and prepare a draft invoice, gated by human review.",
+  "handler":"finance_posting","effect":"reviewed_write","connector":null,"version":"1.0.0",
+  "input_schema":{"type":"object","properties":{"booking_id":{"type":"string","title":"Simulated booking record ID","minLength":1},"file_id":{"type":"string","title":"Monthly finance workbook ID","minLength":1},"category":{"type":"string","title":"Expense category","enum":["Flights","Hotels","Guides","Transport","Activities","Marketing","Customer care"]},"committed_cny":{"type":"number","title":"Simulated committed cost CNY","exclusiveMinimum":0}},"required":["booking_id","file_id","category","committed_cny"],"additionalProperties":false},
+  "example":{"booking_id":"select-a-booking-record","file_id":"select-a-workspace-file","category":"Flights","committed_cny":25000},
+  "guidance":"Use only a recorded simulated confirmation. The operator must approve the exact category and amount in Activity. Add the customer quote to Simulated pipeline and supplier cost to Simulated commitment, never Actual; add a Booking log row and create an invoice marked DRAFT - NOT ISSUED. No real invoice or payment is sent."
+}

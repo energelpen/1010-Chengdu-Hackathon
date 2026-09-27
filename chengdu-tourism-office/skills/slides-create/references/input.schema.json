@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Presentation title",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "slides": {
+      "type": "array",
+      "title": "Slides",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Slide title",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "bullets": {
+            "type": "array",
+            "title": "Key points",
+            "items": {
+              "type": "string",
+              "maxLength": 180,
+              "minLength": 1
+            },
+            "maxItems": 6
+          }
+        },
+        "required": [
+          "title",
+          "bullets"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 30
+    }
+  },
+  "required": [
+    "title",
+    "slides"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "cost_weight": 0.4,
+  "quality_weight": 0.4,
+  "delivery_weight": 0.2,
+  "suppliers": [
+    {
+      "name": "Supplier A",
+      "cost": 8000,
+      "quality": 90,
+      "delivery_days": 10
+    },
+    {
+      "name": "Supplier B",
+      "cost": 7500,
+      "quality": 80,
+      "delivery_days": 15
+    }
+  ]
+}

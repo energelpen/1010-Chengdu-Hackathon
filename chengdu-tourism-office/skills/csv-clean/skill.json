@@ -1,0 +1,35 @@
+{
+  "id": "csv-clean",
+  "title": "Clean tabular data",
+  "category": "Data",
+  "description": "Trim CSV data, optionally remove exact duplicate rows, and profile the result.",
+  "handler": "clean_csv",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "file_id": {
+        "type": "string",
+        "title": "Uploaded CSV ID",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "deduplicate": {
+        "type": "boolean",
+        "title": "Remove duplicate rows"
+      }
+    },
+    "required": [
+      "file_id",
+      "deduplicate"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "file_id": "select-an-uploaded-file",
+    "deduplicate": true
+  },
+  "guidance": "Only trim surrounding whitespace and remove exact duplicate rows when requested. Preserve identifiers and leading zeros.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

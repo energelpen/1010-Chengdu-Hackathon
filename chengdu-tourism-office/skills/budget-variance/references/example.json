@@ -1,0 +1,15 @@
+{
+  "currency": "SGD",
+  "items": [
+    {
+      "category": "Marketing",
+      "budget": 10000,
+      "actual": 11500
+    },
+    {
+      "category": "Software",
+      "budget": 5000,
+      "actual": 4200
+    }
+  ]
+}

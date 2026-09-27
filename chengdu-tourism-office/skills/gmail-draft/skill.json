@@ -1,0 +1,45 @@
+{
+  "id": "gmail-draft",
+  "title": "Create Gmail draft",
+  "category": "Google Workspace",
+  "description": "Create an unsent message in Gmail after reviewing its contents.",
+  "handler": "google",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "to": {
+        "type": "string",
+        "title": "Recipient",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "subject": {
+        "type": "string",
+        "title": "Subject",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "body": {
+        "type": "string",
+        "title": "Message",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "to",
+      "subject",
+      "body"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "to": "client@example.com",
+    "subject": "Project update",
+    "body": "The proposal is ready for review."
+  },
+  "guidance": "Use the connected Google account. Surface provider errors and actual IDs. Review the exact saved payload before executing this external write; do not retry an uncertain result automatically.",
+  "effect": "remote_write",
+  "connector": "google",
+  "version": "1.0.0"
+}

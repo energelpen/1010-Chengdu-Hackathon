@@ -1,0 +1,7 @@
+{
+  "title": "Checkout unavailable",
+  "impact": "high",
+  "urgency": "high",
+  "owner": "Support lead",
+  "details": "All customers are unable to complete checkout."
+}

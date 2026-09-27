@@ -1,0 +1,78 @@
+{
+  "id": "hiring-scorecard",
+  "title": "Interview scorecard",
+  "category": "People",
+  "description": "Calculate a weighted interview score from job-related criteria and recorded evidence.",
+  "handler": "scorecard",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "candidate": {
+        "type": "string",
+        "title": "Candidate reference",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "criteria": {
+        "type": "array",
+        "title": "Criteria",
+        "items": {
+          "type": "object",
+          "properties": {
+            "criterion": {
+              "type": "string",
+              "title": "Job-related criterion",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "weight": {
+              "type": "number",
+              "title": "Weight",
+              "minimum": 0
+            },
+            "score": {
+              "type": "number",
+              "title": "Score, 0 to 5",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "evidence": {
+              "type": "string",
+              "title": "Evidence",
+              "minLength": 1,
+              "maxLength": 10000
+            }
+          },
+          "required": [
+            "criterion",
+            "weight",
+            "score",
+            "evidence"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 500
+      }
+    },
+    "required": [
+      "candidate",
+      "criteria"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "candidate": "Candidate A",
+    "criteria": [
+      {
+        "criterion": "Customer communication",
+        "weight": 1,
+        "score": 4,
+        "evidence": "Clear explanation of the case exercise."
+      }
+    ]
+  },
+  "guidance": "Use job-related evidence only. The weighted score supports human review and does not make a hiring decision.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "sku": "SKU-001",
+      "on_hand": 20,
+      "on_order": 0,
+      "daily_demand": 5,
+      "lead_days": 7,
+      "safety_stock": 10,
+      "target_days": 14
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Incident",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "owner": {
+      "type": "string",
+      "title": "Incident owner",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "impact": {
+      "type": "string",
+      "title": "Impact",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "timeline": {
+      "type": "string",
+      "title": "Timeline",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "actions": {
+      "type": "array",
+      "title": "Actions",
+      "items": {
+        "type": "object",
+        "properties": {
+          "task": {
+            "type": "string",
+            "title": "Task",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "owner": {
+            "type": "string",
+            "title": "Owner",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "due": {
+            "type": "string",
+            "title": "Due date",
+            "minLength": 1,
+            "maxLength": 10000
+          }
+        },
+        "required": [
+          "task",
+          "owner",
+          "due"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 500
+    }
+  },
+  "required": [
+    "title",
+    "owner",
+    "impact",
+    "timeline",
+    "actions"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,8 @@
+{
+  "id":"booking-confirm","title":"Simulate booking confirmation","category":"Tourism template",
+  "description":"Record a clearly simulated customer booking decision without reserving a supplier, taking payment or sending email.",
+  "handler":"simulated_booking","effect":"local","connector":null,"version":"1.0.0",
+  "input_schema":{"type":"object","properties":{"customer":{"type":"string","title":"Customer name","minLength":1,"maxLength":200},"product":{"type":"string","title":"Tourism product","minLength":1,"maxLength":300},"travel_date":{"type":"string","title":"Travel date YYYY-MM-DD","format":"date"},"quote_cny":{"type":"number","title":"Quoted customer amount CNY","exclusiveMinimum":0},"supplier_option":{"type":"string","title":"Selected indicative supplier option","minLength":1,"maxLength":300}},"required":["customer","product","travel_date","quote_cny","supplier_option"],"additionalProperties":false},
+  "example":{"customer":"Demo customer","product":"Chengdu food and tea launch","travel_date":"2026-10-25","quote_cny":120000,"supplier_option":"Indicative supplier option A"},
+  "guidance":"This records a simulated decision only. Never imply a real seat, room, guide, payment or supplier confirmation. Next prepare a reviewed finance-posting and customer follow-up."
+}

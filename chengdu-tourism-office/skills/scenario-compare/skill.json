@@ -1,0 +1,28 @@
+{
+  "id": "scenario-compare",
+  "title": "Scenario comparison",
+  "category": "Governance",
+  "description": "Score options across weighted cost, quality, time or other numeric criteria with a visible breakdown.",
+  "handler": "scenario",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0",
+  "input_schema": {
+    "type": "object", "properties": {
+      "criteria": {"type": "array", "title": "Decision criteria", "minItems": 1, "maxItems": 20, "items": {
+        "type": "object", "properties": {
+          "name": {"type": "string", "minLength": 1, "maxLength": 100},
+          "weight": {"type": "number", "minimum": 0, "maximum": 100},
+          "direction": {"type": "string", "enum": ["lower", "higher"]}
+        }, "required": ["name", "weight", "direction"], "additionalProperties": false
+      }},
+      "options": {"type": "array", "title": "Options and measures", "minItems": 2, "maxItems": 30, "items": {
+        "type": "object", "properties": {
+          "name": {"type": "string", "minLength": 1, "maxLength": 100},
+          "measures": {"type": "object", "title": "Numeric measures by criterion name", "minProperties": 1, "additionalProperties": {"type": "number"}}
+        }, "required": ["name", "measures"], "additionalProperties": false
+      }}
+    }, "required": ["criteria", "options"], "additionalProperties": false
+  },
+  "example": {"criteria": [{"name": "Price CNY", "weight": 60, "direction": "lower"}, {"name": "Quality score", "weight": 40, "direction": "higher"}], "options": [{"name": "Option A", "measures": {"Price CNY": 90000, "Quality score": 80}}, {"name": "Option B", "measures": {"Price CNY": 110000, "Quality score": 95}}]}
+}

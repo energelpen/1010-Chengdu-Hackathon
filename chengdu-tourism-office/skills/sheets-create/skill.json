@@ -1,0 +1,58 @@
+{
+  "id": "sheets-create",
+  "title": "Create Google spreadsheet",
+  "category": "Google Workspace",
+  "description": "Create a new Google spreadsheet with supplied headers and rows.",
+  "handler": "google",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Title",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "values": {
+        "type": "array",
+        "title": "Rows",
+        "items": {
+          "type": "array",
+          "title": "Cells",
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "maxItems": 100
+        },
+        "maxItems": 1000
+      }
+    },
+    "required": [
+      "title",
+      "values"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Team tracker",
+    "values": [
+      [
+        "Task",
+        "Owner"
+      ],
+      [
+        "Launch",
+        "Operations"
+      ]
+    ]
+  },
+  "guidance": "Use the connected Google account. Surface provider errors and actual IDs. Review the exact saved payload before executing this external write; do not retry an uncertain result automatically.",
+  "effect": "remote_write",
+  "connector": "google",
+  "version": "1.0.0"
+}

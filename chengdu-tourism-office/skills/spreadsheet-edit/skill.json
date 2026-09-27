@@ -1,0 +1,8 @@
+{
+  "id":"spreadsheet-edit","title":"Edit a reviewed Excel input","category":"Office files",
+  "description":"Change one non-formula cell in an Excel workbook after review; preserve the original and produce a new version.",
+  "handler":"workbook_edit","effect":"reviewed_write","connector":null,"version":"1.0.0",
+  "input_schema":{"type":"object","properties":{"file_id":{"type":"string","title":"Workspace Excel file ID","minLength":1},"sheet":{"type":"string","title":"Worksheet","minLength":1},"cell":{"type":"string","title":"Exact input cell","pattern":"^[A-Za-z]{1,3}[1-9][0-9]{0,4}$"},"value":{"title":"New number or text","type":["string","number"]}},"required":["file_id","sheet","cell","value"],"additionalProperties":false},
+  "example":{"file_id":"select-a-workspace-file","sheet":"BvA","cell":"C10","value":28500},
+  "guidance":"Search the workbook first. Review the old and new values before approval. Formula cells and formula-like text are blocked. A new .xlsx is produced; formulas recalculate on opening in Excel. Do not call a simulated commitment an actual expense."
+}

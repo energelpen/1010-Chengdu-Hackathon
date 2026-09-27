@@ -1,0 +1,5 @@
+{
+  "to": "client@example.com",
+  "subject": "Project update",
+  "body": "The proposal is ready for review."
+}

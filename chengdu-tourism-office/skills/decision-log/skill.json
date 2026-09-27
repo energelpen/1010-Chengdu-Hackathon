@@ -1,0 +1,53 @@
+{
+  "id": "decision-log",
+  "title": "Decision log",
+  "category": "Governance",
+  "description": "Save a decision with its rationale, owner and follow-up date.",
+  "handler": "record",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Decision",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "rationale": {
+        "type": "string",
+        "title": "Rationale",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "owner": {
+        "type": "string",
+        "title": "Decision owner",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "review_date": {
+        "type": "string",
+        "title": "Review date",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "title",
+      "rationale",
+      "owner",
+      "review_date"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Pilot before full rollout",
+    "rationale": "Validate the workflow with a smaller group.",
+    "owner": "Director",
+    "review_date": "2026-11-01"
+  },
+  "guidance": "Record who made the decision; do not imply delegated authority or approval beyond the supplied record.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

@@ -1,0 +1,12 @@
+{
+  "customer": "Example Company",
+  "currency": "SGD",
+  "tax_rate": 0.09,
+  "items": [
+    {
+      "description": "Consulting",
+      "quantity": 8,
+      "unit_price": 150
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Event title",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "start": {
+      "type": "string",
+      "title": "Start, ISO datetime with offset",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "end": {
+      "type": "string",
+      "title": "End, ISO datetime with offset",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "description": {
+      "type": "string",
+      "title": "Agenda",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "title",
+    "start",
+    "end",
+    "description"
+  ],
+  "additionalProperties": false
+}

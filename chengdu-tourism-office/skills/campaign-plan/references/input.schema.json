@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Campaign",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "audience": {
+      "type": "string",
+      "title": "Audience",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "objective": {
+      "type": "string",
+      "title": "Objective",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "channels": {
+      "type": "array",
+      "title": "Channels",
+      "items": {
+        "type": "string",
+        "title": "Channel",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "maxItems": 500
+    },
+    "budget": {
+      "type": "number",
+      "title": "Budget",
+      "minimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "title": "Currency",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "success_measure": {
+      "type": "string",
+      "title": "Success measure",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "title",
+    "audience",
+    "objective",
+    "channels",
+    "budget",
+    "currency",
+    "success_measure"
+  ],
+  "additionalProperties": false
+}

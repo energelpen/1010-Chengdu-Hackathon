@@ -1,0 +1,41 @@
+{
+  "id": "schedule-builder",
+  "title": "Schedule Builder",
+  "category": "Tourism template",
+  "description": "Run the existing synthetic tourism schedule builder stage.",
+  "handler": "tourism",
+  "function": "schedule_builder",
+  "effect": "local",
+  "input_schema": {
+    "type": "object",
+    "title": "Tourism stage input"
+  },
+  "example": {
+    "request_id": "EXAMPLE-RFQ",
+    "inquiry": {
+      "travel_start": "2026-10-25",
+      "duration_days": 3
+    },
+    "activities": [
+      {
+        "id": "TOUR-TEA",
+        "name": "Sichuan tea workshop",
+        "duration_minutes": 120,
+        "preferred_slot": "afternoon",
+        "source": "SYNTHETIC_DEMO"
+      },
+      {
+        "id": "TOUR-FOOD",
+        "name": "Chengdu cuisine walk",
+        "duration_minutes": 150,
+        "preferred_slot": "evening",
+        "source": "SYNTHETIC_DEMO"
+      }
+    ],
+    "flight": {
+      "depart_date": "2026-10-25",
+      "return_date": "2026-10-28"
+    }
+  },
+  "version": "2.0.0"
+}

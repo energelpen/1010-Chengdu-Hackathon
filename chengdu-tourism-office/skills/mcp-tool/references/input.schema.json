@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "server_id": {
+      "type": "string",
+      "title": "Connection ID",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "tool": {
+      "type": "string",
+      "title": "Tool name",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "arguments": {
+      "type": "object",
+      "title": "Tool arguments"
+    }
+  },
+  "required": [
+    "server_id",
+    "tool",
+    "arguments"
+  ],
+  "additionalProperties": false
+}

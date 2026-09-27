@@ -1,0 +1,22 @@
+{
+  "title": "Customer portal",
+  "start": "2026-10-01",
+  "tasks": [
+    {
+      "id": "design",
+      "title": "Design",
+      "owner": "Product",
+      "days": 3,
+      "depends_on": []
+    },
+    {
+      "id": "build",
+      "title": "Build",
+      "owner": "Engineering",
+      "days": 5,
+      "depends_on": [
+        "design"
+      ]
+    }
+  ]
+}

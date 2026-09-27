@@ -1,0 +1,96 @@
+{
+  "id": "procurement-compare",
+  "title": "Supplier comparison",
+  "category": "Operations",
+  "description": "Rank suppliers by normalized cost, quality and delivery using explicit weights.",
+  "handler": "procurement",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "cost_weight": {
+        "type": "number",
+        "title": "Cost weight",
+        "minimum": 0
+      },
+      "quality_weight": {
+        "type": "number",
+        "title": "Quality weight",
+        "minimum": 0
+      },
+      "delivery_weight": {
+        "type": "number",
+        "title": "Delivery weight",
+        "minimum": 0
+      },
+      "suppliers": {
+        "type": "array",
+        "title": "Suppliers",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Supplier",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "cost": {
+              "type": "number",
+              "title": "Cost",
+              "minimum": 0
+            },
+            "quality": {
+              "type": "number",
+              "title": "Quality, 0 to 100",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "delivery_days": {
+              "type": "number",
+              "title": "Delivery days",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "name",
+            "cost",
+            "quality",
+            "delivery_days"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 500
+      }
+    },
+    "required": [
+      "cost_weight",
+      "quality_weight",
+      "delivery_weight",
+      "suppliers"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "cost_weight": 0.4,
+    "quality_weight": 0.4,
+    "delivery_weight": 0.2,
+    "suppliers": [
+      {
+        "name": "Supplier A",
+        "cost": 8000,
+        "quality": 90,
+        "delivery_days": 10
+      },
+      {
+        "name": "Supplier B",
+        "cost": 7500,
+        "quality": 80,
+        "delivery_days": 15
+      }
+    ]
+  },
+  "guidance": "Weights must have a positive total. Show the score components; this skill does not place orders or validate supplier claims.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

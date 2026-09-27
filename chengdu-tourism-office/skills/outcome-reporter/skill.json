@@ -1,0 +1,57 @@
+{
+  "id": "outcome-reporter",
+  "title": "Outcome Reporter",
+  "category": "Tourism template",
+  "description": "Run the existing synthetic tourism outcome reporter stage.",
+  "handler": "tourism",
+  "function": "outcome_reporter",
+  "effect": "local",
+  "input_schema": {
+    "type": "object",
+    "title": "Tourism stage input"
+  },
+  "example": {
+    "request_id": "EXAMPLE-RFQ",
+    "inquiry": {
+      "group_size": 30,
+      "duration_days": 3,
+      "customer_email": "buyer@example.test"
+    },
+    "option": {
+      "id": "balanced",
+      "quote_cny": 90000
+    },
+    "hierarchy": {
+      "task_lead": "sales_manager",
+      "routes": {}
+    },
+    "execution": {
+      "client_draft_ready": true,
+      "incidents": [],
+      "blocked_tasks": [
+        "REPORT"
+      ],
+      "completed": {
+        "INTAKE": {
+          "evidence_ref": "SIM:INTAKE"
+        },
+        "DESIGN": {
+          "evidence_ref": "SIM:DESIGN"
+        },
+        "SUPPLIER": {
+          "evidence_ref": "SIM:SUPPLIER"
+        },
+        "PRICING": {
+          "evidence_ref": "SIM:PRICING"
+        },
+        "SAFETY": {
+          "evidence_ref": "SIM:SAFETY"
+        },
+        "FINANCE": {
+          "evidence_ref": "SIM:FINANCE"
+        }
+      }
+    }
+  },
+  "version": "2.0.0"
+}

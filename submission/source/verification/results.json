@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-27",
+  "results": [
+    {
+      "name": "tourism-behavior-tests",
+      "exit_code": 0
+    },
+    {
+      "name": "automated-tests",
+      "exit_code": 0
+    },
+    {
+      "name": "routing-evaluation",
+      "exit_code": 0
+    }
+  ]
+}

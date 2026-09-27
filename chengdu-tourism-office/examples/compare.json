@@ -1,0 +1,1 @@
+{"request_id":"EXAMPLE-RFQ","inquiry":{"group_size":30,"duration_days":3,"budget_cny":200000,"travel_start":"2026-10-25"},"flight":{"group_total_cny":65400},"activities":[{"group_total_cny":4800},{"group_total_cny":5400}],"priority":"balanced"}

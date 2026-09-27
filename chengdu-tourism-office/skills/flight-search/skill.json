@@ -1,0 +1,24 @@
+{
+  "id": "flight-search",
+  "title": "Flight Search",
+  "category": "Tourism template",
+  "description": "Run the existing synthetic tourism flight search stage.",
+  "handler": "tourism",
+  "function": "flight_search",
+  "effect": "local",
+  "input_schema": {
+    "type": "object",
+    "title": "Tourism stage input"
+  },
+  "example": {
+    "request_id": "EXAMPLE-RFQ",
+    "inquiry": {
+      "group_size": 30,
+      "duration_days": 3,
+      "travel_start": "2026-10-25",
+      "origin_airport": "SIN",
+      "destination_airport": "CTU"
+    }
+  },
+  "version": "2.0.0"
+}

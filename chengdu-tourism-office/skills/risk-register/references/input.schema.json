@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "properties": {
+    "risks": {
+      "type": "array",
+      "title": "Risks",
+      "items": {
+        "type": "object",
+        "properties": {
+          "risk": {
+            "type": "string",
+            "title": "Risk",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "likelihood": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "title": "Likelihood, 1 to 5"
+          },
+          "impact": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "title": "Impact, 1 to 5"
+          },
+          "owner": {
+            "type": "string",
+            "title": "Owner",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "mitigation": {
+            "type": "string",
+            "title": "Mitigation",
+            "minLength": 1,
+            "maxLength": 10000
+          }
+        },
+        "required": [
+          "risk",
+          "likelihood",
+          "impact",
+          "owner",
+          "mitigation"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 500
+    }
+  },
+  "required": [
+    "risks"
+  ],
+  "additionalProperties": false
+}

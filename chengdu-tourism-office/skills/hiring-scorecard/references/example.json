@@ -1,0 +1,11 @@
+{
+  "candidate": "Candidate A",
+  "criteria": [
+    {
+      "criterion": "Customer communication",
+      "weight": 1,
+      "score": 4,
+      "evidence": "Clear explanation of the case exercise."
+    }
+  ]
+}

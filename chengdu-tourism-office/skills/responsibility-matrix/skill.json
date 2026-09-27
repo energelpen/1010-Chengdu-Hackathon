@@ -1,0 +1,26 @@
+{
+  "id": "responsibility-matrix",
+  "title": "Responsibility matrix",
+  "category": "Operations",
+  "description": "Assign responsible, accountable, consulted and informed colleagues for each task and export a RACI workbook.",
+  "handler": "raci",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "project": {"type": "string", "title": "Project name", "minLength": 1, "maxLength": 100},
+      "assignments": {"type": "array", "title": "Task responsibilities", "minItems": 1, "maxItems": 100, "items": {
+        "type": "object", "properties": {
+          "task": {"type": "string", "minLength": 1, "maxLength": 150},
+          "responsible": {"type": "array", "minItems": 1, "maxItems": 20, "items": {"type": "string", "minLength": 1}},
+          "accountable": {"type": "string", "minLength": 1},
+          "consulted": {"type": "array", "maxItems": 20, "items": {"type": "string", "minLength": 1}},
+          "informed": {"type": "array", "maxItems": 20, "items": {"type": "string", "minLength": 1}}
+        }, "required": ["task", "responsible", "accountable", "consulted", "informed"], "additionalProperties": false
+      }}
+    }, "required": ["project", "assignments"], "additionalProperties": false
+  },
+  "example": {"project": "Customer proposal", "assignments": [{"task": "Prepare itinerary", "responsible": ["product_manager"], "accountable": "director", "consulted": ["finance_manager"], "informed": ["sales_manager"]}]}
+}

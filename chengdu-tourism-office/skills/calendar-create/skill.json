@@ -1,0 +1,53 @@
+{
+  "id": "calendar-create",
+  "title": "Create Google Calendar event",
+  "category": "Google Workspace",
+  "description": "Create an event in your primary calendar without emailing attendees.",
+  "handler": "google",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Event title",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "start": {
+        "type": "string",
+        "title": "Start, ISO datetime with offset",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "end": {
+        "type": "string",
+        "title": "End, ISO datetime with offset",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "description": {
+        "type": "string",
+        "title": "Agenda",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "title",
+      "start",
+      "end",
+      "description"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Project kickoff",
+    "start": "2026-10-01T09:00:00+08:00",
+    "end": "2026-10-01T10:00:00+08:00",
+    "description": "Review scope and responsibilities."
+  },
+  "guidance": "Use the connected Google account. Surface provider errors and actual IDs. Review the exact saved payload before executing this external write; do not retry an uncertain result automatically.",
+  "effect": "remote_write",
+  "connector": "google",
+  "version": "1.0.0"
+}

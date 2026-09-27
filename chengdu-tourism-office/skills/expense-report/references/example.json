@@ -1,0 +1,12 @@
+{
+  "employee": "Alex",
+  "currency": "SGD",
+  "expenses": [
+    {
+      "description": "Airport transfer",
+      "category": "Travel",
+      "amount": 45,
+      "receipt": true
+    }
+  ]
+}

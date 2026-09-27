@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "body": {
+      "type": "string",
+      "title": "Document text",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "title",
+    "body"
+  ],
+  "additionalProperties": false
+}

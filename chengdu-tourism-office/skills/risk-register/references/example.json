@@ -1,0 +1,11 @@
+{
+  "risks": [
+    {
+      "risk": "Supplier delay",
+      "likelihood": 3,
+      "impact": 4,
+      "owner": "Procurement",
+      "mitigation": "Confirm backup supplier"
+    }
+  ]
+}

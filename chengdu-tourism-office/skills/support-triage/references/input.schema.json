@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Issue",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "impact": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "title": "Impact"
+    },
+    "urgency": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "title": "Urgency"
+    },
+    "owner": {
+      "type": "string",
+      "title": "Owner",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "details": {
+      "type": "string",
+      "title": "Details",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "title",
+    "impact",
+    "urgency",
+    "owner",
+    "details"
+  ],
+  "additionalProperties": false
+}

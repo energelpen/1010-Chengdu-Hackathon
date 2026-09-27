@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "spreadsheet_id": {
+      "type": "string",
+      "title": "Spreadsheet ID",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "range": {
+      "type": "string",
+      "title": "A1 range",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "spreadsheet_id",
+    "range"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+{
+  "id": "knowledge-search",
+  "title": "Search company knowledge",
+  "category": "Knowledge",
+  "description": "Search the local knowledge register and return matching source notes.",
+  "handler": "knowledge_search",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "title": "Search terms",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "query"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "query": "customer response"
+  },
+  "guidance": "Return matching passages with their stored source. An empty result means no local match, not that the policy does not exist.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

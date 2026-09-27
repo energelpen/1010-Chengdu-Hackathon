@@ -1,0 +1,77 @@
+{
+  "id": "spreadsheet-create",
+  "title": "Excel workbook",
+  "category": "Office files",
+  "description": "Create a styled Excel workbook from columns and rows.",
+  "handler": "spreadsheet",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Workbook title",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "columns": {
+        "type": "array",
+        "title": "Columns",
+        "items": {
+          "type": "string",
+          "title": "Column",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "maxItems": 50
+      },
+      "rows": {
+        "type": "array",
+        "title": "Rows",
+        "items": {
+          "type": "array",
+          "title": "Cells",
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "maxItems": 50
+        },
+        "maxItems": 5000
+      }
+    },
+    "required": [
+      "title",
+      "columns",
+      "rows"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Sales overview",
+    "columns": [
+      "Month",
+      "Revenue",
+      "Cost"
+    ],
+    "rows": [
+      [
+        "January",
+        12000,
+        7000
+      ],
+      [
+        "February",
+        14500,
+        8200
+      ]
+    ]
+  },
+  "guidance": "Keep numbers numeric, align every row with its headers, and retain units in headers. User strings are stored as text to prevent spreadsheet formula injection.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

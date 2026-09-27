@@ -1,0 +1,13 @@
+{
+  "title": "Service interruption",
+  "owner": "IT lead",
+  "impact": "Customer portal unavailable for 20 minutes",
+  "timeline": "09:00 detected; 09:20 restored",
+  "actions": [
+    {
+      "task": "Review monitoring",
+      "owner": "IT",
+      "due": "2026-10-02"
+    }
+  ]
+}

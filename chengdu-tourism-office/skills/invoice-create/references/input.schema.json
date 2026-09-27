@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "customer": {
+      "type": "string",
+      "title": "Customer",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "currency": {
+      "type": "string",
+      "title": "Currency",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "tax_rate": {
+      "type": "number",
+      "title": "Tax rate, 0 to 1",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "items": {
+      "type": "array",
+      "title": "Line items",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "quantity": {
+            "type": "number",
+            "title": "Quantity",
+            "minimum": 0
+          },
+          "unit_price": {
+            "type": "number",
+            "title": "Unit price",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "description",
+          "quantity",
+          "unit_price"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 500
+    }
+  },
+  "required": [
+    "customer",
+    "currency",
+    "tax_rate",
+    "items"
+  ],
+  "additionalProperties": false
+}

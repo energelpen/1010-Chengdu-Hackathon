@@ -1,0 +1,18 @@
+{
+  "id": "team-capacity",
+  "title": "Team capacity",
+  "category": "Operations",
+  "description": "Inspect current staff capacity, availability and skill coverage.",
+  "handler": "capacity",
+  "input_schema": {
+    "type": "object",
+    "properties": {},
+    "required": [],
+    "additionalProperties": false
+  },
+  "example": {},
+  "guidance": "Use the current saved company structure. Capacity is configured hours and does not read personal calendars.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

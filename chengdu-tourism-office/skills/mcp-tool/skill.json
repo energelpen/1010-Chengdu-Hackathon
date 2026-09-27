@@ -1,0 +1,43 @@
+{
+  "id": "mcp-tool",
+  "title": "Connected MCP tool",
+  "category": "Integrations",
+  "description": "Prepare an allowlisted tool call on a configured MCP server.",
+  "handler": "mcp",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "server_id": {
+        "type": "string",
+        "title": "Connection ID",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "tool": {
+        "type": "string",
+        "title": "Tool name",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "arguments": {
+        "type": "object",
+        "title": "Tool arguments"
+      }
+    },
+    "required": [
+      "server_id",
+      "tool",
+      "arguments"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "server_id": "atlas-local",
+    "tool": "get_company",
+    "arguments": {}
+  },
+  "guidance": "Discover the selected server first. Only tools explicitly allowlisted in the server configuration can run. Every call requires review because a remote tool's declared annotations do not prove that it is read-only.",
+  "effect": "remote_write",
+  "connector": null,
+  "version": "1.0.0"
+}

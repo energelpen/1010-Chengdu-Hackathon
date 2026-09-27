@@ -1,0 +1,10 @@
+{
+  "notice": "Synthetic planning assumptions only. No supplier inventory, public sale price, or company tariff is claimed.",
+  "margin_rate": 0.18,
+  "vehicle_cost_cny_per_day_for_groups_over_20": 1200,
+  "options": [
+    {"id":"essential","supplier_cost_cny_per_person_day":500,"max_group":45,"lead_days":3,"included":["city highlights","standard hotel","group guide"],"experience_score":60},
+    {"id":"balanced","supplier_cost_cny_per_person_day":650,"max_group":45,"lead_days":5,"included":["city highlights","local food experience","four-star hotel","group guide"],"experience_score":82},
+    {"id":"premium","supplier_cost_cny_per_person_day":900,"max_group":30,"lead_days":10,"included":["private guide","premium hotel","specialist cultural experience"],"experience_score":95}
+  ]
+}

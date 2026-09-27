@@ -1,0 +1,745 @@
+{
+  "runs": [
+    {
+      "id": "run_1fd797df38014d82bda0d541ffad5c49",
+      "skill_id": "knowledge-search",
+      "person_id": "transport_coordinator",
+      "status": "completed",
+      "input": {
+        "query": "Chengdu launch"
+      },
+      "output": {
+        "summary": "Matching local source notes.",
+        "matches": [
+          {
+            "id": "rec_a784b7c2ad86440a83792811a6b69ca7",
+            "kind": "knowledge-save",
+            "title": "Chengdu launch preparation outcome",
+            "payload": {
+              "title": "Chengdu launch preparation outcome",
+              "content": "Pilot first recommended at score 75.7. SIM readiness evidence supplied. Reviewed budget copy and management handoff produced. No real product release or booking.",
+              "source": "Recorded local launch demo, 27 September 2026",
+              "owner": "Chen / Director"
+            },
+            "created_at": "2026-09-27T04:29:20.280114+00:00",
+            "updated_at": "2026-09-27T04:29:20.280114+00:00"
+          }
+        ]
+      },
+      "created_at": "2026-09-27T04:29:23.260422+00:00",
+      "updated_at": "2026-09-27T04:29:23.284438+00:00",
+      "idempotency_key": "4b72465c-cb5a-4fa0-bf9e-a7502f697017"
+    },
+    {
+      "id": "run_c7927339c02e4a9f90a428ac594d0b9f",
+      "skill_id": "knowledge-save",
+      "person_id": "transport_coordinator",
+      "status": "completed",
+      "input": {
+        "title": "Chengdu launch preparation outcome",
+        "content": "Pilot first recommended at score 75.7. SIM readiness evidence supplied. Reviewed budget copy and management handoff produced. No real product release or booking.",
+        "source": "Recorded local launch demo, 27 September 2026",
+        "owner": "Chen / Director"
+      },
+      "output": {
+        "summary": "Saved to the local company register.",
+        "record": {
+          "id": "rec_a784b7c2ad86440a83792811a6b69ca7",
+          "kind": "knowledge-save",
+          "title": "Chengdu launch preparation outcome",
+          "payload": {
+            "title": "Chengdu launch preparation outcome",
+            "content": "Pilot first recommended at score 75.7. SIM readiness evidence supplied. Reviewed budget copy and management handoff produced. No real product release or booking.",
+            "source": "Recorded local launch demo, 27 September 2026",
+            "owner": "Chen / Director"
+          }
+        }
+      },
+      "created_at": "2026-09-27T04:29:20.250117+00:00",
+      "updated_at": "2026-09-27T04:29:20.291116+00:00",
+      "idempotency_key": "300f9ea0-fb47-4227-9573-33f5515b6065"
+    },
+    {
+      "id": "run_8d7751cac87e4c4683df7619786fa078",
+      "skill_id": "pdf-create",
+      "person_id": "finance_manager",
+      "status": "completed",
+      "input": {
+        "title": "Chengdu tour launch - simulation outcome",
+        "sections": [
+          {
+            "heading": "Decision",
+            "body": "Pilot first recommended: score 75.7, compared with 62.0 for Full launch. Costs and scores are supplied simulation inputs."
+          },
+          {
+            "heading": "Preparation completed",
+            "body": "Scope, readiness review and management decision were recorded as complete for this simulation. A reviewed spreadsheet edit created a new workbook copy."
+          },
+          {
+            "heading": "Release boundary",
+            "body": "This is operator-led simulated product launch preparation. No real supplier reservation, external message, payment or product release occurred."
+          }
+        ]
+      },
+      "output": {
+        "summary": "PDF brief created.",
+        "artifacts": [
+          {
+            "id": "file_94698859a281417d9457cae36d23fd21",
+            "name": "Chengdu tour launch - simulation outcome.pdf",
+            "size": 41866,
+            "url": "/api/files/file_94698859a281417d9457cae36d23fd21/download"
+          }
+        ]
+      },
+      "created_at": "2026-09-27T04:29:16.930319+00:00",
+      "updated_at": "2026-09-27T04:29:17.122320+00:00",
+      "idempotency_key": "b0c005ed-ee9f-4e58-b7c0-d1ee5d0540fa"
+    },
+    {
+      "id": "run_63f1971c7b9043ed8562c08cdaeea207",
+      "skill_id": "management-handoff",
+      "person_id": "director",
+      "status": "completed",
+      "input": {
+        "title": "Chengdu launch readiness - simulated completion",
+        "audience": "Executive team",
+        "items": [
+          {
+            "work": "Pilot scope and option comparison",
+            "owner": "Zhao and Wang",
+            "status": "done",
+            "due": "2026-10-03",
+            "next_step": "Archive decision brief",
+            "blocker": ""
+          },
+          {
+            "work": "Pilot readiness and capacity check",
+            "owner": "He",
+            "status": "done",
+            "due": "2026-10-06",
+            "next_step": "Replace SIM evidence in enterprise pilot",
+            "blocker": ""
+          },
+          {
+            "work": "Reviewed budget and management decision",
+            "owner": "Deng and Chen",
+            "status": "done",
+            "due": "2026-10-07",
+            "next_step": "Obtain real enterprise authorization",
+            "blocker": ""
+          }
+        ]
+      },
+      "output": {
+        "summary": "Management handoff prepared from supplied status data; no messages sent.",
+        "counts": {
+          "not_started": 0,
+          "in_progress": 0,
+          "blocked": 0,
+          "done": 3
+        },
+        "blockers": [],
+        "artifacts": [
+          {
+            "id": "file_e689a3e543384eaa8e91da6521b39310",
+            "name": "Chengdu launch readiness - simulated completion.docx",
+            "size": 36992,
+            "url": "/api/files/file_e689a3e543384eaa8e91da6521b39310/download"
+          }
+        ],
+        "email_draft": {
+          "subject": "Chengdu launch readiness - simulated completion",
+          "body": "Audience: Executive team\nnot started: 0, in progress: 0, blocked: 0, done: 3\n\nNo reported blockers."
+        }
+      },
+      "created_at": "2026-09-27T04:29:11.380838+00:00",
+      "updated_at": "2026-09-27T04:29:11.436817+00:00",
+      "idempotency_key": "64ee1e55-9384-449e-a9b5-e46d39b272da"
+    },
+    {
+      "id": "run_54501884a929462797ee48bb665b6ed9",
+      "skill_id": "decision-log",
+      "person_id": "director",
+      "status": "completed",
+      "input": {
+        "title": "SIMULATION - pilot preparation approved",
+        "rationale": "Pilot scores 75.7 versus 62.0. Budget input reviewed. SIM: scope, supplier capacity and readiness checklist supplied for this demonstration. No real supplier contract or spending approval.",
+        "owner": "Chen / Director",
+        "review_date": "2026-10-07"
+      },
+      "output": {
+        "summary": "Saved to the local company register.",
+        "record": {
+          "id": "rec_60fc93c9782f47f4870e019553dfc49b",
+          "kind": "decision-log",
+          "title": "SIMULATION - pilot preparation approved",
+          "payload": {
+            "title": "SIMULATION - pilot preparation approved",
+            "rationale": "Pilot scores 75.7 versus 62.0. Budget input reviewed. SIM: scope, supplier capacity and readiness checklist supplied for this demonstration. No real supplier contract or spending approval.",
+            "owner": "Chen / Director",
+            "review_date": "2026-10-07"
+          }
+        }
+      },
+      "created_at": "2026-09-27T04:29:07.746897+00:00",
+      "updated_at": "2026-09-27T04:29:07.784915+00:00",
+      "idempotency_key": "64343519-22f5-471f-b23a-93ddd471ded0"
+    },
+    {
+      "id": "run_628b24541c00413985fe3ad5d69ad036",
+      "skill_id": "spreadsheet-edit",
+      "person_id": "finance_manager",
+      "status": "completed",
+      "input": {
+        "file_id": "file_936b6d1bdfb940aebebdf7e79ca635ac",
+        "sheet": "Overview",
+        "cell": "B2",
+        "value": 11500
+      },
+      "output": {
+        "summary": "A reviewed input cell was changed in a new workbook copy. Excel recalculates formulas when opened.",
+        "change": {
+          "sheet": "Overview",
+          "cell": "B2",
+          "before": 10000,
+          "after": 11500
+        },
+        "artifacts": [
+          {
+            "id": "file_3806a3c5326d4a0bb9a1632ace014af1",
+            "name": "Chengdu launch budget - simulation-edited.xlsx",
+            "size": 5828,
+            "url": "/api/files/file_3806a3c5326d4a0bb9a1632ace014af1/download"
+          }
+        ],
+        "original_file_id": "file_936b6d1bdfb940aebebdf7e79ca635ac"
+      },
+      "created_at": "2026-09-27T04:28:59.485955+00:00",
+      "updated_at": "2026-09-27T04:29:03.685510+00:00",
+      "idempotency_key": "f87b00fd-577c-4d58-8087-ee2e524d7100"
+    },
+    {
+      "id": "run_8cbd977619094b528c119862b8e93fcc",
+      "skill_id": "spreadsheet-create",
+      "person_id": "finance_manager",
+      "status": "completed",
+      "input": {
+        "title": "Chengdu launch budget - simulation",
+        "columns": [
+          "Category",
+          "Budget CNY",
+          "Forecast CNY"
+        ],
+        "rows": [
+          [
+            "Marketing",
+            10000,
+            11500
+          ],
+          [
+            "Pilot operations",
+            25000,
+            24500
+          ]
+        ]
+      },
+      "output": {
+        "summary": "Excel workbook created.",
+        "artifacts": [
+          {
+            "id": "file_936b6d1bdfb940aebebdf7e79ca635ac",
+            "name": "Chengdu launch budget - simulation.xlsx",
+            "size": 5816,
+            "url": "/api/files/file_936b6d1bdfb940aebebdf7e79ca635ac/download"
+          }
+        ]
+      },
+      "created_at": "2026-09-27T04:28:56.166616+00:00",
+      "updated_at": "2026-09-27T04:28:56.206595+00:00",
+      "idempotency_key": "40a5bfa4-026c-42ee-ab03-ea0eaf7876a3"
+    },
+    {
+      "id": "run_5bd9fa3920064b70bfaa3ffa7a609e37",
+      "skill_id": "budget-variance",
+      "person_id": "finance_manager",
+      "status": "completed",
+      "input": {
+        "currency": "CNY",
+        "items": [
+          {
+            "category": "Marketing",
+            "budget": 10000,
+            "actual": 11500
+          },
+          {
+            "category": "Pilot operations",
+            "budget": 25000,
+            "actual": 24500
+          }
+        ]
+      },
+      "output": {
+        "summary": "Positive variance means overspending.",
+        "currency": "CNY",
+        "items": [
+          {
+            "category": "Marketing",
+            "budget": 10000,
+            "actual": 11500,
+            "variance": 1500.0,
+            "variance_percent": 15.0
+          },
+          {
+            "category": "Pilot operations",
+            "budget": 25000,
+            "actual": 24500,
+            "variance": -500.0,
+            "variance_percent": -2.0
+          }
+        ]
+      },
+      "created_at": "2026-09-27T04:28:52.816065+00:00",
+      "updated_at": "2026-09-27T04:28:52.851976+00:00",
+      "idempotency_key": "950847ac-7ba5-408c-a6d0-e9bbae0c5b1c"
+    },
+    {
+      "id": "run_b4202fa51c534c1b9d9d9682dc554d7c",
+      "skill_id": "task-tracker",
+      "person_id": "ops_manager",
+      "status": "completed",
+      "input": {
+        "title": "SIMULATION - confirm pilot supplier capacity",
+        "owner": "He / Operations",
+        "due": "2026-10-06",
+        "status": "blocked"
+      },
+      "output": {
+        "summary": "Saved to the local company register.",
+        "record": {
+          "id": "rec_5e272ecc591842e29b0a1ef08b593316",
+          "kind": "task-tracker",
+          "title": "SIMULATION - confirm pilot supplier capacity",
+          "payload": {
+            "title": "SIMULATION - confirm pilot supplier capacity",
+            "owner": "He / Operations",
+            "due": "2026-10-06",
+            "status": "blocked"
+          }
+        }
+      },
+      "created_at": "2026-09-27T04:28:42.968186+00:00",
+      "updated_at": "2026-09-27T04:28:43.005101+00:00",
+      "idempotency_key": "571a6adf-dbb7-4910-9465-5a0fb63d0be7"
+    },
+    {
+      "id": "run_b66cb8bfcb5d4860a70f7d4e0d7d01b2",
+      "skill_id": "responsibility-matrix",
+      "person_id": "product_manager",
+      "status": "completed",
+      "input": {
+        "project": "Chengdu tour launch preparation",
+        "assignments": [
+          {
+            "task": "Confirm pilot scope",
+            "responsible": [
+              "product_manager"
+            ],
+            "accountable": "director",
+            "consulted": [
+              "sales_manager"
+            ],
+            "informed": [
+              "ops_manager"
+            ]
+          },
+          {
+            "task": "Pilot readiness review",
+            "responsible": [
+              "ops_manager"
+            ],
+            "accountable": "director",
+            "consulted": [
+              "finance_manager"
+            ],
+            "informed": [
+              "sales_manager"
+            ]
+          }
+        ]
+      },
+      "output": {
+        "summary": "Responsibility matrix prepared from the current roster; assignments are proposals.",
+        "rows": [
+          {
+            "task": "Confirm pilot scope",
+            "responsible": [
+              "Zhao"
+            ],
+            "consulted": [
+              "Wang"
+            ],
+            "informed": [
+              "He"
+            ],
+            "accountable": "Chen"
+          },
+          {
+            "task": "Pilot readiness review",
+            "responsible": [
+              "He"
+            ],
+            "consulted": [
+              "Deng"
+            ],
+            "informed": [
+              "Wang"
+            ],
+            "accountable": "Chen"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": "file_d23e20e7c2d64bf9b1cad6f8219e7de2",
+            "name": "Chengdu tour launch preparation responsibility matrix.xlsx",
+            "size": 5882,
+            "url": "/api/files/file_d23e20e7c2d64bf9b1cad6f8219e7de2/download"
+          }
+        ]
+      },
+      "created_at": "2026-09-27T04:28:38.984862+00:00",
+      "updated_at": "2026-09-27T04:28:39.024766+00:00",
+      "idempotency_key": "d501b6a2-27f9-4788-ae8f-22dc63f41291"
+    },
+    {
+      "id": "run_c84002ef56204eb68796a83238c86a04",
+      "skill_id": "project-plan",
+      "person_id": "product_manager",
+      "status": "completed",
+      "input": {
+        "title": "Chengdu tour launch preparation",
+        "start": "2026-10-01",
+        "tasks": [
+          {
+            "id": "scope",
+            "title": "Confirm pilot scope",
+            "owner": "Zhao",
+            "days": 2,
+            "depends_on": []
+          },
+          {
+            "id": "review",
+            "title": "Pilot readiness review",
+            "owner": "He",
+            "days": 3,
+            "depends_on": [
+              "scope"
+            ]
+          },
+          {
+            "id": "decision",
+            "title": "Executive go-live decision",
+            "owner": "Chen",
+            "days": 1,
+            "depends_on": [
+              "review"
+            ]
+          }
+        ]
+      },
+      "output": {
+        "summary": "Schedule calculated in calendar days; finish dates are exclusive.",
+        "tasks": [
+          {
+            "id": "scope",
+            "title": "Confirm pilot scope",
+            "owner": "Zhao",
+            "days": 2,
+            "depends_on": [],
+            "start": "2026-10-01",
+            "finish": "2026-10-03"
+          },
+          {
+            "id": "review",
+            "title": "Pilot readiness review",
+            "owner": "He",
+            "days": 3,
+            "depends_on": [
+              "scope"
+            ],
+            "start": "2026-10-03",
+            "finish": "2026-10-06"
+          },
+          {
+            "id": "decision",
+            "title": "Executive go-live decision",
+            "owner": "Chen",
+            "days": 1,
+            "depends_on": [
+              "review"
+            ],
+            "start": "2026-10-06",
+            "finish": "2026-10-07"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": "file_d5e0ba00f81d4641a914b328535d4a85",
+            "name": "Chengdu tour launch preparation.xlsx",
+            "size": 5932,
+            "url": "/api/files/file_d5e0ba00f81d4641a914b328535d4a85/download"
+          }
+        ]
+      },
+      "created_at": "2026-09-27T04:28:35.318885+00:00",
+      "updated_at": "2026-09-27T04:28:35.538816+00:00",
+      "idempotency_key": "31d5c5b6-18af-4b33-8298-a32a02624fd2"
+    },
+    {
+      "id": "run_120799cce0154a8a983ba7620decfe71",
+      "skill_id": "workload-rebalance",
+      "person_id": "ops_manager",
+      "status": "completed",
+      "input": {
+        "tasks": [
+          {
+            "task": "Plan launch dependencies",
+            "required_skill": "project-plan",
+            "hours": 4,
+            "preferred_person": "product_manager"
+          },
+          {
+            "task": "Review launch budget",
+            "required_skill": "budget-variance",
+            "hours": 3,
+            "preferred_person": "finance_manager"
+          },
+          {
+            "task": "Prepare launch readiness pack",
+            "required_skill": "management-handoff",
+            "hours": 2,
+            "preferred_person": "director"
+          }
+        ]
+      },
+      "output": {
+        "summary": "Projected assignments prepared. No staff records were changed.",
+        "assignments": [
+          {
+            "task": "Plan launch dependencies",
+            "person_id": "product_manager",
+            "person": "Zhao",
+            "manager": "Chen",
+            "hours": 4,
+            "projected_hours": 13,
+            "capacity_hours": 30
+          },
+          {
+            "task": "Review launch budget",
+            "person_id": "finance_manager",
+            "person": "Deng",
+            "manager": "Chen",
+            "hours": 3,
+            "projected_hours": 13,
+            "capacity_hours": 30
+          },
+          {
+            "task": "Prepare launch readiness pack",
+            "person_id": "director",
+            "person": "Chen",
+            "manager": "Company board",
+            "hours": 2,
+            "projected_hours": 5,
+            "capacity_hours": 12
+          }
+        ],
+        "unassigned": [],
+        "needs_manager_attention": false
+      },
+      "created_at": "2026-09-27T04:28:28.752579+00:00",
+      "updated_at": "2026-09-27T04:28:28.780520+00:00",
+      "idempotency_key": "d0d5de0e-7aaa-43ef-a9f8-eb362450dec1"
+    },
+    {
+      "id": "run_1aefd4b9b4864c60bb28f09bac87a1e7",
+      "skill_id": "proposal-package",
+      "person_id": "sales_manager",
+      "status": "completed",
+      "input": {
+        "title": "Chengdu tour product launch",
+        "objective": "Choose a launch approach for a Chengdu food and tea group-tour product.",
+        "audience": "Executive team",
+        "currency": "CNY",
+        "weights": {
+          "impact": 5,
+          "risk": 3,
+          "cost": 2
+        },
+        "options": [
+          {
+            "name": "Pilot first",
+            "cost": 50000,
+            "impact": 4,
+            "risk": 2,
+            "benefit": "Validate with one group.",
+            "concern": "Slower reach."
+          },
+          {
+            "name": "Full launch",
+            "cost": 120000,
+            "impact": 5,
+            "risk": 4,
+            "benefit": "Reach more customers sooner.",
+            "concern": "Higher delivery risk."
+          }
+        ]
+      },
+      "output": {
+        "summary": "Proposal deck and decision brief created from supplied options; no commitments made.",
+        "recommended": "Pilot first",
+        "ranking": [
+          {
+            "name": "Pilot first",
+            "cost": 50000,
+            "impact": 4,
+            "risk": 2,
+            "benefit": "Validate with one group.",
+            "concern": "Slower reach.",
+            "score": 75.7
+          },
+          {
+            "name": "Full launch",
+            "cost": 120000,
+            "impact": 5,
+            "risk": 4,
+            "benefit": "Reach more customers sooner.",
+            "concern": "Higher delivery risk.",
+            "score": 62.0
+          }
+        ],
+        "weights": {
+          "impact": 5,
+          "risk": 3,
+          "cost": 2
+        },
+        "artifacts": [
+          {
+            "id": "file_c1f9d50ef94647f7a9649be326a186bc",
+            "name": "Chengdu tour product launch.pptx",
+            "size": 33540,
+            "url": "/api/files/file_c1f9d50ef94647f7a9649be326a186bc/download"
+          },
+          {
+            "id": "file_f8a607c2b8484b46a16eed3d4dd6f10e",
+            "name": "Chengdu tour product launch - decision brief.docx",
+            "size": 36936,
+            "url": "/api/files/file_f8a607c2b8484b46a16eed3d4dd6f10e/download"
+          }
+        ]
+      },
+      "created_at": "2026-09-27T04:28:20.355651+00:00",
+      "updated_at": "2026-09-27T04:28:20.636680+00:00",
+      "idempotency_key": "7ae0127a-7563-43d7-b8a4-5cdf2124a175"
+    }
+  ],
+  "records": [
+    {
+      "id": "rec_a784b7c2ad86440a83792811a6b69ca7",
+      "kind": "knowledge-save",
+      "title": "Chengdu launch preparation outcome",
+      "payload": {
+        "title": "Chengdu launch preparation outcome",
+        "content": "Pilot first recommended at score 75.7. SIM readiness evidence supplied. Reviewed budget copy and management handoff produced. No real product release or booking.",
+        "source": "Recorded local launch demo, 27 September 2026",
+        "owner": "Chen / Director"
+      },
+      "created_at": "2026-09-27T04:29:20.280114+00:00",
+      "updated_at": "2026-09-27T04:29:20.280114+00:00"
+    },
+    {
+      "id": "rec_60fc93c9782f47f4870e019553dfc49b",
+      "kind": "decision-log",
+      "title": "SIMULATION - pilot preparation approved",
+      "payload": {
+        "title": "SIMULATION - pilot preparation approved",
+        "rationale": "Pilot scores 75.7 versus 62.0. Budget input reviewed. SIM: scope, supplier capacity and readiness checklist supplied for this demonstration. No real supplier contract or spending approval.",
+        "owner": "Chen / Director",
+        "review_date": "2026-10-07"
+      },
+      "created_at": "2026-09-27T04:29:07.773959+00:00",
+      "updated_at": "2026-09-27T04:29:07.773959+00:00"
+    },
+    {
+      "id": "rec_5e272ecc591842e29b0a1ef08b593316",
+      "kind": "task-tracker",
+      "title": "SIMULATION - confirm pilot supplier capacity",
+      "payload": {
+        "title": "SIMULATION - confirm pilot supplier capacity",
+        "owner": "He / Operations",
+        "due": "2026-10-06",
+        "status": "done"
+      },
+      "created_at": "2026-09-27T04:28:42.995113+00:00",
+      "updated_at": "2026-09-27T04:28:47.650374+00:00"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "file_94698859a281417d9457cae36d23fd21",
+      "name": "Chengdu tour launch - simulation outcome.pdf",
+      "size": 41866,
+      "created_at": "2026-09-27T04:29:17.117321+00:00"
+    },
+    {
+      "id": "file_e689a3e543384eaa8e91da6521b39310",
+      "name": "Chengdu launch readiness - simulated completion.docx",
+      "size": 36992,
+      "created_at": "2026-09-27T04:29:11.431818+00:00"
+    },
+    {
+      "id": "file_3806a3c5326d4a0bb9a1632ace014af1",
+      "name": "Chengdu launch budget - simulation-edited.xlsx",
+      "size": 5828,
+      "created_at": "2026-09-27T04:29:03.679533+00:00"
+    },
+    {
+      "id": "file_936b6d1bdfb940aebebdf7e79ca635ac",
+      "name": "Chengdu launch budget - simulation.xlsx",
+      "size": 5816,
+      "created_at": "2026-09-27T04:28:56.201593+00:00"
+    },
+    {
+      "id": "file_d23e20e7c2d64bf9b1cad6f8219e7de2",
+      "name": "Chengdu tour launch preparation responsibility matrix.xlsx",
+      "size": 5882,
+      "created_at": "2026-09-27T04:28:39.018764+00:00"
+    },
+    {
+      "id": "file_d5e0ba00f81d4641a914b328535d4a85",
+      "name": "Chengdu tour launch preparation.xlsx",
+      "size": 5932,
+      "created_at": "2026-09-27T04:28:35.532803+00:00"
+    },
+    {
+      "id": "file_f8a607c2b8484b46a16eed3d4dd6f10e",
+      "name": "Chengdu tour product launch - decision brief.docx",
+      "size": 36936,
+      "created_at": "2026-09-27T04:28:20.631648+00:00"
+    },
+    {
+      "id": "file_c1f9d50ef94647f7a9649be326a186bc",
+      "name": "Chengdu tour product launch.pptx",
+      "size": 33540,
+      "created_at": "2026-09-27T04:28:20.537649+00:00"
+    }
+  ],
+  "voice": {
+    "engine": "Windows SAPI",
+    "name": "Microsoft Zira Desktop - English (United States)",
+    "synthetic": true
+  },
+  "scenario": "Product Launch Preparation",
+  "mode": "Operator-led local simulation",
+  "distinct_skills": 13,
+  "recorded_date": "2026-09-27"
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa"><title>Atlas — Your company assistant</title>
+  <link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/avatar.css"><link rel="stylesheet" href="/workspace.css"><link rel="stylesheet" href="/chat-format.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#assistant" aria-label="Atlas home"><span class="brand-mark">a<span>·</span></span><div>atlas<span>COMPANY WORKSPACE</span></div></a>
+      <button class="new-chat" id="new-chat"><span>＋</span> New conversation <kbd>N</kbd></button>
+      <nav class="main-nav" aria-label="Workspace">
+        <button class="nav-item active" data-view="assistant"><span data-icon="chat"></span> Assistant</button>
+        <button class="nav-item" data-view="people"><span data-icon="people"></span> Your people <span class="nav-count" id="staff-count">10</span></button>
+        <button class="nav-item" data-view="organization"><span data-icon="board"></span> Org chart</button>
+        <button class="nav-item" data-view="skills"><span data-icon="sparkle"></span> Skills library</button>
+        <button class="nav-item" data-view="activity"><span data-icon="board"></span> Activity & approvals</button>
+        <button class="nav-item" data-view="files"><span data-icon="file"></span> Files & knowledge</button>
+        <button class="nav-item" data-view="connections"><span data-icon="globe"></span> Connections</button>
+        <button class="nav-item" data-view="work"><span data-icon="board"></span> Work & decisions</button>
+        <button class="nav-item" data-view="reports"><span data-icon="file"></span> Documents</button>
+      </nav>
+      <div class="history-heading"><span>CONVERSATIONS</span><button id="toggle-history-search" class="icon-btn" aria-label="Search conversation history" data-icon="search"></button></div>
+      <input id="history-search" class="history-search hidden" type="search" placeholder="Find a conversation…" aria-label="Search conversations">
+      <div id="history-list" class="history-list" aria-label="Saved conversations"><p class="sidebar-hint">Loading your history…</p></div>
+      <div class="sidebar-footer"><a class="nav-item api-doc-link" href="/docs" target="_blank" rel="noopener"><span data-icon="file"></span> API documentation ↗</a><button class="nav-item" data-view="settings"><span data-icon="settings"></span> Workspace settings</button><div class="workspace-account"><span class="account-avatar">A</span><div><strong id="company-label">Atlas Company</strong><small>Company workspace</small></div><span class="status-dot"></span></div></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar"><div class="topbar-left"><button id="menu-toggle" class="icon-btn mobile-only" aria-label="Toggle sidebar" data-icon="menu"></button><span class="workspace-crumb">Workspace</span><span class="crumb-divider">/</span><strong id="page-title">Assistant</strong></div><div class="topbar-actions"><span class="connection-chip" id="connection-chip"><span class="status-dot"></span> Local assistant</span><button id="voice-stop" class="icon-btn" aria-label="Stop speaking" title="Stop speaking" data-icon="volume"></button><button class="icon-btn" data-view="settings" aria-label="Open settings" data-icon="settings"></button></div></header>
+      <div id="notice" class="notice hidden" role="status"></div>
+      <div class="content-layout" id="content-layout">
+        <main class="main-content">
+          <section id="view-assistant" class="view assistant-view">
+            <div id="conversation-scroll" class="conversation-scroll"><div id="conversation-content"></div></div>
+            <div class="composer-wrap"><form id="chat-form" class="composer">
+              <label for="chat-input" class="sr-only">Message your company assistant</label><textarea id="chat-input" rows="2" placeholder="Ask your team, create a document, or plan your next project…" maxlength="6000"></textarea>
+              <div class="composer-tools"><div class="composer-left"><button id="dictate" class="tool-button" type="button" title="Dictate a message"><span data-icon="mic"></span><span>Speak</span></button><span class="tool-divider"></span><select id="chat-target" aria-label="Who to talk to"><option value="atlas">Atlas · company assistant</option></select><select id="chat-mode" aria-label="Message intent"><option value="auto">Auto</option><option value="ask">Ask a question</option><option value="delegate">Delegate a task</option></select></div><button id="send-message" type="submit" class="send-button" aria-label="Send message"><span data-icon="arrow-up"></span></button></div>
+            </form><div class="composer-caption"><span id="autonomy-caption">Proposal first · You stay in control</span><button data-view="settings">Change controls</button></div></div>
+          </section>
+          <section id="view-people" class="view standard-view hidden"></section>
+          <section id="view-organization" class="view standard-view hidden"></section>
+          <section id="view-work" class="view standard-view hidden"></section>
+          <section id="view-reports" class="view standard-view hidden"></section>
+          <section id="view-settings" class="view standard-view hidden"></section>
+          <section id="view-skills" class="view standard-view hidden"></section>
+          <section id="view-activity" class="view standard-view hidden"></section>
+          <section id="view-files" class="view standard-view hidden"></section>
+          <section id="view-connections" class="view standard-view hidden"></section>
+        </main>
+        <aside class="companion-panel" id="companion-panel" aria-label="Your assistant"></aside>
+      </div>
+    </div>
+  </div>
+  <dialog id="staff-dialog"><form id="staff-form"><div class="dialog-heading"><div><span class="eyebrow">YOUR PEOPLE</span><h2 id="staff-modal-title">Configure a colleague</h2></div><button type="button" data-close="staff-dialog" class="icon-btn" aria-label="Close">×</button></div><input id="staff-id" type="hidden"><div class="form-grid">
+    <label>Name<input id="staff-name" required></label><label>Role<input id="staff-role" required></label><label>Reports to<select id="staff-manager"></select></label><label>Decision style<select id="staff-style"><option value="balanced">Balanced</option><option value="price">Cost conscious</option><option value="experience">Experience focused</option></select></label><label class="wide">Skills <small>Separate with commas</small><input id="staff-skills" required></label><label>Weekly capacity<input id="staff-capacity" type="number" min="1" max="168" value="30" required></label><label>Hours already assigned<input id="staff-assigned" type="number" min="0" value="0" required></label><label>Avatar accent<input id="staff-color" type="color" value="#527c75"></label><label>Voice language<input id="staff-voice" value="en-US"></label><label class="wide">Agent instructions<textarea id="staff-guidance" maxlength="500" rows="3" placeholder="What should this person focus on?"></textarea></label><label class="wide">Follows<select id="staff-follows" multiple size="3"></select></label><label class="checkbox-label wide"><input id="staff-available" type="checkbox" checked> Available for new work</label>
+  </div><p id="staff-error" class="form-error" role="alert"></p><div class="dialog-actions"><button id="delete-staff" type="button" class="danger-btn hidden">Remove</button><button type="button" data-close="staff-dialog" class="secondary-btn">Cancel</button><button type="submit" class="primary-btn">Save colleague</button></div></form></dialog>
+  <dialog id="review-dialog"><form id="review-form"><div class="dialog-heading"><div><span class="eyebrow">PLAN REVIEW</span><h2 id="review-title">Return with comments</h2></div><button type="button" data-close="review-dialog" class="icon-btn" aria-label="Close">×</button></div><p id="review-description" class="muted"></p><label class="form-label" for="review-comment">Your comments</label><textarea id="review-comment" rows="5" maxlength="3000" required placeholder="Explain what needs to change or how the issue can be resolved…"></textarea><p id="review-error" class="form-error" role="alert"></p><div class="dialog-actions"><button type="button" class="secondary-btn" data-close="review-dialog">Cancel</button><button type="submit" class="primary-btn" id="review-submit">Send comments</button></div></form></dialog>
+  <dialog id="skill-dialog" class="wide-dialog"></dialog>
+  <dialog id="run-dialog" class="wide-dialog"></dialog>
+  <dialog id="record-dialog" class="wide-dialog"></dialog>
+  <script src="/avatar.js"></script><script src="/app.js"></script><script src="/workspace.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "start": {
+      "type": "string",
+      "title": "Range start, ISO datetime with offset",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "end": {
+      "type": "string",
+      "title": "Range end, ISO datetime with offset",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "start",
+    "end"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,122 @@
+# Enterprise challenge fit statement
+
+Track B / SP-D Organizational Collaboration Office | 27 September 2026
+
+Repository: https://github.com/energelpen/1010-Chengdu-Hackathon
+
+## An accountable path to launch
+
+### The proposition
+
+Atlas Office makes cross-functional preparation visible: compare alternatives, identify responsible colleagues, plan dependencies, create draft artifacts and hand unresolved decisions to management. Its intended enterprise setting is preparing a tourism product launch. The implementation combines a general company workspace with a tourism-specific RFQ simulation.
+
+A proposed use case is preparing a Chengdu food, tea and heritage group product. The team needs a commercially coherent offer, a feasible plan, clear ownership and reviewable evidence before customer release. Atlas brings these decisions into a shared workspace with saved conversations, run records and editable files.
+
+### Representative enterprise
+
+The public-source reference is Sichuan Shanghai Airlines Holiday International Travel Agency Co., Ltd. (descriptive English rendering of its registered Chinese name). Its official website lists travel agency services, aviation travel operations, destination operations, airport services, business travel and MICE. It also publishes a group-client contact channel. These touchpoints establish a relevant tourism and commerce setting. [1]
+
+UNESCO identifies Chengdu as a Creative City of Gastronomy. This supports food and cultural experiences as an appropriate destination theme. [2] The enterprise is a public-source reference; no partnership or access to its internal operations is claimed.
+
+### Pain points to validate with operators
+
+These are hypotheses inferred from the coordination work involved, not measured findings about the named company. An operator pilot must establish their frequency and cost before any efficiency claim is made. The intended outcome is a reviewable planning package with a clear next action: approve, revise or escalate.
+
+| Workflow hypothesis | Intended improvement |
+| --- | --- |
+| Prices, scope and decisions may be spread across files | Keep comparison inputs, rationale and artifacts together |
+| A changing plan can obscure the next responsible person | Expose roles, reporting routes, capacity and unassigned work |
+| Draft preparation may require repeated manual reconciliation | Generate consistent commercial and management drafts |
+| Release readiness can be hard to inspect | Make missing evidence, blockers and approvals visible |
+
+Sources: [1] Official company site: https://www.scsatrip.com/; [2] UNESCO Chengdu profile: https://www.unesco.org/en/creative-cities/chengdu
+
+## Map skills to business touchpoints
+
+### Product launch preparation building blocks
+
+The following skills are independently callable through the Skills library, supported API or individual runners. Their outputs are concrete planning artifacts. A staffing proposal does not reserve saved capacity; a responsibility matrix does not change assignments; a decision brief does not authorize spending.
+
+| Business step | Skills | Reviewable output |
+| --- | --- | --- |
+| Compare approaches | proposal-package; scenario-compare | Weighted alternatives, PowerPoint proposal and Word decision brief |
+| Clarify ownership | responsibility-matrix | Roster-based RACI matrix with one accountable person per task |
+| Split available work | workload-rebalance | Skill- and capacity-aware assignments with blocker reasons |
+| Plan delivery | project-plan | Dependency-aware dates and cycle validation; calendar-day durations |
+| Prepare the offer | quotation-package; campaign-plan | Draft quotation, price schedule and campaign brief |
+| Record and hand over | decision-log; management-handoff | Rationale, owner, next step, Word brief and unsent email draft |
+
+### Tourism adaptation: a connected nine-skill loop
+
+The tourism simulation connects inquiry-intake, flight-search, tour-search, option-comparison, hierarchy-router, workload-splitter, schedule-builder, execution-controller and outcome-reporter. It validates party size, dates and budget; rejects incompatible options; selects qualified available staff; sets dependencies; records execution evidence; and determines whether a customer draft is ready for review.
+
+Group seat count, activity capacity and accessibility constrain options. Missing supplier, safety or finance evidence holds release. In the demonstration rules, quotations of at least CNY 100,000 also need an executive gate. Completion events require the assigned owner, evidence and completed predecessors. Saved review history supports revision and escalation.
+
+### How public knowledge becomes an implementation choice
+
+The reusable unit is the skill contract plus its business checks. A future authorized deployment would replace example offers, staffing and demonstration thresholds with enterprise-approved data and rules.
+
+- Travel, destination and group services [1] motivate separate sales, product, supplier and operating duties in the fictional roster.
+- The company's public 21 September 2026 holiday safety notice [1] motivates a visible safety-evidence gate; it does not disclose the company's internal approval process.
+- Chengdu's gastronomic identity [2] motivates food, tea and heritage examples in interest matching and itinerary scheduling.
+
+Sources: Implementation: named skills' SKILL.md files; scripts/tourism_core.py; scripts/governance.py; Knowledge boundary: references/source-register.md; resources/domain-rules.md
+
+## Define value before claiming savings
+
+### A paired operator pilot
+
+Use 20 authorized, anonymized product-preparation cases. Have the same operators complete comparable manual and Atlas-assisted work, counterbalancing the order. Record active preparation time separately from supplier waiting time. A reviewer should score both outputs against the same scope, quality and approval checklist.
+
+Include scope revisions, unavailable staff, insufficient capacity and incomplete approval evidence. Report failed cases as well as completed ones. Agree the baseline, loaded labor rate and tool-cost allocation with the enterprise before measurement.
+
+### Proposed acceptance targets
+
+Efficiency gain = (manual minutes − assisted minutes) / manual minutes. The percentages above are proposed acceptance thresholds, not observed improvements. No enterprise baseline, cost saving, conversion uplift or adoption result has been measured.
+
+| Indicator | Measurement | Pilot target |
+| --- | --- | --- |
+| Preparation efficiency | Median active minutes from complete brief to reviewable package | At least 30% below measured manual baseline |
+| Labor cost per accepted package | Active hours × agreed loaded hourly rate, plus tool cost | At least 20% below baseline; exclude travel and supplier spend |
+| First-review completeness | Packages with every required scope, owner, price-source and approval field / reviewed packages | At least 95% |
+| Accountability coverage | Tasks with responsible owner and accountable reviewer / required tasks | 100% |
+| Gate reliability | Release attempts accepted with missing evidence or unresolved blockers | Zero in the pilot test set |
+| Operator experience | Five-point rating of clarity and next-action usefulness | Median at least 4/5 |
+
+### Decision rule for continued use
+
+Proceed to a broader trial only if the assisted outputs satisfy the same quality checklist, all required release checks hold, and operators can explain the recommendation and next action. If a target is missed, identify whether the cause is data preparation, routing, review effort or integration and repeat the affected cases after a specific correction.
+
+Software self-tests and routing checks establish behavior on specified inputs. They cannot establish business savings, arbitrary-language accuracy or real supplier fulfillment. Adoption value must be demonstrated with authorized operators and cases.
+
+Sources: Submission Guideline.pdf, physical p. 6: quantified enterprise fit indicators; Judging Rubric.pdf, physical pp. 7–9: industry solution, measurable value and authentic distillation
+
+## Evidence, limits and next validation
+
+### SP-D alignment and the remaining scenario gap
+
+Challenge Topics.pdf, physical p. 6, requires a relationship network, automatic lead and collaborator selection, and a complete lifecycle from one sentence. It explicitly names Product Launch Preparation as the unified validation scenario.
+
+Atlas implements the relationship workspace, independent launch planning and reporting tools, and an integrated tourism RFQ loop. The recording demonstrates the full operator-led launch preparation cycle through 13 distinct skills, including a reviewed workbook change and simulated completion. Automatic multi-person launch completion from a single sentence has not been verified. Separate successful skill calls do not establish that strict SP-D requirement.
+
+### What is simulated and what is real
+
+Local draft files, saved conversations and run records are real software outputs. Tourism people, reporting lines, customers, prices, capacity and SIM: evidence are fictional. Approval thresholds and task durations are demonstration choices, not the reference company's SOP or a legal standard. The prototype makes no real reservations or payments; a draft does not prove customer delivery.
+
+The app runs locally and lacks employee authentication and per-role access controls. Enterprise use requires approved supplier adapters, verified commercial data, authorized organizational rules and an appropriate shared deployment. No sponsorship, deployment, award or proprietary company knowledge is claimed.
+
+### Next validation milestones
+
+- Confirm operator pain points, obtain authorized sample cases and agree an SOP and rule inventory.
+- Demonstrate the required single-sentence launch lifecycle, including revisions and exception branches; retain authentic recording, execution logs and outputs.
+- Connect approved data and services, configure organizational review policy, then run the paired pilot and report the results.
+
+### Source provenance
+
+[1] https://www.scsatrip.com/ — official company profile, business categories and safety news dated 21 September 2026. Verified from official-site search-indexed content on 27 September 2026; direct fetch timed out.
+
+[2] https://www.unesco.org/en/creative-cities/chengdu — UNESCO Creative Cities Network profile, accessed 27 September 2026. Neither source endorses the software, synthetic products or prices.
+
+Project source and reproducible demonstration: https://github.com/energelpen/1010-Chengdu-Hackathon
+
+Sources: User-supplied Challenge Topics.pdf, physical pp. 6–7; Judging Rubric.pdf, physical pp. 3 and 7–9; Submission Guideline.pdf, physical p. 6; Atlas source register, domain rules, named skill instructions and associated tests

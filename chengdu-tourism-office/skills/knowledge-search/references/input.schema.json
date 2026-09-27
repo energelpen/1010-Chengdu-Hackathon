@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string",
+      "title": "Search terms",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "query"
+  ],
+  "additionalProperties": false
+}

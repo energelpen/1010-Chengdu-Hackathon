@@ -1,0 +1,35 @@
+{
+  "id": "option-comparison",
+  "title": "Option Comparison",
+  "category": "Tourism template",
+  "description": "Run the existing synthetic tourism option comparison stage.",
+  "handler": "tourism",
+  "function": "option_comparison",
+  "effect": "local",
+  "input_schema": {
+    "type": "object",
+    "title": "Tourism stage input"
+  },
+  "example": {
+    "request_id": "EXAMPLE-RFQ",
+    "inquiry": {
+      "group_size": 30,
+      "duration_days": 3,
+      "budget_cny": 200000,
+      "travel_start": "2026-10-25"
+    },
+    "flight": {
+      "group_total_cny": 65400
+    },
+    "activities": [
+      {
+        "group_total_cny": 4800
+      },
+      {
+        "group_total_cny": 5400
+      }
+    ],
+    "priority": "balanced"
+  },
+  "version": "2.0.0"
+}

@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Project",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "start": {
+      "type": "string",
+      "title": "Start date, YYYY-MM-DD",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "tasks": {
+      "type": "array",
+      "title": "Tasks",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "ID",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "title": {
+            "type": "string",
+            "title": "Task",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "owner": {
+            "type": "string",
+            "title": "Owner",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "days": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 365,
+            "title": "Duration in calendar days"
+          },
+          "depends_on": {
+            "type": "array",
+            "title": "Dependencies",
+            "items": {
+              "type": "string",
+              "title": "Task ID",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "maxItems": 500
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "owner",
+          "days",
+          "depends_on"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 500
+    }
+  },
+  "required": [
+    "title",
+    "start",
+    "tasks"
+  ],
+  "additionalProperties": false
+}

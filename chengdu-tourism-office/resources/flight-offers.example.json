@@ -1,0 +1,11 @@
+{
+  "source": "SYNTHETIC_DEMO",
+  "observed_at": "2026-09-25T09:00:00+08:00",
+  "currency": "CNY",
+  "offers": [
+    {"id":"FL-A","origin":"SIN","destination":"CTU","depart_date":"2026-10-25","return_date":"2026-10-28","carrier":"Demo Air A","fare_cny_per_person":2150,"tax_cny_per_person":430,"seats":35,"stops":0,"duration_minutes":275,"checked_bag_kg":20,"refundable":false},
+    {"id":"FL-B","origin":"SIN","destination":"CTU","depart_date":"2026-10-25","return_date":"2026-10-28","carrier":"Demo Air B","fare_cny_per_person":1800,"tax_cny_per_person":380,"seats":32,"stops":1,"duration_minutes":430,"checked_bag_kg":20,"refundable":false},
+    {"id":"FL-C","origin":"SIN","destination":"CTU","depart_date":"2026-10-25","return_date":"2026-10-28","carrier":"Demo Air C","fare_cny_per_person":2450,"tax_cny_per_person":500,"seats":40,"stops":0,"duration_minutes":285,"checked_bag_kg":30,"refundable":true},
+    {"id":"FL-D","origin":"SIN","destination":"CTU","depart_date":"2026-10-25","return_date":"2026-10-28","carrier":"Demo Air D","fare_cny_per_person":1550,"tax_cny_per_person":350,"seats":9,"stops":1,"duration_minutes":510,"checked_bag_kg":0,"refundable":false}
+  ]
+}

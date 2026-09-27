@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Review title",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "items": {
+      "type": "array",
+      "title": "Checks",
+      "items": {
+        "type": "object",
+        "properties": {
+          "requirement": {
+            "type": "string",
+            "title": "Requirement or clause",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "evidence": {
+            "type": "string",
+            "title": "Evidence",
+            "maxLength": 10000
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "met",
+              "gap",
+              "unknown"
+            ],
+            "title": "Status"
+          },
+          "owner": {
+            "type": "string",
+            "title": "Owner",
+            "minLength": 1,
+            "maxLength": 10000
+          }
+        },
+        "required": [
+          "requirement",
+          "evidence",
+          "status",
+          "owner"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 500
+    }
+  },
+  "required": [
+    "title",
+    "items"
+  ],
+  "additionalProperties": false
+}

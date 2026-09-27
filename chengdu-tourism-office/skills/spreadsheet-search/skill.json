@@ -1,0 +1,8 @@
+{
+  "id":"spreadsheet-search","title":"Search an Excel workbook","category":"Office files",
+  "description":"Search every worksheet for a category, customer, reference or value and return exact cell locations.",
+  "handler":"workbook_search","effect":"local","connector":null,"version":"1.0.0",
+  "input_schema":{"type":"object","properties":{"file_id":{"type":"string","title":"Workspace Excel file ID","minLength":1},"query":{"type":"string","title":"Search text","minLength":2,"maxLength":100}},"required":["file_id","query"],"additionalProperties":false},
+  "example":{"file_id":"select-a-workspace-file","query":"Flights"},
+  "guidance":"Search before editing. Use only actual uploaded or generated file IDs. Return the sheet, cell and value; never guess a location. Read-only and capped at 100 matches."
+}

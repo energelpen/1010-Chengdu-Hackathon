@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "to": {
+      "type": "string",
+      "title": "Recipient email",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "subject": {
+      "type": "string",
+      "title": "Subject",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "body": {
+      "type": "string",
+      "title": "Message",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "to",
+    "subject",
+    "body"
+  ],
+  "additionalProperties": false
+}

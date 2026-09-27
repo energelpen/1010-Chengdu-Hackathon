@@ -1,0 +1,22 @@
+{
+  "id": "hierarchy-router",
+  "title": "Hierarchy Router",
+  "category": "Tourism template",
+  "description": "Run the existing synthetic tourism hierarchy router stage.",
+  "handler": "tourism",
+  "function": "hierarchy_router",
+  "effect": "local",
+  "input_schema": {
+    "type": "object",
+    "title": "Tourism stage input"
+  },
+  "example": {
+    "request_id": "demo",
+    "inquiry": {
+      "group_size": 30,
+      "duration_days": 3,
+      "budget_cny": 200000
+    }
+  },
+  "version": "2.0.0"
+}

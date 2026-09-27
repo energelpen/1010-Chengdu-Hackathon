@@ -1,0 +1,6 @@
+{
+  "schema_version": "2.0",
+  "required_envelope_fields": ["schema_version", "request_id", "skill", "status", "data", "issues", "trace"],
+  "status_values": ["ok", "needs_input", "blocked", "escalated"],
+  "contract": "Each skill accepts one JSON object and returns this envelope. A decision is traceable to input, source or rule IDs. Escalation and missing evidence remain visible."
+}

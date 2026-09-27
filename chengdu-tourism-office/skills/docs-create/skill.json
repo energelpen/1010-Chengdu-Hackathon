@@ -1,0 +1,37 @@
+{
+  "id": "docs-create",
+  "title": "Create Google document",
+  "category": "Google Workspace",
+  "description": "Create a Google document and insert the supplied text.",
+  "handler": "google",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Title",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "body": {
+        "type": "string",
+        "title": "Document text",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "title",
+      "body"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Project brief",
+    "body": "Objective\nLaunch the customer portal pilot.\n"
+  },
+  "guidance": "Use the connected Google account. Surface provider errors and actual IDs. Review the exact saved payload before executing this external write; do not retry an uncertain result automatically.",
+  "effect": "remote_write",
+  "connector": "google",
+  "version": "1.0.0"
+}

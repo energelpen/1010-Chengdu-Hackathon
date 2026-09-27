@@ -1,0 +1,11 @@
+{
+  "currency": "SGD",
+  "deals": [
+    {
+      "customer": "Example Company",
+      "stage": "Proposal",
+      "value": 50000,
+      "probability": 0.6
+    }
+  ]
+}

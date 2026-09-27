@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "employee": {
+      "type": "string",
+      "title": "Employee",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "start": {
+      "type": "string",
+      "title": "Start date",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "end": {
+      "type": "string",
+      "title": "End date",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "manager": {
+      "type": "string",
+      "title": "Manager",
+      "minLength": 1,
+      "maxLength": 10000
+    }
+  },
+  "required": [
+    "employee",
+    "start",
+    "end",
+    "manager"
+  ],
+  "additionalProperties": false
+}

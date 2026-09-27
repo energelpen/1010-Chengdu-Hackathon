@@ -1,0 +1,81 @@
+{
+  "id": "contract-checklist",
+  "title": "Contract review checklist",
+  "category": "Governance",
+  "description": "Organize supplied contract clauses, evidence and review questions.",
+  "handler": "checklist",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Review title",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "items": {
+        "type": "array",
+        "title": "Checks",
+        "items": {
+          "type": "object",
+          "properties": {
+            "requirement": {
+              "type": "string",
+              "title": "Requirement or clause",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "evidence": {
+              "type": "string",
+              "title": "Evidence",
+              "maxLength": 10000
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "met",
+                "gap",
+                "unknown"
+              ],
+              "title": "Status"
+            },
+            "owner": {
+              "type": "string",
+              "title": "Owner",
+              "minLength": 1,
+              "maxLength": 10000
+            }
+          },
+          "required": [
+            "requirement",
+            "evidence",
+            "status",
+            "owner"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 500
+      }
+    },
+    "required": [
+      "title",
+      "items"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Vendor review",
+    "items": [
+      {
+        "requirement": "Data retention terms documented",
+        "evidence": "",
+        "status": "unknown",
+        "owner": "Legal reviewer"
+      }
+    ]
+  },
+  "guidance": "Preserve source clauses and open questions. This is a review checklist, not legal advice or an enforceability determination.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

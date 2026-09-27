@@ -1,0 +1,37 @@
+{
+  "id": "drive-upload",
+  "title": "Upload to Google Drive",
+  "category": "Google Workspace",
+  "description": "Upload a selected local workspace file to Google Drive.",
+  "handler": "google",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "file_id": {
+        "type": "string",
+        "title": "Workspace file ID",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "folder_id": {
+        "type": "string",
+        "title": "Destination folder ID",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "file_id",
+      "folder_id"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "file_id": "select-an-uploaded-file",
+    "folder_id": "root"
+  },
+  "guidance": "Use the connected Google account. Surface provider errors and actual IDs. Review the exact saved payload before executing this external write; do not retry an uncertain result automatically.",
+  "effect": "remote_write",
+  "connector": "google",
+  "version": "1.0.0"
+}

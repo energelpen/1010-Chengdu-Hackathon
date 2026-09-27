@@ -1,0 +1,9 @@
+.message-text ul { margin: 10px 0; padding-left: 20px; }
+.message-text li { margin: 5px 0; }
+.message-text a { color: #276f55; text-decoration: underline; text-underline-offset: 2px; }
+.message-table-wrap { max-width: 100%; overflow-x: auto; margin: 12px 0; border: 1px solid #e4ebe5; border-radius: 10px; }
+.message-text table { width: 100%; border-collapse: collapse; font-size: 12px; white-space: nowrap; }
+.message-text th, .message-text td { padding: 8px 11px; border-bottom: 1px solid #edf1ed; text-align: left; }
+.message-text th { background: #f6faf6; color: #355844; font-weight: 600; }
+.message-text tr:last-child td { border-bottom: 0; }
+.message-text td:not(:first-child), .message-text th:not(:first-child) { text-align: right; }

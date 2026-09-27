@@ -1,0 +1,63 @@
+{
+  "id": "pdf-create",
+  "title": "PDF brief",
+  "category": "Office files",
+  "description": "Create a paginated, printable PDF brief from structured sections.",
+  "handler": "pdf",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "PDF title",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "sections": {
+        "type": "array",
+        "title": "Sections",
+        "items": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string",
+              "title": "Heading",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "body": {
+              "type": "string",
+              "title": "Body",
+              "minLength": 1,
+              "maxLength": 10000
+            }
+          },
+          "required": [
+            "heading",
+            "body"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 50
+      }
+    },
+    "required": [
+      "title",
+      "sections"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "title": "Operations brief",
+    "sections": [
+      {
+        "heading": "Priority",
+        "body": "Confirm owners and milestones for this week's launch."
+      }
+    ]
+  },
+  "guidance": "Use short sections. The output uses a Unicode font when available; inspect documents with scripts unavailable in the installed font.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

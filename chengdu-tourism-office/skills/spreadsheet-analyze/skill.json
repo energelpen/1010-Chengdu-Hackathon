@@ -1,0 +1,29 @@
+{
+  "id": "spreadsheet-analyze",
+  "title": "Analyze a spreadsheet",
+  "category": "Office files",
+  "description": "Profile an uploaded Excel or CSV file, including missing values and numeric totals.",
+  "handler": "analyze",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "file_id": {
+        "type": "string",
+        "title": "Uploaded file ID",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "required": [
+      "file_id"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "file_id": "select-an-uploaded-file"
+  },
+  "guidance": "Use uploaded .xlsx or .csv files. State that cached formula values may be absent; this reader does not recalculate Excel formulas.",
+  "effect": "local",
+  "connector": null,
+  "version": "1.0.0"
+}

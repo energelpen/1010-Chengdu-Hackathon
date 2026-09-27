@@ -1,0 +1,66 @@
+{
+  "id": "sheets-write",
+  "title": "Write Google Sheets",
+  "category": "Google Workspace",
+  "description": "Write supplied values into an explicit spreadsheet range using RAW input.",
+  "handler": "google",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "spreadsheet_id": {
+        "type": "string",
+        "title": "Spreadsheet ID",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "range": {
+        "type": "string",
+        "title": "A1 range",
+        "minLength": 1,
+        "maxLength": 10000
+      },
+      "values": {
+        "type": "array",
+        "title": "Rows",
+        "items": {
+          "type": "array",
+          "title": "Cells",
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "maxItems": 100
+        },
+        "maxItems": 1000
+      }
+    },
+    "required": [
+      "spreadsheet_id",
+      "range",
+      "values"
+    ],
+    "additionalProperties": false
+  },
+  "example": {
+    "spreadsheet_id": "your-spreadsheet-id",
+    "range": "Sheet1!A1:B2",
+    "values": [
+      [
+        "Month",
+        "Revenue"
+      ],
+      [
+        "October",
+        12000
+      ]
+    ]
+  },
+  "guidance": "Use the connected Google account. Surface provider errors and actual IDs. Review the exact saved payload before executing this external write; do not retry an uncertain result automatically.",
+  "effect": "remote_write",
+  "connector": "google",
+  "version": "1.0.0"
+}
