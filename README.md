@@ -19,6 +19,8 @@ The [submission folder](submission/README.md) contains the three upload PDFs, im
 - [Entry summary](submission/06-entry-summary.txt)
 - [Demo script and recording notes](submission/demo-script.md)
 
+The video includes a product tour of the organisation chart, people, skill library, recorded launch approach, activity and approvals, files and knowledge, workspace settings, connections and API reference, alongside the real agent-led execution.
+
 The narrated demo shows **one request driving an agent-led Product Launch Preparation simulation**. The recorded run completed 20 skill executions across 16 distinct skills and 7 fictional colleagues, producing 10 real files. It used 24 model requests and 26 tool calls; reported usage totaled 800,795 tokens across requests. Actual wall time was 303.8 seconds. The agent compares pilot and full-launch options, checks team capacity, records decisions, schedules dependencies, maps responsibility, prepares a campaign and launch checklist, tracks tasks, assesses risk, calculates budget variance and a finance forecast, creates the executive pack, and saves and retrieves reusable knowledge. The pack includes editable Word, PowerPoint and Excel files plus a PDF report.
 
 One user brief starts a real configured OpenAI model. The model chooses the skills, publishes a dependency-aware plan, assigns qualified colleagues, supplies the inputs and executes local work through the shared runtime. The recording contains no manual skill submissions. All business facts and launch outcomes are explicitly simulated; no external delivery, spending or real product release occurs. Execution evidence and generated files are retained in the submission evidence folder.

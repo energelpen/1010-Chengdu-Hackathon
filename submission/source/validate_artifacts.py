@@ -1,5 +1,5 @@
 from pathlib import Path
-import json, re, subprocess, hashlib
+import json, re, subprocess, hashlib, sys
 from PIL import Image,ImageDraw,ImageFont
 from pypdf import PdfReader
 BASE=Path(__file__).resolve().parents[2]; OUT=BASE/'submission'; QA=OUT/'qa/final-validation'
@@ -14,6 +14,9 @@ for file,limit in [('01-skill-function-description.pdf',30000000),('02-api-docum
     if p.suffix=='.pdf':
         reader=PdfReader(p); row['pages']=len(reader.pages)
         assert all((page.extract_text() or '').strip() for page in reader.pages)
+        if '--video-only' in sys.argv:
+            manifest['files'].append(row)
+            continue
         folder=QA/p.stem; folder.mkdir(exist_ok=True)
         subprocess.run([str(POP),'-r','90','-png',str(p),str(folder/'page')],check=True,capture_output=True)
         images=sorted(folder.glob('page-*.png'))
@@ -27,13 +30,14 @@ for file,limit in [('01-skill-function-description.pdf',30000000),('02-api-docum
 summary=(OUT/'06-entry-summary.txt').read_text(encoding='utf-8'); assert len(summary)<=3000
 manifest['summary']={'file':'06-entry-summary.txt','characters':len(summary),'limit':3000}
 manifest['video']={'duration_seconds':round(metadata['final_duration'],2),'maximum_seconds':300,'distinct_skills':len({r['skill_id'] for r in metadata['runs']}),'voice':metadata['voice'],'format':'H.264 video, AAC audio, embedded English subtitles','dimensions':[1600,900]}
+if 'workspace_tour' in metadata: manifest['workspace_tour']=metadata['workspace_tour']
 assert metadata['final_duration']<300
 probe=subprocess.run([str(FF),'-hide_banner','-i',str(OUT/'03-implementation-demo.mp4'),'-af','volumedetect','-f','null','-'],capture_output=True,text=True)
 assert probe.returncode==0
 assert 'Audio: aac' in probe.stderr and 'Video: h264' in probe.stderr and 'mean_volume: -inf' not in probe.stderr
 (QA/'video-decode.txt').write_text(probe.stderr,encoding='utf-8')
 times=[s['video_start']+s['video_duration']*.82 for s in metadata['scenes']]
-contact=Image.new('RGB',(1200,750),'#172332')
+contact=Image.new('RGB',(1200,250*((len(times)+2)//3)),'#172332')
 for i,t in enumerate(times):
     frame=QA/f'video-{i:02d}.png'
     subprocess.run([str(FF),'-hide_banner','-loglevel','error','-y','-ss',str(t),'-i',str(OUT/'03-implementation-demo.mp4'),'-frames:v','1',str(frame)],check=True)

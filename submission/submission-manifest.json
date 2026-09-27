@@ -18,9 +18,9 @@
     },
     {
       "file": "03-implementation-demo.mp4",
-      "bytes": 9600423,
+      "bytes": 14943088,
       "limit_bytes": 200000000,
-      "sha256": "a9862da0585f72e9d16f8716af390dd4a2f5c65b816489c2f0cc5db9b93f5720"
+      "sha256": "ebf45864f29c625661f838a40fc9ab2e0faeee8cab40258ebf70c928dd2cb4d5"
     },
     {
       "file": "04-enterprise-challenge-fit.pdf",
@@ -58,7 +58,7 @@
     "limit": 3000
   },
   "video": {
-    "duration_seconds": 181.46,
+    "duration_seconds": 286.01,
     "maximum_seconds": 300,
     "distinct_skills": 16,
     "voice": {
@@ -70,6 +70,21 @@
     "dimensions": [
       1600,
       900
+    ]
+  },
+  "workspace_tour": {
+    "evidence_unchanged": true,
+    "browser_errors": [],
+    "mutation_requests": [],
+    "run_id": "AGENT-bdfa98ec084a4d8c9c4e36c57c52773b",
+    "chapters": [
+      "An organisation the agent can use",
+      "People with defined capabilities",
+      "Explore all 69 skills",
+      "Review the chosen approach",
+      "Activity and approval visibility",
+      "Files and reusable knowledge",
+      "Controls, connections and API"
     ]
   }
 }

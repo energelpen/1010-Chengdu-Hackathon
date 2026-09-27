@@ -15,113 +15,181 @@ This is a business simulation using a real model connection and executable local
 Atlas chooses the work, assigns colleagues, runs the tools, and creates the deliverables.
 
 5
-00:00:20,966 --> 00:00:24,797
-Atlas turns the request into a visible execution plan.
+00:00:20,966 --> 00:00:25,565
+The organisation chart connects roles, reporting lines and capacity.
 
 6
-00:00:24,797 --> 00:00:29,835
-Each step has an actual skill, an assigned colleague, and dependencies.
+00:00:25,565 --> 00:00:34,628
+Select a colleague to inspect their manager, available hours and assigned skills: the company context Atlas uses when delegating work.
 
 7
-00:00:29,835 --> 00:00:33,808
-The model reads the skill contracts before it uses them.
+00:00:35,828 --> 00:00:38,971
+The people directory makes each role inspectable.
 
 8
-00:00:33,808 --> 00:00:39,697
-The plan and progress come from the running agent, not a prewritten video sequence.
+00:00:38,971 --> 00:00:48,015
+Search Finance to see Deng’s workload, reporting line and executable skills, all attached to the same fictional colleague used in the launch.
 
 9
-00:00:40,897 --> 00:00:43,021
-The first results are arriving.
+00:00:49,215 --> 00:00:52,765
+The library contains sixty-nine executable skills.
 
 10
-00:00:43,021 --> 00:00:49,667
-Atlas supplies the skill inputs itself and delegates to colleagues whose profiles allow the work.
+00:00:52,765 --> 00:00:58,018
+Filter by function, search for a capability, and inspect its instructions.
 
 11
-00:00:49,667 --> 00:00:54,325
-Every call is recorded with its assignee, outcome, and elapsed time.
+00:00:58,018 --> 00:01:03,627
+These are the same skill contracts the agent reads and calls during the launch.
 
 12
-00:00:54,325 --> 00:00:58,093
-Completed results become context for the next decision.
+00:01:04,827 --> 00:01:08,658
+Atlas turns the request into a visible execution plan.
 
 13
-00:00:59,293 --> 00:01:01,911
-The agent continues across the company.
+00:01:08,658 --> 00:01:13,696
+Each step has an actual skill, an assigned colleague, and dependencies.
 
 14
-00:01:01,911 --> 00:01:09,026
-Planning, responsibilities, capacity and commercial decisions are handled through the same shared runtime.
+00:01:13,696 --> 00:01:17,669
+The model reads the skill contracts before it uses them.
 
 15
-00:01:09,026 --> 00:01:13,590
-Dependent steps can proceed only after their prerequisites complete.
+00:01:17,669 --> 00:01:23,558
+The plan and progress come from the running agent, not a prewritten video sequence.
 
 16
-00:01:13,590 --> 00:01:17,214
-There are no manual skill forms between these actions.
+00:01:24,758 --> 00:01:26,882
+The first results are arriving.
 
 17
-00:01:18,414 --> 00:01:22,391
-The launch takes shape as business records and real files.
+00:01:26,882 --> 00:01:33,527
+Atlas supplies the skill inputs itself and delegates to colleagues whose profiles allow the work.
 
 18
-00:01:22,391 --> 00:01:29,659
-Finance calculations, project work, launch risks and management outputs are linked to recorded skill runs.
+00:01:33,527 --> 00:01:38,186
+Every call is recorded with its assignee, outcome, and elapsed time.
 
 19
-00:01:29,659 --> 00:01:37,680
-Simulation assumptions remain visible in the content, while the document and spreadsheet generation actually execute.
+00:01:38,186 --> 00:01:41,954
+Completed results become context for the next decision.
 
 20
-00:01:38,880 --> 00:01:44,631
-Atlas brings the completed work into the launch handoff and reusable company knowledge.
+00:01:43,154 --> 00:01:45,772
+The agent continues across the company.
 
 21
-00:01:44,631 --> 00:01:48,795
-The same request drives the workflow through its final outputs.
+00:01:45,772 --> 00:01:52,887
+Planning, responsibilities, capacity and commercial decisions are handled through the same shared runtime.
 
 22
-00:01:48,795 --> 00:01:55,472
-The live dashboard keeps the completed work, remaining steps, generated files, and API usage visible.
+00:01:52,887 --> 00:01:57,451
+Dependent steps can proceed only after their prerequisites complete.
 
 23
-00:01:56,672 --> 00:02:04,246
-This run recorded 20 completed skill executions, covering 16 different skills and 7 colleagues.
+00:01:57,451 --> 00:02:01,075
+There are no manual skill forms between these actions.
 
 24
-00:02:04,246 --> 00:02:05,920
-It produced 10 files.
+00:02:02,275 --> 00:02:06,252
+The launch takes shape as business records and real files.
 
 25
-00:02:05,920 --> 00:02:10,943
-The dashboard also reports 24 model requests and 26 tool calls.
+00:02:06,252 --> 00:02:13,520
+Finance calculations, project work, launch risks and management outputs are linked to recorded skill runs.
 
 26
-00:02:10,943 --> 00:02:16,922
-These are measured results from this run, not projected productivity gains.
+00:02:13,520 --> 00:02:21,541
+Simulation assumptions remain visible in the content, while the document and spreadsheet generation actually execute.
 
 27
-00:02:18,122 --> 00:02:21,327
-Every completed step links to its actual result.
+00:02:22,741 --> 00:02:28,492
+Atlas brings the completed work into the launch handoff and reusable company knowledge.
 
 28
-00:02:21,327 --> 00:02:28,537
-The activity record keeps the inputs and outputs, while the file library contains the generated launch pack.
+00:02:28,492 --> 00:02:32,656
+The same request drives the workflow through its final outputs.
 
 29
-00:02:28,537 --> 00:02:34,279
-You can reopen the conversation later and inspect the same persisted execution record.
+00:02:32,656 --> 00:02:39,332
+The live dashboard keeps the completed work, remaining steps, generated files, and API usage visible.
 
 30
-00:02:35,479 --> 00:02:44,791
-Atlas Office makes agent work inspectable: one brief, a delegated plan, executable skills, and a finished set of business outputs.
+00:02:40,532 --> 00:02:48,107
+This run recorded 20 completed skill executions, covering 16 different skills and 7 colleagues.
 
 31
-00:02:44,791 --> 00:02:53,817
-The GitHub repository includes the application, sixty-nine skill contracts, the API reference, and the evidence from this run.
+00:02:48,107 --> 00:02:49,781
+It produced 10 files.
 
 32
-00:02:53,817 --> 00:03:00,264
+00:02:49,781 --> 00:02:54,804
+The dashboard also reports 24 model requests and 26 tool calls.
+
+33
+00:02:54,804 --> 00:03:00,783
+These are measured results from this run, not projected productivity gains.
+
+34
+00:03:01,983 --> 00:03:05,188
+Every completed step links to its actual result.
+
+35
+00:03:05,188 --> 00:03:12,398
+The activity record keeps the inputs and outputs, while the file library contains the generated launch pack.
+
+36
+00:03:12,398 --> 00:03:18,139
+You can reopen the conversation later and inspect the same persisted execution record.
+
+37
+00:03:19,339 --> 00:03:27,971
+Open the recorded proposal to examine the approach: a fifty-thousand-renminbi pilot versus a hundred-and-twenty-thousand full launch.
+
+38
+00:03:27,971 --> 00:03:33,876
+The actual result includes the recommendation, weighted scores and editable proposal files.
+
+39
+00:03:35,076 --> 00:03:40,096
+Activity brings together all twenty recorded runs and their company records.
+
+40
+00:03:40,096 --> 00:03:44,192
+Each result retains its inputs, output and assigned colleague.
+
+41
+00:03:44,192 --> 00:03:49,278
+The review counter clearly distinguishes pending actions from completed work.
+
+42
+00:03:50,478 --> 00:03:53,964
+The file library gathers the launch pack in one place.
+
+43
+00:03:53,964 --> 00:04:02,550
+Search company knowledge to retrieve the saved launch note, carrying the decision, assumptions and evidence forward into future work.
+
+44
+00:04:03,750 --> 00:04:08,344
+Settings expose tourism proposal modes and delivery permissions.
+
+45
+00:04:08,344 --> 00:04:14,516
+Connections lists optional Google, Telegram and MCP services with their actual status.
+
+46
+00:04:14,516 --> 00:04:18,822
+The API reference documents the same skills for integration.
+
+47
+00:04:20,022 --> 00:04:29,334
+Atlas Office makes agent work inspectable: one brief, a delegated plan, executable skills, and a finished set of business outputs.
+
+48
+00:04:29,334 --> 00:04:38,360
+The GitHub repository includes the application, sixty-nine skill contracts, the API reference, and the evidence from this run.
+
+49
+00:04:38,360 --> 00:04:44,807
 The business launch is simulated; the agent execution and generated deliverables are real.

@@ -20,6 +20,8 @@ python submission/source/render_submission.py
 
 `voice_full_demo.py --agent` uses Windows SAPI for narration. `assemble_agent_demo.py` compresses waits, synchronizes chapters, adds a small Simulation badge and embedded English captions, and exports a clean full-frame H.264/AAC MP4. It requires Pillow and FFmpeg. `validate_artifacts.py` renders PDFs with Poppler, decodes the entire video, checks audio and upload limits, and writes the manifest.
 
+The extended edition adds a read-only product tour. Run `record_workspace_tour.py` against the saved completed demo workspace, then `voice_full_demo.py --tour` and `assemble_agent_demo.py --with-tour`. The tour shows the organisation chart, people, skill library and instructions, recorded launch approach, activity and approvals, files and knowledge, settings, connections, and API reference. It blocks browser mutation requests and verifies that runs, records and files are unchanged. No new model call or skill execution is needed for this extension.
+
 Runtime and FFmpeg paths near the top of the scripts reflect the Windows authoring environment and should be adjusted on another machine. Temporary browser videos, audio, isolated state and encoding tools are not committed. The sanitized execution evidence and generated files are in `../evidence/`.
 
 ## Verification scope
