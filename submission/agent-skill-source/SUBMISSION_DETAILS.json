@@ -1,0 +1,26 @@
+{
+  "team_name": "Atlas",
+  "institution": "Singapore Polytechnic",
+  "entry": "Atlas Office",
+  "competition": "1010 Global AI Agent Competition",
+  "track": "B",
+  "challenge": "SP-D Product Launch Preparation",
+  "purpose": "Voluntary original Agent Skill source supplement",
+  "package_date": "2026-09-29",
+  "repository": "https://github.com/energelpen/1010-Chengdu-Hackathon",
+  "application_source_commit": "0e17fcbc5a5d7d607883e2aeab8e8c0fbb51b35f",
+  "source_snapshot_base_commit": "6f859cbece643081e9565f34373835b7d1e2c753",
+  "original_individual_skill_markdown_files": 69,
+  "original_top_level_skill_markdown_files": 1,
+  "original_application_files": 407,
+  "original_application_markdown_files": 78,
+  "submission_email": "support@wesomeai.com",
+  "email_sent": false,
+  "review_documents": [
+    "README.md",
+    "REVIEWER_GUIDE.md",
+    "SOURCE_MAP.md",
+    "SKILL_INDEX.md",
+    "DEMO_TRACE.md"
+  ]
+}

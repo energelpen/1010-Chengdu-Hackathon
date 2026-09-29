@@ -2,6 +2,20 @@
 
 [Repository](https://github.com/energelpen/1010-Chengdu-Hackathon)
 
+## Voluntary original-source ZIP
+
+`package_agent_skill_source.py` builds `../Atlas-Singapore-Polytechnic-Agent-Skill-Source.zip` from tracked application files plus the reviewer documents in `../agent-skill-source/`. It preserves all 407 original application files, generates the 69-skill index and recorded launch trace, checks credential patterns, and writes file hashes and an archive checksum. Reviewer-document links are relative to the extracted ZIP root.
+
+`verify_agent_skill_source.py` extracts that archive into ignored QA storage, checks all manifest hashes and documentation links, and runs the offline tests, standalone proposal and tourism examples with external-service environment settings removed. It writes `../agent-skill-source/PACKAGE_VALIDATION.json`. Run the packager again to include that report; the final archive can be checked with its own dependency-free `verify_package.py`.
+
+```powershell
+python submission/source/package_agent_skill_source.py
+python submission/source/verify_agent_skill_source.py
+python submission/source/package_agent_skill_source.py
+```
+
+These commands run from the repository root using an environment with the app requirements installed. They do not run the live model or send the email draft.
+
 The final Markdown editions are `01-skill-function-description.md`, `02-api-documentation.md` and `04-enterprise-challenge-fit.md`. Their rendered PDFs are one directory above. The final narrated script is `../demo-script.md`; English captions are `../03-implementation-demo.srt`.
 
 ## Document generation

@@ -12,6 +12,8 @@ The [submission folder](submission/README.md) contains the three upload PDFs, im
 
 [Download all submission materials](submission/atlas-office-submission.zip) · [Download the skills source ZIP](submission/atlas-office-skills-source.zip)
 
+**Voluntary Track B source supplement — Team Atlas, Singapore Polytechnic:** [Download the documented original-source ZIP](submission/Atlas-Singapore-Polytechnic-Agent-Skill-Source.zip). It includes all 69 individual `SKILL.md` files plus the top-level skill instructions, the complete app source, a reviewer guide, a linked skill index, recorded execution evidence, an email draft, and a SHA-256 manifest with a verification script. Extract the ZIP and start with its `README.md`.
+
 - [Watch or download the implementation demo](submission/03-implementation-demo.mp4)
 - [Skill function description](submission/01-skill-function-description.pdf)
 - [API documentation](submission/02-api-documentation.pdf)

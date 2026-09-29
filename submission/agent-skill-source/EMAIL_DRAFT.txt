@@ -1,0 +1,26 @@
+To: support@wesomeai.com
+Subject: Track B — Voluntary Agent Skill Source Files — Atlas — Singapore Polytechnic
+Attachment: Atlas-Singapore-Polytechnic-Agent-Skill-Source.zip
+
+Dear 1010 Global AI Agent Competition Organizing Committee,
+
+Please find attached the voluntary original Agent Skill source package supporting our Track B submission.
+
+Team Name: Atlas
+University/Institution Name: Singapore Polytechnic
+Entry Name: Atlas Office
+Challenge: SP-D Product Launch Preparation
+
+The ZIP includes all 69 individual SKILL.md files, the top-level skill instructions, manifests, implementation code, examples, tests, and the complete application source and assets. It also contains a reviewer guide, a linked skill index, the recorded agent execution evidence and its generated deliverables, and a checksum manifest with a verification script.
+
+The recorded simulation shows one request completing 20 skill executions across 16 distinct skills and 7 fictional colleagues, producing 10 real files. Business outcomes are simulated; the recorded agent calls and generated files are real.
+
+GitHub repository: https://github.com/energelpen/1010-Chengdu-Hackathon
+
+Please use Team Atlas and Singapore Polytechnic to match these materials with our original submission. We are providing the source supplement for evaluation and consideration for the potential post-competition showcases described in your email.
+
+Thank you for reviewing our work. Please let us know if any further information is needed.
+
+Best regards,
+Team Atlas
+Singapore Polytechnic

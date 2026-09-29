@@ -1,0 +1,2691 @@
+{
+  "package": "Atlas-Singapore-Polytechnic-Agent-Skill-Source",
+  "package_date": "2026-09-29",
+  "repository": "https://github.com/energelpen/1010-Chengdu-Hackathon",
+  "application_source_commit": "0e17fcbc5a5d7d607883e2aeab8e8c0fbb51b35f",
+  "note": "SHA-256 covers every packaged file except this manifest. Original application files are byte-for-byte copies of the working checkout at the recorded source snapshot.",
+  "files": [
+    {
+      "path": "Challenge Topics.pdf",
+      "bytes": 105422,
+      "sha256": "1e0e2debf4b4d9db8ea8bfe734efa42fbd3d4d06f321a26fb5cbe3d4899c0869",
+      "original_repository_path": "Challenge Topics.pdf"
+    },
+    {
+      "path": "DEMO_TRACE.md",
+      "bytes": 8036,
+      "sha256": "2a0304a2405e9a902554de6bbdb8fa6f3e5707ab801b2611f4f639eb4c5fd465",
+      "original_repository_path": "submission/agent-skill-source/DEMO_TRACE.md"
+    },
+    {
+      "path": "EMAIL_DRAFT.txt",
+      "bytes": 1547,
+      "sha256": "f22083f5bcac4ca9910511977c9967341d9d6b8755fcb42ac8ac2724a765b03f",
+      "original_repository_path": "submission/agent-skill-source/EMAIL_DRAFT.txt"
+    },
+    {
+      "path": "Judging Rubric.pdf",
+      "bytes": 133316,
+      "sha256": "55f3f5c04f00c6d21a84e560c16f6ce843eb44e1158c481a719966b84c73cb99",
+      "original_repository_path": "Judging Rubric.pdf"
+    },
+    {
+      "path": "PACKAGE_VALIDATION.json",
+      "bytes": 1978,
+      "sha256": "143048a0b035b8aafdac0f0cc9f1a8cfa10047bfdb57d63bda4cd834257b3c95",
+      "original_repository_path": "submission/agent-skill-source/PACKAGE_VALIDATION.json"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5293,
+      "sha256": "fc0d9c09a7ddf8959402aeab70b1a94f1e73af2452f145d46147119071178b2d",
+      "original_repository_path": "submission/agent-skill-source/README.md"
+    },
+    {
+      "path": "REVIEWER_GUIDE.md",
+      "bytes": 10054,
+      "sha256": "d6029ea5b464fbeefa94e7cf4985c9a04eb23eafc20cf3cf7e476d11e1372fd3",
+      "original_repository_path": "submission/agent-skill-source/REVIEWER_GUIDE.md"
+    },
+    {
+      "path": "SKILL_INDEX.md",
+      "bytes": 21690,
+      "sha256": "29a60694101eb62599ca7f3ae3e736ff1453675ef3985738ec3d422362b460b5",
+      "original_repository_path": "submission/agent-skill-source/SKILL_INDEX.md"
+    },
+    {
+      "path": "SOURCE_MAP.md",
+      "bytes": 10501,
+      "sha256": "01c6d1f971405848399669ab8653c7f6e708f115fbd4c8f86bc2e895d5f43dca",
+      "original_repository_path": "submission/agent-skill-source/SOURCE_MAP.md"
+    },
+    {
+      "path": "SUBMISSION_DETAILS.json",
+      "bytes": 945,
+      "sha256": "0bcfd9acea2e8ade94790545c1e9ba629337d48b9c702db76c14a094dcef7d78",
+      "original_repository_path": "submission/agent-skill-source/SUBMISSION_DETAILS.json"
+    },
+    {
+      "path": "chengdu-tourism-office/.env.example",
+      "bytes": 523,
+      "sha256": "4798b8cbe97d432cedac994b877cf02a566f34de25ecdbc102b8850188c49100",
+      "original_repository_path": "chengdu-tourism-office/.env.example"
+    },
+    {
+      "path": "chengdu-tourism-office/.gitignore",
+      "bytes": 149,
+      "sha256": "68094f8bacad9fff2371e8976f39237344af986496dbd6b6beeff60e3476a0c7",
+      "original_repository_path": "chengdu-tourism-office/.gitignore"
+    },
+    {
+      "path": "chengdu-tourism-office/README.md",
+      "bytes": 12786,
+      "sha256": "e70755f2a426d994d58a318e42db0872106505f59a0eab4d38b90422f36a2776",
+      "original_repository_path": "chengdu-tourism-office/README.md"
+    },
+    {
+      "path": "chengdu-tourism-office/SKILL.md",
+      "bytes": 4129,
+      "sha256": "a0e77111016da2a596619de148a5317e2a458c46157152be4f0ca85014ba16c0",
+      "original_repository_path": "chengdu-tourism-office/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/app.py",
+      "bytes": 39697,
+      "sha256": "5fe7fef8fe0a189aa6614624e28482a156ae5e0d212cf70be9c172f36e3e8508",
+      "original_repository_path": "chengdu-tourism-office/app.py"
+    },
+    {
+      "path": "chengdu-tourism-office/config/mcp-servers.example.json",
+      "bytes": 3070,
+      "sha256": "64b5fa5b98dfadad6da37775e8cefc7dc8d3f96edfe96c3a1369c27b12ebaf22",
+      "original_repository_path": "chengdu-tourism-office/config/mcp-servers.example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/examples/compare.json",
+      "bytes": 245,
+      "sha256": "e3b786deef576f59add1099a9e3ee7fe8cbef3ae6a63e05dac458826edb6532c",
+      "original_repository_path": "chengdu-tourism-office/examples/compare.json"
+    },
+    {
+      "path": "chengdu-tourism-office/examples/execution.json",
+      "bytes": 484,
+      "sha256": "8e3070def3ec360fb549bb5e3a6be8311e281f1180c3675c5522bff19fd5d732",
+      "original_repository_path": "chengdu-tourism-office/examples/execution.json"
+    },
+    {
+      "path": "chengdu-tourism-office/examples/flight-search.json",
+      "bytes": 154,
+      "sha256": "10d97b1e1d147e7f1b8ee4c8a12053f85ecc75213b3aa894d603c487b246cc00",
+      "original_repository_path": "chengdu-tourism-office/examples/flight-search.json"
+    },
+    {
+      "path": "chengdu-tourism-office/examples/outcome.json",
+      "bytes": 550,
+      "sha256": "ca1c2cd0690bc22770a5e17756e34930a5eb35d2e2c210ade1cda5992d1b7545",
+      "original_repository_path": "chengdu-tourism-office/examples/outcome.json"
+    },
+    {
+      "path": "chengdu-tourism-office/examples/rfq.json",
+      "bytes": 173,
+      "sha256": "cf23d7e1d5cad11b6838ab6ba60fe5301d6c47a8bc930e0087e2d5a03852f5c0",
+      "original_repository_path": "chengdu-tourism-office/examples/rfq.json"
+    },
+    {
+      "path": "chengdu-tourism-office/examples/schedule.json",
+      "bytes": 418,
+      "sha256": "3137a20097eb3439d5e96e622f54ba769f703a03a5eb955a499fcc10504dba30",
+      "original_repository_path": "chengdu-tourism-office/examples/schedule.json"
+    },
+    {
+      "path": "chengdu-tourism-office/examples/tour-search.json",
+      "bytes": 114,
+      "sha256": "e9d77845143019afa2ec6f752f899ab40817c4a0884f82e1bb18a84a0a7dfff2",
+      "original_repository_path": "chengdu-tourism-office/examples/tour-search.json"
+    },
+    {
+      "path": "chengdu-tourism-office/examples/workload.json",
+      "bytes": 997,
+      "sha256": "c1fd2f4cdff38a06f63a132cbd4a9b6212da1b77fefca33621d3c24e45adade4",
+      "original_repository_path": "chengdu-tourism-office/examples/workload.json"
+    },
+    {
+      "path": "chengdu-tourism-office/outputs/atlas-finance-demo/booking-log.png",
+      "bytes": 31815,
+      "sha256": "f897ccec53e1b1946356dbe267382341e0f99bb5a82f4cea586610269bdd695a",
+      "original_repository_path": "chengdu-tourism-office/outputs/atlas-finance-demo/booking-log.png"
+    },
+    {
+      "path": "chengdu-tourism-office/outputs/atlas-finance-demo/bva.png",
+      "bytes": 141213,
+      "sha256": "504f68bfedfcfb59a01b8b2fa2ffc2f885649a8c28e0bb545a25a50c6890f5d5",
+      "original_repository_path": "chengdu-tourism-office/outputs/atlas-finance-demo/bva.png"
+    },
+    {
+      "path": "chengdu-tourism-office/outputs/atlas-finance-demo/monthly-finance-demo.xlsx",
+      "bytes": 7589,
+      "sha256": "7fde077239d0bae724be2e4264af3a8b25ad9bf645aadf85ab91d4fb27cc8712",
+      "original_repository_path": "chengdu-tourism-office/outputs/atlas-finance-demo/monthly-finance-demo.xlsx"
+    },
+    {
+      "path": "chengdu-tourism-office/references/api.md",
+      "bytes": 7363,
+      "sha256": "8f5fa889b8b6507e5bd20b4fbfd06483f8db23ac05a362874d1d68dbbd75f3d3",
+      "original_repository_path": "chengdu-tourism-office/references/api.md"
+    },
+    {
+      "path": "chengdu-tourism-office/references/autonomy.md",
+      "bytes": 6060,
+      "sha256": "c2ad184577f32d964b1ee47a9e58586a36d1e34147a902fa14f57a50fffd0f75",
+      "original_repository_path": "chengdu-tourism-office/references/autonomy.md"
+    },
+    {
+      "path": "chengdu-tourism-office/references/demo-script.md",
+      "bytes": 4228,
+      "sha256": "1cd913b71160a1d769684b55e6c39f0b5c3c38050e2cf383329902b8de17ec6d",
+      "original_repository_path": "chengdu-tourism-office/references/demo-script.md"
+    },
+    {
+      "path": "chengdu-tourism-office/references/mcp-setup.md",
+      "bytes": 2158,
+      "sha256": "99bcd4ac708328874d5d7b71e6337eabac2d97ea76e96be88cd59b349e53cc9a",
+      "original_repository_path": "chengdu-tourism-office/references/mcp-setup.md"
+    },
+    {
+      "path": "chengdu-tourism-office/references/source-register.md",
+      "bytes": 2056,
+      "sha256": "edf748fcac68b761b98013b19c3accbab4acc06773137a58f1ff05a472a75657",
+      "original_repository_path": "chengdu-tourism-office/references/source-register.md"
+    },
+    {
+      "path": "chengdu-tourism-office/references/track-choice.md",
+      "bytes": 1211,
+      "sha256": "c20885f76409e6ce30888a6d7030c9a18bd56ffdbe95ac25dd50c5e6bfadaf5c",
+      "original_repository_path": "chengdu-tourism-office/references/track-choice.md"
+    },
+    {
+      "path": "chengdu-tourism-office/requirements.txt",
+      "bytes": 206,
+      "sha256": "631ff1c17a34d97f8b8d02f842a375cf0bddbab074d5758c45b7023ef2e3a97a",
+      "original_repository_path": "chengdu-tourism-office/requirements.txt"
+    },
+    {
+      "path": "chengdu-tourism-office/resources/company-general.json",
+      "bytes": 9126,
+      "sha256": "e7c64d61838eeab9ede6d26940c02c83913487021f847e7461dbeac25c0f9a55",
+      "original_repository_path": "chengdu-tourism-office/resources/company-general.json"
+    },
+    {
+      "path": "chengdu-tourism-office/resources/company-tourism-template.json",
+      "bytes": 9027,
+      "sha256": "d19f8fa5791058e379f3098f83435aa843628a9a88b8dd0484ea08abac30ec27",
+      "original_repository_path": "chengdu-tourism-office/resources/company-tourism-template.json"
+    },
+    {
+      "path": "chengdu-tourism-office/resources/domain-rules.md",
+      "bytes": 952,
+      "sha256": "bb1605fc49a78f67d82a7b2398c3f97ab6869a84732cc2b26428b05c4b703555",
+      "original_repository_path": "chengdu-tourism-office/resources/domain-rules.md"
+    },
+    {
+      "path": "chengdu-tourism-office/resources/flight-offers.example.json",
+      "bytes": 1179,
+      "sha256": "d5c590fb28c2672a1c5f4cd8f471cdb390acffc3737ce40903bba449f9a8f4e8",
+      "original_repository_path": "chengdu-tourism-office/resources/flight-offers.example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/resources/tour-catalog.example.json",
+      "bytes": 1037,
+      "sha256": "282e0f3075b96ef99d2c8bc937ea35b530aed04619a18006ce6a392d68322652",
+      "original_repository_path": "chengdu-tourism-office/resources/tour-catalog.example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/resources/tourism-company.json",
+      "bytes": 4278,
+      "sha256": "882d0b69f9a4347c7da6a0f13c08cfe2f19e45850eef3ea4bb8c2ee9e93b2b0b",
+      "original_repository_path": "chengdu-tourism-office/resources/tourism-company.json"
+    },
+    {
+      "path": "chengdu-tourism-office/resources/tourism-price-model.json",
+      "bytes": 791,
+      "sha256": "4a8fe6683dae4ab75034c19375449e8e7312f220185a4316c54a422ea28df102",
+      "original_repository_path": "chengdu-tourism-office/resources/tourism-price-model.json"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/agent_execution.py",
+      "bytes": 6967,
+      "sha256": "7673cd3efade5fc0618aa680d399262ebaf8122fca06f9b973330caa8a1abab6",
+      "original_repository_path": "chengdu-tourism-office/scripts/agent_execution.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/assistant_service.py",
+      "bytes": 15010,
+      "sha256": "2f28059aa60a523ae9b840e639df13954b6c99f219d4c7e5ec56cb06951248e8",
+      "original_repository_path": "chengdu-tourism-office/scripts/assistant_service.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/build_demo_budget.mjs",
+      "bytes": 5528,
+      "sha256": "0b6c1b7da55747f61d9b02817bb52a23a6767695d55e3beadd4f46c5b5b35d98",
+      "original_repository_path": "chengdu-tourism-office/scripts/build_demo_budget.mjs"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/build_skill_catalog.py",
+      "bytes": 25077,
+      "sha256": "4bd7508cf592ad61a8163bd18bd2df3302f7a7d13e61b176d9d5c1954a6207be",
+      "original_repository_path": "chengdu-tourism-office/scripts/build_skill_catalog.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/business_packages.py",
+      "bytes": 8038,
+      "sha256": "52394a8ff3b5d507c982ccfc38fc2c60b17d2dcbc0f884a553c439c50080e86a",
+      "original_repository_path": "chengdu-tourism-office/scripts/business_packages.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/business_tools.py",
+      "bytes": 26776,
+      "sha256": "6304d60003690e392577aae25b35458a54c901142fc38e84d4e7f2ca5d9be3dc",
+      "original_repository_path": "chengdu-tourism-office/scripts/business_tools.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/company_chat.py",
+      "bytes": 15196,
+      "sha256": "0f2fc10222ebf834862f5669aabbcdaa4cf9636248b8c27eb88fa15884f9670a",
+      "original_repository_path": "chengdu-tourism-office/scripts/company_chat.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/conversation_store.py",
+      "bytes": 12078,
+      "sha256": "bad3c1c678da057047ffa48a42ce862b0b101c6067a4514b593307212c56eef9",
+      "original_repository_path": "chengdu-tourism-office/scripts/conversation_store.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/google_connect.py",
+      "bytes": 1321,
+      "sha256": "1dd90cff3f57a3c38b3daa11f9a8f0055d3768281b66f8acb9803af57b9ad208",
+      "original_repository_path": "chengdu-tourism-office/scripts/google_connect.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/google_workspace.py",
+      "bytes": 11606,
+      "sha256": "429a44d2a97d8fffcf345a68e97000d99e639b6a2e742d3080bf36b4157a8e1d",
+      "original_repository_path": "chengdu-tourism-office/scripts/google_workspace.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/governance.py",
+      "bytes": 25350,
+      "sha256": "0b5797e18f80c50c556391e86c1764e745a603b9550c110c7f663e47399ebbce",
+      "original_repository_path": "chengdu-tourism-office/scripts/governance.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/intent_router.py",
+      "bytes": 3260,
+      "sha256": "e36b2ad61a7ad64baeac72e68cbb81bbaffcc2c13bc8855e814631fdaea91af7",
+      "original_repository_path": "chengdu-tourism-office/scripts/intent_router.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/mcp_bridge.py",
+      "bytes": 5345,
+      "sha256": "c5f9ca60f36b071f458142164eebebacc887d82827439c11d74e7c69065911ce",
+      "original_repository_path": "chengdu-tourism-office/scripts/mcp_bridge.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/office_operations.py",
+      "bytes": 8183,
+      "sha256": "31d747d7c1627379192b5b67218c946e544de1cdde8db89930a7ad0354fc03d8",
+      "original_repository_path": "chengdu-tourism-office/scripts/office_operations.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/render_reports.py",
+      "bytes": 4627,
+      "sha256": "b005bfc770decfb5d3184bc4747860dd8192a21848a30c37f397de425f2b2c8f",
+      "original_repository_path": "chengdu-tourism-office/scripts/render_reports.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/search_store.py",
+      "bytes": 1864,
+      "sha256": "3b91642b05b64820e78678fb1f2b11f10312ca9544a457faaac876a38f370d92",
+      "original_repository_path": "chengdu-tourism-office/scripts/search_store.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/setup_workspace.py",
+      "bytes": 4762,
+      "sha256": "c3ab789a787b1cbf44dfb8b0969d3f9c4e07c5bcb03f88509dfe29c6f18b6547",
+      "original_repository_path": "chengdu-tourism-office/scripts/setup_workspace.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/skill_runtime.py",
+      "bytes": 13535,
+      "sha256": "52bfb084f4ba9570913ff559c3189029badfba5c0836b20de66404cde23a3177",
+      "original_repository_path": "chengdu-tourism-office/scripts/skill_runtime.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/telegram_service.py",
+      "bytes": 2786,
+      "sha256": "9cd1f2c7353b0f705bfb9e673e1ebe485aef89d378287b2a2775bfc899f450ef",
+      "original_repository_path": "chengdu-tourism-office/scripts/telegram_service.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/tourism_core.py",
+      "bytes": 38548,
+      "sha256": "eccf1c90cd0adf2e8c8197c6a5a28829501a6b5b864648b922d606674090ac2c",
+      "original_repository_path": "chengdu-tourism-office/scripts/tourism_core.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/tourism_office.py",
+      "bytes": 3014,
+      "sha256": "f395b990a6149793a46dd5d6fb012c1e4bfdf3a5b2e979192685210a211bbe5c",
+      "original_repository_path": "chengdu-tourism-office/scripts/tourism_office.py"
+    },
+    {
+      "path": "chengdu-tourism-office/scripts/workspace_api.py",
+      "bytes": 8520,
+      "sha256": "e445cc0fcb293bdfc5b4b6ac5c8c5e152f0a46112f0e543bc2cb8d1db8cd1091",
+      "original_repository_path": "chengdu-tourism-office/scripts/workspace_api.py"
+    },
+    {
+      "path": "chengdu-tourism-office/server/company_mcp.py",
+      "bytes": 1841,
+      "sha256": "975e04a6dd3feeffcaf46b1e0b81e0cc40485442652d0f9fa6bcb1ad4b9ac99f",
+      "original_repository_path": "chengdu-tourism-office/server/company_mcp.py"
+    },
+    {
+      "path": "chengdu-tourism-office/server/tourism_mcp.py",
+      "bytes": 5588,
+      "sha256": "67ab0f92531141b0927b8c8facb023a2ff3866d5ac573b8cc3facd612eee546c",
+      "original_repository_path": "chengdu-tourism-office/server/tourism_mcp.py"
+    },
+    {
+      "path": "chengdu-tourism-office/shared/message-schema.json",
+      "bytes": 387,
+      "sha256": "ff3ef0aeb270226c14f776362d0ef645f0b23486fe6a911f150fa961dad94e21",
+      "original_repository_path": "chengdu-tourism-office/shared/message-schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/booking-confirm/SKILL.md",
+      "bytes": 998,
+      "sha256": "25a32ef4fdd612fecca925a13fc6300074371d8f618a156a651dd03dc6ac3912",
+      "original_repository_path": "chengdu-tourism-office/skills/booking-confirm/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/booking-confirm/references/example.json",
+      "bytes": 164,
+      "sha256": "01bbe9e2c264544fca41c0fd575853d0a6f0842e257c8f926b34cd0072511a09",
+      "original_repository_path": "chengdu-tourism-office/skills/booking-confirm/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/booking-confirm/scripts/run.py",
+      "bytes": 184,
+      "sha256": "d8244c26aa7e6a7a2709284260656d969af3abca215622befd80723728850bfa",
+      "original_repository_path": "chengdu-tourism-office/skills/booking-confirm/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/booking-confirm/skill.json",
+      "bytes": 1294,
+      "sha256": "534569a768da88215755032e1b9c974344adc343b05a929aaf28a735caf4847f",
+      "original_repository_path": "chengdu-tourism-office/skills/booking-confirm/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/budget-variance/SKILL.md",
+      "bytes": 1166,
+      "sha256": "211bee28ad06a5f5708b0a5744af54cfedb08d75963d2c062eaf6b11ce9da070",
+      "original_repository_path": "chengdu-tourism-office/skills/budget-variance/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/budget-variance/references/example.json",
+      "bytes": 231,
+      "sha256": "c83eb0cbc2223c5ef50e376feadd0b60efbf0d3f2b4f67aad453da9687adb14e",
+      "original_repository_path": "chengdu-tourism-office/skills/budget-variance/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/budget-variance/references/input.schema.json",
+      "bytes": 1015,
+      "sha256": "9aa8b22cfaad1372132b8a360d3229ab82ae9321664fefa4f2a8972760c05c31",
+      "original_repository_path": "chengdu-tourism-office/skills/budget-variance/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/budget-variance/scripts/run.py",
+      "bytes": 309,
+      "sha256": "9fe013c8038fc2d94a3e6597804cffb2020ac17b0da9934610056db07cf6223f",
+      "original_repository_path": "chengdu-tourism-office/skills/budget-variance/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/budget-variance/skill.json",
+      "bytes": 1810,
+      "sha256": "f7c347449bb1f57e7d15a0c76dabf9bf31e01d56eac3562077312ce5844b24a2",
+      "original_repository_path": "chengdu-tourism-office/skills/budget-variance/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-create/SKILL.md",
+      "bytes": 1252,
+      "sha256": "bd99a45c1678e090d4d66ff10abba1edd5690d9f6920a2e748bcaff3337cc4a5",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-create/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-create/references/example.json",
+      "bytes": 172,
+      "sha256": "5b9d6a500aeb8532c611e9246a9ea6930772c187034960fe86abec4d5122afe9",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-create/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-create/references/input.schema.json",
+      "bytes": 719,
+      "sha256": "2c8d247a91fa9f5361c6af191d9d1624bdfbc34efd7dd2982ae496a2dd7fa368",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-create/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-create/scripts/run.py",
+      "bytes": 322,
+      "sha256": "22fa4d0110cd223e64f727d3b4c8565fc80170140c79dc55db000397a1fbffc5",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-create/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-create/skill.json",
+      "bytes": 1517,
+      "sha256": "02e60a6bbad6790b44e5d0c782e81fd95f79b4f572b482f7cc5b9ebdb978aa87",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-create/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-event/SKILL.md",
+      "bytes": 1160,
+      "sha256": "12e8164fc36a603104cb8c8ede4a65deb510ea89f3e0ff816af2761560a0336f",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-event/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-event/references/example.json",
+      "bytes": 174,
+      "sha256": "cb28f07125ec6576cc0a8a07ab2537f068c812ea3b934fdb0d0a79cc40d25aeb",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-event/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-event/references/input.schema.json",
+      "bytes": 729,
+      "sha256": "a9ee16de2176abb91e0f34e503569f5bfd7431e476e9a8266301a6b7668bfda6",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-event/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-event/scripts/run.py",
+      "bytes": 312,
+      "sha256": "b0065f3bf28e4417d9609e62d844cc3cd8fba8009020ae87507b9a1aa1ce05bb",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-event/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-event/skill.json",
+      "bytes": 1428,
+      "sha256": "acd728b0eb46db40569a25e41bd25f763a27b49e3cc6eb97642bf11de16b87f4",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-event/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-invite/SKILL.md",
+      "bytes": 892,
+      "sha256": "65f4018b4d57fc266bba62796f8fdf0fcb2aa37373f27054759e6ba357bb500a",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-invite/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-invite/references/example.json",
+      "bytes": 190,
+      "sha256": "e57352bdb815dca132d714303b16762e808b61d894f03dfc1ea1d232d3403e2c",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-invite/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-invite/scripts/run.py",
+      "bytes": 184,
+      "sha256": "27592b84241851a1bd18cabaf60d9dc45d1b00d239dcb539f21e558554d5d66f",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-invite/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-invite/skill.json",
+      "bytes": 1143,
+      "sha256": "6631012aa7207d4a4e9596e36fdef267cac4e494e7dfcf291f392d12e1d1d519",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-invite/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-list/SKILL.md",
+      "bytes": 1199,
+      "sha256": "30d723edfbaf18fb818b62f2557c915699fb03b99bd23f8c37a84610120f70d4",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-list/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-list/references/example.json",
+      "bytes": 85,
+      "sha256": "89c9c33110db11207ca9a7e4db1c9bb5325ad4ba1ebd464747b7753984d46704",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-list/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-list/references/input.schema.json",
+      "bytes": 438,
+      "sha256": "e40b519e4e7962692817d1c2d4849d930c16caf16771c8c5febca27637db8e9f",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-list/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-list/scripts/run.py",
+      "bytes": 312,
+      "sha256": "0cfdb08bc52b2aa37b476a354389a015be702b8999db92f659a3b9e2b19db71d",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-list/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/calendar-list/skill.json",
+      "bytes": 1069,
+      "sha256": "d15d2010c3fbb0aa4d80a0a1b971952eaaebe43c34b7de50af9f8dd2dd947321",
+      "original_repository_path": "chengdu-tourism-office/skills/calendar-list/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/campaign-plan/SKILL.md",
+      "bytes": 1126,
+      "sha256": "cf96c627b359f1b138a5b82ac4a9e72368c6841e5db0b74f2b8b0ead14e44068",
+      "original_repository_path": "chengdu-tourism-office/skills/campaign-plan/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/campaign-plan/references/example.json",
+      "bytes": 243,
+      "sha256": "5c366ef866dab6017949c9d28206c72f9ee244b383be78d15c9bab5b04d93adf",
+      "original_repository_path": "chengdu-tourism-office/skills/campaign-plan/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/campaign-plan/references/input.schema.json",
+      "bytes": 1221,
+      "sha256": "141310a2c4ce4de580fdf3afd3514ba4872a1b7faa62aa4bf22e5258080e3c03",
+      "original_repository_path": "chengdu-tourism-office/skills/campaign-plan/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/campaign-plan/scripts/run.py",
+      "bytes": 305,
+      "sha256": "4f27d47a57c1f0ce449199e9c617aca44f2ac4d2bb415a73511ee543a54fcbe3",
+      "original_repository_path": "chengdu-tourism-office/skills/campaign-plan/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/campaign-plan/skill.json",
+      "bytes": 2013,
+      "sha256": "eae6255d4db2c6244f5bbf1f1c63e96ac6b8113e88330e6751ffda5e68f9880c",
+      "original_repository_path": "chengdu-tourism-office/skills/campaign-plan/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/contract-checklist/SKILL.md",
+      "bytes": 1193,
+      "sha256": "1e77e2e6305259eb505f236bad22993323271232376d7ea79f1302abc1d335b4",
+      "original_repository_path": "chengdu-tourism-office/skills/contract-checklist/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/contract-checklist/references/example.json",
+      "bytes": 209,
+      "sha256": "d560169070770550f884548b947be3cf34f0bb2c0a99e9518366a2c6bd4fda63",
+      "original_repository_path": "chengdu-tourism-office/skills/contract-checklist/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/contract-checklist/references/input.schema.json",
+      "bytes": 1298,
+      "sha256": "257e36f69cad02cca4b6207abddc07325857b2b717cbbefff5bde794aac55dc9",
+      "original_repository_path": "chengdu-tourism-office/skills/contract-checklist/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/contract-checklist/scripts/run.py",
+      "bytes": 322,
+      "sha256": "c8a6e7b77abbfcfd1cc85de02161e6399db319f6daff543642a561deb938e653",
+      "original_repository_path": "chengdu-tourism-office/skills/contract-checklist/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/contract-checklist/skill.json",
+      "bytes": 2107,
+      "sha256": "b454731e7732e2e786686f65ebdd19d167c2d4288607ec9daef98c79ba9708dc",
+      "original_repository_path": "chengdu-tourism-office/skills/contract-checklist/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/crm-pipeline/SKILL.md",
+      "bytes": 1150,
+      "sha256": "caa98eae6000f29c492216bdc97bb01feec64347deb070985c103e5a9262191d",
+      "original_repository_path": "chengdu-tourism-office/skills/crm-pipeline/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/crm-pipeline/references/example.json",
+      "bytes": 176,
+      "sha256": "a5030824b4c70b56969188ac92cddbdd2c391d433d2e7c7997cb84af064a5a2e",
+      "original_repository_path": "chengdu-tourism-office/skills/crm-pipeline/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/crm-pipeline/references/input.schema.json",
+      "bytes": 1242,
+      "sha256": "34bb00ea39befa298da2f0be0601c3e1666c96d7362675d1b04ea3de95e3af8b",
+      "original_repository_path": "chengdu-tourism-office/skills/crm-pipeline/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/crm-pipeline/scripts/run.py",
+      "bytes": 305,
+      "sha256": "bc43417aef2e7a9daab96c88cdd99c09df7f57262867f040945a98832911ed82",
+      "original_repository_path": "chengdu-tourism-office/skills/crm-pipeline/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/crm-pipeline/skill.json",
+      "bytes": 1981,
+      "sha256": "3fe50ce51fb575b2a4451c1b84249ed43a91f72171e4456139fd7af156e64344",
+      "original_repository_path": "chengdu-tourism-office/skills/crm-pipeline/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/csv-clean/SKILL.md",
+      "bytes": 1158,
+      "sha256": "49aa478746624caebe97c376308e989702f485578481e0fa0f6ea905472dc39b",
+      "original_repository_path": "chengdu-tourism-office/skills/csv-clean/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/csv-clean/references/example.json",
+      "bytes": 70,
+      "sha256": "5f8d730fdcc26300d4cd47f87cefbb1e06fd910c55f38bbde23127fe1703598c",
+      "original_repository_path": "chengdu-tourism-office/skills/csv-clean/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/csv-clean/references/input.schema.json",
+      "bytes": 373,
+      "sha256": "5b87464e3326cf1e211a4c3eb924abc68f3799fa958cea96bca4335a389611c4",
+      "original_repository_path": "chengdu-tourism-office/skills/csv-clean/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/csv-clean/scripts/run.py",
+      "bytes": 306,
+      "sha256": "3699c7af5a116a994b2fdfe8ee44f6bee3020c4e3ebb62f5439451f1da163d4c",
+      "original_repository_path": "chengdu-tourism-office/skills/csv-clean/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/csv-clean/skill.json",
+      "bytes": 937,
+      "sha256": "25205cb4b86d39ee122573d4b04f6c6ced57d0773aaf07cad162ce2b948d6286",
+      "original_repository_path": "chengdu-tourism-office/skills/csv-clean/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/customer-followup/SKILL.md",
+      "bytes": 885,
+      "sha256": "784838db5d56c93c3781a6a5e98f8f9f3e20ad768d7b1fd2ac1345a784760380",
+      "original_repository_path": "chengdu-tourism-office/skills/customer-followup/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/customer-followup/references/example.json",
+      "bytes": 271,
+      "sha256": "15b982a747e66c74259e52ecd7d8048ba9c92f1652353014a35f06a0808021eb",
+      "original_repository_path": "chengdu-tourism-office/skills/customer-followup/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/customer-followup/scripts/run.py",
+      "bytes": 186,
+      "sha256": "dbaf60227eb1569dfe6f73bac486d8ae6d44c2cbf004c0c87203d4603968ece7",
+      "original_repository_path": "chengdu-tourism-office/skills/customer-followup/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/customer-followup/skill.json",
+      "bytes": 1427,
+      "sha256": "4cc7ca9971d04ae6dcad63c0e3dffc03eedd9e7e4e795f78439aa81f78bb8e5b",
+      "original_repository_path": "chengdu-tourism-office/skills/customer-followup/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/decision-log/SKILL.md",
+      "bytes": 1129,
+      "sha256": "16642bc004567fcb95004a02a90423e1e90ba3b090ec4ff5bd7720e5969abb33",
+      "original_repository_path": "chengdu-tourism-office/skills/decision-log/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/decision-log/references/example.json",
+      "bytes": 165,
+      "sha256": "10b0700d41b044725fc2efe848aa623db0aad1b3a9d7a17628b65faa7a0dd0c4",
+      "original_repository_path": "chengdu-tourism-office/skills/decision-log/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/decision-log/references/input.schema.json",
+      "bytes": 696,
+      "sha256": "ef0fc1e077fdb1b88d021ba72255d6873e69ed057d7afa9c68f384317593a75b",
+      "original_repository_path": "chengdu-tourism-office/skills/decision-log/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/decision-log/scripts/run.py",
+      "bytes": 303,
+      "sha256": "4e33fc5df570c2266e4ec7ef38a33a625fc9f3ee351647b571497ae006dec38a",
+      "original_repository_path": "chengdu-tourism-office/skills/decision-log/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/decision-log/skill.json",
+      "bytes": 1356,
+      "sha256": "27da8de5aae94a561827ce05c2f96239a816717d40c20124f6a874a3eeeb5dad",
+      "original_repository_path": "chengdu-tourism-office/skills/decision-log/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-create/SKILL.md",
+      "bytes": 1216,
+      "sha256": "06500a3ecad193b4753f589c0be008cadc89a2a33b5914d75d59f374d5abc4a3",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-create/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-create/references/example.json",
+      "bytes": 95,
+      "sha256": "671bb7d70180731dbfe5737e085724c2323aaa100f9759ac6e9d92a196f0005b",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-create/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-create/references/input.schema.json",
+      "bytes": 386,
+      "sha256": "22a8f5a0258d1de8e1f1dd07bfccb5bc2c92abeadd3fc78a566df8d74e992b56",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-create/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-create/scripts/run.py",
+      "bytes": 312,
+      "sha256": "a748d9927a24f4041ea5e661c8667135891e4c6e143e1ee07ed346cc22d42344",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-create/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-create/skill.json",
+      "bytes": 1051,
+      "sha256": "7b2301fd7ae217978983845a40794cd8f98e15fe45a8ef77aaa0b7d312663ac3",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-create/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-read/SKILL.md",
+      "bytes": 1169,
+      "sha256": "839a0c5e5a9c9dab97c90cd89e582a741577caac5ededa350e346aa9ebd3ab1e",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-read/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-read/references/example.json",
+      "bytes": 43,
+      "sha256": "50f08a415b796829b99a00b59100649c834f5bbbb976a9d6a2bba1d841e3408a",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-read/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-read/references/input.schema.json",
+      "bytes": 261,
+      "sha256": "ffcf051bb51dcc2399c86ee3644f4ee2d212f70b010ed1d3e1fb22c92a6d623d",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-read/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-read/scripts/run.py",
+      "bytes": 304,
+      "sha256": "9e58203e7e9d43785c8d7b153baa12078b068852350a39944e24be0710d0a496",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-read/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/docs-read/skill.json",
+      "bytes": 816,
+      "sha256": "07c244a299d33371442da3199b86979a3af90f561143b8d90ead886a44806475",
+      "original_repository_path": "chengdu-tourism-office/skills/docs-read/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/document-create/SKILL.md",
+      "bytes": 1170,
+      "sha256": "f4890ca5ef82f61a87d0fef152c5016ef618229b2923a2048b0fcf7b58c09e9b",
+      "original_repository_path": "chengdu-tourism-office/skills/document-create/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/document-create/references/example.json",
+      "bytes": 279,
+      "sha256": "5e81c85371eefb0fa2fec39f06f6388df1719fb6abaad1da9af569fed83501bf",
+      "original_repository_path": "chengdu-tourism-office/skills/document-create/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/document-create/references/input.schema.json",
+      "bytes": 895,
+      "sha256": "13823346e89b01e15ee2f774dc9824ba95c26e83093dd7144c7fd562f3f6e99f",
+      "original_repository_path": "chengdu-tourism-office/skills/document-create/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/document-create/scripts/run.py",
+      "bytes": 307,
+      "sha256": "6aa6311da88431f868f4136f8ce336a59e1a5be2d706f542d19e67087ed55faa",
+      "original_repository_path": "chengdu-tourism-office/skills/document-create/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/document-create/skill.json",
+      "bytes": 1733,
+      "sha256": "8267659edbdfd3ba15ea3b0e19e6dfef34b6043eac61737bb4e6c91a16b2f74a",
+      "original_repository_path": "chengdu-tourism-office/skills/document-create/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-search/SKILL.md",
+      "bytes": 1192,
+      "sha256": "8c5010153ec2e7a70e68c263a57b40eee3a3af43e24dc23cf8f4b397d1a4a810",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-search/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-search/references/example.json",
+      "bytes": 45,
+      "sha256": "aa1378f4bca239c2eceadfedafbe0b914af9922e65ec77eb8a8073eef0391a34",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-search/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-search/references/input.schema.json",
+      "bytes": 395,
+      "sha256": "cb7a5fe115f59ecbac3df6063882de91dd98d4141b6ec0fa2cc07d6d0cda7d78",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-search/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-search/scripts/run.py",
+      "bytes": 310,
+      "sha256": "9e91c0369a327624b79b6b1d64934d4ca1db43bde99d0793f538aa8b05dca32d",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-search/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-search/skill.json",
+      "bytes": 982,
+      "sha256": "f7d687488cda9a62dee20ba56bfeef79c33d3583e3b3f194d0df03f2dc9ad159",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-search/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-upload/SKILL.md",
+      "bytes": 1221,
+      "sha256": "b05f05734c284ee6ab99bb3b9425580452fecdbfdd26751982cf2d345a556079",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-upload/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-upload/references/example.json",
+      "bytes": 70,
+      "sha256": "db9f2d79866aba23622da4d7eb59dfad11e5f0efe84ffd7561b1950c035ccfad",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-upload/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-upload/references/input.schema.json",
+      "bytes": 420,
+      "sha256": "3787561840d740a0dccc493f5aa88fe9e127bb6b5050cc3c4d001feccdd7a139",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-upload/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-upload/scripts/run.py",
+      "bytes": 313,
+      "sha256": "e9ab7d523a868cc504cb673db03cd37e555451164a2c282d5812cd588ee10e59",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-upload/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/drive-upload/skill.json",
+      "bytes": 1062,
+      "sha256": "993f06c4789009b67eb940b2131218a874942dd1811b8d4ab3a7aa21484282fd",
+      "original_repository_path": "chengdu-tourism-office/skills/drive-upload/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/email-draft/SKILL.md",
+      "bytes": 1158,
+      "sha256": "96c849e812d7a4fabcd21963a6dcf81854c648015858eff6a530b2758798cc3b",
+      "original_repository_path": "chengdu-tourism-office/skills/email-draft/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/email-draft/references/example.json",
+      "bytes": 154,
+      "sha256": "2004d0cb6c94085989897053c0c8c11e43b9971dd4a216bf6c8d7ae566fd2170",
+      "original_repository_path": "chengdu-tourism-office/skills/email-draft/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/email-draft/references/input.schema.json",
+      "bytes": 527,
+      "sha256": "1cf8735a84d024a3500f844874ce25aea854afffb27c153d4a3ad4117375ac7c",
+      "original_repository_path": "chengdu-tourism-office/skills/email-draft/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/email-draft/scripts/run.py",
+      "bytes": 301,
+      "sha256": "32181e45fe4d1a578443c0ddb54ce8bf2ed75c14226384391039161224aaed06",
+      "original_repository_path": "chengdu-tourism-office/skills/email-draft/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/email-draft/skill.json",
+      "bytes": 1194,
+      "sha256": "cfd2ec5fff2ff29e8efecd8aa4a4301356ef5cbac0da0248b89bf621db335d84",
+      "original_repository_path": "chengdu-tourism-office/skills/email-draft/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/execution-controller/SKILL.md",
+      "bytes": 920,
+      "sha256": "f85aca2c558305a581bf5afd377732d899f8d280869ef012e6a15ec844ee3dc4",
+      "original_repository_path": "chengdu-tourism-office/skills/execution-controller/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/execution-controller/scripts/run.py",
+      "bytes": 264,
+      "sha256": "de5a0db017d457a903553a0d24f68de960d1d699cbcc9e60a44605b154f7bf14",
+      "original_repository_path": "chengdu-tourism-office/skills/execution-controller/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/execution-controller/scripts/run_tests.py",
+      "bytes": 250,
+      "sha256": "93616b5910a8c6ecf6d9d4e3ea000068c7067f72f82b7c6459f4562618f515d5",
+      "original_repository_path": "chengdu-tourism-office/skills/execution-controller/scripts/run_tests.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/execution-controller/skill.json",
+      "bytes": 1262,
+      "sha256": "5bcf09a25615567bd07fa4810163580c64c832040727328a0676ea8fed079f07",
+      "original_repository_path": "chengdu-tourism-office/skills/execution-controller/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/expense-report/SKILL.md",
+      "bytes": 1133,
+      "sha256": "dbd333d8c4b9d042d0b0807eb4e459424f66585d93df7d8d95bd6b91c1e3923f",
+      "original_repository_path": "chengdu-tourism-office/skills/expense-report/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/expense-report/references/example.json",
+      "bytes": 202,
+      "sha256": "91dc24a938ad395b03f5dbefa6e0982810511a8eeccaf5bc169441f4d92f0f56",
+      "original_repository_path": "chengdu-tourism-office/skills/expense-report/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/expense-report/references/input.schema.json",
+      "bytes": 1346,
+      "sha256": "c320a362134ffdb11616606342fc2afc6242e5c88ebd956a79260492ce263283",
+      "original_repository_path": "chengdu-tourism-office/skills/expense-report/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/expense-report/scripts/run.py",
+      "bytes": 307,
+      "sha256": "4daa5f3a4d22e28813d0f541aacc3f30f142473d98a1d19f9aaba83c33038134",
+      "original_repository_path": "chengdu-tourism-office/skills/expense-report/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/expense-report/skill.json",
+      "bytes": 2102,
+      "sha256": "e41174b3986befc093681d5f60c426886a1d8c21dab00ed997178130f1835b76",
+      "original_repository_path": "chengdu-tourism-office/skills/expense-report/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/finance-forecast/SKILL.md",
+      "bytes": 1000,
+      "sha256": "ee536639bb31d5ca4a26ee0ad58d8b3e5570852b5a26c4c32b5720e1ef679f29",
+      "original_repository_path": "chengdu-tourism-office/skills/finance-forecast/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/finance-forecast/references/example.json",
+      "bytes": 346,
+      "sha256": "078a69adc4a7e54635dfface6baa41b6c757847f677e104b1ab1935bc01b4f5a",
+      "original_repository_path": "chengdu-tourism-office/skills/finance-forecast/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/finance-forecast/scripts/run.py",
+      "bytes": 185,
+      "sha256": "c313ced1b8f2de243f75062599ad0b093ec80d7e1220d14df668724c49f11dde",
+      "original_repository_path": "chengdu-tourism-office/skills/finance-forecast/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/finance-forecast/skill.json",
+      "bytes": 1727,
+      "sha256": "52f00fa3d87995eb8b22731b746b004dcabd0ff793ea1b2ca34c3f8e80d1ff29",
+      "original_repository_path": "chengdu-tourism-office/skills/finance-forecast/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/finance-posting/SKILL.md",
+      "bytes": 1424,
+      "sha256": "5adf75ad54e6e8345e7509a3a114b0b8c44214b3268514794b8666d22cc9c61e",
+      "original_repository_path": "chengdu-tourism-office/skills/finance-posting/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/finance-posting/references/example.json",
+      "bytes": 120,
+      "sha256": "c1aed8b25570366f8b430905e4d5d0f39a22b9c9ba098f57989c1926211a1bb0",
+      "original_repository_path": "chengdu-tourism-office/skills/finance-posting/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/finance-posting/scripts/run.py",
+      "bytes": 184,
+      "sha256": "767875cf80c83442a2b61353252555303bed0205beffd2c5db456adebbf5e2d9",
+      "original_repository_path": "chengdu-tourism-office/skills/finance-posting/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/finance-posting/skill.json",
+      "bytes": 1369,
+      "sha256": "6564169772b7c850cc547a37641406baf71bc9ef2a9fc812a1487dbc3d45c18e",
+      "original_repository_path": "chengdu-tourism-office/skills/finance-posting/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/flight-search/SKILL.md",
+      "bytes": 850,
+      "sha256": "2a915dbaea59dae4a3ed3bc6f4eab15fb5be0347a122df8230305aa44dbe2adb",
+      "original_repository_path": "chengdu-tourism-office/skills/flight-search/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/flight-search/scripts/run.py",
+      "bytes": 264,
+      "sha256": "de5a0db017d457a903553a0d24f68de960d1d699cbcc9e60a44605b154f7bf14",
+      "original_repository_path": "chengdu-tourism-office/skills/flight-search/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/flight-search/scripts/run_tests.py",
+      "bytes": 250,
+      "sha256": "93616b5910a8c6ecf6d9d4e3ea000068c7067f72f82b7c6459f4562618f515d5",
+      "original_repository_path": "chengdu-tourism-office/skills/flight-search/scripts/run_tests.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/flight-search/skill.json",
+      "bytes": 598,
+      "sha256": "8fe8f2aa1dbadc4408241b33d8630d22c41bfe4aff6b063b75df12d94f29b025",
+      "original_repository_path": "chengdu-tourism-office/skills/flight-search/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-draft/SKILL.md",
+      "bytes": 1221,
+      "sha256": "f5147d3864a0e95529824b6f68d4744ab5d3be26033f1c73fffe4a6756ace768",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-draft/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-draft/references/example.json",
+      "bytes": 116,
+      "sha256": "a1e1180af1e0be527711be4e0183378f5401c2cdbea51187cbd976b30df81c6a",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-draft/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-draft/references/input.schema.json",
+      "bytes": 521,
+      "sha256": "004a1af7864199513e05746487a2a2326ad4afc057fb5de109976a1ff1f29123",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-draft/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-draft/scripts/run.py",
+      "bytes": 308,
+      "sha256": "dbacb58bf5ea216756e0758120ef6515c14c1de34e6492bfc52b451985169efd",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-draft/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-draft/skill.json",
+      "bytes": 1228,
+      "sha256": "e82650455455e8225adcae95ad3f028d1fb123e0aca30c27e7d69bf186cc22bc",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-draft/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-search/SKILL.md",
+      "bytes": 1189,
+      "sha256": "a20f2f60822b95361bc54fbdb69d6143742e852e7f7d13fa0a66f46a911f1782",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-search/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-search/references/example.json",
+      "bytes": 46,
+      "sha256": "c659b9a670e8b1813bb9c3cfa5785efefe50796476300891db2da19452231839",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-search/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-search/references/input.schema.json",
+      "bytes": 394,
+      "sha256": "2040dd13135db1ef7d89cb1d04e4196c201c1af4a2e86f006524364113d02b8f",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-search/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-search/scripts/run.py",
+      "bytes": 303,
+      "sha256": "579f4d2b33970a7134e697142370abb51fc67ec46a3de09909fd67bdaf5ac469",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-search/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-search/skill.json",
+      "bytes": 979,
+      "sha256": "3e6554f889768bcb3e2972305abfe8c7b3e2c9a4e01218b43f9a51ff28f9ac91",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-search/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-send/SKILL.md",
+      "bytes": 1223,
+      "sha256": "aa5df7d3e1e55c8c8af7f96d7d3ff0e38eec902d5c5d4885c170c8b8745bcadb",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-send/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-send/references/example.json",
+      "bytes": 121,
+      "sha256": "c036e20372131a767f13821f8eccc12ace40204d483048b5031653e5a08ae7a6",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-send/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-send/references/input.schema.json",
+      "bytes": 521,
+      "sha256": "004a1af7864199513e05746487a2a2326ad4afc057fb5de109976a1ff1f29123",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-send/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-send/scripts/run.py",
+      "bytes": 307,
+      "sha256": "c5450368d9ab9a19f505a0528a28c29099e4c6ae7234a9afa55ea5bb98ec16b3",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-send/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/gmail-send/skill.json",
+      "bytes": 1238,
+      "sha256": "fb004e96d5ae07c8082fbe1f568e5969a150df323d0bc63a6d94d2fb478d10e0",
+      "original_repository_path": "chengdu-tourism-office/skills/gmail-send/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hierarchy-router/SKILL.md",
+      "bytes": 998,
+      "sha256": "48b2d3fb175c1b766fa31148ad8bce479ead5224b7c951ae736fe82f8d2a0ace",
+      "original_repository_path": "chengdu-tourism-office/skills/hierarchy-router/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hierarchy-router/scripts/run.py",
+      "bytes": 264,
+      "sha256": "de5a0db017d457a903553a0d24f68de960d1d699cbcc9e60a44605b154f7bf14",
+      "original_repository_path": "chengdu-tourism-office/skills/hierarchy-router/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hierarchy-router/scripts/run_tests.py",
+      "bytes": 250,
+      "sha256": "93616b5910a8c6ecf6d9d4e3ea000068c7067f72f82b7c6459f4562618f515d5",
+      "original_repository_path": "chengdu-tourism-office/skills/hierarchy-router/scripts/run_tests.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hierarchy-router/skill.json",
+      "bytes": 526,
+      "sha256": "dbbec41470817a71821bc3c7ee8faed92a7013efedf5d188339e328e44d72796",
+      "original_repository_path": "chengdu-tourism-office/skills/hierarchy-router/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hiring-scorecard/SKILL.md",
+      "bytes": 1182,
+      "sha256": "130e1c5edf1c9cbce29b008a73e58f2917afb3de1ec9606fb4f12e524e2a68bd",
+      "original_repository_path": "chengdu-tourism-office/skills/hiring-scorecard/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hiring-scorecard/references/example.json",
+      "bytes": 219,
+      "sha256": "e0bcb773590bda387dccdbbe8a7874294d4e6a434f416a152a457e9800f5935b",
+      "original_repository_path": "chengdu-tourism-office/skills/hiring-scorecard/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hiring-scorecard/references/input.schema.json",
+      "bytes": 1265,
+      "sha256": "94cf1d05d46537b630bad2b1323807ade5f43895b5afd293450d0c689244c2b1",
+      "original_repository_path": "chengdu-tourism-office/skills/hiring-scorecard/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hiring-scorecard/scripts/run.py",
+      "bytes": 314,
+      "sha256": "e44805395decd35fe8ef67129776daa302b55bf8f23f828c16419f7ec646a63a",
+      "original_repository_path": "chengdu-tourism-office/skills/hiring-scorecard/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hiring-scorecard/skill.json",
+      "bytes": 2069,
+      "sha256": "a7437517b654498af856552e51348079b0060fd256dfe70ff36e9b5f7de5496b",
+      "original_repository_path": "chengdu-tourism-office/skills/hiring-scorecard/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hr-onboarding/SKILL.md",
+      "bytes": 1169,
+      "sha256": "8b8c591db5401353668c12315a9997b1bb8d762072b9fdbad514ad0bc1b18093",
+      "original_repository_path": "chengdu-tourism-office/skills/hr-onboarding/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hr-onboarding/references/example.json",
+      "bytes": 127,
+      "sha256": "200893c61817c1012279aedfe280972f76e40094d2106cd6a6861fd10c2fc3ab",
+      "original_repository_path": "chengdu-tourism-office/skills/hr-onboarding/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hr-onboarding/references/input.schema.json",
+      "bytes": 671,
+      "sha256": "7e2ef44974ad89b4d8fa466c973ca614e3004305319d9cd14169d7f0b76ff23f",
+      "original_repository_path": "chengdu-tourism-office/skills/hr-onboarding/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hr-onboarding/scripts/run.py",
+      "bytes": 311,
+      "sha256": "9433235e0360aa88b964505e54a214fb00f4ac5716c49957e1e9b9da619672ec",
+      "original_repository_path": "chengdu-tourism-office/skills/hr-onboarding/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/hr-onboarding/skill.json",
+      "bytes": 1330,
+      "sha256": "d4632e66c659a840ce03b211c6538ce02956926eb33c97d1a3ad649dc1bd6b4f",
+      "original_repository_path": "chengdu-tourism-office/skills/hr-onboarding/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/incident-report/SKILL.md",
+      "bytes": 1166,
+      "sha256": "af0c697c610f5195bc79c6bf8a8afc4178e559cfd7efcd658ab244c2954403bf",
+      "original_repository_path": "chengdu-tourism-office/skills/incident-report/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/incident-report/references/example.json",
+      "bytes": 293,
+      "sha256": "594e31a55964294b3889519bc760b8e539b9f2bce0a0c5152b690970a31b8558",
+      "original_repository_path": "chengdu-tourism-office/skills/incident-report/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/incident-report/references/input.schema.json",
+      "bytes": 1491,
+      "sha256": "6af0d328a7d0596f101e05fd1706bbeb6ddaaee937516287a7ef450d26d32976",
+      "original_repository_path": "chengdu-tourism-office/skills/incident-report/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/incident-report/scripts/run.py",
+      "bytes": 309,
+      "sha256": "7ea8ff7f97545742b61343801257ef42250dd7cd0495648b77dd7033f459eb16",
+      "original_repository_path": "chengdu-tourism-office/skills/incident-report/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/incident-report/skill.json",
+      "bytes": 2391,
+      "sha256": "62c451d08344ae11a9b16d47f9c4cd82c12ec33de28e40c0e02b16578869fb96",
+      "original_repository_path": "chengdu-tourism-office/skills/incident-report/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/inquiry-intake/SKILL.md",
+      "bytes": 886,
+      "sha256": "6cc4bfffdb9f96e11efc1641c2fe8baee5d3b763985a8cb587a6b60bede43b6f",
+      "original_repository_path": "chengdu-tourism-office/skills/inquiry-intake/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/inquiry-intake/scripts/run.py",
+      "bytes": 264,
+      "sha256": "de5a0db017d457a903553a0d24f68de960d1d699cbcc9e60a44605b154f7bf14",
+      "original_repository_path": "chengdu-tourism-office/skills/inquiry-intake/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/inquiry-intake/scripts/run_tests.py",
+      "bytes": 250,
+      "sha256": "93616b5910a8c6ecf6d9d4e3ea000068c7067f72f82b7c6459f4562618f515d5",
+      "original_repository_path": "chengdu-tourism-office/skills/inquiry-intake/scripts/run_tests.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/inquiry-intake/skill.json",
+      "bytes": 577,
+      "sha256": "3a2d7c17763b25fffd4e425566f4de7500d064959dbf47320eba16aa791085e7",
+      "original_repository_path": "chengdu-tourism-office/skills/inquiry-intake/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/inventory-reorder/SKILL.md",
+      "bytes": 1206,
+      "sha256": "53330a4aeefb65a8b0a0fbad53bc6f9d2bd73042626adb30e2021980f03ddde3",
+      "original_repository_path": "chengdu-tourism-office/skills/inventory-reorder/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/inventory-reorder/references/example.json",
+      "bytes": 209,
+      "sha256": "48fc375a7262d4323f9f5c9970830c49dcce255f3be603491c30294912822776",
+      "original_repository_path": "chengdu-tourism-office/skills/inventory-reorder/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/inventory-reorder/references/input.schema.json",
+      "bytes": 1527,
+      "sha256": "275cee10d76b47e91ada3b07183dc3cc701803b9276a5a92bd7f9731fc056809",
+      "original_repository_path": "chengdu-tourism-office/skills/inventory-reorder/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/inventory-reorder/scripts/run.py",
+      "bytes": 313,
+      "sha256": "a35843dafae1ea9cff57f9f8477dcd78a63c4e84707d4e8e8af322e142ee90d1",
+      "original_repository_path": "chengdu-tourism-office/skills/inventory-reorder/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/inventory-reorder/skill.json",
+      "bytes": 2368,
+      "sha256": "96423965a3746f57e49a65d80e4d7a3bbaddb22b4ed42bd2c4b6c394e82f89b3",
+      "original_repository_path": "chengdu-tourism-office/skills/inventory-reorder/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/invoice-create/SKILL.md",
+      "bytes": 1187,
+      "sha256": "87984851b231a838dd27495e5b56b631db5d9fa2d2e1e6ecd2e6c5f3405c5d01",
+      "original_repository_path": "chengdu-tourism-office/skills/invoice-create/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/invoice-create/references/example.json",
+      "bytes": 199,
+      "sha256": "bfad90f9a1bfc85a8f452608975eb98cd2a5f6b9740a206f04084afeea8d182d",
+      "original_repository_path": "chengdu-tourism-office/skills/invoice-create/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/invoice-create/references/input.schema.json",
+      "bytes": 1332,
+      "sha256": "89e3295e2036273f595d94e4db3467f4803b5431bb1db7e083105fc0af47cdc8",
+      "original_repository_path": "chengdu-tourism-office/skills/invoice-create/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/invoice-create/scripts/run.py",
+      "bytes": 306,
+      "sha256": "df9e1ee55c746cdc9a376c081aa8a79ef2f7b2e38ade9959603e1c82f1823738",
+      "original_repository_path": "chengdu-tourism-office/skills/invoice-create/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/invoice-create/skill.json",
+      "bytes": 2140,
+      "sha256": "275e345dc3e82d7fed42ccf299eddb44fcb75036d559deaf7ca8d32dc4411ec7",
+      "original_repository_path": "chengdu-tourism-office/skills/invoice-create/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-save/SKILL.md",
+      "bytes": 1138,
+      "sha256": "9f9afe99c6b22c5a4068f1ee9972933d020272e866e9fd3c9935260676fdda31",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-save/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-save/references/example.json",
+      "bytes": 174,
+      "sha256": "29cefb9b0a090e06149a9240635166a82e8270b83121015d16588f028e6f360f",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-save/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-save/references/input.schema.json",
+      "bytes": 663,
+      "sha256": "fbedc85cd0f489a0873d01bcf5c413881b4d3c7e3e7d70acffc4bdfb33483c69",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-save/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-save/scripts/run.py",
+      "bytes": 315,
+      "sha256": "e618678328a560e0521525633753c3a5f5aafbdad4271edb094b271ab593ecd3",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-save/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-save/skill.json",
+      "bytes": 1337,
+      "sha256": "63234b7c901e8aa90bbbc13fd15e662d0b29d54fabb4aa565c155c71b7cee9d6",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-save/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-search/SKILL.md",
+      "bytes": 1187,
+      "sha256": "4b1614499f116f72b8b45649c889f0a08610062c544337fedc56cab892e58e74",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-search/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-search/references/example.json",
+      "bytes": 38,
+      "sha256": "a319b4143c5de70c58ffd767739a0135915960b3289f41cead1f538998a894bd",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-search/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-search/references/input.schema.json",
+      "bytes": 250,
+      "sha256": "bd93afd922f53426526f66484231334d85d587cb0d3d5f97ee78b38a56aa9b76",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-search/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-search/scripts/run.py",
+      "bytes": 319,
+      "sha256": "6c2b4870f7e74b13cba6b5c7afdde21272a85a9bdd686ea2dc0893e4f756db5c",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-search/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/knowledge-search/skill.json",
+      "bytes": 790,
+      "sha256": "f1c2bba26f627dd3bc92baad997590c61077c9e376888b23d46da147b9846522",
+      "original_repository_path": "chengdu-tourism-office/skills/knowledge-search/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/leave-request/SKILL.md",
+      "bytes": 1156,
+      "sha256": "6b21cd56746f8c1e759c2ec7cf36a294e9699beb6b4af0a5cbcd476c8ea34ce1",
+      "original_repository_path": "chengdu-tourism-office/skills/leave-request/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/leave-request/references/example.json",
+      "bytes": 111,
+      "sha256": "27fb017f6d81aee9c219c4e14d0b933336446f4b26c798434b021e1049a9d5e4",
+      "original_repository_path": "chengdu-tourism-office/skills/leave-request/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/leave-request/references/input.schema.json",
+      "bytes": 673,
+      "sha256": "1cf04c4fd8427c0ae68fa0e00932608d2500ad9645bc46193062b02fc255c482",
+      "original_repository_path": "chengdu-tourism-office/skills/leave-request/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/leave-request/scripts/run.py",
+      "bytes": 305,
+      "sha256": "4cf071865d0271e88abb70605a91040fa75c0218b103e7666851e867808139af",
+      "original_repository_path": "chengdu-tourism-office/skills/leave-request/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/leave-request/skill.json",
+      "bytes": 1298,
+      "sha256": "8914fcbfb8006a1dc8b7ca0da63497f9f33b1ac7ecd4cb3606be1db52a1c3813",
+      "original_repository_path": "chengdu-tourism-office/skills/leave-request/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/management-handoff/SKILL.md",
+      "bytes": 852,
+      "sha256": "e02fca40c4738f71808e93a06d31e6220c4bc908e22e769bd575a84b97cdecb9",
+      "original_repository_path": "chengdu-tourism-office/skills/management-handoff/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/management-handoff/scripts/run.py",
+      "bytes": 282,
+      "sha256": "32e3cc493d0a160313b1d869f4368b3772eae6e48265e8df0d87e1543812c553",
+      "original_repository_path": "chengdu-tourism-office/skills/management-handoff/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/management-handoff/skill.json",
+      "bytes": 1555,
+      "sha256": "7b5a88ddbeda19dd14ab74c20721a10a1dd7018822383e9c49a86d429ba041c3",
+      "original_repository_path": "chengdu-tourism-office/skills/management-handoff/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/mcp-tool/SKILL.md",
+      "bytes": 1229,
+      "sha256": "e1c0ecce1f5273ff10e278ce7a78480467199c3859171551a290148fe7075df2",
+      "original_repository_path": "chengdu-tourism-office/skills/mcp-tool/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/mcp-tool/references/example.json",
+      "bytes": 82,
+      "sha256": "01702d7bd3751433a1805ffd35e226202214931048fccc2ddea1b79b06a7b35e",
+      "original_repository_path": "chengdu-tourism-office/skills/mcp-tool/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/mcp-tool/references/input.schema.json",
+      "bytes": 502,
+      "sha256": "2b1dce0a546e6ca6567efc3035fff7e99c2c2a1af738affd22728e8eca82446c",
+      "original_repository_path": "chengdu-tourism-office/skills/mcp-tool/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/mcp-tool/scripts/run.py",
+      "bytes": 305,
+      "sha256": "7ee5b22e5e428edc008701a9abfe73cbf4c05cf1c5c662d2938567a36483ab13",
+      "original_repository_path": "chengdu-tourism-office/skills/mcp-tool/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/mcp-tool/skill.json",
+      "bytes": 1177,
+      "sha256": "ee0dc1043f8741013bc8368dd2a61c07865f63645b33a047e91da5f0aeb42f8f",
+      "original_repository_path": "chengdu-tourism-office/skills/mcp-tool/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/meeting-minutes/SKILL.md",
+      "bytes": 1181,
+      "sha256": "a0df7a06a82c0cef187561d13acce21eb54ee140da77ae8826cb5868420bde21",
+      "original_repository_path": "chengdu-tourism-office/skills/meeting-minutes/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/meeting-minutes/references/example.json",
+      "bytes": 270,
+      "sha256": "d3ab1ceb1c5cd1d53cbd5840e1076233de9f0c1006c68c31cb8b601d9f525750",
+      "original_repository_path": "chengdu-tourism-office/skills/meeting-minutes/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/meeting-minutes/references/input.schema.json",
+      "bytes": 1455,
+      "sha256": "7fe411fef8a4bf569e9bdc1ecd85181d4978e6e50ae8e645d66be4d411081a96",
+      "original_repository_path": "chengdu-tourism-office/skills/meeting-minutes/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/meeting-minutes/scripts/run.py",
+      "bytes": 309,
+      "sha256": "d9026f8e4ae36c2d0894628aa1a278ea5d738b8f15d08f7844e36b080615bac8",
+      "original_repository_path": "chengdu-tourism-office/skills/meeting-minutes/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/meeting-minutes/skill.json",
+      "bytes": 2347,
+      "sha256": "cb995a72306a58ccb3a4b906837c6a15c468831c70512d4a92d314e775e7762e",
+      "original_repository_path": "chengdu-tourism-office/skills/meeting-minutes/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/option-comparison/SKILL.md",
+      "bytes": 861,
+      "sha256": "d7b029cd2426ef1202e2c5392784e1c3078b87b6d52822a1324d4df5e60bd42c",
+      "original_repository_path": "chengdu-tourism-office/skills/option-comparison/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/option-comparison/scripts/run.py",
+      "bytes": 264,
+      "sha256": "de5a0db017d457a903553a0d24f68de960d1d699cbcc9e60a44605b154f7bf14",
+      "original_repository_path": "chengdu-tourism-office/skills/option-comparison/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/option-comparison/scripts/run_tests.py",
+      "bytes": 250,
+      "sha256": "93616b5910a8c6ecf6d9d4e3ea000068c7067f72f82b7c6459f4562618f515d5",
+      "original_repository_path": "chengdu-tourism-office/skills/option-comparison/scripts/run_tests.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/option-comparison/skill.json",
+      "bytes": 792,
+      "sha256": "d7f89c6fc6dee9ffe346ca307343c751d45a75323b2a3b75b3b17f2f361fba4f",
+      "original_repository_path": "chengdu-tourism-office/skills/option-comparison/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/outcome-reporter/SKILL.md",
+      "bytes": 911,
+      "sha256": "c6cab32506f2e96ad55faf31b1265a5243eebbc90d078e143117db40ab0c9cf4",
+      "original_repository_path": "chengdu-tourism-office/skills/outcome-reporter/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/outcome-reporter/scripts/run.py",
+      "bytes": 264,
+      "sha256": "de5a0db017d457a903553a0d24f68de960d1d699cbcc9e60a44605b154f7bf14",
+      "original_repository_path": "chengdu-tourism-office/skills/outcome-reporter/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/outcome-reporter/scripts/run_tests.py",
+      "bytes": 250,
+      "sha256": "93616b5910a8c6ecf6d9d4e3ea000068c7067f72f82b7c6459f4562618f515d5",
+      "original_repository_path": "chengdu-tourism-office/skills/outcome-reporter/scripts/run_tests.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/outcome-reporter/skill.json",
+      "bytes": 1329,
+      "sha256": "37dd8431216d1d2af03e5b6b98f99ad9fd4c605fa3e8e7733b88f7b35d782dd4",
+      "original_repository_path": "chengdu-tourism-office/skills/outcome-reporter/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-create/SKILL.md",
+      "bytes": 1152,
+      "sha256": "91f5f562e3a8b7b537e4dc35c70d48fe27ffe8b7d86666adcb12f9dcb8d6afde",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-create/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-create/references/example.json",
+      "bytes": 175,
+      "sha256": "469132ebbf69d0bb00c303b69e2aee9b38a3a42b8fba41e4af8fabe4692d8d45",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-create/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-create/references/input.schema.json",
+      "bytes": 890,
+      "sha256": "c81a28760580f0188df75e32f39308030c3340c1c917b67c9bdb2266e095b380",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-create/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-create/scripts/run.py",
+      "bytes": 298,
+      "sha256": "a05f82eb9094e081605325325fc428128ed72698bbf6bfa1c33725f5a449e3bf",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-create/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-create/skill.json",
+      "bytes": 1608,
+      "sha256": "2744206cd214468ef80ee280e19b58b63cc551317de62fad15f53f9f74b5d57d",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-create/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-extract/SKILL.md",
+      "bytes": 1133,
+      "sha256": "86d1c3a169c993d365a71e3c40a3e8a83bd914e9188480293b2c05d1cd071869",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-extract/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-extract/references/example.json",
+      "bytes": 46,
+      "sha256": "8371d1107be9406e83375808c55cd25861ff0136ffb3fb9b35a7bef94df47a51",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-extract/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-extract/references/input.schema.json",
+      "bytes": 257,
+      "sha256": "e40d5531154116027d390341dd9035128fc0c1a96cb9b06d9add09fdaf42d0b6",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-extract/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-extract/scripts/run.py",
+      "bytes": 300,
+      "sha256": "3fe2be66b65e905433ca23ba894a10d8fa1e1270949caa16972c07312a58c275",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-extract/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/pdf-extract/skill.json",
+      "bytes": 764,
+      "sha256": "85cab11d8a7447eeab2258f1ca7e2ffb2fade17b38cece81a96f13117f9b537c",
+      "original_repository_path": "chengdu-tourism-office/skills/pdf-extract/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/policy-checklist/SKILL.md",
+      "bytes": 1127,
+      "sha256": "09d65dd421d6bfcfea06d9d245da95ba36ccf1cb441a574796806c05a46d0e7f",
+      "original_repository_path": "chengdu-tourism-office/skills/policy-checklist/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/policy-checklist/references/example.json",
+      "bytes": 209,
+      "sha256": "d560169070770550f884548b947be3cf34f0bb2c0a99e9518366a2c6bd4fda63",
+      "original_repository_path": "chengdu-tourism-office/skills/policy-checklist/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/policy-checklist/references/input.schema.json",
+      "bytes": 1298,
+      "sha256": "257e36f69cad02cca4b6207abddc07325857b2b717cbbefff5bde794aac55dc9",
+      "original_repository_path": "chengdu-tourism-office/skills/policy-checklist/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/policy-checklist/scripts/run.py",
+      "bytes": 311,
+      "sha256": "335e7862e031670dc03f4c7f3625222357d63c86c35da75f2cb9cc72a2e1db4c",
+      "original_repository_path": "chengdu-tourism-office/skills/policy-checklist/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/policy-checklist/skill.json",
+      "bytes": 2047,
+      "sha256": "071db4e34a2db84ba9eab792349bc51b5cbcb0d0ef92e9bbe89d5df4f851826e",
+      "original_repository_path": "chengdu-tourism-office/skills/policy-checklist/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/presentation-create/SKILL.md",
+      "bytes": 1219,
+      "sha256": "051a35ff48bd515e5d4bb75a7d23d72a36b8ecd392438e29713b09cd827d73df",
+      "original_repository_path": "chengdu-tourism-office/skills/presentation-create/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/presentation-create/references/example.json",
+      "bytes": 275,
+      "sha256": "f19eb2574e2e8c2fb4e8dcbe50c31f01323a9085c070175ab0dcdf867cebbd34",
+      "original_repository_path": "chengdu-tourism-office/skills/presentation-create/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/presentation-create/references/input.schema.json",
+      "bytes": 1006,
+      "sha256": "03a3b6d0976d372a40d02f78ce4ace91362a3f5459a9b7d6a920e828fbefae1e",
+      "original_repository_path": "chengdu-tourism-office/skills/presentation-create/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/presentation-create/scripts/run.py",
+      "bytes": 321,
+      "sha256": "67e3a5b99e1b4e2cd5cdef36268abe16e860bf23b6c4d451740cdcf6f4b06c79",
+      "original_repository_path": "chengdu-tourism-office/skills/presentation-create/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/presentation-create/skill.json",
+      "bytes": 1889,
+      "sha256": "ba9a2c9c51f74fbcb86f855584b06515630f2e1a872266a8debb53d6e065aa86",
+      "original_repository_path": "chengdu-tourism-office/skills/presentation-create/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/procurement-compare/SKILL.md",
+      "bytes": 1204,
+      "sha256": "a5c97fafaa26149c6fbdaaa144c3e7c8c73baea47d1b057e1c6050ff4cb67f73",
+      "original_repository_path": "chengdu-tourism-office/skills/procurement-compare/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/procurement-compare/references/example.json",
+      "bytes": 332,
+      "sha256": "a99f037da1687f32059bdd61ee0809a8971496e6016729d828b5570ba6024a28",
+      "original_repository_path": "chengdu-tourism-office/skills/procurement-compare/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/procurement-compare/references/input.schema.json",
+      "bytes": 1469,
+      "sha256": "87f772b2f897055ee2cdc8d7669d36a69e612646f3f31cb05af4ce620a68486c",
+      "original_repository_path": "chengdu-tourism-office/skills/procurement-compare/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/procurement-compare/scripts/run.py",
+      "bytes": 317,
+      "sha256": "4e984bcbf4c1af9968559ca2edc6e9d762d65a9188317d7caa065e9d0e6ce834",
+      "original_repository_path": "chengdu-tourism-office/skills/procurement-compare/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/procurement-compare/skill.json",
+      "bytes": 2441,
+      "sha256": "bc3cd8922f8bce7b25959f223e217bee3fb6cf58358748543217b919b7966670",
+      "original_repository_path": "chengdu-tourism-office/skills/procurement-compare/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/project-plan/SKILL.md",
+      "bytes": 1194,
+      "sha256": "55f9e98154dc925c683b1ff8dfc31ef555a6d824d2eccc1e4c778a100f9c062d",
+      "original_repository_path": "chengdu-tourism-office/skills/project-plan/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/project-plan/references/example.json",
+      "bytes": 375,
+      "sha256": "d42e3dab2da281f42e0fadbff8be0f9d71a0baa02610228b1df802523ee2b760",
+      "original_repository_path": "chengdu-tourism-office/skills/project-plan/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/project-plan/references/input.schema.json",
+      "bytes": 1728,
+      "sha256": "6de57851316367652d75dfc363dddaeea0447915801eb11ba6a33f2a97d9c5aa",
+      "original_repository_path": "chengdu-tourism-office/skills/project-plan/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/project-plan/scripts/run.py",
+      "bytes": 303,
+      "sha256": "b8019a1d344b48262bb456f2c805ad7e97ed32b2b14945f2d867a9921f8dad80",
+      "original_repository_path": "chengdu-tourism-office/skills/project-plan/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/project-plan/skill.json",
+      "bytes": 2776,
+      "sha256": "c2500dfb181807156f5d1f39896c89fae006da24916b19139bc435b07daa7d81",
+      "original_repository_path": "chengdu-tourism-office/skills/project-plan/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/proposal-package/SKILL.md",
+      "bytes": 951,
+      "sha256": "cb4a6b412558b25e0f7db8b750a3dc435d3132a282e6777b2be26cb5fc185d93",
+      "original_repository_path": "chengdu-tourism-office/skills/proposal-package/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/proposal-package/references/example.json",
+      "bytes": 457,
+      "sha256": "ea3f7fb1640a23b1bda1804f3f293eb58a48d79087ab5af5d033f299d68e36d1",
+      "original_repository_path": "chengdu-tourism-office/skills/proposal-package/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/proposal-package/scripts/run.py",
+      "bytes": 185,
+      "sha256": "9eb66fd8e40f7564040ac661e41831b129ad31f30080f29e674b1c0c63555953",
+      "original_repository_path": "chengdu-tourism-office/skills/proposal-package/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/proposal-package/skill.json",
+      "bytes": 2063,
+      "sha256": "ea8eb0ffc5561fbdac62f5cef150dcca0cf4845174b1f675bf590f3e0d54507c",
+      "original_repository_path": "chengdu-tourism-office/skills/proposal-package/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/quotation-package/SKILL.md",
+      "bytes": 938,
+      "sha256": "8be0a956222942fc016fbe01903c1f6c84bbd075479dc1d731b4bb768d72d409",
+      "original_repository_path": "chengdu-tourism-office/skills/quotation-package/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/quotation-package/references/example.json",
+      "bytes": 251,
+      "sha256": "44e237255bf5681f5c444cb02d05974248f8a6e8caf6c85f578b6006790b7eb0",
+      "original_repository_path": "chengdu-tourism-office/skills/quotation-package/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/quotation-package/scripts/run.py",
+      "bytes": 186,
+      "sha256": "b1f49049ba6d40a42aa163cb867de58caf98feb45037a5d3bbb736ebc398a83e",
+      "original_repository_path": "chengdu-tourism-office/skills/quotation-package/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/quotation-package/skill.json",
+      "bytes": 1558,
+      "sha256": "f7fbc10046502a63ee9db52f3713f9890be089e9d3a2a28a8692dd9b71e14413",
+      "original_repository_path": "chengdu-tourism-office/skills/quotation-package/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/responsibility-matrix/SKILL.md",
+      "bytes": 1001,
+      "sha256": "417a62b88e09ed89c534829449fad3fe08d456def7f1accb05536693cf0064b3",
+      "original_repository_path": "chengdu-tourism-office/skills/responsibility-matrix/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/responsibility-matrix/scripts/run.py",
+      "bytes": 285,
+      "sha256": "8de27518fa7132f1cfc957e278278a470bb348b1544585db76c0a9fca1525af8",
+      "original_repository_path": "chengdu-tourism-office/skills/responsibility-matrix/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/responsibility-matrix/skill.json",
+      "bytes": 1519,
+      "sha256": "48dae42dd24e91dd2329a7d8f093dd89a81d04333cf308446b0714a056056ee2",
+      "original_repository_path": "chengdu-tourism-office/skills/responsibility-matrix/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/risk-register/SKILL.md",
+      "bytes": 1141,
+      "sha256": "59e5e0e84a2a975c591ff3fc02c4ae9ed0031bddea610887df1cd07b03521d9b",
+      "original_repository_path": "chengdu-tourism-office/skills/risk-register/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/risk-register/references/example.json",
+      "bytes": 194,
+      "sha256": "54a61712174b76803fbf92df976d4de4967fe43d6c33b7e2fbe684a7d29d1aa6",
+      "original_repository_path": "chengdu-tourism-office/skills/risk-register/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/risk-register/references/input.schema.json",
+      "bytes": 1307,
+      "sha256": "e23c49591ab8844180f673010e07880c096b80563bcf38fc3862a9bf29c5a5d7",
+      "original_repository_path": "chengdu-tourism-office/skills/risk-register/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/risk-register/scripts/run.py",
+      "bytes": 305,
+      "sha256": "72b889552f3acc872c0c9448fb13ff55cf851cbf961f8d0a0ee612eee25ed4ba",
+      "original_repository_path": "chengdu-tourism-office/skills/risk-register/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/risk-register/skill.json",
+      "bytes": 2056,
+      "sha256": "0dbec77b70b21b1fc6d07d077332bc90b39c847594a8ee03f57069f67f3913e3",
+      "original_repository_path": "chengdu-tourism-office/skills/risk-register/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/scenario-compare/SKILL.md",
+      "bytes": 962,
+      "sha256": "196d135bc97e37e7fdd3a3966a8db331bb574a6665b9ccba74f70b3c8fbe9cf3",
+      "original_repository_path": "chengdu-tourism-office/skills/scenario-compare/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/scenario-compare/scripts/run.py",
+      "bytes": 280,
+      "sha256": "23dd03f1d1524ed9c1da6e2ef92b3c6c9577839d1b6319bd9b6d55d42f198fc3",
+      "original_repository_path": "chengdu-tourism-office/skills/scenario-compare/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/scenario-compare/skill.json",
+      "bytes": 1680,
+      "sha256": "fdf706dcf695f09957f9b3fd378d9b202b7daf99a75cb6558d969df5234e4e61",
+      "original_repository_path": "chengdu-tourism-office/skills/scenario-compare/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/schedule-builder/SKILL.md",
+      "bytes": 747,
+      "sha256": "2400bb952d48bfad4c5facffe3eb1f7182292cc3c1102886abeabf4eb9942a8c",
+      "original_repository_path": "chengdu-tourism-office/skills/schedule-builder/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/schedule-builder/scripts/run.py",
+      "bytes": 264,
+      "sha256": "de5a0db017d457a903553a0d24f68de960d1d699cbcc9e60a44605b154f7bf14",
+      "original_repository_path": "chengdu-tourism-office/skills/schedule-builder/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/schedule-builder/scripts/run_tests.py",
+      "bytes": 250,
+      "sha256": "93616b5910a8c6ecf6d9d4e3ea000068c7067f72f82b7c6459f4562618f515d5",
+      "original_repository_path": "chengdu-tourism-office/skills/schedule-builder/scripts/run_tests.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/schedule-builder/skill.json",
+      "bytes": 1033,
+      "sha256": "5af2bc7d0bef394bf2f56bc7083b8d7f67f31e1d0c0d1ac1a14ebe582b11f5d9",
+      "original_repository_path": "chengdu-tourism-office/skills/schedule-builder/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/shareholder-report/SKILL.md",
+      "bytes": 1040,
+      "sha256": "735f6a7fb6c02ce1550c282ec59ae2a993b9141cc28f8956c833a85e561b7299",
+      "original_repository_path": "chengdu-tourism-office/skills/shareholder-report/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/shareholder-report/references/example.json",
+      "bytes": 309,
+      "sha256": "11dcd8b883344344d8389b6dd3738f43b7aa4ae13f705ffb4f3b947887a28df3",
+      "original_repository_path": "chengdu-tourism-office/skills/shareholder-report/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/shareholder-report/scripts/run.py",
+      "bytes": 187,
+      "sha256": "4fd014532b1b8d3e6654a7c75b18c87ece1f3ccada65cb7218b7ad7fe582a72c",
+      "original_repository_path": "chengdu-tourism-office/skills/shareholder-report/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/shareholder-report/skill.json",
+      "bytes": 1790,
+      "sha256": "65f018e4b3fe4b80cdee9cfc3a3ed5db38b1aca7771689d84f0a1e74a8da7201",
+      "original_repository_path": "chengdu-tourism-office/skills/shareholder-report/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-create/SKILL.md",
+      "bytes": 1236,
+      "sha256": "04cb4c42d841a7df93c32904cb0cd1a97fe85b5006f4ad7db63319f718f1e76e",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-create/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-create/references/example.json",
+      "bytes": 150,
+      "sha256": "aae6e867f2d46a14e5b034f2d1409675604df16da991c4f6e4569a5222048857",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-create/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-create/references/input.schema.json",
+      "bytes": 617,
+      "sha256": "d2b7560247a2f8d5ffc643f439f4207f214e816cf833511599672f290737984a",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-create/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-create/scripts/run.py",
+      "bytes": 317,
+      "sha256": "413fa94e1346f850b4b6b3772fa93230a36873b8e5ce1635cbbf83c238914633",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-create/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-create/skill.json",
+      "bytes": 1393,
+      "sha256": "6aeba4c5058b659a42351e594b775a339a02e6f86ab01e5970efa0327d168243",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-create/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-read/SKILL.md",
+      "bytes": 1184,
+      "sha256": "5046a7ef2f917193c92454dcf1b231ce0782a7a8f24d7ef2a6ef58620a9d5f64",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-read/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-read/references/example.json",
+      "bytes": 78,
+      "sha256": "415a813dfeb4e4eec3a3fe74080551ddd94e5019e43b5d39e5bee80a642900a6",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-read/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-read/references/input.schema.json",
+      "bytes": 410,
+      "sha256": "2711d9892d382704973f93d48e0c6b2625a30dee519d7bfe9142cf6f69b1ef72",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-read/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-read/scripts/run.py",
+      "bytes": 308,
+      "sha256": "9e3ff1699ce61b72b8d55d5f89a6f40da82d70df0f29a2181f080293421641f4",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-read/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-read/skill.json",
+      "bytes": 1025,
+      "sha256": "42d669c3dab1ff690274b5a1892a4909119ef324a98108ae938591d16a400289",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-read/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-write/SKILL.md",
+      "bytes": 1236,
+      "sha256": "e87cb2ba702ea1c3f1f02de3bfbc1a34240801b7f1b30c9211ad721bbb78a8ab",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-write/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-write/references/example.json",
+      "bytes": 191,
+      "sha256": "12e55c79d295c59583e27bc2f45b72aad3134e9ab017f99428dda357f8a55ec3",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-write/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-write/references/input.schema.json",
+      "bytes": 784,
+      "sha256": "57d33e23964e4f6822b4f433019118e13ca5e97d6621ce251106cbde572a1a1f",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-write/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-write/scripts/run.py",
+      "bytes": 310,
+      "sha256": "ebeec5dc70bde740d0fab3b37f006b38ca504e0404c42224ebca454eb3f3ed52",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-write/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/sheets-write/skill.json",
+      "bytes": 1620,
+      "sha256": "c1d1c7021acafd123d539bdcc4c5d006dfdef4f14e42e79deb8a829acfe3b26d",
+      "original_repository_path": "chengdu-tourism-office/skills/sheets-write/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/slides-create/SKILL.md",
+      "bytes": 1235,
+      "sha256": "d4eb0abcf9c5a4b5298ff65fcda2a3a04c043f408285c3949beb2870758a365e",
+      "original_repository_path": "chengdu-tourism-office/skills/slides-create/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/slides-create/references/example.json",
+      "bytes": 189,
+      "sha256": "820c0805b9d48f7e25474b133a8b06e2f850da36c5345d286b35107c57a35499",
+      "original_repository_path": "chengdu-tourism-office/skills/slides-create/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/slides-create/references/input.schema.json",
+      "bytes": 1006,
+      "sha256": "03a3b6d0976d372a40d02f78ce4ace91362a3f5459a9b7d6a920e828fbefae1e",
+      "original_repository_path": "chengdu-tourism-office/skills/slides-create/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/slides-create/scripts/run.py",
+      "bytes": 312,
+      "sha256": "40825d85ca5131a67282dc6d3b78734feb2e57d980c328fcb72755030507cd43",
+      "original_repository_path": "chengdu-tourism-office/skills/slides-create/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/slides-create/skill.json",
+      "bytes": 1844,
+      "sha256": "9e30a336ebfa6075a76437af8e8607ddc91c99e593c0285f213a45929a36a591",
+      "original_repository_path": "chengdu-tourism-office/skills/slides-create/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-analyze/SKILL.md",
+      "bytes": 1216,
+      "sha256": "05b1958c6bafeab2a500d8e6cfe03aea561c40981a19645af3da7571e68a61ac",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-analyze/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-analyze/references/example.json",
+      "bytes": 46,
+      "sha256": "8371d1107be9406e83375808c55cd25861ff0136ffb3fb9b35a7bef94df47a51",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-analyze/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-analyze/references/input.schema.json",
+      "bytes": 258,
+      "sha256": "6cdad6425074403147aaa2ea261bae206773fd47e1373592a297e38d2d003a37",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-analyze/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-analyze/scripts/run.py",
+      "bytes": 319,
+      "sha256": "739cd41a05f69938209dd84d1010f65fecffc2ddc2f32f1f59f15ee204e22cd6",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-analyze/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-analyze/skill.json",
+      "bytes": 820,
+      "sha256": "457f46d1125a3746d4e4e52b4c8ff12f1bb324c1188c0c64f3ef72a4749f428d",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-analyze/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-create/SKILL.md",
+      "bytes": 1203,
+      "sha256": "61da26f103b5fd7c4f14f3c69fc0c2a7f227a72ac4358ec7ef4a2942a75185b7",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-create/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-create/references/example.json",
+      "bytes": 236,
+      "sha256": "84823118efc801a970315927fc0dd5d243fccbb3f5348b24903d090de7e029e1",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-create/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-create/references/input.schema.json",
+      "bytes": 872,
+      "sha256": "891770e89796649f062718b3ae6f37a05b85e3b7a7867795117c53766e5cc1b8",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-create/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-create/scripts/run.py",
+      "bytes": 311,
+      "sha256": "27c3a1e154d211ee6c14fe27410a3ef223139890e181e7981e09c7162d80b26f",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-create/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-create/skill.json",
+      "bytes": 1714,
+      "sha256": "1a67e4910be2d46e5447658a1de84e03f663a63dfda58cd70401467f39d4979b",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-create/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-edit/SKILL.md",
+      "bytes": 983,
+      "sha256": "1ff12a88a82d834c5ca5f498aacb9a5da8633e5abdfce594d11e72283f556649",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-edit/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-edit/references/example.json",
+      "bytes": 79,
+      "sha256": "baa9f480037ca83a2959ddd613474749749c3982cdeb0ae063b5c89402e1f1c0",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-edit/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-edit/scripts/run.py",
+      "bytes": 185,
+      "sha256": "3cadd7c6d002e2a7eb256d1078bdbeac13078e9b714fcb3b73508d6717094069",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-edit/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-edit/skill.json",
+      "bytes": 1090,
+      "sha256": "d713d1a69cb2e7f5eed2dbb78281652924143e8abff82247fe113db9bb70a9a6",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-edit/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-search/SKILL.md",
+      "bytes": 858,
+      "sha256": "bae269fb0d65b257f558e7ff127c098bd2e579ae56b63901ceeac30e2ff9a65d",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-search/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-search/references/example.json",
+      "bytes": 56,
+      "sha256": "758796b906490815f41fc7fc9c18f418969a62b7f7aa79241c820f0728fb5606",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-search/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-search/scripts/run.py",
+      "bytes": 187,
+      "sha256": "d099ec133f74d61a7698122cdd3e73ad26565946b2a1abea8849069ecf2af3eb",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-search/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/spreadsheet-search/skill.json",
+      "bytes": 812,
+      "sha256": "ba1d4d275db90318a1274edf6a2390eff598ea0bf9e33c96850587d2ed0ea67d",
+      "original_repository_path": "chengdu-tourism-office/skills/spreadsheet-search/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/support-triage/SKILL.md",
+      "bytes": 1178,
+      "sha256": "8bd1c63f2177a89a80d7f54ba795cc5ff870cd1f1a20a3e9a790fe59850def8c",
+      "original_repository_path": "chengdu-tourism-office/skills/support-triage/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/support-triage/references/example.json",
+      "bytes": 176,
+      "sha256": "fc5174c0d519a24df6de9ffcb55924a76a28b019c24853c90f9c56ce60f3a027",
+      "original_repository_path": "chengdu-tourism-office/skills/support-triage/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/support-triage/references/input.schema.json",
+      "bytes": 862,
+      "sha256": "813821ffafb53248116283d31125b7939061ea5746be1733d2a598053076e60b",
+      "original_repository_path": "chengdu-tourism-office/skills/support-triage/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/support-triage/scripts/run.py",
+      "bytes": 307,
+      "sha256": "5c16317244a0c426c3eb07ccd52ad03b977f6fd7d756574e34f93b7e638b7991",
+      "original_repository_path": "chengdu-tourism-office/skills/support-triage/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/support-triage/skill.json",
+      "bytes": 1610,
+      "sha256": "dfeba705fb1b92d65381b39ce8989cca7c6bad1c945a856e84e2e53b9fd9bb69",
+      "original_repository_path": "chengdu-tourism-office/skills/support-triage/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/task-tracker/SKILL.md",
+      "bytes": 1145,
+      "sha256": "046bd93fbba649643f49c0ef29af9546887382b26ce5cbcee6bbcb394cc89a12",
+      "original_repository_path": "chengdu-tourism-office/skills/task-tracker/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/task-tracker/references/example.json",
+      "bytes": 113,
+      "sha256": "9cfb97a33f39ea90a71a27dc988ead2708c0a611d90fa5fdce8fdb1f1d71915b",
+      "original_repository_path": "chengdu-tourism-office/skills/task-tracker/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/task-tracker/references/input.schema.json",
+      "bytes": 709,
+      "sha256": "f4271359d2b269d9c891275196013b4d1fd71294e16580a3291e2424d44fea92",
+      "original_repository_path": "chengdu-tourism-office/skills/task-tracker/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/task-tracker/scripts/run.py",
+      "bytes": 303,
+      "sha256": "ca041b39e85066c5246d6b63925f6c26983c518ee0bc91afd26824455ed26081",
+      "original_repository_path": "chengdu-tourism-office/skills/task-tracker/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/task-tracker/skill.json",
+      "bytes": 1341,
+      "sha256": "358d6ddd76b6bba6e1c7e297182a142de0ada53196355ef393a750e642538d00",
+      "original_repository_path": "chengdu-tourism-office/skills/task-tracker/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/team-capacity/SKILL.md",
+      "bytes": 1142,
+      "sha256": "c1947b8b22c83b3850109815f718f0c96ffb024ccb9f0b577b6664f8f9929947",
+      "original_repository_path": "chengdu-tourism-office/skills/team-capacity/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/team-capacity/references/example.json",
+      "bytes": 4,
+      "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f",
+      "original_repository_path": "chengdu-tourism-office/skills/team-capacity/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/team-capacity/references/input.schema.json",
+      "bytes": 100,
+      "sha256": "176b8cf1be0f4a4c9b691d66320d9a93d2f05358a44ac03afce1b2669dfc9d4c",
+      "original_repository_path": "chengdu-tourism-office/skills/team-capacity/references/input.schema.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/team-capacity/scripts/run.py",
+      "bytes": 305,
+      "sha256": "49d628daef4a89d7df82cda932dc5c2fbfc13fe8a83b43c35ac7142d20b2a2f8",
+      "original_repository_path": "chengdu-tourism-office/skills/team-capacity/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/team-capacity/skill.json",
+      "bytes": 541,
+      "sha256": "97e4ca91815bc74c6e9220e6f18dc27190b3aa2034d1ef4cd500f469e025504d",
+      "original_repository_path": "chengdu-tourism-office/skills/team-capacity/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/telegram-boss-update/SKILL.md",
+      "bytes": 904,
+      "sha256": "5b40974aa97ff9e4703db5fbd30d133bb012ff5692a91f9df5a0599d1f6ebd9d",
+      "original_repository_path": "chengdu-tourism-office/skills/telegram-boss-update/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/telegram-boss-update/references/example.json",
+      "bytes": 87,
+      "sha256": "b5c1bbeae9f4ce4e2bbb4b00ab9a804346b0e4467a3ce41326f0c3619677c3ea",
+      "original_repository_path": "chengdu-tourism-office/skills/telegram-boss-update/references/example.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/telegram-boss-update/scripts/run.py",
+      "bytes": 189,
+      "sha256": "f6d0e70554c0d3a20f4073f3dcf6636ab35cb8652de5aa00b9a6e390a994c746",
+      "original_repository_path": "chengdu-tourism-office/skills/telegram-boss-update/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/telegram-boss-update/skill.json",
+      "bytes": 816,
+      "sha256": "79c7194d7f7f1275696562f25d1408e7e7ba3391c3f15153a5f82e2adb74b1c4",
+      "original_repository_path": "chengdu-tourism-office/skills/telegram-boss-update/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/tour-search/SKILL.md",
+      "bytes": 796,
+      "sha256": "7346536584643d39c79c8aee22001a8d307f520dce11b98192b13fc6cc5507e0",
+      "original_repository_path": "chengdu-tourism-office/skills/tour-search/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/tour-search/scripts/run.py",
+      "bytes": 264,
+      "sha256": "de5a0db017d457a903553a0d24f68de960d1d699cbcc9e60a44605b154f7bf14",
+      "original_repository_path": "chengdu-tourism-office/skills/tour-search/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/tour-search/scripts/run_tests.py",
+      "bytes": 250,
+      "sha256": "93616b5910a8c6ecf6d9d4e3ea000068c7067f72f82b7c6459f4562618f515d5",
+      "original_repository_path": "chengdu-tourism-office/skills/tour-search/scripts/run_tests.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/tour-search/skill.json",
+      "bytes": 570,
+      "sha256": "cf0bea97d79b3603ad416fdce9d9980fd597df110483cdc2a3f3d3eaba17cd4c",
+      "original_repository_path": "chengdu-tourism-office/skills/tour-search/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/workload-rebalance/SKILL.md",
+      "bytes": 945,
+      "sha256": "2ac24569b18318f5588308899d1e5eb286726d8fac093b6de99f78c1e8048482",
+      "original_repository_path": "chengdu-tourism-office/skills/workload-rebalance/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/workload-rebalance/scripts/run.py",
+      "bytes": 282,
+      "sha256": "9812b35f8201a0a8572006b7aeb8c40434d708d610a13bc6c2bb3b24c620990c",
+      "original_repository_path": "chengdu-tourism-office/skills/workload-rebalance/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/workload-rebalance/skill.json",
+      "bytes": 1224,
+      "sha256": "ad0e165558c41ccaea6b6a6998ccd5ab42b501699f16ac7c4bbfea16842708f8",
+      "original_repository_path": "chengdu-tourism-office/skills/workload-rebalance/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/workload-splitter/SKILL.md",
+      "bytes": 893,
+      "sha256": "417c939dbb7ae68766b05ed89ed3e21b9ea4c29ce693395251ee4bf85e88af8b",
+      "original_repository_path": "chengdu-tourism-office/skills/workload-splitter/SKILL.md"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/workload-splitter/scripts/run.py",
+      "bytes": 264,
+      "sha256": "de5a0db017d457a903553a0d24f68de960d1d699cbcc9e60a44605b154f7bf14",
+      "original_repository_path": "chengdu-tourism-office/skills/workload-splitter/scripts/run.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/workload-splitter/scripts/run_tests.py",
+      "bytes": 250,
+      "sha256": "93616b5910a8c6ecf6d9d4e3ea000068c7067f72f82b7c6459f4562618f515d5",
+      "original_repository_path": "chengdu-tourism-office/skills/workload-splitter/scripts/run_tests.py"
+    },
+    {
+      "path": "chengdu-tourism-office/skills/workload-splitter/skill.json",
+      "bytes": 2111,
+      "sha256": "ef0496de7e13215292d5bda6f6f5c45f976cbbb8276d17de4eafdd8e3df602c6",
+      "original_repository_path": "chengdu-tourism-office/skills/workload-splitter/skill.json"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "original_repository_path": "chengdu-tourism-office/tests/__init__.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/browser_general_smoke.py",
+      "bytes": 2807,
+      "sha256": "b07a1634c4aa98d5a64b0d091510c81ae624fa83e238dea06ae66dee4f31f8ec",
+      "original_repository_path": "chengdu-tourism-office/tests/browser_general_smoke.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/browser_smoke.py",
+      "bytes": 15551,
+      "sha256": "8a76a9e0429360f54c6612a46e4a9fb5b4c6231b02b2728e3c7e0e99d1343d5e",
+      "original_repository_path": "chengdu-tourism-office/tests/browser_smoke.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/test_agent_orchestration.py",
+      "bytes": 5820,
+      "sha256": "4baa29465b96392b29cf8e77831698f19d73a8a0cf9eb61a26bcd963da209e7f",
+      "original_repository_path": "chengdu-tourism-office/tests/test_agent_orchestration.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/test_assistant.py",
+      "bytes": 15523,
+      "sha256": "c9c62dfa9730c0a58481431666fbddd444a66f8b327204393a47de7ce3955fff",
+      "original_repository_path": "chengdu-tourism-office/tests/test_assistant.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/test_governance.py",
+      "bytes": 16085,
+      "sha256": "81ad99197ca74c27ca21ffe5114b4b036b27664e9413723c7e1fb367dabca375",
+      "original_repository_path": "chengdu-tourism-office/tests/test_governance.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/test_integration.py",
+      "bytes": 3799,
+      "sha256": "7585f967a14f0a4dfdc4905137ddd10738e1046c09dbfdb72cce81ad58adcb96",
+      "original_repository_path": "chengdu-tourism-office/tests/test_integration.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/test_new_skills.py",
+      "bytes": 5111,
+      "sha256": "6c3899a13be72fea8e87813ba1a0abc51cc9e737f9850476ac3b817e6890d2b3",
+      "original_repository_path": "chengdu-tourism-office/tests/test_new_skills.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/test_office_skills.py",
+      "bytes": 3245,
+      "sha256": "d6b4098dde321f633b8df1a94be6cdd426ed09e2d69efb165f839794d77ea81d",
+      "original_repository_path": "chengdu-tourism-office/tests/test_office_skills.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/test_skills.py",
+      "bytes": 24884,
+      "sha256": "f315362d7cf4871eed70235920882f702adf7a7ad4ff5d103ae7422aa756a1ab",
+      "original_repository_path": "chengdu-tourism-office/tests/test_skills.py"
+    },
+    {
+      "path": "chengdu-tourism-office/tests/trigger_eval.py",
+      "bytes": 4451,
+      "sha256": "a8b36a64c29d36bfcdd21dbfff1818afb18f65818473be8d691265aafe0869e9",
+      "original_repository_path": "chengdu-tourism-office/tests/trigger_eval.py"
+    },
+    {
+      "path": "chengdu-tourism-office/web/agent-run.css",
+      "bytes": 7313,
+      "sha256": "0fb3718efb36d6f1a540499616624fce9e1009a196ca556641a5ab701b34ca0d",
+      "original_repository_path": "chengdu-tourism-office/web/agent-run.css"
+    },
+    {
+      "path": "chengdu-tourism-office/web/agent-run.js",
+      "bytes": 8686,
+      "sha256": "7c2159760c806ed779e216c37dc9e610c889142037976f7a70172d288c2d750f",
+      "original_repository_path": "chengdu-tourism-office/web/agent-run.js"
+    },
+    {
+      "path": "chengdu-tourism-office/web/app.js",
+      "bytes": 62431,
+      "sha256": "0831537513967f42688498ec2939f171f0ce9eb008ff3643f2bcfab6a636ce69",
+      "original_repository_path": "chengdu-tourism-office/web/app.js"
+    },
+    {
+      "path": "chengdu-tourism-office/web/avatar.css",
+      "bytes": 4604,
+      "sha256": "7f066e1b57aab12f195ec3912bdde485dc4e0eb2ff3145869d977dc21df0b989",
+      "original_repository_path": "chengdu-tourism-office/web/avatar.css"
+    },
+    {
+      "path": "chengdu-tourism-office/web/avatar.js",
+      "bytes": 1966,
+      "sha256": "7b2bf33a55a04f2308bcae2acd01750db161fccdc4d800bcc2a04a293408a9e4",
+      "original_repository_path": "chengdu-tourism-office/web/avatar.js"
+    },
+    {
+      "path": "chengdu-tourism-office/web/chat-format.css",
+      "bytes": 743,
+      "sha256": "203f8caf649f3d9f045a0251be6b055df659e4731f135fbbeb25a7ba14551521",
+      "original_repository_path": "chengdu-tourism-office/web/chat-format.css"
+    },
+    {
+      "path": "chengdu-tourism-office/web/docs.html",
+      "bytes": 2525,
+      "sha256": "04657ceb79109a7faaa9d3cc3eb7f6bccfdca595d1580b6e16f204eaf2720780",
+      "original_repository_path": "chengdu-tourism-office/web/docs.html"
+    },
+    {
+      "path": "chengdu-tourism-office/web/docs.js",
+      "bytes": 3070,
+      "sha256": "2750fdf89e20f983e09db10a8c4908511be220b5a047aed6176062e919e8252d",
+      "original_repository_path": "chengdu-tourism-office/web/docs.js"
+    },
+    {
+      "path": "chengdu-tourism-office/web/index.html",
+      "bytes": 9041,
+      "sha256": "4e3d1435cd34a2ca2a804460dbc1ce86eac9bf7c8e6588074c1c61cc81955544",
+      "original_repository_path": "chengdu-tourism-office/web/index.html"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/account_exec.png",
+      "bytes": 1937703,
+      "sha256": "84dd4f21dfe08ec1d9990cba968f5fd1ff981eb6d2a3aadd2bf693e370afe0c2",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/account_exec.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/atlas.png",
+      "bytes": 2240905,
+      "sha256": "26470f5aa3c8af1aae7c12f0de13ef5198bf8444e2ee59fecedabd0120c0a49e",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/atlas.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/director.png",
+      "bytes": 2024737,
+      "sha256": "7c42de4d97cd3a3b81367316cef47d1f165f5cf2e1aa471e47fae80032013ee8",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/director.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/finance_manager.png",
+      "bytes": 1981883,
+      "sha256": "6ef36884774328512a0405a8024e2e16fcac45246a524aa1140ab9e94dfa6b58",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/finance_manager.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/itinerary_specialist.png",
+      "bytes": 2062416,
+      "sha256": "dc9e444e32bb54f0a9f0f33451342d487ca8a19921eee9021843702a3dd6af1b",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/itinerary_specialist.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/ops_manager.png",
+      "bytes": 2057994,
+      "sha256": "25d71355cc97b045abc4eecb3da1235af5a11a6b751debdc086cb27f5294901f",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/ops_manager.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/product_manager.png",
+      "bytes": 2249706,
+      "sha256": "7dfab8521c36a63207456413b34c69d69303a6f8ffda4caf565e607a5cc32717",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/product_manager.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/sales_exec.png",
+      "bytes": 2040326,
+      "sha256": "5d37a00a38bc8cc1a18569af8b900cccfe7ffb40f8f70166ea8978085d2337b8",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/sales_exec.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/sales_manager.png",
+      "bytes": 1847457,
+      "sha256": "24d6ee36e86c859d272de9a5450e0bf9670323ea3fd750288b5ed17eb4f5327b",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/sales_manager.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/supplier_manager.png",
+      "bytes": 2070683,
+      "sha256": "8bc96fdd9f8d6c26e7bd21fe6b243c3207b8bcae9814ade7713a6ae4e3332c52",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/supplier_manager.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/portraits/transport_coordinator.png",
+      "bytes": 1935317,
+      "sha256": "03e45f670839ab1931fa0608fc103189781efcb9669fdcb103fc98cac4900f47",
+      "original_repository_path": "chengdu-tourism-office/web/portraits/transport_coordinator.png"
+    },
+    {
+      "path": "chengdu-tourism-office/web/style.css",
+      "bytes": 29940,
+      "sha256": "6f012a71bc3c89f9d7be08887943f5ec998aa14f00ad9ab5ee88f0f5bfcd7db1",
+      "original_repository_path": "chengdu-tourism-office/web/style.css"
+    },
+    {
+      "path": "chengdu-tourism-office/web/workspace.css",
+      "bytes": 21146,
+      "sha256": "f1080e97aae7e529df17c252985940a174a593936aef3156aab8bac43ec14978",
+      "original_repository_path": "chengdu-tourism-office/web/workspace.css"
+    },
+    {
+      "path": "chengdu-tourism-office/web/workspace.js",
+      "bytes": 31244,
+      "sha256": "acaff7b2cc58f471484b3cd84c5b53c60a26c12ed4f226973f36e1053ad74cd9",
+      "original_repository_path": "chengdu-tourism-office/web/workspace.js"
+    },
+    {
+      "path": "submission/01-skill-function-description.pdf",
+      "bytes": 56655,
+      "sha256": "3293d2a7e9ae76abe84fd4c2a0adee105bddb7acbd0754fde6c7cba80a32851c",
+      "original_repository_path": "submission/01-skill-function-description.pdf"
+    },
+    {
+      "path": "submission/02-api-documentation.pdf",
+      "bytes": 99731,
+      "sha256": "c6062f07dbbed8c00cec62fb130d4cca48982cf9fb59bd1d11e22efadfe9c9ed",
+      "original_repository_path": "submission/02-api-documentation.pdf"
+    },
+    {
+      "path": "submission/03-implementation-demo.srt",
+      "bytes": 5770,
+      "sha256": "a98d0f5fa8281da1e104b36f7e60b5d2a90480c11f61db137d1228d0920bd13f",
+      "original_repository_path": "submission/03-implementation-demo.srt"
+    },
+    {
+      "path": "submission/04-enterprise-challenge-fit.pdf",
+      "bytes": 53670,
+      "sha256": "29c20665bee7b75a706eb86b688a4ead5031dc4ac79bc10d09c2ede839c35158",
+      "original_repository_path": "submission/04-enterprise-challenge-fit.pdf"
+    },
+    {
+      "path": "submission/06-entry-summary.txt",
+      "bytes": 1898,
+      "sha256": "ff432948c94f946f6b73850c8b50e50bec7602a0efc05d33baed4986dbe8310f",
+      "original_repository_path": "submission/06-entry-summary.txt"
+    },
+    {
+      "path": "submission/README.md",
+      "bytes": 2024,
+      "sha256": "ff89a3874cbbe8caf6c931efad61c4641efcbe8ed024fd9b6b6b30d2d6b9b593",
+      "original_repository_path": "submission/agent-skill-source/SUPPORTING_DOCUMENTS.md"
+    },
+    {
+      "path": "submission/demo-script.md",
+      "bytes": 6574,
+      "sha256": "b7392cb6ff26484a52af1cb017dd6a415e4ab567c4a94477ddf45b4a60d0e8a5",
+      "original_repository_path": "submission/demo-script.md"
+    },
+    {
+      "path": "submission/evidence/README.md",
+      "bytes": 1929,
+      "sha256": "b3c44a37b8c6d43ddbfe314ec62a54b33b804329feff23ea18bc5f13481cd350",
+      "original_repository_path": "submission/evidence/README.md"
+    },
+    {
+      "path": "submission/evidence/agent-timeline.json",
+      "bytes": 346425,
+      "sha256": "92fdcd89897c2c392b8b5d6bcbb902499f23bde590c3dda3ab6b2da1abd90924",
+      "original_repository_path": "submission/evidence/agent-timeline.json"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Chengdu Food-and-Tea Launch — Final Executive Report.pdf",
+      "bytes": 50921,
+      "sha256": "5c85608f90ff2e8c117ef88e18fd53b445120e4f9ce7752c6323210208584ecc",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Chengdu Food-and-Tea Launch — Final Executive Report.pdf"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Chengdu food-and-tea executive management handoff.docx",
+      "bytes": 38562,
+      "sha256": "3a83bad95afdd2a4fbdc8989d491b64fbbaca4b8e935b4543aa55da8b0d1b11f",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Chengdu food-and-tea executive management handoff.docx"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Chengdu food-and-tea launch options - decision brief.docx",
+      "bytes": 37351,
+      "sha256": "2ca22d8cc94576bc41043b055cd69c5066169360bb8a89e5907f99decd917bfa",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Chengdu food-and-tea launch options - decision brief.docx"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Chengdu food-and-tea launch options.pptx",
+      "bytes": 33958,
+      "sha256": "07c2509a4aa9d75acd367444f8ef4da2ce8bb3b396c891dad8c5930f5f186984",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Chengdu food-and-tea launch options.pptx"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Chengdu food-and-tea pilot — local draft only.md",
+      "bytes": 1634,
+      "sha256": "3c32aec42b1d4a1397f52f172dee27ee21f8d50764f1880b52a4c4112c6f415b",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Chengdu food-and-tea pilot — local draft only.md"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Chengdu launch budget CNY — assumptions not transactions.xlsx",
+      "bytes": 7139,
+      "sha256": "41cb121bd3bd4902c7a46f4abd631819ef16d9a8481928a796d3b7c9f6213b02",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Chengdu launch budget CNY — assumptions not transactions.xlsx"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Chengdu launch checklist — tabletop gate 2026-10-11, not real clearance.md",
+      "bytes": 2781,
+      "sha256": "42f8d295a78e3882ad2f536ab315f465b346d351e87f00b60977fb1a81bbfddd",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Chengdu launch checklist — tabletop gate 2026-10-11, not real clearance.md"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Chengdu pilot preparation and fictional outcome.xlsx",
+      "bytes": 6312,
+      "sha256": "bc302345587db8c8159cc858c67c395c2da96cb1711cb091d06d875c44b818fe",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Chengdu pilot preparation and fictional outcome.xlsx"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Chengdu pilot — 40h assumed effort, no reservations responsibility matrix.xlsx",
+      "bytes": 6248,
+      "sha256": "5415d3f06449186d1dc16e7a6e6ef78703976b6519c927a41c12e7abbba24a3b",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Chengdu pilot — 40h assumed effort, no reservations responsibility matrix.xlsx"
+    },
+    {
+      "path": "submission/evidence/generated-files/SIMULATION Oct-Dec 2026 retained 30-guest monthly-repeat scenario.xlsx",
+      "bytes": 6187,
+      "sha256": "f3a8f7ff48ebac0783fdfbee663a80a3d1f9fd16a8910761b1437906909f7797",
+      "original_repository_path": "submission/evidence/generated-files/SIMULATION Oct-Dec 2026 retained 30-guest monthly-repeat scenario.xlsx"
+    },
+    {
+      "path": "submission/evidence/launch-execution.json",
+      "bytes": 128682,
+      "sha256": "fb67f41d2eb8cbd3acacb9736c084304f8cea5b73daee8c28df2e95001632db8",
+      "original_repository_path": "submission/evidence/launch-execution.json"
+    },
+    {
+      "path": "submission/source/01-skill-function-description.md",
+      "bytes": 13477,
+      "sha256": "aae91c6cd9a26d79be462b7c8dca0d77d79b56c0cdc416f951567cf6c65c09e8",
+      "original_repository_path": "submission/source/01-skill-function-description.md"
+    },
+    {
+      "path": "submission/source/02-api-documentation.md",
+      "bytes": 62591,
+      "sha256": "5f102f9b2940589450e0c40630f9bd94a68bba18d6015c2a58adb962138c4237",
+      "original_repository_path": "submission/source/02-api-documentation.md"
+    },
+    {
+      "path": "submission/source/04-enterprise-challenge-fit.md",
+      "bytes": 11419,
+      "sha256": "c8788e7eca833c65acc43e37fb4aab0194d031e7c575cd21cb1fda099ac7e029",
+      "original_repository_path": "submission/source/04-enterprise-challenge-fit.md"
+    },
+    {
+      "path": "submission/source/verification/automated-tests.txt",
+      "bytes": 512,
+      "sha256": "be916dc1c2470f8a12d936f321b38b784302c3a1d348e7e803ac95bb61973b62",
+      "original_repository_path": "submission/source/verification/automated-tests.txt"
+    },
+    {
+      "path": "submission/source/verification/results.json",
+      "bytes": 272,
+      "sha256": "b589e5758420d2d162632cf2c188f5b88ac47bda44de15b9448cd7bc38818f8b",
+      "original_repository_path": "submission/source/verification/results.json"
+    },
+    {
+      "path": "submission/source/verification/routing-evaluation.txt",
+      "bytes": 195,
+      "sha256": "269736a888201894c3eaff81c313608cc9adaad1f85a1b8b33894b8042b7aad0",
+      "original_repository_path": "submission/source/verification/routing-evaluation.txt"
+    },
+    {
+      "path": "submission/source/verification/tourism-behavior-tests.txt",
+      "bytes": 333,
+      "sha256": "92cd8009f2ea7973ec505a0f5da12a48eca0fce062aee63b6e42c18f2c51aba1",
+      "original_repository_path": "submission/source/verification/tourism-behavior-tests.txt"
+    },
+    {
+      "path": "submission/source/verification/unittest.txt",
+      "bytes": 450,
+      "sha256": "23d5f515fe150ba355b887800f9a4444f18f2db45ccc390d6feed2b9fcb7c3a9",
+      "original_repository_path": "submission/source/verification/unittest.txt"
+    },
+    {
+      "path": "submission/submission-manifest.json",
+      "bytes": 2690,
+      "sha256": "2ac0ec1e6b8408f2097575489e8bf871f5deca83873b9d60b581bce51e116cbe",
+      "original_repository_path": "submission/submission-manifest.json"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 2642,
+      "sha256": "f81ef8bd8b82f6176f0fde9ba0337eb8d4f22359f283fc321ed76549a0f11759",
+      "original_repository_path": "submission/agent-skill-source/verify_package.py"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-29",
+  "scope": "Fresh extraction of the source ZIP using the authoring Python environment; no new model/API run",
+  "python": "3.12.10",
+  "checks": [
+    {
+      "name": "package-integrity",
+      "exit_code": 0,
+      "command": "python verify_package.py"
+    },
+    {
+      "name": "tourism-behavior",
+      "exit_code": 0,
+      "command": "python scripts/tourism_office.py test"
+    },
+    {
+      "name": "automated-tests",
+      "exit_code": 0,
+      "command": "python -m unittest discover -s tests -p test_*.py -q"
+    },
+    {
+      "name": "routing",
+      "exit_code": 0,
+      "command": "python tests/trigger_eval.py"
+    },
+    {
+      "name": "standalone-proposal",
+      "exit_code": 0,
+      "command": "python skills/proposal-package/scripts/run.py --input skills/proposal-package/references/example.json --data-dir ../review-output/company"
+    },
+    {
+      "name": "tourism-stage",
+      "exit_code": 0,
+      "command": "python scripts/tourism_office.py run inquiry-intake @examples/rfq.json"
+    },
+    {
+      "name": "tourism-demo",
+      "exit_code": 0,
+      "command": "python scripts/tourism_office.py demo --out ../review-output/tourism"
+    },
+    {
+      "name": "tourism-search",
+      "exit_code": 0,
+      "command": "python scripts/tourism_office.py search tea --db ../review-output/tourism/cases.sqlite"
+    }
+  ],
+  "relative_document_links_checked": 365,
+  "broken_document_links": 0,
+  "source_file_identity": "All 407 original application files verified byte-for-byte against the packaged manifest",
+  "original_skill_instructions": 70,
+  "live_model_calls": 0,
+  "notes": [
+    "Dependencies were already installed in the authoring environment; fresh dependency resolution on another machine is not claimed.",
+    "The final package is rebuilt to include this report, then integrity-checked again. Prior submission logs retain their original dates."
+  ]
+}

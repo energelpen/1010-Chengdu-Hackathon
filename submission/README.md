@@ -4,6 +4,12 @@
 
 [Download the complete submission bundle](atlas-office-submission.zip) or the [independently runnable skills source package](atlas-office-skills-source.zip).
 
+## Voluntary original-source supplement
+
+**Team Atlas — Singapore Polytechnic.** [Download the documented Agent Skill source ZIP](Atlas-Singapore-Polytechnic-Agent-Skill-Source.zip) for the organizing committee's voluntary source request. It contains all 69 individual original `SKILL.md` files and the top-level instructions, the full application source and assets, examples, tests, reviewer documentation, recorded execution evidence, and an email draft identifying the team and institution. The package's `README.md` is the starting point. `verify_package.py` checks its SHA-256 file manifest without installing dependencies or calling an API.
+
+The [archive checksum](Atlas-Singapore-Polytechnic-Agent-Skill-Source.zip.sha256) is supplied separately. This source supplement omits the video and cover, which remain available below. The original six submission artifacts are unchanged.
+
 ## Upload these six items
 
 | Form field | File | Limit |
